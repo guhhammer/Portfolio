@@ -1,0 +1,20 @@
+Nome: Gustavo Hammerschmidt.
+
+Objetivo da Pesquisa:
+- fazer revisão sistemática de leitura do tópico falhas de ambientes de big data.
+
+Questões de Pesquisa:
+- reportar as falhas mais recorrentes nesses ambientes.
+- relatar como as falhas são previstas e a ideia dos algoritmos de previsão de falhas.
+- relatar os tipos de falha.
+
+String Busca:
+'big AND data AND (environment OR fault)'
+
+Obs.: a string-busca foi gerada pelo portal SpringerLink.
+
+Adicional:
+- Obtive resultados relevantes com a string de busca acima mencionada.
+
+Condução:
+- Individual.
