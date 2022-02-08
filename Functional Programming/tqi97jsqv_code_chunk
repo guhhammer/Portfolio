@@ -1,0 +1,37 @@
+
+# -*- coding: utf-8 -*-
+# modify default matplotlib pyplot show function
+try:
+    import matplotlib
+    matplotlib.use('Agg') # use Agg backend
+    import matplotlib.pyplot as plt
+    import sys
+    def new_plt_show():
+        plt.savefig(sys.stdout, format="svg")
+    plt.show = new_plt_show # override old one
+except Exception:
+    pass
+# modify default mpld3 behavior
+try:
+    import matplotlib.pyplot as plt, mpld3
+    import sys
+    def new_mpld3_show():
+        fig = plt.gcf() # get current figure
+        sys.stdout.write(mpld3.fig_to_html(fig))
+    mpld3.show = new_mpld3_show # override old one
+    mpld3.display = new_mpld3_show
+except Exception:
+    pass
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 5, 100)
+y = x ** 2
+
+plt.plot(x, y, 'r')
+plt.plot(y, x, 'b')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('mpe for fun')
+plt.show()
+print("job done")

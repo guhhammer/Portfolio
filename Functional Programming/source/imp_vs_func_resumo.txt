@@ -1,0 +1,14 @@
+Imperativo vs. funcional:
+
+No paradigma imperativo, descrevemos como o problema deve ser resolvido usando um algoritmo com uma sequência de instruções.
+
+
+No paradigma funcional, não há variáveis( ou as variáveis são imutáveis), pois as funções só estão interessadas no processamento de dados. Em princípio, não há interesse em salvar o status de nada cada função opera em seus dados e não depende de outra função, portanto, não há sequência de execução.
+
+
+Paradigma -> Passar um problema para uma forma computadorizada.
+
+funcional -> foco está na avaliação de funções.
+	- imutabilidade e transparÊncia referencial.
+
+imperativo -> focado na mudança de estados de variáveis.
