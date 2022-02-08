@@ -1,0 +1,23 @@
+
+1. O que é uma startup?
+
+É um projeto em desenvolvimento com potencial assimétrico de retornos, também, com mais riscos. O ímpeto de uma startup é crescer e conquistar mais mercado.
+
+2. 02 exemplo de empresas que iniciaram como startup? * Cite o modelo de negócio de cada startup.
+
+Ebanx - O modelo de negócio que habilita o consumidor latino americano a pagar por compras online internacionais.
+
+Siacoin - Sia é uma plataforma de armazenamento em nuvem descentralizada. Ela utiliza tecnologia  blockchain para criar um marketplace para armazenar dados.
+
+3. Faça uma pesquisa sobre MPV e apresente dois exemplos, descrevendo como a empresa utilizou o MVP para lançar sua ideia.
+
+Amazon - Site com design simplificado, vendendo livros a preços baixos. Dessa forma, a Amazon estava caminhando no caminho oposto das lojas de livros físicos: o comércio online.
+
+Dropbox - O mvp era apenas um vídeo explicando como funcionaria o projeto; nada do serviço estava consolidado ainda.
+
+4. Sobre a palestra vista hoje o que você aprendeu? O que é necessário para começar uma startup?
+
+Uma startup é feita de um personel com competências diversas que se ajustem à ideia do projeto e preferir por desenvolvimento de software à moda growth. 
+
+É necessário focar em desenvolvimento por etapas; a melhor ideia de startup é aquela testada ao máximo na prática: na teoria, qualquer projeto tem demanda de mercado, mas, na prática, prevalece o que for mais ajustável. 
+
