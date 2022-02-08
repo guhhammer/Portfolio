@@ -1,0 +1,3 @@
+Refazer a árvore.
+
+Respeitar a ordem de entrada dos vlaores do heap
