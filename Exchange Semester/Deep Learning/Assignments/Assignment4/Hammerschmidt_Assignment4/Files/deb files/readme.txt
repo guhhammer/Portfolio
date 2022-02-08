@@ -1,0 +1,1 @@
+These files were necessary through the development to emulate a valid virtual environment with flask. I had a lot of problems related to tensorflow module and I had to install these files for my environment. 
