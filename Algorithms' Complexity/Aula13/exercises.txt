@@ -1,0 +1,156 @@
+
+
+{A3
+
+	T(0) = 1, se n <= 0
+
+	T(n) = 2T(n/2) + n², se n >= 1
+
+
+	caso :: log de a na base b ~> log2 2 = 1
+
+	caso :: 1 < (k = 2) ~> Caso 3 = theta(n ^ k)
+
+	
+	f(n) pertence a theta(n ^ (lg a / lg b + e)), e > 0
+
+
+	a f(n/b) <= c1 f(n)
+
+	2 f(n/2) <= c1 f(n)
+
+	2 [ n²/4 ] <= c1 n²
+
+	1/2 <= c1
+
+	c1 >= 0.5
+
+}
+
+
+{A5
+
+	T(0) = 1, se n <= 0
+
+	T(n) = 3T(n/3) + n²/2, se n >= 1
+	
+
+	caso :: log de a na base b ~> log3 3 = 1
+
+	caso :: 1 < (k = 2) ~> Caso 3 = theta(n ^ k)
+
+	
+	f(n) pertence a theta(n ^ (lg a / lg b + e)), e > 0
+
+
+	a f(n/b) <= c1 f(n)
+
+	3 f(n/3) <= c1 f(n)
+
+	3 [ n²/18 ] <= c1 n²/2
+
+	2/9 <= c1
+
+	c1 >= 0.223
+
+}
+
+
+{A7
+
+	T(0) = 1, se n <= 0
+
+	T(n) = 3T(n/3) + n³, se n >= 1
+	
+
+	caso :: log de a na base b ~> log3 3 = 1
+
+	caso :: 1 < (k = 3) ~> Caso 3 = theta(n ^ k)
+
+	
+	f(n) pertence a theta(n ^ (lg a / lg b + e)), e > 0
+
+
+	a f(n/b) <= c1 f(n)
+
+	3 f(n/3) <= c1 f(n)
+
+	3 [ n³/27 ] <= c1 n³ 
+
+	1/9 <= c1
+
+	c1 >= 0.112
+
+}
+
+
+{A9
+
+	T(0) = 1, se n <= 0
+
+	T(n) = 4T(n/4) + 4n, se n >= 1
+
+
+	caso :: log de a na base b ~> log4 4 = 1
+
+	caso :: 1 = (k = 1) ~> Caso 2 = theta((n ^ k) * lg n)
+
+
+	f(n) pertence a theta(n ^ (lg a / lg b))
+
+
+	a f(n/b) <= c1 f(n)
+
+	4 f(n/4) <= c1 f(n)
+
+	4 [ n ] <= c1 4n 
+
+	1 <= c1
+
+	c1 >= 1
+
+}
+
+
+{A11
+
+	T(0) = 1, se n <= 0
+
+	T(n) = 4T(n/4) + n^4 + 4n, se n >= 1
+	
+
+	caso :: log de a na base b ~> log4 4 = 1
+
+	caso :: 1 < (k = 4) ~> Caso 3 = theta(n ^ k)
+
+
+	f(n) pertence a theta(n ^ (lg a / lg b + e)), e > 0
+
+
+	a f(n/b) <= c1 f(n)
+
+	4 f(n/4) <= c1 f(n)
+
+	4 [ n^4/(16*16) + n ] <= c1 n^4 + 4n
+
+	[ n^4/(4*16) + 4n ] / n(n³ + 4) <= c1
+
+	n^4/(4*16) / n(n³ + 4) + 4n / n(n³ + 4) <= c1
+
+	n^4/(4*16) / n(n³ + 4) + 4 / (n³ + 4) <= c1	
+
+	n^3/(64n³ + 216) + 4 / (n³ + 4) <= c1	
+
+	[n^3/ 64 * (n³ + 4)] + {4 / (n³ + 4)} <= c1
+
+	|	[n^3/ 64 * (n³ + 4)] ~ n->oo :> 1/65
+	|	{4 / (n³ + 4)} ~ n->oo :> 0
+
+	1/65 <= c1
+
+	c1 >= 0.0154
+
+}
+
+
+

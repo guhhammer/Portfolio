@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk-13.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2019.2.2\lib\idea_rt.jar=63351:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2019.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Gustavo\Desktop\trabalho03\out\production\trabalho03 main.main
