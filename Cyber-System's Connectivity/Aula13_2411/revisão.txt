@@ -1,0 +1,177 @@
+
+Nome: Gustavo Hammerschmidt.
+
+
+Exercício 1:
+
+I. V (O tamanho usual do cluster é 4K)
+II. V (O espaço perdido é chamado slack space)
+III. F (Cluster pequeno irá aumentar a complexidade das operações de leitura do arquivo, pois haverão muitos pedaços que precisarão ser localizados.)
+IV. V
+V. F (A fragmentação acontece porque o sistema não tem como saber qual será o tamanho do arquivo.)
+VI. V
+
+
+Exercício 2:
+
+I. V
+Obs.: ext usa um modelo para mapear arquivos em clusters chamado i-nodes.
+II. V
+III. V
+Obs.: NTFS e ext4 são robustos contra esse problema.
+IV. F
+Obs.: NTFS e ext4 têm meios de restaurar os sistemas de arquivo, usando journaling por exemplo; ext2, ext3 e FAT são sujeitos a esses problemas.
+V. F
+Obs.: é preciso escrever os dados no disco e atualizar a tabela que associa o cluster ao arquivo.
+
+
+Exercício 3: 
+
+(e)
+(f)
+(i)
+(f)
+(i)
+
+
+Exercício 4:
+
+r: não cria o arquivo.
+w+: sempre cria um arquivo novo.
+a+: só cria o arquivo se ele não existir.
+
+(r)
+(r ou r+)
+(w, w+, a, a+)
+(w+, a+) 
+(w+)
+(a+, r+)
+(a) Obs.: abre um arquivo em modo atualização.
+
+
+Exercício 5:
+
+I. F
+II. V
+III. V
+Obs.: BASE64 é um algoritmo que codifica qualquer arquivo binário em texto.
+IV. F
+V. V
+VI. V
+
+
+Exercício 6:
+
+(1)
+(6) Obs.: cd ../..
+(4)
+(5)
+(3)
+
+
+Exercício 7:
+
+(a)
+(d)
+(c)
+(b)
+(c)
+
+
+Exercício 8:
+
+(1) Mutualmente Exclusivo(LOCK)
+(2) 
+(3)
+(5)
+(4)
+
+#-------------------------------------------
+
+
+Exercício 9:
+
+(3)
+(4)
+(2) O computador entra no grupo quando uma aplicação é iniciada.
+(1) Broadcast é um grupo permanente.
+(3)
+(4)
+(4)
+
+
+Exercício 10:
+
+(3)
+(3)
+(2)
+(2)
+(1) FQDN: Fully Qualified Domain Name.
+(1) Implementado por segurança, nem sempre disponível.
+(1)
+
+
+Exercício 11:
+
+(4) NS = Name Server: qualquer servidor DNS que responde por um domínio.
+(1) SOA = Start of Authority: só pode haver um master por domínio.
+(2) A = Address
+(3) MX = Mail Exchange
+(5) CNAME = Canonical Name
+(6) PTR = Pointer
+
+
+Exercício 12:
+
+(3)
+(3)
+(5)
+(2)
+(1)
+
+
+Exercício 13:
+
+I. (F) Retorna apenas o IP. 
+
+II. (V)
+
+III. (V)
+
+IV. (F) O tempo em cache (denominado TTL) é retornado com a consulta.
+
+V. (F) O servidor DNS sempre avisa que respondeu da cache(não é resposta de autorização).
+
+
+Exercício 14:
+
+1. (F) O conceito de servidor web padrão não existe.
+Mas ele pode configurar o domínio padrão. Por exemplo: pucpr.br
+
+2. (F)
+O cliente descobre o DHCP por broadcast.
+
+3. (F)
+Permite renovar o uso do IP indefinidamente.
+
+4. (F)
+Existe um serviço denominado agente relay, que redireciona as consultas DHCP para um servidor.
+
+
+Exercício 15:
+
+1. (F)
+O IP privado pode ser duplicado apenas em redes diferentes, separadas pela Internet.
+
+2. (V)
+Mas é possível criar uma regra de redirecionamento para um servidor dentro da rede.
+
+3. (V)
+
+4. (V)
+
+5. (F)
+169.254.X.X = APIPA
+IP leatório escolhido pelo computador quando o DHCP falha.
+
+

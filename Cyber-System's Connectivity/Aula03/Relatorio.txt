@@ -1,0 +1,40 @@
+Nome: Gustavo Hammerschmidt.
+Relatório:
+
+Questão 1:
+a) Indique os valores das trÊs portas obtidas com o teste
+
+Recebi uma conexão de  ('127.0.0.1', 59757)
+Recebi uma conexão de  ('127.0.0.1', 59758)
+Recebi uma conexão de  ('127.0.0.1', 59759)
+Recebi uma conexão de  ('127.0.0.1', 59760)
+
+b) Que portas são essas? O que elas significam?
+
+Portas de aplicações do tipo cliente, conhecidas como portas dinâmicas ou efêmeras.
+
+Questão 2:
+a) Indique o que acontece qaundo você tenta abrir dois servidores simultaneamente na mesma porta.
+
+Erro de bind. Dois processos não podem usar a mesma porta.
+
+b) Indique o que acontece quando você tenta usar uma porta menor que 1024(exemplo: 700).
+
+Essas portas exigem permissão de administrador para serem utilizadas.
+
+
+
+QUESTÃO 3:
+
+a) Indique o que acontece quando você tenta conectar 2 Puttys simultaneamente.
+
+O segundo Putty
+
+b) Explique o que acontece quando o primeiro Putty é encerrado.
+c) Indique como o conteúdo é recebido quando você usa um buffer pequeno no servidor (exemplo 10).
+d) Utilizando um buffer grande (exemplo 10000), faça com que o servidor aguarde que o usuário digite algo no teclado antes de efetuar a leitura dos dados. Em seguida, envie 3 mensagens pelo Putty antes de digitar algo no servidor, e indique o que acontece.
+
+
+
+
+

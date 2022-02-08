@@ -1,0 +1,77 @@
+
+Nome: Gustavo Hammerschmidt.
+
+Usando Lubuntu na Oracle VM Virtualbox.
+
+Pergunta 1 - Identifique a configuração do seu sistema:
+
+A) Processador:
+Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz 
+1 physical processor; 1 core; 1 thread.
+
+B) Memória(Total e Livre):
+Total -> 4039388 KiB
+Livre -> 2956064 KiB
+
+C) Sistema de Arquivos(Tipo, Quantidade Total e Disponível):
+/dev/sda1
+	
+Filesystem    ext4
+Mounted As    Read-Write
+Mount Point   /
+Size          9,8 GiB
+Used          5,0 GiB
+available     4,8 GiB
+
+D) E/S(Dispositivos de Entrada):
+Power Button
+Sleep Button
+AT Translated Set 2 keyboard
+ImExPS/2 Generic Explorer Mouse
+VirtualBox USB Tablet
+Video Bus
+VirtualBox mouse integration
+
+E) Interfaces de Rede:
+enp0s3 -> Ethernet
+lo -> Loopback
+
+Pergunta 2:
+ll  -> total 116 ...
+dir -> Desktop Documentos Downloads Imagens Modelos Música Público Vídeos
+ls -> Desktop Documentos Downloads Imagens Modelos Música Público Vídeos
+
+Qual é o caminho padrão no sistema de arquivos(pasta) quando você abre o LXTerminal?
+
+/home/gustavo
+
+
+Pergunta 3:
+
+Qual o uso de CPU do programa no caso 1:
+Uso da CPU varia entre 76.1% e 92.3%.
+
+Qual o uso de CPU de cada um dos dois programas no caso 2:
+
+Com sleep de 0.01, o uso de CPU varia entre 0.1% e 0.2%.
+
+Com sleep de 0.02, o uso de CPU varia entre 0.1% e 0.2%.
+
+
+Pergunta 4:
+
+1. Verifique e anote a quantidade de memória livre no seu sistema:
+Memória Livre: 2695
+
+Para ./testemem 100000
+Memória Livre: 2688
+
+Para ./testemem 10000000
+Memória Livre: 2685
+
+Teste de 10Mbytes estava ativo:
+%MEM -> 0.2
+VSZ -> 14276
+RSS -> 10980
+
+

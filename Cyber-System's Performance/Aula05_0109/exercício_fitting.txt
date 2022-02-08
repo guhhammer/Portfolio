@@ -1,0 +1,4 @@
+first fit (16 -> 25K) (21 -> 24k)
+best fit (16 -> 22K) (21 -> 24k)
+worst fit (16 -> 25K) (21 -> 24k)
+next fit (16 -> 25K) (21 -> 24k)

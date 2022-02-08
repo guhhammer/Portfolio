@@ -1,0 +1,51 @@
+Nome: Gustavo Hammerschmidt
+
+Respostas da lista de exercícios 1:
+
+Exercício 1:
+	(1) (1) (2) (2) (1) (2)
+
+Exercício 2:
+	(1) (1) (2) (2) (1) (1) 
+
+NetBEUI = endereço é o nome do computador.
+
+Exercício 3:	
+	(3) (2) (3) (1) (1) (4) (3)
+
+Exercício 4:
+	(1) (4)* (4)** (5) (3) (6)*** (4)****
+
+* Porque o TCP trava as mensagens que não chegarem na ordem, e prejudica mostrar as informações em tempo real.
+** Porque o TCP interpreta perda de pacotes como congestionamento e reduz a taxa de transmissão.
+*** Broadcast e Multicat funcionam apenas na LAN.
+**** Porque é possível transmitir em Multicast e economizar recursos do servidor e de sua interface de rede.
+
+Exercício 5:
+	I.   V
+	II.  V
+	III. F (*)
+	IV.  F (**)
+	V.   F (***)
+
+* As portas são números inteiros de 16 bits.
+** Algumas poucas aplicações enviam mensagens encapsuladas diretamente no IP(PING usa ICMP).
+*** Não existe broadcast de porta. Broadcat chega em todos os computadores na LAN, mas só é recebida na porta correta.
+
+
+Exercício 6:
+	(2) (1) (4) (2) (5) (5) (3)
+
+Controle de fluxo: pausar a transmissão se o buffer do receptor está cheio.
+Controle de congestionamento: reduz a taxa de transmissão se a rede está congestionada.
+Transmissão por fluxo: quem cria os pacotes é o S.O. e ele garante que os bytes são lidos na ordem.
+Transmissão confiável: retransmite pacotes em caso de não confirmação.
+
+Exercício 7:
+	Início da conexão:
+		Ordem: 1 -> 6 -> 3 
+	Transmissão da conexão:
+		Ordem: 3 -> 7
+	Fim conexão:
+		Ordem: 4 -> 7 -> 8 -> 3
+

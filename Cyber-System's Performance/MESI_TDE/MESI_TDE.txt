@@ -1,0 +1,29 @@
+
+Nome: Gustavo Hammerschmidt.
+
+1. P1 lê de x
+2. P2 lê de x
+3. P2 escreve em x
+4. P1 escreve em x
+5. P2 lê x
+
+Resposta para 1:
+        mudança de estado da cache line x de P1: I -> E
+        mudança de estado da cache line x de P2: permanece em I
+
+Resposta para 2:
+	mudança de estado da cache line x de P1: E -> S
+	mudança de estado da cache line x de P2: I -> S
+
+Resposta para 3:
+	mudança de estado da cache line x de P1: S -> I
+	mudança de estado da cache line x de P2: S -> M
+
+Resposta para 4:
+	mudança de estado da cache line x de P1: I -> M
+	mudança de estado da cache line x de P2: M -> I
+
+Resposta para 5:
+	mudança de estado da cache line x de P1: M -> S
+	mudança de estado da cache line x de P2: I -> S
+

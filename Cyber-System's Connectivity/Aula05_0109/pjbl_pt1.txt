@@ -1,0 +1,81 @@
+Relatório:
+
+a) Qual a diferença entre fechar uma conexão com FINISH (FIN)  e RESET (RST)?
+
+  - Com (FIN), a conexão é encerrada porque a aplicação cliente encerrou a conexão com o comando close(); e, com (RST), a conexão é encerrada porque a aplicação cliente foi abortada antes de executar o comando close() e o sistema operacional notificou que a conexão foi encerrada.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+b) Por que é mais vantajoso que os sensores sejam clientes e o monitor o servidor? Qual seria o problema se o monitor fosse o cliente e cada sensor fosse um servidor?
+
+A desvantagem é que o monitor precisa saber qual o endereço IP de cada sensor.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+c) Qual o significado do número N passado como argumento na chamada socket.listen(N)?
+
+   - N significa backlog da aplicação: N é o número máximo de conexões em espera, se o número de conexões exceder N, então o S.O. rejeitará a conexão.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+d) Qual a diferença entre soquete do cliente (CLIENT SOCKET) e soquete do servidor (SERVER SOCKET)?
+
+   - Server socket estabelece uma interface ou um ip para a aplicação. 
+
+Exemplo: s = socket.socket(socket.AF_INET, socket.SOCK_STREAM). 
+
+[ APLICACAO ]  ---------- | INTERFACE |  PORTA   (computador local)
+
+Através do server socket, a aplicação se inscreve para receber pacotes enviados para um IP(interface) e uma porta do computador local.
+
+O server socket só serve para receber conexões.
+
+   - Client socket: exemplo
+
+Objeto conn no código do monitor é o client socket:
+
+conn, addr = s.accept()
+
+S -- (server socket) --- | (IP, PORTA | ------------- (client socket 1) ----- C1
+				      | ------------- (client socket 2) ----- C2
+				      | ------------- (client socket 3) ----- C3
+
+O client socket representa a conexão com um único cliente e é usado para enviar e receber dados.
+
+S -- (server socekt) -- (client socket) --------- (conexão) ------ (socket) C
+	
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+e) Como o  monitor separa os dados de sensores diferentes e indentifica qual sensor fez a transmissão?
+
+   - Cada thread trata um único sensor que é identificado pela conexão conn.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+f) O que acontece com a Thread no servidor quando um sensor é encerrado?
+
+   - A thread é encerrada quando ela sai do loop while na função TrataSensor. Quando o cliente encerra(por FIN ou RST), o loop é encerrado. A thread se suicida...
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+g) O que significa CONEXÃO TCP?
+
+   - No TCP, a comunicação entre o servidor e cada cliente é identificada de forma separada por um código único denominado conexão.
+
+Servidor |-----------------C1
+	 |-----------------C2
+  	 |-----------------C3
+
+A conexão permite ao servidor saber se o cliente ainda está ativo. Uma conexão TCP é identificada por 4 números: < IP_CLIENTE:PORTA_CLIENTE, IP_SERVIDOR:PORTA_SERVIDOR >
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+
