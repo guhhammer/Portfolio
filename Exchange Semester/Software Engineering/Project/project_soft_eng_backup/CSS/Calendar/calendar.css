@@ -1,0 +1,11 @@
+.calendar-parent {
+	position: absolute;
+	top: 24%;
+	left: 7.5%;
+	display: inline-block;
+	text-align: center;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+}

@@ -1,0 +1,15 @@
+
+Requirements engineering:
+
+	- system-as-is
+	- system-to-be
+	- system requirements
+	- software requirements
+	- assumptions 
+	- domain properties
+	
+
+- system-as-is: It is the system as it is before the machine("software") is built into it.
+- system-to-be: How the system should behave when the machine is operating.
+	- software-to-be: part of the machine - it is the software to be developed - a component of the system-to-be
+	- environment: all other components of the system-to-be, including people, physical devices and legacy software.
