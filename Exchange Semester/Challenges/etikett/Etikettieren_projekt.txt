@@ -1,0 +1,7 @@
+App label
+
+App de Machine learning para fazer label de imagens automaticamente com a letra baseada na escrita do meme.
+
+Add bar na parte inferior, ligar a carteira.
+Usar python e c# na criação.
+

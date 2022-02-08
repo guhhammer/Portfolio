@@ -1,0 +1,4 @@
+aa = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]; ab = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+c [] r = r; c (x:y) r = c y r++[[x]]; d = \w -> c w []; f = \w x y -> if y == 0 then w else f (w++x) x (y-1); o w l = length (filter (\x -> x==l) (d w)); p l = length (filter (\x -> x == l) ab); t [] w r = r; 
+t (x:y) w r = if (o w x) > 0 then t y w r++(f "" x (o w x)) else t y w r; v = \l (x:y) (z:w) -> if l==x then z else v l y w; z = \l -> v l ab aa; s [] r =  r; s (x:y) r = if (p [x]) == 1 then s y r++(z [x]) else s y r++[x];
+alphabet_soup = \w -> reverse (t aa (reverse (s w [])) ""); aps = \w -> alphabet_soup w;
