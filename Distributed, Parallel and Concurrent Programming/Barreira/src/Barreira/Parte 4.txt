@@ -1,0 +1,200 @@
+ID: 60
+Salário Bruto: 2643.0
+Salário Líquido: 1744.38
+Desconto (Imposto de renda): 528.6
+Desconto (INSS): 211.44
+Desconto (Previdência Privada): 105.72
+Desconto (Plano de Saude): 52.86
+Total de Descontos: 898.6200000000001
+
+
+ID: 61
+Salário Bruto: 1665.0
+Salário Líquido: 1098.9
+Desconto (Imposto de renda): 333.0
+Desconto (INSS): 133.2
+Desconto (Previdência Privada): 66.6
+Desconto (Plano de Saude): 33.3
+Total de Descontos: 566.0999999999999
+
+
+ID: 62
+Salário Bruto: 2426.0
+Salário Líquido: 1601.16
+Desconto (Imposto de renda): 485.20000000000005
+Desconto (INSS): 194.08
+Desconto (Previdência Privada): 97.04
+Desconto (Plano de Saude): 48.52
+Total de Descontos: 824.84
+
+
+ID: 63
+Salário Bruto: 3201.0
+Salário Líquido: 2112.66
+Desconto (Imposto de renda): 640.2
+Desconto (INSS): 256.08
+Desconto (Previdência Privada): 128.04
+Desconto (Plano de Saude): 64.02
+Total de Descontos: 1088.34
+
+
+ID: 64
+Salário Bruto: 1851.0
+Salário Líquido: 1221.66
+Desconto (Imposto de renda): 370.20000000000005
+Desconto (INSS): 148.08
+Desconto (Previdência Privada): 74.04
+Desconto (Plano de Saude): 37.02
+Total de Descontos: 629.34
+
+
+ID: 65
+Salário Bruto: 1883.0
+Salário Líquido: 1242.78
+Desconto (Imposto de renda): 376.6
+Desconto (INSS): 150.64000000000001
+Desconto (Previdência Privada): 75.32000000000001
+Desconto (Plano de Saude): 37.660000000000004
+Total de Descontos: 640.22
+
+
+ID: 66
+Salário Bruto: 1753.0
+Salário Líquido: 1156.9800000000002
+Desconto (Imposto de renda): 350.6
+Desconto (INSS): 140.24
+Desconto (Previdência Privada): 70.12
+Desconto (Plano de Saude): 35.06
+Total de Descontos: 596.02
+
+
+ID: 67
+Salário Bruto: 4471.0
+Salário Líquido: 2950.86
+Desconto (Imposto de renda): 894.2
+Desconto (INSS): 357.68
+Desconto (Previdência Privada): 178.84
+Desconto (Plano de Saude): 89.42
+Total de Descontos: 1520.14
+
+
+ID: 68
+Salário Bruto: 2862.0
+Salário Líquido: 1888.92
+Desconto (Imposto de renda): 572.4
+Desconto (INSS): 228.96
+Desconto (Previdência Privada): 114.48
+Desconto (Plano de Saude): 57.24
+Total de Descontos: 973.08
+
+
+ID: 69
+Salário Bruto: 2424.0
+Salário Líquido: 1599.84
+Desconto (Imposto de renda): 484.8
+Desconto (INSS): 193.92000000000002
+Desconto (Previdência Privada): 96.96000000000001
+Desconto (Plano de Saude): 48.480000000000004
+Total de Descontos: 824.1600000000001
+
+
+ID: 70
+Salário Bruto: 2826.0
+Salário Líquido: 1865.1599999999999
+Desconto (Imposto de renda): 565.2
+Desconto (INSS): 226.08
+Desconto (Previdência Privada): 113.04
+Desconto (Plano de Saude): 56.52
+Total de Descontos: 960.84
+
+
+ID: 71
+Salário Bruto: 2345.0
+Salário Líquido: 1547.6999999999998
+Desconto (Imposto de renda): 469.0
+Desconto (INSS): 187.6
+Desconto (Previdência Privada): 93.8
+Desconto (Plano de Saude): 46.9
+Total de Descontos: 797.3000000000001
+
+
+ID: 72
+Salário Bruto: 4206.0
+Salário Líquido: 2775.9600000000005
+Desconto (Imposto de renda): 841.2
+Desconto (INSS): 336.48
+Desconto (Previdência Privada): 168.24
+Desconto (Plano de Saude): 84.12
+Total de Descontos: 1430.04
+
+
+ID: 73
+Salário Bruto: 4977.0
+Salário Líquido: 3284.82
+Desconto (Imposto de renda): 995.4000000000001
+Desconto (INSS): 398.16
+Desconto (Previdência Privada): 199.08
+Desconto (Plano de Saude): 99.54
+Total de Descontos: 1692.18
+
+
+ID: 74
+Salário Bruto: 1631.0
+Salário Líquido: 1076.46
+Desconto (Imposto de renda): 326.20000000000005
+Desconto (INSS): 130.48
+Desconto (Previdência Privada): 65.24
+Desconto (Plano de Saude): 32.62
+Total de Descontos: 554.5400000000001
+
+
+ID: 75
+Salário Bruto: 3958.0
+Salário Líquido: 2612.28
+Desconto (Imposto de renda): 791.6
+Desconto (INSS): 316.64
+Desconto (Previdência Privada): 158.32
+Desconto (Plano de Saude): 79.16
+Total de Descontos: 1345.7199999999998
+
+
+ID: 76
+Salário Bruto: 3424.0
+Salário Líquido: 2259.8399999999997
+Desconto (Imposto de renda): 684.8000000000001
+Desconto (INSS): 273.92
+Desconto (Previdência Privada): 136.96
+Desconto (Plano de Saude): 68.48
+Total de Descontos: 1164.16
+
+
+ID: 77
+Salário Bruto: 2567.0
+Salário Líquido: 1694.2199999999998
+Desconto (Imposto de renda): 513.4
+Desconto (INSS): 205.36
+Desconto (Previdência Privada): 102.68
+Desconto (Plano de Saude): 51.34
+Total de Descontos: 872.78
+
+
+ID: 78
+Salário Bruto: 3509.0
+Salário Líquido: 2315.9399999999996
+Desconto (Imposto de renda): 701.8000000000001
+Desconto (INSS): 280.72
+Desconto (Previdência Privada): 140.36
+Desconto (Plano de Saude): 70.18
+Total de Descontos: 1193.0600000000002
+
+
+ID: 79
+Salário Bruto: 1176.0
+Salário Líquido: 799.68
+Desconto (Imposto de renda): 235.20000000000002
+Desconto (INSS): 94.08
+Desconto (Previdência Privada): 47.04
+Desconto (Plano de Saude): 0.0
+Total de Descontos: 376.32
+
+

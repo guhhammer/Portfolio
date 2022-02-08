@@ -1,0 +1,12 @@
+
+
+Resultado do teste de Speed Up:
+
+Boundary de A e B significa o limite Random().nextInt(Boundary).
+Nº Proc., (m), (k), (n), Boundary de A e B, Tempo Paralelo(Matriz C), Tempo Sequencial(Matriz C), Speed Up
+4,  100,  100,  100,  1000,  590,  217,  0.3677966101694915
+4,  200,  200,  200,  1000,  1539,  3026,  1.9662118258609487
+4,  100,  100,  100,  1000,  631,  712,  1.1283676703645007
+4,  200,  200,  200,  1000,  12114,  15807,  1.3048538880633977
+
+
