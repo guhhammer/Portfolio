@@ -1,0 +1,8 @@
+Nome: 
+k3
+
+Senha(sem Hash): 
+6664
+
+Senha(com Hash): 
+fcd11da01e886bc1be35b19f4d974f4e

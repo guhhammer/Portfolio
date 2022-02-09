@@ -1,0 +1,8 @@
+Nome: 
+k4
+
+Senha(sem Hash): 
+6663
+
+Senha(com Hash): 
+0ef41260a5b096182ee7e45b942cd46d

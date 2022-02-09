@@ -1,0 +1,8 @@
+Nome: 
+g3
+
+Senha(sem Hash): 
+5983
+
+Senha(com Hash): 
+0cb82dbdcda47e2ad7b7aaf69573906e

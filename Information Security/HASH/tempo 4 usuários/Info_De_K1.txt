@@ -1,0 +1,8 @@
+Nome: 
+k1
+
+Senha(sem Hash): 
+6666
+
+Senha(com Hash): 
+e9510081ac30ffa83f10b68cde1cac07

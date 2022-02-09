@@ -1,0 +1,8 @@
+Nome: 
+j1
+
+Senha(sem Hash): 
+2222
+
+Senha(com Hash): 
+934b535800b1cba8f96a5d72f72f1611

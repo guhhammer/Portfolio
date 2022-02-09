@@ -1,0 +1,8 @@
+Nome: 
+l4
+
+Senha(sem Hash): 
+1800
+
+Senha(com Hash): 
+f39ae9ff3a81f499230c4126e01f421b

@@ -1,0 +1,8 @@
+Nome: 
+h4
+
+Senha(sem Hash): 
+3425
+
+Senha(com Hash): 
+07211688a0869d995947a8fb11b215d6

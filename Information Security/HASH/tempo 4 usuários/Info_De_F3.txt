@@ -1,0 +1,8 @@
+Nome: 
+f3
+
+Senha(sem Hash): 
+9991
+
+Senha(com Hash): 
+d005ce7aeef46bd18515f783fb8e87fa

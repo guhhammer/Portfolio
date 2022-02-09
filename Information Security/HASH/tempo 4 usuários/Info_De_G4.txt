@@ -1,0 +1,8 @@
+Nome: 
+g4
+
+Senha(sem Hash): 
+6754
+
+Senha(com Hash): 
+c25e9a36b62f62f58f847fa83c70dc91

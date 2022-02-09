@@ -1,0 +1,8 @@
+Nome: 
+m2
+
+Senha(sem Hash): 
+5000
+
+Senha(com Hash): 
+a35fe7f7fe8217b4369a0af4244d1fca

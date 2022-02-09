@@ -1,0 +1,8 @@
+Nome: 
+f1
+
+Senha(sem Hash): 
+2897
+
+Senha(com Hash): 
+6e3197aae95c2ff8fcab35cb730f6a86

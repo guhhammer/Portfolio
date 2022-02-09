@@ -1,0 +1,8 @@
+Nome: 
+n4
+
+Senha(sem Hash): 
+9999
+
+Senha(com Hash): 
+fa246d0262c3925617b0c72bb20eeb1d

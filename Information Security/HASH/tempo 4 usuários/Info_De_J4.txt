@@ -1,0 +1,8 @@
+Nome: 
+j4
+
+Senha(sem Hash): 
+5555
+
+Senha(com Hash): 
+6074c6aa3488f3c2dddff2a7ca821aab

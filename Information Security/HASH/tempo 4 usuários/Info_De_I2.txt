@@ -1,0 +1,8 @@
+Nome: 
+i2
+
+Senha(sem Hash): 
+4321
+
+Senha(com Hash): 
+d93591bdf7860e1e4ee2fca799911215

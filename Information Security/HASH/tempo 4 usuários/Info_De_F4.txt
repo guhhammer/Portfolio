@@ -1,0 +1,8 @@
+Nome: 
+f4
+
+Senha(sem Hash): 
+0923
+
+Senha(com Hash): 
+3f4d7a5a8f8f1f72f7d27173d30eb91f

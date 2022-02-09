@@ -1,0 +1,8 @@
+Nome: 
+l3
+
+Senha(sem Hash): 
+1400
+
+Senha(com Hash): 
+f0dd4a99fba6075a9494772b58f95280
