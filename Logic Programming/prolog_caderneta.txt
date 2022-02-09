@@ -1,0 +1,5 @@
+
+
+
+% fazer recursão de função sem fail. 
+na cardeneta da função no prolog.

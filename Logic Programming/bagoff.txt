@@ -1,0 +1,56 @@
+
+% Nomes: Gustavo Hammerschmidt, Guilherme Hey, Bruno Alves, Pedro Henrique
+
+
+% Questão 1 da Lista 6: Maiores([1,5,7],5,N) -> N = [6,7]
+maior([],[],_).
+maior([X|Y],[X|Z],N) :- X > N, maior(Y,Z,N),!.
+maior([_|Y],Z,N) :- maior(Y,Z,N).
+quest_1(Num,Lista,Z) :-
+    nl,write('Elementos maiores do que '),
+    write(Num),write(' na lista '),write(Lista),
+    write(' : '),maior(Lista, Z, Num),nl.
+
+
+% Exercício 1:
+?- bagof(C,Y^cidade(C,Y,argentina),Cidades).
+Cidades = [ushuaia, santa_rosa, cordoba].
+
+
+% Exercício 2:
+?- bagof(C,Cidades^cidade(C,Estado,brasil),Cidades).
+Cidades = [curitiba, foz_do_iguaçu, londrina, maringa],
+Estado = parana ;
+Cidades = [blumenau, joenville],
+Estado = santa_catarina.
+
+
+% Exercício 3:
+?- bagof(C,Cidades^cidade(C,Estado,_),Cidades).
+Cidades = [cordoba],
+Estado = cordoba ;
+Cidades = [santa_rosa],
+Estado = la_pampa ;
+Cidades = [curitiba, foz_do_iguaçu, londrina, maringa],
+Estado = parana ;
+Cidades = [blumenau, joenville],
+Estado = santa_catarina ;
+Cidades = [ushuaia],
+Estado = terra_do_fogo.
+
+
+% Exercício 4:
+?- setof(Estado,X^cidade(X,Estado,Pais),Estado).
+Estado = [cordoba, la_pampa, terra_do_fogo],
+Pais = argentina ;
+Estado = [parana, santa_catarina],
+Pais = brasil.
+
+
+% Exercício 5:
+?- bagof(Estado,X^cidade(X,Estado,Pais),Estado).
+Estado = [terra_do_fogo, la_pampa, cordoba],
+Pais = argentina ;
+Estado = [parana, santa_catarina, santa_catarina, parana, parana, parana],
+Pais = brasil.
+
