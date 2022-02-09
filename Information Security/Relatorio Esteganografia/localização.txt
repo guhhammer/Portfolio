@@ -1,0 +1,2 @@
+Código de Esteganografia:
+cortana -> Principal -> open paste.
