@@ -1,0 +1,208 @@
+body{
+
+	background-image: url("../imagens/telaInicial/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+
+}
+
+#alterar{
+
+	position: absolute;
+  	left: 50%;
+	top: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 20px;
+
+}
+
+#alterar #logo{
+
+	width: 500px;
+	height: 180px;
+
+}
+
+#alterar button{
+
+	margin-top: 10px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;
+
+}
+
+#alterar button:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+
+#alterar #btCriar{
+
+	margin-left: 30px;
+
+}
+
+#alterar #btAlterar{
+
+}
+
+#choseCriar{
+
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 20px;
+
+}
+
+
+#choseCriar input{
+
+	width: 430px;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Arial;
+
+}
+
+#choseCriar input:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+
+}
+
+#choseCriar #btCriarLogin{
+
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;	
+
+}
+
+#choseCriar #btCriarLogin:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+#choseCriar #criarP{
+
+	color: white;
+	font-size: 35px;
+
+}
+
+#Clogin{
+
+}
+
+
+#choseAlterar{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 20px;	
+}
+
+
+#choseAlterar input{
+
+	width: 430px;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Arial;
+
+}
+
+#choseAlterar input:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+
+}
+
+#choseAlterar #btAlterarSenha{
+
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;	
+
+}
+
+#choseAlterar #btAlterarSenha:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+#choseAlterar #alterarP{
+
+	color: white;
+	font-size: 35px;
+
+}
+
+#Alogin{
+
+}
+
+.redBorder{
+
+	border-color: red;
+
+}
+
+.backgroundGreenColor{
+
+	background: lightgreen;
+
+}
+
+
+.backgroundRedColor{
+
+	background: #FF7666;
+	color: white;
+
+}
+
+
+
