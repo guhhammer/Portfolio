@@ -1,0 +1,3 @@
+extensão -> extende algo que já existe.
+
+implementação/ realização -> implementa algo que não existe.
