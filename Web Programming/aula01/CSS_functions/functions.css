@@ -1,0 +1,173 @@
+
+
+
+/*
+
+            Style Definition Rule ->  Selector,  Property,  Value.
+
+  */
+
+.container{
+	position: relative;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+
+.centered {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#resize{
+	width: 100%;
+	height: 15%;
+}
+
+#red_RR{
+	color: rgb(259,53,15);
+}
+
+#menu{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+#menu_on{
+	background-color: transparent;
+	border-color: red;
+}
+
+#link_style{
+	color: transparent;
+}
+
+#span_text{
+	color: rgb(259,53,15);
+}
+
+#line{
+	border-color: rgb(259,53,15);
+}
+
+#label_specs_index{
+	width: -50%;
+	text-align: left;
+	text-indent: left;
+}
+
+#font_specs_index{
+	size: 3;
+	color: white;
+	font-weight: inherit;
+
+}
+
+#h1_index{
+	margin-left: 100px;
+	color: rgb(239,53,15);
+}
+
+#h2_index{
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+
+#NomeSite{	
+	font-size: 28;
+	font-family: cursive;
+}
+
+
+#form_font{
+	font-style: italic;
+	color: rgb(239,53,15);
+}
+
+#pd{
+	size: 4;
+	color: white;
+}
+
+#space{
+	width: 10%;
+}
+
+#enviar{
+	background-color: rgb(259,53,15);
+	width: 200px;
+	height: 50px;
+	font-size: 40px;
+}
+
+#text_decor{
+	text-decoration-color: rgb(259,53,15);
+}
+
+
+#imagem{
+	margin-left:  100px;
+	width: 550px;
+	height: 300px;
+	border-color: rgb(259,53,15);
+}
+
+#but_on_video{
+	background-color: transparent;
+	border-style: none;
+}
+
+#search_box{
+	background-color: rgb(220,220,220);
+	border-style: none;
+	height: 30px;
+	text-decoration-color: rgb(259,53,15);
+}
+
+
+#description{
+	size: 5;
+	color: rgb(255,255,255);
+	width: -50px;
+}
+
+#framer{
+	width: 380px;
+	height: 340px;
+}
+
+#but_on{
+	border-style: none;
+	background-color: rgb(259,53,15);
+	font-size: 40px;
+	width: 200px;
+	height: 50;
+}
+
+#but_on_ins{
+	font-family: cursive;
+	text-decoration-color: white;
+	border-color: transparent;
+}
+
+#NomeSite{	
+	font-size: 28;
+	font-family: cursive;
+}
+
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1.space{
+	margin-left: 120px;
+}
+
+
+body.specs{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

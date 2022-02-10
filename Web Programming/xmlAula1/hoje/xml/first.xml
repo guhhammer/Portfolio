@@ -1,0 +1,62 @@
+<raiz>
+	<banda>
+		<pais>Inglaterra</pais>
+		<nomeDaBanda>Led Zeppelin</nomeDaBanda>
+		<nomeDaMusica>
+			<musica>I Can't Quit You Baby!</musica>
+			<musica>The Rain</musica>
+			<musica>Ramble On</musica>
+		</nomeDaMusica>
+	</banda>
+	<banda>
+		<pais>Inglaterra</pais>
+		<nomeDaBanda>Arctic Monkeys</nomeDaBanda>
+		<nomeDaMusica>
+			<musica>Crying Lightning</musica>
+			<musica>Arabella</musica>
+		</nomeDaMusica>
+	</banda>
+	<banda>
+		<pais>Estados Unidos</pais>
+		<nomeDaBanda>Mötley Crüe</nomeDaBanda>
+		<nomeDaMusica>
+			<musica>Shoot At The Devil</musica>
+			<musica>Home Sweet Home</musica>
+		</nomeDaMusica>
+	</banda>
+	<banda>
+		<pais>Estados Unidos</pais>
+		<nomeDaBanda>Muse</nomeDaBanda>
+		<nomeDaMusica>
+			<musica>Aftermath</musica>
+			<musica>Drones</musica>
+		</nomeDaMusica>
+	</banda>
+	<banda>
+		<pais>Estados Unidos</pais>
+		<nomeDaBanda>The Kills</nomeDaBanda>
+		<nomeDaMusica>
+			<musica>Black Balloon</musica>
+			<musica>Doing It to Death</musica>
+		</nomeDaMusica>
+	</banda>
+</raiz>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+
+body{
+
+	background-image: url("../imagens/telaInicial/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: all;
+	height: all;
+
+}
+
+
+#loadingGif{
+
+	position: absolute;
+  	left: 50%;
+	top: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	background: repeating-linear-gradient( 45deg, transparent, transparent 5px, #FFF 50px, transparent 20px); /* #FFFFFF; */
+	border-radius: 25px;
+	padding: 20px;
+	width:300px;
+	opacity: 0.9;
+
+}
+
+
+#loadingGif #logo{
+	width: 100%;
+}
+
+
+#loadingGif #load{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+
+
+#loadingGif #line{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+	color: blue;
+	font-size: 30px;
+	width: 100%;
+	font-family: Arial;
+	font-weight: 40px;
+
+}

@@ -1,0 +1,131 @@
+body{
+
+	background-image: url("../imagens/telaInicial/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: all;
+	height: all;
+
+}
+
+
+#login{
+	position: absolute;
+  	left: 50%;
+  	top: 48%;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	background: repeating-linear-gradient( 45deg, transparent, transparent 5px, #FFF 20px, transparent 10px); /* #FFFFFF; */
+	border-radius: 25px;
+	padding: 20px;
+	opacity: 0.92;
+}
+
+#login #logo{
+
+	width: 500px;
+	height: 180px;
+
+}
+
+
+#login #usuario{
+
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 430px;
+	height: 30px;
+	opacity: 0.95;
+	text-align: center;
+	font-family: Arial;
+	border: 1px solid;
+	font-size: 20px;
+}
+
+
+#login #senha{
+
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 430px;
+	height: 30px;
+	opacity: 0.95;
+	text-align: center;
+	font-family: Arial;
+	border: 1px solid;
+	font-size: 20px;
+
+}
+
+
+#login #btLogin{
+
+	margin-top: 18px;
+	margin-left: 130px;
+	width: 230px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#login #btLogin:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+
+}
+
+#login #btForget{
+
+	margin-top: 20px;
+	margin-left: -30px;
+	font-size: 20px;
+	background-color: white;
+	border-color: transparent;
+	color: blue;
+	font-size: 20px;	
+	opacity: 0.92;
+	border-radius: 2%;
+
+}
+
+#login #btForget:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	color: #0575E6;
+
+}
+
+#login #btCreate{
+
+	margin-top: 20px;
+	margin-left: 8px;
+	font-size: 20px;
+	background-color: white;
+	border-color: transparent;
+	color: blue;
+	font-size: 20px;
+	opacity: 0.92;
+	border-radius: 2%;
+
+}
+
+#login #btCreate:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	color: #0575E6;
+
+}
+
+
+.redBorder{
+
+	border-color: red;
+
+}

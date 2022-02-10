@@ -1,0 +1,99 @@
+
+
+.withGuide_seeMessage{
+
+	position: relative;
+	margin-left: 350px;
+	margin-top: 20px;
+	width: 500px;
+
+}
+
+
+.withoutGuide_seeMessage{
+
+	position: relative;
+	margin-left: 200px;
+	margin-top: 20px;
+	width: 500px;
+
+}
+
+
+#verMensagens p{
+
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: -10px;
+
+}
+
+
+#verMensagens input{
+
+	width: 1060px;
+	margin-top: -13px;
+	margin-left: 20px;
+	height: 30px;
+	padding-left: 20px;
+}
+
+
+#verMensagens #emailMensagem{
+
+	margin-left: 20px;
+	width: 1060px;
+	height: 420px;
+
+}
+
+#verMensagens #btVoltar{
+
+	margin-left: 340px;
+	width: 120px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+
+}
+
+
+#verMensagens #btDelete{
+
+	margin-left: 480px;
+	margin-top: -43px;
+	width: 200px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+
+}
+
+.redBorder{
+
+	border-color: #F03D3D;
+	background-color: #F65A5A;
+}
+
+
+#btVoltar:hover{
+
+	background-color: #03CBF3;
+	cursor: pointer;
+
+}
+
+
+#btDelete:hover{
+
+	background-color: #03CBF3;
+	cursor: pointer;
+	
+}
+
+#topoBarra #logo{
+
+	margin-left: 770px;
+
+}
