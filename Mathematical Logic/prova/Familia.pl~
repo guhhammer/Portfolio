@@ -1,0 +1,18 @@
+mae(maria,joao).
+mae(maria,julia). %relação mãe.
+mae(gabriela,eduardo).
+mae(gabriela,vitoria).
+mae(joana,camila).
+
+casado(joao,vitoria).
+casado(vitoria,joao). %relação casado.
+casado(camila,eduardo).
+casado(eduardo,camila).
+
+irmao(X,Y) :- mae(A,X), mae(A,Y), X\=Y . %X é irmao de y.
+
+cunhado(X,Y) :- irmao(X,A), casado(A,Y). %X é cunhado de Y.
+
+conc(X,Y) :- cunhado(X,A), casado(A,Y). %X é concunhado de Y
+
+% como testar o codigo: conc(
