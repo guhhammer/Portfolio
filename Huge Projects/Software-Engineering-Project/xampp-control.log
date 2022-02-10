@@ -1,0 +1,94 @@
+3:58:43 PM  [main] 	Initializing Control Panel
+3:58:43 PM  [main] 	Windows Version:  Home  64-bit
+3:58:43 PM  [main] 	XAMPP Version: 7.4.4
+3:58:43 PM  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+3:58:43 PM  [main] 	Running with Administrator rights - good!
+3:58:43 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:58:43 PM  [main] 	Checking for prerequisites
+3:58:43 PM  [main] 	All prerequisites found
+3:58:43 PM  [main] 	Initializing Modules
+3:58:44 PM  [main] 	The Mercury module is disabled
+3:58:44 PM  [main] 	The Tomcat module is disabled
+3:58:44 PM  [main] 	Starting Check-Timer
+3:58:44 PM  [main] 	Control Panel Ready
+3:59:19 PM  [Apache] 	Installing service...
+3:59:20 PM  [Apache] 	Successful!
+3:59:22 PM  [mysql] 	Installing service...
+3:59:22 PM  [mysql] 	Successful!
+3:59:24 PM  [filezilla] 	Setting Service Name...
+3:59:24 PM  [filezilla] 	Setting Service Display Name...
+3:59:24 PM  [filezilla] 	Installing service...
+3:59:24 PM  [filezilla] 	Successful!
+4:02:58 PM  [Apache] 	Status change detected: running
+4:03:02 PM  [Apache] 	Status change detected: stopped
+4:03:02 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+4:03:02 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+4:03:02 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+4:03:02 PM  [Apache] 	Press the Logs button to view error logs and check
+4:03:02 PM  [Apache] 	the Windows Event Viewer for more clues
+4:03:02 PM  [Apache] 	If you need more help, copy and post this
+4:03:02 PM  [Apache] 	entire log window on the forums
+4:05:46 PM  [Apache] 	Status change detected: running
+4:05:47 PM  [mysql] 	Status change detected: running
+9:59:22 PM  [Apache] 	Status change detected: stopped
+9:59:22 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+9:59:22 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+9:59:22 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+9:59:22 PM  [Apache] 	Press the Logs button to view error logs and check
+9:59:22 PM  [Apache] 	the Windows Event Viewer for more clues
+9:59:22 PM  [Apache] 	If you need more help, copy and post this
+9:59:22 PM  [Apache] 	entire log window on the forums
+9:59:29 PM  [Apache] 	Status change detected: running
+9:59:39 PM  [mysql] 	Status change detected: stopped
+9:59:39 PM  [mysql] 	Error: MySQL shutdown unexpectedly.
+9:59:39 PM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+9:59:39 PM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+9:59:39 PM  [mysql] 	Press the Logs button to view error logs and check
+9:59:39 PM  [mysql] 	the Windows Event Viewer for more clues
+9:59:39 PM  [mysql] 	If you need more help, copy and post this
+9:59:39 PM  [mysql] 	entire log window on the forums
+10:17:20 PM  [mysql] 	Status change detected: running
+10:36:59 PM  [mysql] 	Status change detected: stopped
+10:36:59 PM  [mysql] 	Error: MySQL shutdown unexpectedly.
+10:36:59 PM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+10:36:59 PM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+10:36:59 PM  [mysql] 	Press the Logs button to view error logs and check
+10:36:59 PM  [mysql] 	the Windows Event Viewer for more clues
+10:36:59 PM  [mysql] 	If you need more help, copy and post this
+10:36:59 PM  [mysql] 	entire log window on the forums
+10:36:59 PM  [Apache] 	Status change detected: stopped
+10:36:59 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+10:36:59 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+10:36:59 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+10:36:59 PM  [Apache] 	Press the Logs button to view error logs and check
+10:36:59 PM  [Apache] 	the Windows Event Viewer for more clues
+10:36:59 PM  [Apache] 	If you need more help, copy and post this
+10:36:59 PM  [Apache] 	entire log window on the forums
+10:37:02 PM  [Apache] 	Status change detected: running
+10:37:07 PM  [Apache] 	Status change detected: stopped
+10:37:07 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+10:37:07 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+10:37:07 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+10:37:07 PM  [Apache] 	Press the Logs button to view error logs and check
+10:37:07 PM  [Apache] 	the Windows Event Viewer for more clues
+10:37:07 PM  [Apache] 	If you need more help, copy and post this
+10:37:07 PM  [Apache] 	entire log window on the forums
+2:07:17 AM  [main] 	Deinitializing Modules
+2:07:17 AM  [main] 	Deinitializing Control Panel
+
+5:38:11 PM  [main] 	Initializing Control Panel
+5:38:11 PM  [main] 	Windows Version:  Home  64-bit
+5:38:11 PM  [main] 	XAMPP Version: 7.4.4
+5:38:11 PM  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+5:38:11 PM  [main] 	Running with Administrator rights - good!
+5:38:11 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+5:38:11 PM  [main] 	Checking for prerequisites
+5:38:11 PM  [main] 	All prerequisites found
+5:38:11 PM  [main] 	Initializing Modules
+5:38:11 PM  [main] 	The Mercury module is disabled
+5:38:11 PM  [main] 	The Tomcat module is disabled
+5:38:11 PM  [main] 	Starting Check-Timer
+5:38:11 PM  [main] 	Control Panel Ready
+5:38:26 PM  [main] 	Deinitializing Modules
+5:38:26 PM  [main] 	Deinitializing Control Panel
+

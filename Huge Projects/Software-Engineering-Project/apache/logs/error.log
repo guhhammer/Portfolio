@@ -1,0 +1,454 @@
+[Wed Apr 01 15:54:00.774829 2020] [ssl:warn] [pid 17444:tid 632] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 15:54:00.821799 2020] [ssl:warn] [pid 17444:tid 632] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), \\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 15:54:00.850626 2020] [mpm_winnt:notice] [pid 17444:tid 632] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Wed Apr 01 15:54:00.850626 2020] [mpm_winnt:notice] [pid 17444:tid 632] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Wed Apr 01 15:54:00.850626 2020] [core:notice] [pid 17444:tid 632] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 01 15:54:00.852621 2020] [mpm_winnt:notice] [pid 17444:tid 632] AH00418: Parent: Created child process 15108
+[Wed Apr 01 15:54:01.124941 2020] [ssl:warn] [pid 15108:tid 584] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 15:54:01.160800 2020] [ssl:warn] [pid 15108:tid 584] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), \\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 15:54:01.182790 2020] [mpm_winnt:notice] [pid 15108:tid 584] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 01 16:02:58.480271 2020] [ssl:warn] [pid 15800:tid 700] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 16:02:58.524195 2020] [ssl:warn] [pid 15800:tid 700] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 16:02:58.678342 2020] [mpm_winnt:notice] [pid 15800:tid 700] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Wed Apr 01 16:02:58.678342 2020] [mpm_winnt:notice] [pid 15800:tid 700] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Wed Apr 01 16:02:58.678342 2020] [core:notice] [pid 15800:tid 700] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 01 16:02:58.680349 2020] [mpm_winnt:notice] [pid 15800:tid 700] AH00418: Parent: Created child process 16620
+[Wed Apr 01 16:02:59.061249 2020] [ssl:warn] [pid 16620:tid 688] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 16:02:59.099198 2020] [ssl:warn] [pid 16620:tid 688] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 16:02:59.124123 2020] [mpm_winnt:notice] [pid 16620:tid 688] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 01 16:03:00.258924 2020] [mpm_winnt:notice] [pid 15800:tid 700] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 01 16:03:02.260650 2020] [mpm_winnt:notice] [pid 16620:tid 688] AH00364: Child: All worker threads have exited.
+[Wed Apr 01 16:03:02.284568 2020] [mpm_winnt:notice] [pid 15800:tid 700] AH00430: Parent: Child process 16620 exited successfully.
+[Wed Apr 01 16:05:46.003524 2020] [ssl:warn] [pid 7448:tid 736] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 16:05:46.054806 2020] [ssl:warn] [pid 7448:tid 736] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 16:05:46.073702 2020] [mpm_winnt:notice] [pid 7448:tid 736] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Wed Apr 01 16:05:46.073702 2020] [mpm_winnt:notice] [pid 7448:tid 736] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Wed Apr 01 16:05:46.073702 2020] [core:notice] [pid 7448:tid 736] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 01 16:05:46.075739 2020] [mpm_winnt:notice] [pid 7448:tid 736] AH00418: Parent: Created child process 23144
+[Wed Apr 01 16:05:46.466704 2020] [ssl:warn] [pid 23144:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 16:05:46.502608 2020] [ssl:warn] [pid 23144:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 16:05:46.522555 2020] [mpm_winnt:notice] [pid 23144:tid 628] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 01 21:59:18.519012 2020] [mpm_winnt:notice] [pid 7448:tid 736] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 01 21:59:20.521437 2020] [mpm_winnt:notice] [pid 23144:tid 628] AH00364: Child: All worker threads have exited.
+[Wed Apr 01 21:59:21.676721 2020] [mpm_winnt:notice] [pid 7448:tid 736] AH00430: Parent: Child process 23144 exited successfully.
+[Wed Apr 01 21:59:29.132811 2020] [ssl:warn] [pid 26252:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 21:59:29.174659 2020] [ssl:warn] [pid 26252:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 21:59:29.194639 2020] [mpm_winnt:notice] [pid 26252:tid 696] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Wed Apr 01 21:59:29.194639 2020] [mpm_winnt:notice] [pid 26252:tid 696] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Wed Apr 01 21:59:29.194639 2020] [core:notice] [pid 26252:tid 696] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 01 21:59:29.196635 2020] [mpm_winnt:notice] [pid 26252:tid 696] AH00418: Parent: Created child process 3008
+[Wed Apr 01 21:59:29.475090 2020] [ssl:warn] [pid 3008:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 21:59:29.512049 2020] [ssl:warn] [pid 3008:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 21:59:29.532993 2020] [mpm_winnt:notice] [pid 3008:tid 648] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 01 22:36:55.405183 2020] [mpm_winnt:notice] [pid 26252:tid 696] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 01 22:36:58.312374 2020] [mpm_winnt:notice] [pid 3008:tid 648] AH00364: Child: All worker threads have exited.
+[Wed Apr 01 22:36:59.446520 2020] [mpm_winnt:notice] [pid 26252:tid 696] AH00430: Parent: Child process 3008 exited successfully.
+[Wed Apr 01 22:37:02.049487 2020] [ssl:warn] [pid 24416:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 22:37:02.118333 2020] [ssl:warn] [pid 24416:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 22:37:02.146229 2020] [mpm_winnt:notice] [pid 24416:tid 708] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Wed Apr 01 22:37:02.146229 2020] [mpm_winnt:notice] [pid 24416:tid 708] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Wed Apr 01 22:37:02.146229 2020] [core:notice] [pid 24416:tid 708] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Wed Apr 01 22:37:02.149250 2020] [mpm_winnt:notice] [pid 24416:tid 708] AH00418: Parent: Created child process 7584
+[Wed Apr 01 22:37:02.575153 2020] [ssl:warn] [pid 7584:tid 680] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 01 22:37:02.631009 2020] [ssl:warn] [pid 7584:tid 680] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Wed Apr 01 22:37:02.662924 2020] [mpm_winnt:notice] [pid 7584:tid 680] AH00354: Child: Starting 150 worker threads.
+[Wed Apr 01 22:37:05.111967 2020] [mpm_winnt:notice] [pid 24416:tid 708] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Apr 01 22:37:07.114529 2020] [mpm_winnt:notice] [pid 7584:tid 680] AH00364: Child: All worker threads have exited.
+[Wed Apr 01 22:37:07.141772 2020] [mpm_winnt:notice] [pid 24416:tid 708] AH00430: Parent: Child process 7584 exited successfully.
+[Thu Apr 02 02:09:26.859031 2020] [ssl:warn] [pid 3344:tid 504] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 02 02:09:26.891378 2020] [ssl:warn] [pid 3344:tid 504] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Thu Apr 02 02:09:27.026920 2020] [mpm_winnt:notice] [pid 3344:tid 504] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Thu Apr 02 02:09:27.026920 2020] [mpm_winnt:notice] [pid 3344:tid 504] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Thu Apr 02 02:09:27.026920 2020] [core:notice] [pid 3344:tid 504] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Thu Apr 02 02:09:27.029032 2020] [mpm_winnt:notice] [pid 3344:tid 504] AH00418: Parent: Created child process 6068
+[Thu Apr 02 02:09:27.578047 2020] [ssl:warn] [pid 6068:tid 636] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 02 02:09:27.616215 2020] [ssl:warn] [pid 6068:tid 636] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Thu Apr 02 02:09:27.646995 2020] [mpm_winnt:notice] [pid 6068:tid 636] AH00354: Child: Starting 150 worker threads.
+[Fri Apr 03 01:07:08.048895 2020] [mpm_winnt:notice] [pid 3344:tid 504] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Apr 03 01:07:10.077324 2020] [mpm_winnt:notice] [pid 6068:tid 636] AH00364: Child: All worker threads have exited.
+[Fri Apr 03 01:07:10.804267 2020] [mpm_winnt:notice] [pid 3344:tid 504] AH00430: Parent: Child process 6068 exited successfully.
+[Fri Apr 03 01:07:36.366999 2020] [ssl:warn] [pid 4100:tid 748] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Apr 03 01:07:36.402594 2020] [ssl:warn] [pid 4100:tid 748] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Fri Apr 03 01:07:36.532883 2020] [mpm_winnt:notice] [pid 4100:tid 748] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Fri Apr 03 01:07:36.532883 2020] [mpm_winnt:notice] [pid 4100:tid 748] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Fri Apr 03 01:07:36.532883 2020] [core:notice] [pid 4100:tid 748] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Fri Apr 03 01:07:36.533881 2020] [mpm_winnt:notice] [pid 4100:tid 748] AH00418: Parent: Created child process 3216
+[Fri Apr 03 01:07:37.019635 2020] [ssl:warn] [pid 3216:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Apr 03 01:07:37.044438 2020] [ssl:warn] [pid 3216:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Fri Apr 03 01:07:37.061525 2020] [mpm_winnt:notice] [pid 3216:tid 648] AH00354: Child: Starting 150 worker threads.
+[Fri Apr 03 13:22:48.588338 2020] [mpm_winnt:notice] [pid 4100:tid 748] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Apr 03 13:22:50.618954 2020] [mpm_winnt:notice] [pid 3216:tid 648] AH00364: Child: All worker threads have exited.
+[Fri Apr 03 13:22:51.206489 2020] [mpm_winnt:notice] [pid 4100:tid 748] AH00430: Parent: Child process 3216 exited successfully.
+[Fri Apr 03 13:23:15.694860 2020] [ssl:warn] [pid 4120:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Apr 03 13:23:15.729740 2020] [ssl:warn] [pid 4120:tid 648] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Fri Apr 03 13:23:15.865056 2020] [mpm_winnt:notice] [pid 4120:tid 648] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Fri Apr 03 13:23:15.865056 2020] [mpm_winnt:notice] [pid 4120:tid 648] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Fri Apr 03 13:23:15.865056 2020] [core:notice] [pid 4120:tid 648] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Fri Apr 03 13:23:15.865620 2020] [mpm_winnt:notice] [pid 4120:tid 648] AH00418: Parent: Created child process 3656
+[Fri Apr 03 13:23:16.325995 2020] [ssl:warn] [pid 3656:tid 560] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Apr 03 13:23:16.366753 2020] [ssl:warn] [pid 3656:tid 560] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Fri Apr 03 13:23:16.396727 2020] [mpm_winnt:notice] [pid 3656:tid 560] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 13:21:48.437263 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51800] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:21:48.437263 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51800] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:21:48.438260 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51800] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:21:48.438260 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51800] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:21:48.441756 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51800] PHP Fatal error:  Uncaught Error: Call to undefined function mysqul_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:13.545270 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51801] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:13.545270 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51801] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:13.545270 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51801] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:13.545270 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51801] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:13.545270 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51801] PHP Fatal error:  Uncaught Error: Call to undefined function mysqul_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:52.612363 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51803] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:52.612363 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51803] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:52.612363 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51803] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:52.612363 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51803] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:22:52.613353 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51803] PHP Fatal error:  Uncaught Error: Call to undefined function mysqul_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:23:09.417538 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51806] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:23:09.417538 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51806] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:23:09.417538 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51806] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:23:09.417538 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51806] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:23:09.417538 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51806] PHP Fatal error:  Uncaught Error: Call to undefined function mysqul_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:26:28.681813 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51839] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:26:28.681813 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51839] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:26:28.681813 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51839] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:26:28.681813 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51839] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:26:28.681813 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51839] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:27:45.477021 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51843] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:27:45.477021 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51843] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:27:45.477021 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51843] PHP Notice:  Undefined variable: POST in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:27:45.478020 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51843] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:27:45.478020 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51843] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:16.542840 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51846] PHP Notice:  Undefined index: username in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:16.542840 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51846] PHP Notice:  Undefined index: password in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:16.543837 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51846] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:38.097688 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51848] PHP Notice:  Undefined index: username in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:38.097688 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51848] PHP Notice:  Undefined index: password in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:28:38.097688 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51848] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:30:33.865246 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51897] PHP Notice:  Undefined index: username in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:30:33.865246 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:51897] PHP Notice:  Undefined index: password in C:\\xampp\\htdocs\\login\\process.php on line 4, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:30:33.865246 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51897] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:31:36.199422 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51901] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:32:08.907301 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51904] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:40:10.161596 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52002] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:40:10.161596 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52002] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in C:\\xampp\\htdocs\\login\\process.php on line 10, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:40:10.162583 2020] [php7:error] [pid 3656:tid 1936] [client ::1:52002] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in C:\\xampp\\htdocs\\login\\process.php:13\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 13, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:42:53.509233 2020] [php7:notice] [pid 3656:tid 1936] [client ::1:52019] PHP Notice:  Undefined variable: mysqli in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:42:53.509233 2020] [php7:error] [pid 3656:tid 1936] [client ::1:52019] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in C:\\xampp\\htdocs\\login\\process.php:9\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 9, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:45:54.659879 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52036] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES) in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:45:54.660876 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52036] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in C:\\xampp\\htdocs\\login\\process.php on line 12, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:45:54.660876 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52036] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in C:\\xampp\\htdocs\\login\\process.php on line 13, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:45:54.660876 2020] [php7:error] [pid 3656:tid 1936] [client ::1:52036] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in C:\\xampp\\htdocs\\login\\process.php:16\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 16, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:48:23.906326 2020] [php7:warn] [pid 3656:tid 1884] [client ::1:52053] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES) in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:48:23.906326 2020] [php7:warn] [pid 3656:tid 1884] [client ::1:52053] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in C:\\xampp\\htdocs\\login\\process.php on line 12, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:48:23.906326 2020] [php7:warn] [pid 3656:tid 1884] [client ::1:52053] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in C:\\xampp\\htdocs\\login\\process.php on line 13, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:48:23.906326 2020] [php7:error] [pid 3656:tid 1884] [client ::1:52053] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in C:\\xampp\\htdocs\\login\\process.php:16\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 16, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:51:14.818301 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52039] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:51:14.818301 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:52039] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:51:14.819299 2020] [php7:error] [pid 3656:tid 1936] [client ::1:52039] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:09.386059 2020] [php7:warn] [pid 3656:tid 1916] [client ::1:52043] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:09.386059 2020] [php7:warn] [pid 3656:tid 1916] [client ::1:52043] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:09.387059 2020] [php7:error] [pid 3656:tid 1916] [client ::1:52043] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:44.061122 2020] [php7:warn] [pid 3656:tid 1928] [client ::1:52046] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:44.061122 2020] [php7:warn] [pid 3656:tid 1928] [client ::1:52046] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:44.062185 2020] [php7:error] [pid 3656:tid 1928] [client ::1:52046] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:49.463068 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:52048] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:49.463068 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:52048] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 13:52:49.464063 2020] [php7:error] [pid 3656:tid 1896] [client ::1:52048] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 3, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:26:48.558708 2020] [php7:error] [pid 3656:tid 1928] [client ::1:51708] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\\xampp\\htdocs\\login\\process.php:36\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:27:22.824234 2020] [php7:error] [pid 3656:tid 1928] [client ::1:51710] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\\xampp\\htdocs\\login\\process.php:36\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:27:48.141753 2020] [php7:error] [pid 3656:tid 1928] [client ::1:51713] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\\xampp\\htdocs\\login\\process.php:36\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:30:36.480384 2020] [php7:error] [pid 3656:tid 1904] [client ::1:51756] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\\xampp\\htdocs\\login\\process.php:36\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:33:55.200819 2020] [php7:error] [pid 3656:tid 1904] [client ::1:51765] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in C:\\xampp\\htdocs\\login\\process.php:37\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:34:06.844724 2020] [php7:warn] [pid 3656:tid 1904] [client ::1:51768] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:36:53.523882 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51790] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:36:53.523882 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51790] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 6, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:36:53.523882 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51790] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 7, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:36:53.523882 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51790] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 8, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:36:53.523882 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51790] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:37:18.733066 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51794] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:37:18.733066 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51794] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 6, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:37:18.733066 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51794] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 7, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:37:18.733066 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51794] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 8, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:37:18.733066 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51794] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in C:\\xampp\\htdocs\\login\\process.php on line 36, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:13.524391 2020] [php7:warn] [pid 3656:tid 1904] [client ::1:51775] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:13.524391 2020] [php7:warn] [pid 3656:tid 1904] [client ::1:51775] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:13.525387 2020] [php7:error] [pid 3656:tid 1904] [client ::1:51775] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:28.096949 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:51778] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:28.096949 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:51778] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:40:28.097953 2020] [php7:error] [pid 3656:tid 1896] [client ::1:51778] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:18.029169 2020] [php7:warn] [pid 3656:tid 1916] [client ::1:51781] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:18.030216 2020] [php7:warn] [pid 3656:tid 1916] [client ::1:51781] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:18.030216 2020] [php7:error] [pid 3656:tid 1916] [client ::1:51781] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:20.764984 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:51783] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:20.764984 2020] [php7:warn] [pid 3656:tid 1936] [client ::1:51783] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:20.765944 2020] [php7:error] [pid 3656:tid 1936] [client ::1:51783] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:36.846478 2020] [php7:warn] [pid 3656:tid 1884] [client ::1:51786] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:36.846478 2020] [php7:warn] [pid 3656:tid 1884] [client ::1:51786] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:36.847437 2020] [php7:error] [pid 3656:tid 1884] [client ::1:51786] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:41:41.056855 2020] [php7:error] [pid 3656:tid 1884] [client ::1:51786] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\\xampp\\htdocs\\login\\process.php:38\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 38, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:43:02.882408 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51800] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:43:02.882408 2020] [php7:warn] [pid 3656:tid 1852] [client ::1:51800] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:43:02.883468 2020] [php7:error] [pid 3656:tid 1852] [client ::1:51800] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:43:04.369595 2020] [php7:error] [pid 3656:tid 1852] [client ::1:51800] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\\xampp\\htdocs\\login\\process.php:38\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 38, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:48.677686 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:51875] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:48.677686 2020] [php7:warn] [pid 3656:tid 1896] [client ::1:51875] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:48.678640 2020] [php7:error] [pid 3656:tid 1896] [client ::1:51875] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:55.580448 2020] [php7:warn] [pid 3656:tid 1888] [client ::1:51877] PHP Warning:  mysqli_connect(): Error while reading greeting packet. PID=3656 in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:55.580448 2020] [php7:warn] [pid 3656:tid 1888] [client ::1:51877] PHP Warning:  mysqli_connect(): (HY000/2006): MySQL server has gone away in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:45:55.580448 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51877] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\\xampp\\htdocs\\login\\process.php on line 5, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:47:51.823714 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51907] PHP Parse error:  syntax error, unexpected ';' in C:\\xampp\\htdocs\\login\\process.php on line 38, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:49:26.703884 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51913] PHP Parse error:  syntax error, unexpected ')' in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:50:04.707429 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51921] PHP Parse error:  syntax error, unexpected ';' in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:50:36.818744 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51922] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:51:01.496181 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51924] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:51:06.552145 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51925] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:52:00.626882 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51928] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:53:13.480997 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51931] PHP Parse error:  syntax error, unexpected ';' in C:\\xampp\\htdocs\\login\\process.php on line 37, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:53:28.682189 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51933] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in C:\\xampp\\htdocs\\login\\process.php on line 39, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:53:40.541594 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51935] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in C:\\xampp\\htdocs\\login\\process.php on line 41, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:54:30.978015 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51938] PHP Parse error:  syntax error, unexpected '}' in C:\\xampp\\htdocs\\login\\process.php on line 40, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:55:11.689005 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51940] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\\xampp\\htdocs\\login\\process.php:41\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 41, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:55:54.662001 2020] [php7:error] [pid 3656:tid 1888] [client ::1:51943] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\\xampp\\htdocs\\login\\process.php:42\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\login\\process.php on line 42, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:57:53.803403 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51948] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 44, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:57:53.804401 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51948] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 44, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:57:53.804401 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51948] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 45, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:58:33.244635 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51951] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 44, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 14:58:54.230174 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51954] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 44, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 15:00:11.606391 2020] [php7:notice] [pid 3656:tid 1888] [client ::1:51958] PHP Notice:  Trying to access array offset on value of type null in C:\\xampp\\htdocs\\login\\process.php on line 16, referer: http://localhost:8521/login/login.php
+[Sat Apr 04 15:02:42.005244 2020] [mpm_winnt:notice] [pid 4120:tid 648] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 15:02:44.008741 2020] [mpm_winnt:notice] [pid 3656:tid 560] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 15:02:45.788132 2020] [mpm_winnt:notice] [pid 4120:tid 648] AH00430: Parent: Child process 3656 exited successfully.
+[Sat Apr 04 15:02:48.239962 2020] [ssl:warn] [pid 5132:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 15:02:48.267990 2020] [ssl:warn] [pid 5132:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 15:02:48.428839 2020] [mpm_winnt:notice] [pid 5132:tid 708] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 15:02:48.428839 2020] [mpm_winnt:notice] [pid 5132:tid 708] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 15:02:48.428839 2020] [core:notice] [pid 5132:tid 708] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 15:02:48.439810 2020] [mpm_winnt:notice] [pid 5132:tid 708] AH00418: Parent: Created child process 7840
+[Sat Apr 04 15:02:48.670240 2020] [ssl:warn] [pid 7840:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 15:02:48.693505 2020] [ssl:warn] [pid 7840:tid 640] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 15:02:48.710538 2020] [mpm_winnt:notice] [pid 7840:tid 640] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 15:31:20.537058 2020] [php7:error] [pid 7840:tid 1908] [client ::1:52209] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on null in C:\\xampp\\htdocs\\GoNavy\\login\\process.php:14\nStack trace:\n#0 {main}\n  thrown in C:\\xampp\\htdocs\\GoNavy\\login\\process.php on line 14, referer: http://localhost:8521/GoNavy/login/login.php
+[Sat Apr 04 17:30:19.893524 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.893524 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.894501 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.895518 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.896479 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.896479 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:30:19.896479 2020] [authz_core:error] [pid 7840:tid 1920] [client ::1:52830] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:33:22.998558 2020] [mpm_winnt:notice] [pid 5132:tid 708] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:33:25.001661 2020] [mpm_winnt:notice] [pid 7840:tid 640] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:33:25.878876 2020] [mpm_winnt:notice] [pid 5132:tid 708] AH00430: Parent: Child process 7840 exited successfully.
+[Sat Apr 04 17:33:42.672047 2020] [ssl:warn] [pid 18524:tid 744] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:33:42.708900 2020] [ssl:warn] [pid 18524:tid 744] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:33:42.724399 2020] [mpm_winnt:notice] [pid 18524:tid 744] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 17:33:42.724399 2020] [mpm_winnt:notice] [pid 18524:tid 744] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 17:33:42.724399 2020] [core:notice] [pid 18524:tid 744] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 17:33:42.725934 2020] [mpm_winnt:notice] [pid 18524:tid 744] AH00418: Parent: Created child process 19148
+[Sat Apr 04 17:33:42.972136 2020] [ssl:warn] [pid 19148:tid 672] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:33:42.996114 2020] [ssl:warn] [pid 19148:tid 672] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:33:43.013033 2020] [mpm_winnt:notice] [pid 19148:tid 672] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 17:34:12.844180 2020] [mpm_winnt:notice] [pid 18524:tid 744] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:34:14.846171 2020] [mpm_winnt:notice] [pid 19148:tid 672] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:34:14.866171 2020] [mpm_winnt:notice] [pid 18524:tid 744] AH00430: Parent: Child process 19148 exited successfully.
+[Sat Apr 04 17:34:20.723015 2020] [ssl:warn] [pid 18900:tid 800] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:34:20.767965 2020] [ssl:warn] [pid 18900:tid 800] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:34:20.784920 2020] [mpm_winnt:notice] [pid 18900:tid 800] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 17:34:20.784920 2020] [mpm_winnt:notice] [pid 18900:tid 800] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 17:34:20.784920 2020] [core:notice] [pid 18900:tid 800] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 17:34:20.785918 2020] [mpm_winnt:notice] [pid 18900:tid 800] AH00418: Parent: Created child process 4872
+[Sat Apr 04 17:34:21.032821 2020] [ssl:warn] [pid 4872:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:34:21.058088 2020] [ssl:warn] [pid 4872:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:34:21.075185 2020] [mpm_winnt:notice] [pid 4872:tid 624] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 17:34:59.002193 2020] [mpm_winnt:notice] [pid 18900:tid 800] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:35:01.005252 2020] [mpm_winnt:notice] [pid 4872:tid 624] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:35:01.028049 2020] [mpm_winnt:notice] [pid 18900:tid 800] AH00430: Parent: Child process 4872 exited successfully.
+[Sat Apr 04 17:35:11.939924 2020] [ssl:warn] [pid 13180:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:35:11.977495 2020] [ssl:warn] [pid 13180:tid 716] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:35:11.992964 2020] [mpm_winnt:notice] [pid 13180:tid 716] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 17:35:11.992964 2020] [mpm_winnt:notice] [pid 13180:tid 716] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 17:35:11.992964 2020] [core:notice] [pid 13180:tid 716] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 17:35:11.994917 2020] [mpm_winnt:notice] [pid 13180:tid 716] AH00418: Parent: Created child process 11472
+[Sat Apr 04 17:35:12.240681 2020] [ssl:warn] [pid 11472:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:35:12.266403 2020] [ssl:warn] [pid 11472:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:35:12.283371 2020] [mpm_winnt:notice] [pid 11472:tid 628] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 17:35:14.605335 2020] [mpm_winnt:notice] [pid 13180:tid 716] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:35:16.608042 2020] [mpm_winnt:notice] [pid 11472:tid 628] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:35:16.630463 2020] [mpm_winnt:notice] [pid 13180:tid 716] AH00430: Parent: Child process 11472 exited successfully.
+[Sat Apr 04 17:35:31.523488 2020] [ssl:warn] [pid 9720:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:35:31.551624 2020] [ssl:warn] [pid 9720:tid 664] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:35:31.566583 2020] [mpm_winnt:notice] [pid 9720:tid 664] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 17:35:31.566583 2020] [mpm_winnt:notice] [pid 9720:tid 664] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 17:35:31.566583 2020] [core:notice] [pid 9720:tid 664] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 17:35:31.568529 2020] [mpm_winnt:notice] [pid 9720:tid 664] AH00418: Parent: Created child process 16652
+[Sat Apr 04 17:35:31.809434 2020] [ssl:warn] [pid 16652:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:35:31.837856 2020] [ssl:warn] [pid 16652:tid 628] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:35:31.854689 2020] [mpm_winnt:notice] [pid 16652:tid 628] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.854216 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.855213 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.856211 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.856211 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.856211 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.856211 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:35:36.856211 2020] [authz_core:error] [pid 16652:tid 1932] [client ::1:52848] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:36:58.408318 2020] [mpm_winnt:notice] [pid 9720:tid 664] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:37:00.410596 2020] [mpm_winnt:notice] [pid 16652:tid 628] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:37:01.266998 2020] [mpm_winnt:notice] [pid 9720:tid 664] AH00430: Parent: Child process 16652 exited successfully.
+[Sat Apr 04 17:38:49.963296 2020] [ssl:warn] [pid 13368:tid 772] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:38:49.999918 2020] [ssl:warn] [pid 13368:tid 772] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:38:50.016577 2020] [mpm_winnt:notice] [pid 13368:tid 772] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 17:38:50.016577 2020] [mpm_winnt:notice] [pid 13368:tid 772] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 17:38:50.016577 2020] [core:notice] [pid 13368:tid 772] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 17:38:50.018294 2020] [mpm_winnt:notice] [pid 13368:tid 772] AH00418: Parent: Created child process 17076
+[Sat Apr 04 17:38:50.256952 2020] [ssl:warn] [pid 17076:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 17:38:50.280687 2020] [ssl:warn] [pid 17076:tid 696] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 17:38:50.297586 2020] [mpm_winnt:notice] [pid 17076:tid 696] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 17:39:03.729092 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.729092 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.729092 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.729092 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.730090 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.731087 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:03.732084 2020] [authz_core:error] [pid 17076:tid 1928] [client ::1:52896] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 17:39:27.266608 2020] [mpm_winnt:notice] [pid 13368:tid 772] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 17:39:29.268547 2020] [mpm_winnt:notice] [pid 17076:tid 696] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 17:39:29.293112 2020] [mpm_winnt:notice] [pid 13368:tid 772] AH00430: Parent: Child process 17076 exited successfully.
+[Sat Apr 04 18:15:39.648373 2020] [ssl:warn] [pid 15448:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 18:15:39.731553 2020] [ssl:warn] [pid 15448:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 18:15:39.750505 2020] [mpm_winnt:notice] [pid 15448:tid 708] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 18:15:39.750505 2020] [mpm_winnt:notice] [pid 15448:tid 708] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 18:15:39.750505 2020] [core:notice] [pid 15448:tid 708] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 18:15:39.752496 2020] [mpm_winnt:notice] [pid 15448:tid 708] AH00418: Parent: Created child process 17128
+[Sat Apr 04 18:15:40.015935 2020] [ssl:warn] [pid 17128:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 18:15:40.039914 2020] [ssl:warn] [pid 17128:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 18:15:40.057807 2020] [mpm_winnt:notice] [pid 17128:tid 620] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 18:15:58.007369 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.007369 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.007369 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.008375 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.008375 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.008375 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.008375 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.008375 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.009364 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 18:15:58.010362 2020] [authz_core:error] [pid 17128:tid 1932] [client ::1:53133] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 19:27:39.714598 2020] [mpm_winnt:notice] [pid 15448:tid 708] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 19:27:41.716009 2020] [mpm_winnt:notice] [pid 17128:tid 620] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 19:27:42.775165 2020] [mpm_winnt:notice] [pid 15448:tid 708] AH00430: Parent: Child process 17128 exited successfully.
+[Sat Apr 04 19:31:55.688406 2020] [ssl:warn] [pid 3612:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 19:31:55.739110 2020] [ssl:warn] [pid 3612:tid 708] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 19:31:55.754734 2020] [mpm_winnt:notice] [pid 3612:tid 708] AH00455: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4 configured -- resuming normal operations
+[Sat Apr 04 19:31:55.754734 2020] [mpm_winnt:notice] [pid 3612:tid 708] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 12:20:04
+[Sat Apr 04 19:31:55.754734 2020] [core:notice] [pid 3612:tid 708] AH00094: Command line: 'C:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat Apr 04 19:31:55.754734 2020] [mpm_winnt:notice] [pid 3612:tid 708] AH00418: Parent: Created child process 16420
+[Sat Apr 04 19:31:56.123613 2020] [ssl:warn] [pid 16420:tid 704] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Apr 04 19:31:56.146437 2020] [ssl:warn] [pid 16420:tid 704] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found.), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found.)) in Unknown on line 0
+[Sat Apr 04 19:31:56.162016 2020] [mpm_winnt:notice] [pid 16420:tid 704] AH00354: Child: Starting 150 worker threads.
+[Sat Apr 04 21:49:23.251991 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.251991 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.251991 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.251991 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.253010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.253010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.253010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.253010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.253010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.254013 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255010 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255980 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 21:49:23.255980 2020] [authz_core:error] [pid 16420:tid 1920] [client ::1:56262] AH01630: client denied by server configuration: C:/xampp/webalizer
+[Sat Apr 04 23:12:41.699189 2020] [mpm_winnt:notice] [pid 3612:tid 708] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Apr 04 23:12:43.702875 2020] [mpm_winnt:notice] [pid 16420:tid 704] AH00364: Child: All worker threads have exited.
+[Sat Apr 04 23:12:44.500512 2020] [mpm_winnt:notice] [pid 3612:tid 708] AH00430: Parent: Child process 16420 exited successfully.
