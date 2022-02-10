@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<title>GoNavy!</title>
+
+		<meta charset="utf-8">	
+
+		<link rel="icon" href="../../IMAGES/Tab_Icon/icon.PNG">
+
+		<link rel="stylesheet" type="text/css" href="../../CSS/Common/background.css?v=5">
+		<link rel="stylesheet" type="text/css" href="../../CSS/Common/header.css?v=6">
+		<link rel="stylesheet" type="text/css" href="../../CSS/Common/div_switch_pages.css?v=7">
+		<link rel="stylesheet" type="text/css" href="../../CSS/Chits/chits.css?v=11">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+		<script type="text/javascript" src="../../JAVASCRIPT/Jquery/Jquery.js"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Headers/page_header.js?v=4"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Headers/page_redirect_bar.js?v=8"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Switch_Pages/Switch_Pages.js"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Switch_Pages/Switch_Pages_chits.js"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Chits/chits.js"></script>
+		<script type="text/javascript" src="../../JAVASCRIPT/Knockout/knockout-3.5.1.js"></script>
+	</head>
+	<body>
+		<!-- Content -->
+		<div class="completed-chits">
+			<table>
+				<tr>
+					<td class="display-completed-chits">
+						<table>
+							<thead>
+								<tr> 
+									<td> Chit ID </td> 
+									<td> Chit Type </td>
+									<td> Routing Status </td>
+									<td> AW Action By </td>
+									<td> Last Action </td>
+									<td> Last Comment By </td>
+									<td> Last Comment </td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-bind='text: chitID'></td>
+									<td data-bind='text: type'></td>
+									<td data-bind='text: routing_status'></td>
+									<td data-bind='text: aw.username'></td>
+									<td data-bind='text: actions.action'></td>
+									<td data-bind='text: c.username'></td>
+									<td data-bind='text: comments'></td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+</html>
