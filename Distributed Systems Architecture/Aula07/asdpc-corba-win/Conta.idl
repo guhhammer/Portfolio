@@ -1,0 +1,13 @@
+exception SaldoInsuficiente {};
+
+interface Conta {
+
+	readonly attribute float saldo;
+	readonly attribute string id;
+
+	void deposito(in float valor);
+	void saque(in float valor) raises (SaldoInsuficiente);
+	void transfere(in float valor, in Conta destino) raises (SaldoInsuficiente);
+
+	oneway void shutdown(in string senha);
+};
