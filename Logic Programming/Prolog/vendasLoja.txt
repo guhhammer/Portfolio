@@ -1,0 +1,9 @@
+:- dynamic venda/5.
+
+
+venda('joao da silva', data(15,1,2015), 3, bola, 12.50).
+venda('claudia', data(18,1,2015), 1, tenis, 89.45).
+venda('joao claudio', data(22,1,2015), 4, sabao, 1.35).
+venda('joao da silva', data(15,2,2015), 5, bolsas, 202.50).
+venda('claudia', data(18,2,2015), 3, sapatos, 200.45).
+venda('joao claudio', data(22,2,2015), 10, escovas, 20.5).

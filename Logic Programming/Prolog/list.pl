@@ -1,0 +1,37 @@
+
+
+par(X) :- (X mod 2) =:= 0.
+
+pares([],[]).
+
+pares([X|Y],[X|Z]) :- par(X), pares(Y,Z), !.
+
+pares([_|Y],Z) :- pares(Y,Z).
+
+
+
+pow(_,0,1).
+pow(X,Y,Z) :- Y1 is Y-1,pow(X,Y1,Z1), Z is Z1*X,!.
+
+size(A, N) :- length(A,N).
+
+ultimo([X],X) :- !.
+ultimo([_|Z],X) :- ultimo(Z,X).
+
+n_esimo(N, [X|_], X) :- N =:= 0,!.
+n_esimo(N, [_|T], X) :- n_esimo(N-1,T,X).
+
+
+append([], List, List).
+append([Head|Tail], List, [Head|Rest]) :- append(Tail, List, Rest).
+merge(L,L2,List) :- append(L, L2, Z), sort(0, @=<, Z, List).
+
+
+
+fold([], Acc, Acc, _F).
+fold([A|As], B, Acc1, F) :- call(F, Acc1, A, Acc2),fold(As, B, Acc2, F).
+reduce([A|As], Bs, F) :- fold(As, Bs, A, F).
+
+multi(L, S) :- reduce(L,S,[X,Y,Z]>>(Z is X*Y)).
+
+

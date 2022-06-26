@@ -1,0 +1,8 @@
+:- dynamic auto/15.
+
+auto(8451205451, 'AGH7891', john, arromb, 'BMW', i6, '2016', '5th_Avenue', '2140', 'Ap_02', 'São_Bernardo', 'São_Paulo', '84120062', '984512668', '98456712').
+auto(8451888451, 'AGH7899', john, arromb, 'Audi', 'R8', '2018', '5th_Avenue', '2140', 'Ap_02', 'São_Bernardo', 'São_Paulo', '84120062', '984512668', '98456712').
+auto(4653700427, 'DDS1152', heath, ledg, 'Audi', 'R8', '2018', '3th_Avenue', '6788', 'Ap_15', 'Rio_de_Janeiro', 'Rio_de_Janeiro', '87555099', '999884141', '55871204').
+auto(9941524326, 'KSW9120', steve, dgobs, ford, focus, '2008', '11th_Avenue', '4420', 'Ap_08', 'Curitiba', 'Paraná', '87451020', '945117858', '62152324').
+auto(2341702193, 'XDH2321', mike, vex, 'Audi', 'R8', '2010', '12th_avenue', 8266, 'Ap_08', 'Porto_Alegre', 'Rio_Grande_do_Sul', '78500666', '919845444', '36369854').
+

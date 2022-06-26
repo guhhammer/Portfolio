@@ -1,0 +1,79 @@
+option(X) :-
+    X =:= 1,
+    nl,
+    writeln('--- (Soma = A + B) ---'),
+    write('A: '),read(A),nl,
+    write('B: '),read(B),nl,
+    Y is A+B,
+    write(A),write(' + '),write(B),write(' = '),write(Y).
+
+option(X) :-
+    X =:= 2,
+    nl,
+    writeln('--- (Subtração = A - B) ---'),
+    write('A: '),read(A),nl,
+    write('B: '),read(B),nl,
+    Y is A-B,
+    write(A),write(' - '),write(B),write(' = '),write(Y).
+
+option(X) :-
+    X =:= 3,
+    nl,
+    writeln('--- (Multiplicação = A 8 B) ---'),
+    write('A: '),read(A),nl,
+    write('B: '),read(B),nl,
+    Y is A*B,
+    write(A),write(' * '),write(B),write(' = '),write(Y).
+
+option(X) :-
+    X =:= 4,
+    nl,
+    writeln('--- (Divisão = A / B) ---'),
+    write('A: '),read(A),nl,
+    write('B: '),read(B),nl,
+    B =\= 0,
+    Y is A/B,
+    write(A),write(' / '),write(B),write(' = '),write(Y).
+
+option(X) :-
+    X =:= 4,
+    nl,
+    write('Não possível é possível efetuar a divisão por zero.').
+
+calc :-
+    nl,
+    writeln('***********************************'),
+    writeln('*      Calculadora Simples        *'),
+    writeln('***********************************'),nl,nl,
+    writeln('Escolha qual a opção que deseja executar:'),nl,
+    writeln('1- Soma.'),
+    writeln('2- Subtração.'),
+    writeln('3- Multiplicação.'),
+    writeln('4- Divisão.'),
+    writeln('5- Sair.'),nl,nl,
+    read(Option),
+    Option =\=5,
+    option(Option).
+
+calc :-
+    nl,
+    write('Saindo da Calculadora.').
+
+
+caderneta :-
+    nl,
+    consult('c:\\temp\\alunos.txt'),
+    writeln('============================'),
+    writeln('**          Notas da Turma             **'),
+    writeln('============================'),
+    writeln("Nome  N1   N2   N3   Média"),
+    a(Nome,N1,N2,N3),
+    Media is ((N1+N2+N3)/3),
+    write(Nome),tab(5),
+    write(N1),tab(5),
+    write(N2),tab(5),
+    write(N3),tab(5),
+    format('~2f',Media),
+    writeln('-----------------------------------------'),
+    fail,
+    nl.

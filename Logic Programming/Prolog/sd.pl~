@@ -1,0 +1,6 @@
+
+
+
+power(X,Y) :- abs(X,Z), pow(Z,2,Y).
+
+distancia(X1,Y1,X2,Y2,D) :- power((X2-X1),S), power(Y2-Y1,T), D is sqrt((S+T)/2).
