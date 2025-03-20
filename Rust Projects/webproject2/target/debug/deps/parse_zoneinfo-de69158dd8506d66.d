@@ -1,0 +1,11 @@
+/home/gustavo/Desktop/webproject2/target/debug/deps/libparse_zoneinfo-de69158dd8506d66.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/line.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/structure.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/table.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/libparse_zoneinfo-de69158dd8506d66.rlib: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/line.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/structure.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/table.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/parse_zoneinfo-de69158dd8506d66.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/line.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/structure.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/table.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/transitions.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/line.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/structure.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/table.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/parse-zoneinfo-0.3.1/src/transitions.rs:

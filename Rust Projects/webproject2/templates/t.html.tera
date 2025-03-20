@@ -1,0 +1,16 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+MAKE THIS TRENDS PAGE
+
+<img src="{{ctx_trends}}"/>
+
+
+{{ ctx_trends }}
+
+{% include "components/footer" %}
+  
+{% endblock %}

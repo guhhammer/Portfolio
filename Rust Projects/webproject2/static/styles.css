@@ -1,0 +1,67 @@
+.radial-gradient {
+  background: radial-gradient(circle, #6b21a8, #e9d5ff);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Light border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.semi-transparent-black {
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+}
+
+.hidden {
+  display: none;
+}
+
+.b-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+}
+
+.minimal-scrollbar {
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #a855f7 transparent; /* Thumb color | No background */
+}
+
+/* Chrome, Edge, and Safari */
+.minimal-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+}
+
+.minimal-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* No background */
+}
+
+.minimal-scrollbar::-webkit-scrollbar-thumb {
+  background: #a855f7; /* Purple thumb */
+  border-radius: 50px; /* Fully rounded */
+}
+
+.minimal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9333ea; /* Darker purple on hover */
+}
+
+/* Custom scrollbar buttons (up/down arrows) */
+.minimal-scrollbar::-webkit-scrollbar-button {
+  background: #a855f7; /* Same as scrollbar */
+  height: 10px;
+  border-radius: 50px;
+}
+
+.minimal-scrollbar::-webkit-scrollbar-button:hover {
+  background: #9333ea;
+}

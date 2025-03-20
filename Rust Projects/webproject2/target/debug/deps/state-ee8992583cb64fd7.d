@@ -1,0 +1,12 @@
+/home/gustavo/Desktop/webproject2/target/debug/deps/libstate-ee8992583cb64fd7.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/libstate-ee8992583cb64fd7.rlib: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/state-ee8992583cb64fd7.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/ident_hash.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/cell.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/init.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/shim.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/state-0.6.0/src/type_map.rs:

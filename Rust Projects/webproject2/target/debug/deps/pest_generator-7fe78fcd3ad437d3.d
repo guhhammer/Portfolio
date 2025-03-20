@@ -1,0 +1,11 @@
+/home/gustavo/Desktop/webproject2/target/debug/deps/libpest_generator-7fe78fcd3ad437d3.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/docs.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/generator.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/parse_derive.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/libpest_generator-7fe78fcd3ad437d3.rlib: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/docs.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/generator.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/parse_derive.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/pest_generator-7fe78fcd3ad437d3.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/docs.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/generator.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/parse_derive.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/macros.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/docs.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/generator.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pest_generator-2.7.15/src/parse_derive.rs:

@@ -1,0 +1,21 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+<h1>Status {{ ctx_code }}</h1>
+
+<p> {{ ctx_reason }} </p>
+
+<p> {{ ctx_uri }}</p>
+
+<p>You will be redirected to the homepage in 5 seconds...</p>
+
+<!-- Redirect to index after 5 seconds -->
+<script> setTimeout(function() { window.location.href = "/"; }, 5000); </script>
+
+{% include "components/footer" %}
+
+{% endblock %}
+

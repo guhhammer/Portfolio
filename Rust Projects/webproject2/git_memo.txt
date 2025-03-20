@@ -1,0 +1,24 @@
+
+#### PLEASE MIND DOCKER IS NOT WORKING BECAUSE MY DEV ENV IS NOT PRODUCING A GOOD DOCKER IMAGE.
+#### I DON'T HOW TO USE BY THE WAY.
+
+=============
+git commands:
+
+git init
+
+git status 
+
+git add .
+
+git log
+
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/your-username/repo-name.git
+
+git branch -M main
+
+git push -u origin main
+
+=============

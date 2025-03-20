@@ -1,0 +1,10 @@
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/libfutures_task-8b4e8a812b4b021b.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/spawn.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/future_obj.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/noop_waker.rs
+
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/libfutures_task-8b4e8a812b4b021b.rlib: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/spawn.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/future_obj.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/noop_waker.rs
+
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/futures_task-8b4e8a812b4b021b.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/spawn.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/future_obj.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/noop_waker.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/spawn.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/future_obj.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-task-0.3.31/src/noop_waker.rs:

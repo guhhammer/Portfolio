@@ -1,0 +1,11 @@
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/libbitflags-6d7f55e4f5899d1a.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/iter.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/parser.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/traits.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/public.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/internal.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/external.rs
+
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/bitflags-6d7f55e4f5899d1a.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/iter.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/parser.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/traits.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/public.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/internal.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/external.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/iter.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/parser.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/traits.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/public.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/internal.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.8.0/src/external.rs:

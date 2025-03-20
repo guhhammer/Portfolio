@@ -1,0 +1,12 @@
+/home/gustavo/Desktop/webproject2/target/debug/deps/libhttparse-d5767e2881f7c0a1.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/iter.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/mod.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/swar.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/sse42.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/avx2.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/runtime.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/httparse-d5767e2881f7c0a1.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/iter.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/mod.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/swar.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/sse42.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/avx2.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/runtime.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/iter.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/macros.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/mod.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/swar.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/sse42.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/avx2.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/httparse-1.10.0/src/simd/runtime.rs:

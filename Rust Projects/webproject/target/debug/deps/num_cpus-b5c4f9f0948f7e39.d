@@ -1,0 +1,6 @@
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/libnum_cpus-b5c4f9f0948f7e39.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/linux.rs
+
+/home/gustavo/Desktop/mywork/RandomProjects/rustproject/webproject/target/debug/deps/num_cpus-b5c4f9f0948f7e39.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/linux.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/num_cpus-1.16.0/src/linux.rs:

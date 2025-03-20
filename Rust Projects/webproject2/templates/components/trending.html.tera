@@ -1,0 +1,68 @@
+<div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6 mt-4" style="max-height: 60vh;">
+    <h2 class="text-2xl font-bold text-purple-600 mb-4">Trending Donations</h2>
+
+    <div class="overflow-y-auto minimal-scrollbar" style="max-height: 50vh;"> <!-- Added overflow-y-auto and max-height for scroll -->
+        <ul id="trending-list" class="space-y-4">
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 1</span>
+                <span class="font-semibold text-purple-600">$5,000</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 2</span>
+                <span class="font-semibold text-purple-600">$4,800</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 3</span>
+                <span class="font-semibold text-purple-600">$4,200</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 4</span>
+                <span class="font-semibold text-purple-600">$3,900</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 5</span>
+                <span class="font-semibold text-purple-600">$3,500</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 6</span>
+                <span class="font-semibold text-purple-600">$3,200</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 7</span>
+                <span class="font-semibold text-purple-600">$2,900</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 8</span>
+                <span class="font-semibold text-purple-600">$2,500</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 9</span>
+                <span class="font-semibold text-purple-600">$2,300</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 10</span>
+                <span class="font-semibold text-purple-600">$2,000</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 11</span>
+                <span class="font-semibold text-purple-600">$1,800</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 12</span>
+                <span class="font-semibold text-purple-600">$1,500</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 13</span>
+                <span class="font-semibold text-purple-600">$1,200</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 14</span>
+                <span class="font-semibold text-purple-600">$1,000</span>
+            </li>
+            <li class="flex justify-between bg-gray-100 p-4 rounded-lg">
+                <span>Cause 15</span>
+                <span class="font-semibold text-purple-600">$900</span>
+            </li>
+        </ul>
+    </div>
+</div>

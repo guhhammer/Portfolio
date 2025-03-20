@@ -1,0 +1,433 @@
+
+// User 0 (Example):
+//
+
+{
+   
+    "profile_image": "",
+   
+    "profile_name": "",
+   
+    "profile_short_description": "",
+   
+    "donate_address": "", 
+   
+    "social_media": {
+
+        "facebook": { "url": null },
+        "twitter": { "url": null },
+        "instagram": { "url": null },
+        "linkedin": { "url": null },
+        "youtube": { "url": null },
+        "tiktok": { "url": null },
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": null },
+
+        "whatsapp": { "url": null },
+        "telegram": { "url": null },
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": null },
+        "wordpress": { "url": null },
+        "others": { "url": null }
+        
+    },
+   
+    "long_description": "",
+
+    "categories": [
+    
+    ],
+
+    "tier": ""
+
+},
+
+[   
+
+// User 1:
+// ETH Account 5
+
+    {
+   
+    "profile_image": "",
+   
+    "profile_name": "Flow Games",
+   
+    "profile_short_description": "Viva o hype com a gente! Notícias, eventos, reviews, dicas, esports e muito mais!",
+   
+    "donate_address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc", 
+   
+    "social_media": {
+
+        "facebook": { "url": null },
+        "twitter": { "url": null },
+        "instagram": { "url": null },
+        "linkedin": { "url": null },
+        "youtube": { "url": "https://www.youtube.com/@FlowGamesPodcast"},
+        "tiktok": { "url": null },
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": "https://discord.com/invite/SfxPYf7BkQ?utm_campaign=button_list_FaapartedoDiscorddoFlowGames&utm_medium=referral&utm_source=later-linkinbio"},
+
+        "whatsapp": { "url": "https://whatsapp.com/channel/0029VacH04P8aKvBME6vZH1W?utm_campaign=button_list_RecebatodasasnotciasnoWhatsApp&utm_medium=referral&utm_source=later-linkinbio"},
+        "telegram": { "url": "https://t.me/FlowGamesNEWS?utm_campaign=button_list_RecebatodasasnotciasnoTelegram&utm_medium=referral&utm_source=later-linkinbio"},
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": "https://flowgames.gg/?utm_campaign=button_list_PortalFlowGames&utm_medium=referral&utm_source=later-linkinbio"},
+        "wordpress": { "url": null },
+        "others": { "url": "https://www.flowgames.store/?utm_campaign=button_list_FlowGamesStore&utm_medium=referral&utm_source=later-linkinbio"}
+        
+    },
+   
+    "long_description": "Viva o hype com a gente! Notícias, eventos, reviews, dicas, esports e muito mais! \n\nPROGRAMAÇÃO SEMANAL\n\nFLOW GAMES: todas as segundas e quintas-feiras; \nMD3: as terças e quartas-feiras; \nFLOW GAMES NEWS: toda sexta-feira; \nVÍDEOS: todas as semanas. \n\n~~~~~~ \n\nAcompanhe o Flow Games em todas as mídias: https://linkin.bio/flowgamestv/ \n\nAcesse o nosso portal de notícias: https://flowgames.gg/ \n\n~~~~~~ \n\n📬 CAIXA POSTAL 80154 | CEP: 03350-970 | São Paulo–SP \n(Especificar que é para o Flow Games) \n\n📩  comercial@goldenpill.com.br \n\n~~~~~~ \n\nANFITRIÕES\n\nDavy Jones\nInstagram: @odavyjones\nTwitter: @DavyJonesRJ\n\nPhoenix\nInstagram: @PhoenixBRnnf\nTwitter: @PhoenixBR\n\nThais Matsufugi \nInstagram: @ThaMatsu\nTwitter: @thamatsu\n\nCross \nInstagram: @crosstossaur\nTwitter: @Cross_GP\n\nBruno Micali \nInstagram: @micalibruno\nTwitter: @MicaliBruno\n\nSchaeppi \nInstagram: @tschaeppi \nTwitter: @Schaeppi\n\nPrieto \nInstagram: @prieto.7k \nTwitter: @fprieto\n\nDjoko \nInstagram: @djokolol\nTwitter: @Djokolol\n",
+      
+    "categories": [
+
+        "CyberSecurityAwareness",
+        "EnvironmentalConservation",
+        "JobCreation",
+        "MentalHealth"
+    
+    ],
+
+    "tier": "Creator"
+
+},
+
+
+// User 2:
+// ETH Account 6
+
+{
+   
+    "profile_image": "",
+   
+    "profile_name": "Brasão de Armas",
+   
+    "profile_short_description": "Meu nome é Thiago Braga e aqui você vai encontrar MUITA História, batalhas e guerras.",
+   
+    "donate_address": "0x976EA74026E726554dB657fA54763abd0C3a0aa9", 
+   
+    "social_media": {
+
+        "facebook": { "url": null },
+        "twitter": { "url": "twitter.com/thiagao_braga?t=PlC4pOXbrmZqVPdfRPKKZA&s=08"},
+        "instagram": { "url": "instagram.com/thiagao_braga"},
+        "linkedin": { "url": null },
+        "youtube": { "url": "https://www.youtube.com/@BrasaodeArmas"},
+        "tiktok": { "url": null },
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": null },
+
+        "whatsapp": { "url": null },
+        "telegram": { "url": null },
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": null },
+        "wordpress": { "url": null },
+        "others": { "url": "canalbrasaodearmas@gmail.com"}
+        
+    },
+   
+    "long_description": "Meu nome é Thiago Braga e aqui você vai encontrar MUITA História, batalhas e guerras, além de análises das melhores séries, filmes, jogos e animes com temas históricos. Caixa Postal 95105, AGF Coronel Veiga, Petrópolis, RJ, CEP 25655-970",
+
+    "categories": [
+
+        "Education",
+        "LiteracyPrograms",
+        "SocialJustice",
+        "YouthPrograms"
+
+    ],
+
+    "tier": "Researcher"
+
+},
+
+
+// User 3:
+// ETH Account 7
+
+{
+   
+    "profile_image": "",
+   
+    "profile_name": "Fernando Ulrich",
+   
+    "profile_short_description": "Click here for more information. \nWelcome to my channel, I'm Fernando Ulrich, and here you will find analyses and insights on economics, markets, and investments, all presented in Portuguese.",
+
+    "donate_address": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955", 
+   
+    "social_media": {
+
+        "facebook": { "url": null },
+        "twitter": { "url": null },
+        "instagram": { "url": "instagram.com/ulrich.fernando"},
+        "linkedin": { "url": null },
+        "youtube": { "url": "https://www.youtube.com/@FernandoUlrichCanal"},
+        "tiktok": { "url": null },
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": null },
+
+        "whatsapp": { "url": null },
+        "telegram": { "url": null },
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": "liberta.click/follow_the_money"},
+        "wordpress": { "url": null },
+        "others": { "url": "liberta.click/ulrich"}
+        
+    },
+   
+    "long_description": "Click here for more information. \nWelcome to my channel, I'm Fernando Ulrich, and here you will find analyses and insights on economics, markets, and investments, all presented in Portuguese. \n\nMy journey in the world of finance took a new direction after experiencing the global financial crisis of 2008. This led me to complete a master's degree in Austrian School Economics at URJC in Madrid, focusing on economic cycles and global markets. \n\nWith over two decades of international experience, including stints at renowned groups such as XP Inc, ThyssenKrupp, and Banco Indusval & Partners, I believe that knowledge is the key to anticipating the movements of the world economy and better protecting your assets and investments.",
+    
+    "categories": [
+
+        "YouthPrograms", 
+        "JobCreation", 
+        "EconomicEmpowerment"
+    
+    ],
+
+    "tier": "Investor"
+
+},
+
+
+// User 4:
+// ETH Account 8
+
+{
+   
+    "profile_image": "",
+   
+    "profile_name": "FireShip",
+   
+    "profile_short_description": "High-intensity ⚡ code tutorials and tech news to help you ship your app faster. New videos every week covering the topics every programmer should know.",
+   
+    "donate_address": "0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f", 
+   
+    "social_media": {
+
+        "facebook": { "url": null },
+        "twitter": { "url": "twitter.com/fireship_dev"},
+        "instagram": { "url": "instagram.com/fireship_dev"},
+        "linkedin": { "url": null },
+        "youtube": { "url": "https://www.youtube.com/@Fireship"},
+        "tiktok": { "url": "tiktok.com/@fireship_dev"},
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": "discord.com/invite/fireship"},
+
+        "whatsapp": { "url": null },
+        "telegram": { "url": null },
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": "fireship.io"},
+        "wordpress": { "url": null },
+        "others": { "url": "github.com/codediodeio"}
+        
+    },
+   
+    "long_description": "High-intensity ⚡ code tutorials and tech news to help you ship your app faster. New videos every week covering the topics every programmer should know. \n\nThe original home of #100SecondsOfCode #TheCodeReport and #CodeThisNotThat. Created by Jeff Delaney. \n\nBuilding an app? Get project support, advanced full courses, and more at https://fireship.io",
+      
+    "categories": [
+
+        "CyberSecurityAwareness",
+        "Education",
+        "JobCreation"
+    
+    ],
+
+    "tier": "Student"
+
+},
+
+
+// User 5:
+// ETH Account 9
+
+
+{
+   
+    "profile_image": "",
+   
+    "profile_name": "Gigaton Games",
+   
+    "profile_short_description": "Um canal dedicado aos games, com humor e criatividade. \n\nContato comercial logo abaixo.",
+      
+    "donate_address": "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720", 
+   
+    "social_media": {
+
+        "facebook": { "url": "facebook.com/gigatongames"},
+        "twitter": { "url": "twitter.com/diegogigaton"},
+        "instagram": { "url": "instagram.com/diegogigaton"},
+        "linkedin": { "url": null },
+        "youtube": { "url": "www.youtube.com/@gigatongames"},
+        "tiktok": { "url": null },
+        "snapchat": { "url": null },
+        "pinterest": { "url": null },
+        "reddit": { "url": null },
+        "twitch": { "url": null },
+        "discord": { "url": null },
+
+        "whatsapp": { "url": null },
+        "telegram": { "url": null },
+        "signal": { "url": null },
+        "skype": { "url": null },
+        "slack": { "url": null },
+
+        "medium": { "url": null },
+        "tumblr": { "url": null },
+
+        "vimeo": { "url": null },
+        "flickr": { "url": null },
+        "imgur": { "url": null },
+        "artstation": { "url": null },
+        "deviantart": { "url": null },
+        "dribbble": { "url": null },
+        "behance": { "url": null },
+
+        "soundcloud": { "url": null },
+        "spotify": { "url": null },
+        "pandora": { "url": null },
+        "lastfm": { "url": null },
+        "bandcamp": { "url": null },
+        "mixcloud": { "url": null },
+
+        "website": { "url": null },
+        "wordpress": { "url": null },
+        "others": { "url": "contatogigatongames@gmail.com"}
+        
+    },
+   
+    "long_description": "Um canal dedicado aos games, com humor e criatividade. \n\nContato comercial logo abaixo.",
+
+    "categories": [
+
+        "CyberSecurityAwareness",
+        "EnvironmentalConservation",
+        "JobCreation",
+        "MentalHealth"
+    
+    ],
+
+    "tier": "Creator"
+
+}
+]

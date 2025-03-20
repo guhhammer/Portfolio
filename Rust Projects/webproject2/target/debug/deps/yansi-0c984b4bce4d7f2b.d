@@ -1,0 +1,14 @@
+/home/gustavo/Desktop/webproject2/target/debug/deps/libyansi-0c984b4bce4d7f2b.rmeta: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/windows.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/attr_quirk.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/style.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/color.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/paint.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/global.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/condition.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/set.rs
+
+/home/gustavo/Desktop/webproject2/target/debug/deps/yansi-0c984b4bce4d7f2b.d: /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/lib.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/macros.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/windows.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/attr_quirk.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/style.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/color.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/paint.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/global.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/condition.rs /home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/set.rs
+
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/lib.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/macros.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/windows.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/attr_quirk.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/style.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/color.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/paint.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/global.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/condition.rs:
+/home/gustavo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/yansi-1.0.1/src/set.rs:

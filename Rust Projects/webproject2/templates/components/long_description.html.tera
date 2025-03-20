@@ -1,0 +1,4 @@
+<div id="long-description" 
+    data-profile-name="{{ ctx_user.long_description }}" 
+    class="absolute left-full ml-4 p-8 semi-transparent-black rounded-md shadow-lg hidden overflow-y-auto max-h-[80vh]"></div>
+<script src="/static/js/long_description.js"></script>
