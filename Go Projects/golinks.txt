@@ -1,0 +1,10 @@
+
+
+https://learnxinyminutes.com/docs/go/
+
+https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs
+
+
+https://go.dev/doc/
+
+https://go.dev/learn/
