@@ -1,0 +1,42 @@
+# 1. Build the image
+docker build -t my-rust-app .
+
+# 2. Run the container (default)
+docker run --name rust_test my-rust-app
+
+# 2b. Run as a server exposing port 8080
+docker run -p 8080:8080 --name rust_test my-rust-app
+
+# 3. Check running containers
+docker ps
+
+# 3b. Check all containers (including stopped)
+docker ps -a
+
+# 4. See logs
+docker logs rust_test
+
+# 4b. Stream logs live
+docker logs -f rust_test
+
+# 5. Go inside the container
+docker exec -it rust_test bash
+
+# 6. Stop container
+docker stop rust_test
+
+# 6b. Start container
+docker start rust_test
+
+# 6c. Start with logs attached
+docker start -a rust_test
+
+# 7. Remove container (must be stopped first)
+docker rm rust_test
+
+# 7b. Remove image
+docker rmi my-rust-app
+
+# ⚡ Quick workflow (rebuild + run)
+docker build -t my-rust-app .
+docker run --rm -it my-rust-app

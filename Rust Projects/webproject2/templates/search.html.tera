@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+<div class="flex-1 flex flex-col items-center semi-transparent-black p-4">
+  
+  {% include "components/searchbar" %}
+
+  <img id="i-empty" src="/static/images/social_media_svgs/search.svg" alt="My Logo" width="100" height="100">
+
+  <script src="/static/js/searchbody.js"> </script>
+
+</div>
+
+{% include "components/footer" %}
+
+{% endblock %}

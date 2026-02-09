@@ -1,0 +1,19 @@
+SC 1.1 - Acima de 70% das visualizações.
+SC 1.2 - Entre 40 até 70% das visualizações.
+SC 1.3 - Abaixo de 40% das visualizações.
+
+SC 2.1 - Acima de 80% das visualizações.
+SC 2.2 - De 70% até 80% das visualizações.
+SC 2.3 - Abaixo de 70% das visualizações.
+
+SC 3.1 - Acima de 10% das visualizações.
+SC 3.2 - De 2% até 10% das visualizações.
+SC 3.3 - Abaixo de 2% das visualizações.
+
+SC 4.1 - Acima de 40% das visualizações.
+SC 4.2 - De 10% até 40% das visualizações.
+SC 4.3 - Abaixo de 10% das visualizações.
+
+SC 5.1 - Acima de 90% das visualizações.
+SC 5.2 - De 40% até 90% das visualizações.
+SC 5.3 - Abaixo de 40% das visualizações.

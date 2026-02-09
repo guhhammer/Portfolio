@@ -1,0 +1,170 @@
+
+
+function factorial(n)
+
+	if n == 0
+
+		return 1;
+
+	else 
+
+		return n * factorial(n-1);
+
+	end if
+
+end
+
+
+function bin_search(int[] chaves, int chave, int begin, int end)
+
+	int begin = begin, end = end; // begin <- 0 | end <- chaves.length()
+	
+	int mid = begin + (end-begin) / 2;
+
+	if chaves[mid] == chave
+
+		return mid;
+
+	else if chaves[mid] > chave
+
+		return bin_search(chaves, chave, 0, mid);
+
+	else
+
+		return bin_search(chaves, chave, mid, end);
+
+	end if
+
+end
+
+
+Item 4)
+
+Obs.: Entendo por equação de recorrência uma instrução que possui uma cadeia de eventos ou uma função com um stack de chamadas.
+
+Sendo assim:
+	
+	a) cálculo do fatorial:
+
+		f(n) [suponha n = 3;
+				p, uma pilha de chamadas;
+				r, return]
+
+		p[0]	f(3){
+
+		p[1]		r 3 * f(2){ 
+
+		p[2]			r 2 * f(1){
+							
+		p[3]				r 1 * f(0){
+
+								return 1;
+
+		p[3]				}
+
+		p[2]			}
+
+		p[1]		}
+
+		p[0]	}
+
+		Quatro tempos de stack e quatro de unstack.
+		Quatro multiplicações.
+		A partir de f(3), quatro instruções foram executadas.
+
+		Tempo de execução: T_stack(n+1) + T_unstack(n+1)
+										+ T_op_mult(n+1) 
+										+ T_instrução_de_retorno(n+1)
+
+		O(n!).
+
+	=================
+
+	b) busca binária:
+
+		arr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+		bin_search(arr, 3, 0, arr.length()){						|
+																|
+			int begin = 0, end = 9, mid = 4;              		|		<- A
+                                                            	|
+			if mid == 3 {}; (FALSE)                        		|       <- B
+                                                            	|
+			else if mid > 3 {}; (TRUE)                      	|       <- B
+			|                                               	|
+			|-> return bin_search(arr, 3, 0, 4){              	|       <- C
+                                                            	|
+					int begin = 0, end = 4, mid = 2;        	|       <- A
+                                                            	|
+					if mid == 2 {}; (FALSE)                 	|       <- B
+                                                            	|
+					else if mid > 3 {}; (FALSE)             	|       <- B
+					|                                       	|
+					|-> return bin_search(arr, 3, 2, 4){      	|       <- C
+																|
+							int begin = 2, end = 4, mid = 3;    |		<- A
+																|
+							if mid == 3 {}; (TRUE)				|		<- B
+							|									|	
+							|-> return mid;						|		<- C
+																|
+					}											|
+																|
+				}												|
+																|
+		}														|
+
+
+			| A -> instrução de armazenamento;
+			| B -> instrução de decisão;
+			| C -> Chamada de retorno.
+
+		O( lg(n) ). 9 valores -> máximo de 3 chamadas para encontrar todos os valores.
+
+
+
+item 5
+
+		arr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+		valor = 7
+
+						bin_search
+							|
+							|
+						   arr
+						   /|\
+						  / | \
+						 0  4  8
+						/	|	\
+					  4>7 	|	4<7
+					  /    4==7	  \
+					 *		|	  arr
+					 		*     /|\
+					 			 4 6 8
+					 			/  |  \
+					 		  4>7  |   8>7
+					 		  /  6==7   \
+					 		 *     |    arr
+					 		 	   *	/|\
+					 		 	   	   6 7 8
+					 		 	   	  /	 |	\
+					 		 	   	6>7  |	 8>7
+					 		 	   	/  7==7	  \
+					 		 	   *	 |     *
+					 		 	   	    end
+
+			left-comparison-value é o index do array.
+			right-comparison-value é o valor.
+			mid-comparison é executada primeiro.
+			begin- e end-comparison são testadas em if. 
+
+
+
+
+item 6:
+
+	(0 -1) + 
+		(2 -1) + 
+			(6 -1) +
+			 (8 -1) 

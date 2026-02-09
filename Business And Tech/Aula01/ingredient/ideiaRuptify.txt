@@ -1,0 +1,6 @@
+Fazer app de receitas, onde todos os usuários podem adicionar suas receitas e modos de preparos. Fazer um sistema de ranking de receitas com melhor avaliação e promover a receita do dia ou "o que está bombando hoje ao se redor" || um instagram like com um comportamento mais old. Promover integração de entrega de produtos orgânicos de fornecedores locais com base nos ingredientes das receitas. Criar uma "feira" na questão de negócios com melhores comerciantes.
+
+
+App de receitas:
+
+-- 

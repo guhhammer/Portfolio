@@ -1,0 +1,66 @@
+
+Nome: Gustavo Hammerschmidt.
+
+Exercício 1:
+
+A) Verfique se é possível enviar mensagens em broadcast sem setar a opção SO_BROADCAST
+
+Sim, para todos os Broadcasts, menos para o 255.255.255.255.
+
+B) Corrija o problema de envio de broadcast e verifique o envio de broadcast para os endereços abaixo.
+Em cada um dos casos anote o endereço que o programa servidor identificou o cliente.
+
+- Broadcast para endereços de loopback: 127.255.255.255
+	
+  INTERFACE DE LOOPBACK: 127.0.0.1
+
+- Broadcast para rede local:
+- use route print -4 no prompt do windows para descobrir
+- use route -n no Linux ou MAC
+  
+  IDENTIFICOU COMO 192.168.1.102
+
+- Broadcast genérico: 255.255.255.255
+
+
+C) Explique porque o endereço de origem mostrado no servidor mudou nas chamadas.
+
+Cada tipo de broadcast é acessado por uma interface específica:
+127.255.255.255 usa loopback.
+192.168.1.255 usa a interface física.
+255.255.255.255 usa todas as interfaces.
+
+Obs.: Se não houver uma aplicação na porta 9999, quem descarta o pacote é o S.O. e não a placa de rede.
+
+#---------------------------------------------------------------------
+
+Exercício 2:
+
+1) O Receptor Multicast pode receber mensagens enviadas para portas diferentes daquela em que ele fez o bind?
+
+Não.
+
+2) O Receptor Multicast também pode receber mensagens em UNICAST?
+
+Sim.
+
+3) Qual a melhor estratégia para dividir os receptores de uma aplicação de streaming em grupos? Usar portas diferentes ou usar grupos de multicast diferentes?
+
+A melhor estratégia é sempre usar multicast porque: (1) a mensagem é descartada pela interface de rede de quem não tiver o programa para tratar a mensagem; (2) se a rede for cabeada, o switch não deixará o pacote chegar nos computadores que não estiverem no grupo.
+
+#------------------------------------------------------------------------
+
+Exercício 3:
+
+A) Qual a vantagem dos sensores localizarem o monitor por BROADCAST
+
+Por eles não precisarem mais ser configurados manualmente.
+
+B)  Existe o risco do sensor se conectar em um monitor que não seja o desejado? Se isso pode acontecer, como o problema pode ser corrigido?
+
+Isso pode acontecer. O problema tem que ser corrigido usando algum mecanismo de autenticação(senha).
+
+C) Caso você queria implementar a função ao contrário, isto é, fazer o monitor localizar os sensors por BROADCAST, que tipo de modificação seria necessária no código?
+
+Como não existe broadcast de porta, todos os sensores devem ser inicializados em uma porta fixa.
+

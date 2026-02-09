@@ -1,0 +1,11 @@
+prova pf -> 3 questões
+
+2 conceituais 
+1 pseudocódigo
+
+
+comparar imperativo e funcional
+
+outra baseada no material do lazy e eager
+
+e outra solução de código,  solução algorítmica.

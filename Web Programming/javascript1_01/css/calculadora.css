@@ -1,0 +1,58 @@
+
+html{
+
+	background-color: black;
+}
+
+.tbl{
+	position: relative;
+	top: 80px;
+	left: 20px;
+}
+
+
+.tbl tr td input{
+
+	width: 45px;
+	padding: 10px 10px 10px 10px;
+
+	background-color: #EEE;
+	border: #CCC 1px;
+	border-radius: 3px;
+}
+
+
+.tbl tr .result{
+	
+	width: 100px;
+
+}
+
+.tbl button{
+
+	background-color: #FF8000;
+	color: white;
+	width: 37px;
+	height: 37px;
+	font-size: 14px;
+	border-color: transparent;
+	border-radius: 3px;
+}
+
+.tbl .limpar {
+
+	width: 50px;
+	font-size: 10px;
+
+}
+
+.tbl button:hover{
+
+	cursor: pointer;
+	background-color: #EE5000;
+
+}
+
+.tbl .sign{
+	color: white;
+}

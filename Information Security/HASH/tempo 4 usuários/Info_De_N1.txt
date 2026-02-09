@@ -1,0 +1,8 @@
+Nome: 
+n1
+
+Senha(sem Hash): 
+7213
+
+Senha(com Hash): 
+6213a8959a9a96589ca484dfd1e25053

@@ -1,0 +1,20 @@
+services:
+  mongo_db:
+    image: mongo
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.runCommand({ ping: 1 })"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  rocket_app:
+    build: .
+    container_name: rocket_app
+    depends_on:
+      mongo_db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=mongodb://mongo_db:27017

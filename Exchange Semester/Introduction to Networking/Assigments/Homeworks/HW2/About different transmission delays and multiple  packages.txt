@@ -1,0 +1,2 @@
+The transmission delay at source is the one that matters for the remaining packages.
+

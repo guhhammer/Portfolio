@@ -1,0 +1,8 @@
+Nome: 
+h3
+
+Senha(sem Hash): 
+8231
+
+Senha(com Hash): 
+2004e0f2b74655ee92d3a6af6bdb6626

@@ -1,0 +1,28 @@
+✅ My Recommended Optimized Structure:
+This order improves storage packing, readability, and developer ergonomics (especially for larger contracts):
+
+1. Pragmas & Imports
+
+2. Events
+
+3. Errors (if using custom errors — saves gas over require)
+
+4. Constants / Immutables (cheaper than storage)
+
+5. Structs / Enums
+
+6. Storage Variables (grouped and ordered for tight packing)
+
+7. Mappings / Arrays (after tightly packed variables)
+
+8. Modifiers
+
+9. Constructor
+
+10. Receive / Fallback functions
+
+11. Functions
+
+---  Grouped by type: external/public/internal/private
+
+---  Grouped by purpose: view/pure → write → admin

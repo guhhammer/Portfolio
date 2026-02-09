@@ -1,0 +1,76 @@
+[
+  {
+    "Number": 1,
+    "Prices": {
+      "Gasoline70": 0.0,
+      "Gasoline85": 0.0,
+      "Gasoline95": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Gasoline70"
+  },
+  {
+    "Number": 2,
+    "Prices": {
+      "Gasoline70": 0.0,
+      "Gasoline85": 0.0,
+      "Gasoline95": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Gasoline70"
+  },
+  {
+    "Number": 3,
+    "Prices": {
+      "Ethanol70": 0.0,
+      "Gasoline70": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Ethanol70"
+  },
+  {
+    "Number": 4,
+    "Prices": {
+      "Ethanol70": 0.0,
+      "Gasoline70": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Ethanol70"
+  },
+  {
+    "Number": 5,
+    "Prices": {
+      "Ethanol70": 0.0,
+      "Gasoline70": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Ethanol70"
+  },
+  {
+    "Number": 6,
+    "Prices": {
+      "Ethanol70": 0.0,
+      "Gasoline70": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Ethanol70"
+  },
+  {
+    "Number": 7,
+    "Prices": {
+      "Diesel50": 0.0,
+      "Diesel500": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Diesel50"
+  },
+  {
+    "Number": 8,
+    "Prices": {
+      "Diesel50": 0.0,
+      "Diesel500": 0.0
+    },
+    "CurrentAmount": 0.0,
+    "CurrentFuel": "Diesel50"
+  }
+]

@@ -1,0 +1,6 @@
+
+https://phpmyadmin.arcanist.games/tbl_structure.php?server=1&db=navy&table=term
+
+
+
+https://jqueryui.com/dialog/#modal-form

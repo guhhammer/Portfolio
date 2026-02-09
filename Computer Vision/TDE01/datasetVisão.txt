@@ -1,0 +1,12 @@
+
+
+Olá Estudantes,
+
+Um dataset de moedas brasileiras apresentando menor variação de tamanho e luminosidade foi liberado para facilitar a solução. No entanto, testem nos três datasets para avaliar o desempenho e o impacto da qualidade da aquisição.
+
+https://www.inf.ufpr.br/aghochuli/dataset.zip
+
+https://www.inf.ufpr.br/aghochuli/dataset2.zip
+
+https://www.inf.ufpr.br/aghochuli/dataset3.zip
+

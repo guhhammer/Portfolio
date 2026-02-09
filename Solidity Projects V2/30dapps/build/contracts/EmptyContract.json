@@ -1,0 +1,108 @@
+{
+  "contractName": "EmptyContract",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/16_emptycontract.sol\":\"EmptyContract\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/16_emptycontract.sol\":{\"keccak256\":\"0xb5d723dad4907c833ac231e6d2aaa92305e8513c014ea896b72cfd8c1ff24482\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://1463c47c57811ff8754dd87b63c3ab53d4c1807e9494f28fc310976e5f027cfd\",\"dweb:/ipfs/QmY9xHdqFnzwf7YTnwLUXYeDs8tc25BbKTsvoE4EfoeFFC\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea2646970667358221220954f7f4fa0b3e3ea5127c4a65b063eac78196c4af2bdc45a1d100674f96c508064736f6c63430008150033",
+  "deployedBytecode": "0x60806040525f80fdfea2646970667358221220954f7f4fa0b3e3ea5127c4a65b063eac78196c4af2bdc45a1d100674f96c508064736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "65:83:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "65:83:6:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.21;\n\ncontract EmptyContract {\n    \n    // I forgot to make this as contract 1_...sol.\n\n}",
+  "sourcePath": "/home/gustavo/Desktop/eat-the-blocks/30dapps/contracts/16_emptycontract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/16_emptycontract.sol",
+    "exportedSymbols": {
+      "EmptyContract": [
+        1508
+      ]
+    },
+    "id": 1509,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1507,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:24:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "EmptyContract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1508,
+        "linearizedBaseContracts": [
+          1508
+        ],
+        "name": "EmptyContract",
+        "nameLocation": "74:13:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1509,
+        "src": "65:83:6",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "39:109:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {
+    "1747075279053": {
+      "events": {},
+      "links": {},
+      "address": "0x0c48bC984C7B56e8b078AB5573D39798ecb4dFF1",
+      "transactionHash": "0xbf993433f49d972edd553e2ccf371e9cfff31d923f7a95e8e81500acb06f79d3"
+    },
+    "1747190933586": {
+      "events": {},
+      "links": {},
+      "address": "0x3f89cA8C660cf8C58358EA80e714A5a7126d8506",
+      "transactionHash": "0xe92c02945b29c981efddf50753f96fd0146dd67b96e27fddd7804c296285fba7"
+    },
+    "1747349176169": {
+      "events": {},
+      "links": {},
+      "address": "0x876F3de55bedcDCa9F5b1252Afc3D1BDB70D6D62",
+      "transactionHash": "0xa74e1ce15bfb050f03c71d40b8290602caeba49ca927063077a70beb74a6da1e"
+    },
+    "1748453479836": {
+      "events": {},
+      "links": {},
+      "address": "0x2d67df12505e2e56079F3Ba228c7A840Fb205a2e",
+      "transactionHash": "0xf3663a726448e575b86ab45b6eed0c5d3be6e60178c32d0f67d73c4ab920c31d"
+    },
+    "1759970943223": {
+      "events": {},
+      "links": {},
+      "address": "0x2a0e5D43fD7C59E653044c6e16D992c61B211988",
+      "transactionHash": "0x322e55d6e64388caa3feffddd7fc4521dcbfd1b7aaeb12582e62fb2dca71fa6f"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-10-09T01:00:27.160Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

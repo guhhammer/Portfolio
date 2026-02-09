@@ -1,0 +1,50 @@
+﻿Julien Klepatch - Full-stack Blockchain Developer for DeFi - Solidity, React, JS / NodeJs
+
+
+Experience
+2018 - now | Taiwan
+Freelance consultant - Full-stack Blockchain Developer
+* ZeFi (YC 2020): an Ethereum smart wallet with multisig & auto-saving to Compound
+        => Built the Solidity smart contracts and a JS client library
+           => Solidity, OpenZeppelin, Dapper wallet, Truffle
+* FutureSwap: Dex for ERC20 futures. Solidity, React
+* Unslashed: Dex for staking Insurance, using Gnosis conditional tokens. Solidity, React.
+* SenseChat: Mobile chat with integration to EOS. Typescript, React & React Native
+
+
+2017 - 2018 | UK / Taiwan
+LendingBlock (Crypto asset Lending Exchange) - Full-stack Blockchain Developer
+   * Employee #1
+   * Built an enterprise trading web app with integration to multiple blockchains
+   * Worked on Frontend, Backend & Devops
+   * For Frontend, I used: React, Redux, Saga, D3, Enzyme
+   * For Backend, I used: Docker, Python, Nodejs, PostgresQL, Redis, RabbitMQ, Open API
+   * For Ethereum, I used: Solidity smart contracts, Truffle and Web3 
+   * For Devops, I setup AWS initial infrastructure, Kubernetes and Kops
+   * Managed Ethereum and Bitcoin clients
+
+
+2013 - 2017 | Taiwan
+Freelance consultant - Full-stack Developer
+   * Built Web Backends and Frontends in Javascript, Nodejs & React
+
+2010 - 2013 | Hong Kong
+Societe Generale ( Investment bank) - Financial Enginer
+      * Create structured products (complex financial products) for institutional investors
+      * VBA / Excel backtests (simulations of financial performance with historical data)
+
+Blockchain mentoring (2018 - now)
+         * Teach Ethereum Dapp Development on my YouTube channel (~3600 subs, 170k views) and website
+         * Authored a 82 pages ebook on Ethereum Dapp development & Solidity
+
+
+Languages & Frameworks
+         * Web: Javascript, NodeJS, React, HTML, CSS & Sass 
+         * Blockchain: Solidity, Openzeppelin, Remix, Truffle & Web3
+         * DB: Redis, Mysql, PostgresQL
+         * Human: English, French & Chinese
+
+
+Education
+         * Master of Finance - HEC, France
+         * Master of Engineering - Ecole des Mines, France

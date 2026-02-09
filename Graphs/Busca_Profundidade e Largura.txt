@@ -1,0 +1,3 @@
+
+Estrutura da busca em Profundidade equivale a uma pilha;
+Estrutura da busca em Largura equivale a uma fila;

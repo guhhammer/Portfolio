@@ -1,0 +1,72 @@
+
+
+NOME: Gustavo Hammerschmidt.
+
+
+PASSO 1: Leitura de material sobre conceitos básicos de Teoria de Jogos no Capítulo 5
+– Busca Competitiva, itens 5.1 a 5.4 do livro-texto Inteligência Artificial – Uma
+Abordagem Moderna, de Russel e Norvig, disponível na biblioteca virtual da PUCPR
+denominada “Minha Biblioteca” (endereço
+https://integrada.minhabiblioteca.com.br/#/books/9788595156104/cfi/6/32!/4@0:0
+se estiver já logado).
+
+
+
+
+PASSO 2: Responda as seguintes questões sobre conceitos de Teoria de Jogos, baseado
+no material lido no Passo 1.
+
+1)	O que é representado por uma árvore de jogos?
+
+	Possíveis estratégias a serem utilizadas pelo computador para solucionar um problema(objetivo do jogo).
+
+2)	Uma árvore de jogos pode na realidade ser um grafo? Por quê?
+
+	Sim, toda árvore é um grafo com certas características: todo nó tem um número n de filhos, e cada nó ou é pai ou é folha. A árvore de jogos tem, em específico, as qualidades de que cada nó representa um estado do jogo e uma relação entre nós uma ação que leva de um estado ao outro.
+
+3)	O que é um jogo de soma zero?
+
+	É um jogo em que necessariamente um jogador precisa perder para o outro ganhar; ou todas as ações tomadas, quando somadas, precisam resultar em zero ou em um equilíbrio.
+
+4)	Em uma árvore de jogo com profundidade 12, quantas jogadas de cada jogador estão
+representadas? Por quê?
+	
+	Cada jogador realizando uma jogada, nessa árvore de jogos, faria com a árvore tivesse (12! = 479.001.600) jogadas. Isso porque, para cada cenário, se uma ação X for tomada existiram 12 - 1 cenários em que essa ação foi tomada e dela podem surgir novos cenários ou o jogo pode proceder com outros 12 cenários, logo, é uma operação fatorial.
+
+5)	Na teoria de jogos assume-se que o jogador adversário tem algum comportamento
+esperado, por exemplo, tome decisões aleatórias? Ou a melhor decisão do seu ponto de
+vista? Ou a pior? Por quê?
+
+	Sim, sempre se assume que o há um objetivo estipulado para o jogo, e que se o jogo é competitivo entre dois ou mais jogadores, então, o objetivo do jogador é concluir o objetivo do jogo antes dos outros jogadores, vencê-lo. Pode-se tomar de premissa de que o jogador vai agir da forma mais inteligente possível à sua perspectiva, afinal o jogador pode ser bom ou muito bom ou excelente, mas não, necessariamente, atuará com o pensamento de uma máquina avaliando estado a estado -- às vezes, de forma	intuitiva. Dependendo da complexidade de um jogo, como o xadrez, deve-se pressupor que o oponente tem as mesmas chances de vitória e que os primeiros movimentos têm menor relevância para um cheque-mate como um todo, senão, a árvore de jogo do xadrez seria absurdamente grande.
+	
+6)	Qual o objetivo de uma função de avaliação em jogos?
+
+	Elas oferecem um insight do quão interessante um estado é, sem fazer uma busca pela árvore toda.
+
+7)	Descreva o funcionamento do jogo da velha.
+
+	No jogo da velha, dois jogadores competem para formar uma sequência de três marcas(ou 'X', ou 'O') em espaço 3 por 3. Aquele que completar uma linha, coluna ou diagonal com as suas marcas vence. O jogador de marca X começa, e o jogo é divido em turnos, ou seja, depois do jogador de marca 'X' é a vez do jogador de marca 'O', e vice-versa.
+
+
+
+
+PASSO 3: Assista ao vídeo no YouTube no endereço abaixo:
+https://www.youtube.com/watch?v=cwzKjFkSyIE
+
+
+
+Passo 4:
+
+	jogo_da_velha.py
+
+	respostas_passo4.jpg
+
+
+
+Passo 5:
+
+	São gerados 9! (362880) nós.  [REVER na próxima aula o que ele diz sobre essa resposta.]
+
+
+
+	

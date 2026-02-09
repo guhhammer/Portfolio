@@ -1,0 +1,498 @@
+"C:\Program Files\Java\jdk-13.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2019.2.2\lib\idea_rt.jar=63995:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2019.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Gustavo\Desktop\trabalho3\out\production\trabalho03 main.main
+Recursive Quicksort [repeat=10] [arraysize=1000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=1000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=1000] [crescent] => [ 0:(16ms) 1:(0ms) 2:(0ms) 3:(15ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 3
+Random Recursive Mergesort [repeat=10] [arraysize=1000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=1000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Selectionsort [repeat=10] [arraysize=1000] [crescent] => [ 0:(63ms) 1:(46ms) 2:(16ms) 3:(15ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(15ms) 8:(16ms) 9:(16ms) ] Avg. Exec. Time = 23
+
+Recursive Quicksort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=1000] [decrescent] => [ 0:(16ms) 1:(16ms) 2:(0ms) 3:(16ms) 4:(15ms) 5:(31ms) 6:(16ms) 7:(0ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 14
+
+Recursive Quicksort [repeat=10] [arraysize=1000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=1000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=1000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=1000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=1000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 1
+Random Recursive Selectionsort [repeat=10] [arraysize=1000] [random] => [ 0:(15ms) 1:(16ms) 2:(15ms) 3:(16ms) 4:(15ms) 5:(16ms) 6:(16ms) 7:(16ms) 8:(15ms) 9:(15ms) ] Avg. Exec. Time = 15
+
+Recursive Quicksort [repeat=10] [arraysize=2000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=2000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=2000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=2000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=2000] [crescent] => [ 0:(0ms) 1:(15ms) 2:(0ms) 3:(16ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(16ms) 9:(0ms) ] Avg. Exec. Time = 4
+Random Recursive Selectionsort [repeat=10] [arraysize=2000] [crescent] => [ 0:(32ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(47ms) 5:(47ms) 6:(47ms) 7:(46ms) 8:(47ms) 9:(47ms) ] Avg. Exec. Time = 45
+
+Recursive Quicksort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(15ms) 3:(0ms) 4:(16ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 4
+Random Recursive Selectionsort [repeat=10] [arraysize=2000] [decrescent] => [ 0:(46ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(62ms) 5:(47ms) 6:(47ms) 7:(46ms) 8:(47ms) 9:(47ms) ] Avg. Exec. Time = 48
+
+Recursive Quicksort [repeat=10] [arraysize=2000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=2000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=2000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=2000] [random] => [ 0:(0ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Recursive Selectionsort [repeat=10] [arraysize=2000] [random] => [ 0:(15ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 4
+Random Recursive Selectionsort [repeat=10] [arraysize=2000] [random] => [ 0:(46ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(31ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(47ms) 9:(31ms) ] Avg. Exec. Time = 43
+
+Recursive Quicksort [repeat=10] [arraysize=5000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=5000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=5000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=5000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=5000] [crescent] => [ 0:(15ms) 1:(16ms) 2:(16ms) 3:(16ms) 4:(15ms) 5:(32ms) 6:(31ms) 7:(31ms) 8:(31ms) 9:(32ms) ] Avg. Exec. Time = 23
+Random Recursive Selectionsort [repeat=10] [arraysize=5000] [crescent] => [ 0:(203ms) 1:(203ms) 2:(188ms) 3:(204ms) 4:(203ms) 5:(203ms) 6:(203ms) 7:(203ms) 8:(187ms) 9:(203ms) ] Avg. Exec. Time = 200
+
+Recursive Quicksort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(16ms) 1:(31ms) 2:(31ms) 3:(32ms) 4:(31ms) 5:(31ms) 6:(31ms) 7:(32ms) 8:(31ms) 9:(31ms) ] Avg. Exec. Time = 29
+Random Recursive Selectionsort [repeat=10] [arraysize=5000] [decrescent] => [ 0:(203ms) 1:(187ms) 2:(203ms) 3:(203ms) 4:(250ms) 5:(203ms) 6:(203ms) 7:(203ms) 8:(218ms) 9:(203ms) ] Avg. Exec. Time = 207
+
+Recursive Quicksort [repeat=10] [arraysize=5000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=5000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=5000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=5000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=5000] [random] => [ 0:(31ms) 1:(16ms) 2:(15ms) 3:(15ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(15ms) 8:(16ms) 9:(31ms) ] Avg. Exec. Time = 18
+Random Recursive Selectionsort [repeat=10] [arraysize=5000] [random] => [ 0:(219ms) 1:(203ms) 2:(203ms) 3:(203ms) 4:(203ms) 5:(219ms) 6:(203ms) 7:(187ms) 8:(203ms) 9:(187ms) ] Avg. Exec. Time = 203
+
+Recursive Quicksort [repeat=10] [arraysize=10000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(16ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Quicksort [repeat=10] [arraysize=10000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=10000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=10000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=10000] [crescent] => [ 0:(110ms) 1:(93ms) 2:(94ms) 3:(109ms) 4:(109ms) 5:(94ms) 6:(94ms) 7:(109ms) 8:(109ms) 9:(94ms) ] Avg. Exec. Time = 101
+Random Recursive Selectionsort [repeat=10] [arraysize=10000] [crescent] => [ 0:(734ms) 1:(828ms) 2:(765ms) 3:(812ms) 4:(765ms) 5:(734ms) 6:(797ms) 7:(765ms) 8:(750ms) 9:(797ms) ] Avg. Exec. Time = 774
+
+Recursive Quicksort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 1
+Random Recursive Mergesort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(109ms) 1:(109ms) 2:(94ms) 3:(93ms) 4:(110ms) 5:(109ms) 6:(109ms) 7:(94ms) 8:(94ms) 9:(109ms) ] Avg. Exec. Time = 103
+Random Recursive Selectionsort [repeat=10] [arraysize=10000] [decrescent] => [ 0:(812ms) 1:(797ms) 2:(766ms) 3:(781ms) 4:(843ms) 5:(781ms) 6:(750ms) 7:(844ms) 8:(796ms) 9:(796ms) ] Avg. Exec. Time = 796
+
+Recursive Quicksort [repeat=10] [arraysize=10000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=10000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=10000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(15ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Mergesort [repeat=10] [arraysize=10000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=10000] [random] => [ 0:(109ms) 1:(94ms) 2:(93ms) 3:(94ms) 4:(109ms) 5:(94ms) 6:(94ms) 7:(109ms) 8:(110ms) 9:(109ms) ] Avg. Exec. Time = 101
+Random Recursive Selectionsort [repeat=10] [arraysize=10000] [random] => [ 0:(797ms) 1:(844ms) 2:(797ms) 3:(810ms) 4:(828ms) 5:(812ms) 6:(765ms) 7:(797ms) 8:(781ms) 9:(828ms) ] Avg. Exec. Time = 805
+
+Recursive Quicksort [repeat=10] [arraysize=20000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=20000] [crescent] => [ 0:(0ms) 1:(15ms) 2:(0ms) 3:(0ms) 4:(16ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 3
+Recursive Mergesort [repeat=10] [arraysize=20000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=20000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(16ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Recursive Selectionsort [repeat=10] [arraysize=20000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=20000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=20000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Recursive Mergesort [repeat=10] [arraysize=20000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=20000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=20000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=20000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Quicksort [repeat=10] [arraysize=20000] [random] => [ 0:(0ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(16ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 3
+Recursive Mergesort [repeat=10] [arraysize=20000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(16ms) 5:(0ms) 6:(16ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 3
+Random Recursive Mergesort [repeat=10] [arraysize=20000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(16ms) 7:(0ms) 8:(15ms) 9:(0ms) ] Avg. Exec. Time = 3
+Recursive Selectionsort [repeat=10] [arraysize=20000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Quicksort [repeat=10] [arraysize=50000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Mergesort [repeat=10] [arraysize=50000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Random Recursive Mergesort [repeat=10] [arraysize=50000] [crescent] => [ 0:(15ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(16ms) 5:(0ms) 6:(15ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 6
+Recursive Selectionsort [repeat=10] [arraysize=50000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(15ms) 5:(0ms) 6:(16ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 3
+Random Recursive Quicksort [repeat=10] [arraysize=50000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(15ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 3
+Recursive Mergesort [repeat=10] [arraysize=50000] [decrescent] => [ 0:(0ms) 1:(15ms) 2:(0ms) 3:(16ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(15ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 6
+Random Recursive Mergesort [repeat=10] [arraysize=50000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 0
+Recursive Selectionsort [repeat=10] [arraysize=50000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000] [random] => [ 0:(15ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(16ms) 5:(0ms) 6:(0ms) 7:(16ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 7
+Random Recursive Quicksort [repeat=10] [arraysize=50000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(15ms) 5:(0ms) 6:(0ms) 7:(16ms) 8:(0ms) 9:(15ms) ] Avg. Exec. Time = 4
+Recursive Mergesort [repeat=10] [arraysize=50000] [random] => [ 0:(16ms) 1:(0ms) 2:(0ms) 3:(16ms) 4:(16ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 7
+Random Recursive Mergesort [repeat=10] [arraysize=50000] [random] => [ 0:(0ms) 1:(0ms) 2:(15ms) 3:(16ms) 4:(0ms) 5:(0ms) 6:(15ms) 7:(16ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 6
+Recursive Selectionsort [repeat=10] [arraysize=50000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=100000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(15ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Quicksort [repeat=10] [arraysize=100000] [crescent] => [ 0:(16ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 4
+Recursive Mergesort [repeat=10] [arraysize=100000] [crescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 6
+Random Recursive Mergesort [repeat=10] [arraysize=100000] [crescent] => [ 0:(16ms) 1:(15ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(15ms) 6:(16ms) 7:(15ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 7
+Recursive Selectionsort [repeat=10] [arraysize=100000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=100000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=100000] [decrescent] => [ 0:(0ms) 1:(16ms) 2:(0ms) 3:(16ms) 4:(0ms) 5:(15ms) 6:(0ms) 7:(16ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 7
+Random Recursive Quicksort [repeat=10] [arraysize=100000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(0ms) 8:(15ms) 9:(0ms) ] Avg. Exec. Time = 4
+Recursive Mergesort [repeat=10] [arraysize=100000] [decrescent] => [ 0:(0ms) 1:(15ms) 2:(16ms) 3:(16ms) 4:(15ms) 5:(16ms) 6:(16ms) 7:(15ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 10
+Random Recursive Mergesort [repeat=10] [arraysize=100000] [decrescent] => [ 0:(0ms) 1:(16ms) 2:(16ms) 3:(15ms) 4:(0ms) 5:(0ms) 6:(16ms) 7:(15ms) 8:(16ms) 9:(0ms) ] Avg. Exec. Time = 9
+Recursive Selectionsort [repeat=10] [arraysize=100000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=100000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=100000] [random] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(16ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 6
+Random Recursive Quicksort [repeat=10] [arraysize=100000] [random] => [ 0:(0ms) 1:(15ms) 2:(16ms) 3:(16ms) 4:(15ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 7
+Recursive Mergesort [repeat=10] [arraysize=100000] [random] => [ 0:(15ms) 1:(16ms) 2:(15ms) 3:(16ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(16ms) 8:(15ms) 9:(31ms) ] Avg. Exec. Time = 17
+Random Recursive Mergesort [repeat=10] [arraysize=100000] [random] => [ 0:(16ms) 1:(16ms) 2:(16ms) 3:(15ms) 4:(16ms) 5:(31ms) 6:(16ms) 7:(16ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 17
+Recursive Selectionsort [repeat=10] [arraysize=100000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=100000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=200000] [crescent] => [ 0:(15ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(15ms) 6:(0ms) 7:(16ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 4
+Random Recursive Quicksort [repeat=10] [arraysize=200000] [crescent] => [ 0:(15ms) 1:(16ms) 2:(15ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(16ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 10
+Recursive Mergesort [repeat=10] [arraysize=200000] [crescent] => [ 0:(31ms) 1:(16ms) 2:(16ms) 3:(16ms) 4:(15ms) 5:(16ms) 6:(15ms) 7:(16ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 17
+Random Recursive Mergesort [repeat=10] [arraysize=200000] [crescent] => [ 0:(15ms) 1:(16ms) 2:(16ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(15ms) 7:(16ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 15
+Recursive Selectionsort [repeat=10] [arraysize=200000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=200000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=200000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(16ms) 3:(0ms) 4:(0ms) 5:(16ms) 6:(0ms) 7:(0ms) 8:(15ms) 9:(0ms) ] Avg. Exec. Time = 4
+Random Recursive Quicksort [repeat=10] [arraysize=200000] [decrescent] => [ 0:(0ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(16ms) 7:(0ms) 8:(0ms) 9:(16ms) ] Avg. Exec. Time = 3
+Recursive Mergesort [repeat=10] [arraysize=200000] [decrescent] => [ 0:(31ms) 1:(15ms) 2:(16ms) 3:(15ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(15ms) 8:(16ms) 9:(16ms) ] Avg. Exec. Time = 17
+Random Recursive Mergesort [repeat=10] [arraysize=200000] [decrescent] => [ 0:(16ms) 1:(16ms) 2:(15ms) 3:(0ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(15ms) 8:(16ms) 9:(16ms) ] Avg. Exec. Time = 14
+Recursive Selectionsort [repeat=10] [arraysize=200000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=200000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=200000] [random] => [ 0:(32ms) 1:(15ms) 2:(32ms) 3:(15ms) 4:(31ms) 5:(16ms) 6:(31ms) 7:(16ms) 8:(15ms) 9:(16ms) ] Avg. Exec. Time = 21
+Random Recursive Quicksort [repeat=10] [arraysize=200000] [random] => [ 0:(16ms) 1:(16ms) 2:(31ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(16ms) 7:(15ms) 8:(16ms) 9:(15ms) ] Avg. Exec. Time = 17
+Recursive Mergesort [repeat=10] [arraysize=200000] [random] => [ 0:(31ms) 1:(31ms) 2:(31ms) 3:(31ms) 4:(47ms) 5:(31ms) 6:(32ms) 7:(32ms) 8:(31ms) 9:(32ms) ] Avg. Exec. Time = 32
+Random Recursive Mergesort [repeat=10] [arraysize=200000] [random] => [ 0:(31ms) 1:(31ms) 2:(31ms) 3:(31ms) 4:(47ms) 5:(31ms) 6:(32ms) 7:(31ms) 8:(32ms) 9:(31ms) ] Avg. Exec. Time = 32
+Recursive Selectionsort [repeat=10] [arraysize=200000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=200000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=500000] [crescent] => [ 0:(16ms) 1:(0ms) 2:(0ms) 3:(0ms) 4:(0ms) 5:(0ms) 6:(0ms) 7:(0ms) 8:(0ms) 9:(0ms) ] Avg. Exec. Time = 1
+Random Recursive Quicksort [repeat=10] [arraysize=500000] [crescent] => [ 0:(16ms) 1:(31ms) 2:(16ms) 3:(16ms) 4:(16ms) 5:(31ms) 6:(32ms) 7:(15ms) 8:(15ms) 9:(32ms) ] Avg. Exec. Time = 22
+Recursive Mergesort [repeat=10] [arraysize=500000] [crescent] => [ 0:(47ms) 1:(31ms) 2:(47ms) 3:(47ms) 4:(47ms) 5:(32ms) 6:(47ms) 7:(47ms) 8:(32ms) 9:(47ms) ] Avg. Exec. Time = 42
+Random Recursive Mergesort [repeat=10] [arraysize=500000] [crescent] => [ 0:(47ms) 1:(47ms) 2:(31ms) 3:(47ms) 4:(47ms) 5:(47ms) 6:(46ms) 7:(47ms) 8:(63ms) 9:(47ms) ] Avg. Exec. Time = 46
+Recursive Selectionsort [repeat=10] [arraysize=500000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=500000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=500000] [decrescent] => [ 0:(16ms) 1:(15ms) 2:(16ms) 3:(16ms) 4:(16ms) 5:(15ms) 6:(16ms) 7:(16ms) 8:(16ms) 9:(16ms) ] Avg. Exec. Time = 15
+Random Recursive Quicksort [repeat=10] [arraysize=500000] [decrescent] => [ 0:(31ms) 1:(31ms) 2:(31ms) 3:(31ms) 4:(16ms) 5:(16ms) 6:(15ms) 7:(15ms) 8:(16ms) 9:(16ms) ] Avg. Exec. Time = 21
+Recursive Mergesort [repeat=10] [arraysize=500000] [decrescent] => [ 0:(46ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(31ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(47ms) 9:(46ms) ] Avg. Exec. Time = 45
+Random Recursive Mergesort [repeat=10] [arraysize=500000] [decrescent] => [ 0:(47ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(46ms) 5:(31ms) 6:(47ms) 7:(47ms) 8:(46ms) 9:(47ms) ] Avg. Exec. Time = 45
+Recursive Selectionsort [repeat=10] [arraysize=500000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=500000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=500000] [random] => [ 0:(47ms) 1:(62ms) 2:(47ms) 3:(46ms) 4:(47ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(47ms) 9:(46ms) ] Avg. Exec. Time = 48
+Random Recursive Quicksort [repeat=10] [arraysize=500000] [random] => [ 0:(47ms) 1:(47ms) 2:(47ms) 3:(47ms) 4:(47ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(47ms) 9:(47ms) ] Avg. Exec. Time = 47
+Recursive Mergesort [repeat=10] [arraysize=500000] [random] => [ 0:(94ms) 1:(94ms) 2:(78ms) 3:(94ms) 4:(93ms) 5:(94ms) 6:(94ms) 7:(79ms) 8:(94ms) 9:(94ms) ] Avg. Exec. Time = 90
+Random Recursive Mergesort [repeat=10] [arraysize=500000] [random] => [ 0:(93ms) 1:(94ms) 2:(93ms) 3:(94ms) 4:(94ms) 5:(94ms) 6:(93ms) 7:(94ms) 8:(93ms) 9:(94ms) ] Avg. Exec. Time = 93
+Recursive Selectionsort [repeat=10] [arraysize=500000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=500000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=1000000] [crescent] => [ 0:(31ms) 1:(31ms) 2:(31ms) 3:(31ms) 4:(32ms) 5:(15ms) 6:(32ms) 7:(31ms) 8:(15ms) 9:(16ms) ] Avg. Exec. Time = 26
+Random Recursive Quicksort [repeat=10] [arraysize=1000000] [crescent] => [ 0:(62ms) 1:(47ms) 2:(47ms) 3:(46ms) 4:(47ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(46ms) 9:(47ms) ] Avg. Exec. Time = 48
+Recursive Mergesort [repeat=10] [arraysize=1000000] [crescent] => [ 0:(94ms) 1:(93ms) 2:(94ms) 3:(94ms) 4:(78ms) 5:(78ms) 6:(78ms) 7:(78ms) 8:(78ms) 9:(94ms) ] Avg. Exec. Time = 85
+Random Recursive Mergesort [repeat=10] [arraysize=1000000] [crescent] => [ 0:(78ms) 1:(79ms) 2:(78ms) 3:(78ms) 4:(78ms) 5:(78ms) 6:(79ms) 7:(78ms) 8:(78ms) 9:(78ms) ] Avg. Exec. Time = 78
+Recursive Selectionsort [repeat=10] [arraysize=1000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=1000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=1000000] [decrescent] => [ 0:(47ms) 1:(32ms) 2:(31ms) 3:(32ms) 4:(31ms) 5:(47ms) 6:(31ms) 7:(31ms) 8:(31ms) 9:(31ms) ] Avg. Exec. Time = 34
+Random Recursive Quicksort [repeat=10] [arraysize=1000000] [decrescent] => [ 0:(63ms) 1:(62ms) 2:(63ms) 3:(62ms) 4:(63ms) 5:(47ms) 6:(47ms) 7:(47ms) 8:(62ms) 9:(63ms) ] Avg. Exec. Time = 57
+Recursive Mergesort [repeat=10] [arraysize=1000000] [decrescent] => [ 0:(93ms) 1:(79ms) 2:(78ms) 3:(78ms) 4:(78ms) 5:(93ms) 6:(94ms) 7:(78ms) 8:(78ms) 9:(78ms) ] Avg. Exec. Time = 82
+Random Recursive Mergesort [repeat=10] [arraysize=1000000] [decrescent] => [ 0:(78ms) 1:(94ms) 2:(94ms) 3:(94ms) 4:(93ms) 5:(78ms) 6:(94ms) 7:(94ms) 8:(78ms) 9:(78ms) ] Avg. Exec. Time = 87
+Recursive Selectionsort [repeat=10] [arraysize=1000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=1000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=1000000] [random] => [ 0:(93ms) 1:(94ms) 2:(94ms) 3:(93ms) 4:(94ms) 5:(94ms) 6:(94ms) 7:(94ms) 8:(109ms) 9:(110ms) ] Avg. Exec. Time = 96
+Random Recursive Quicksort [repeat=10] [arraysize=1000000] [random] => [ 0:(109ms) 1:(109ms) 2:(110ms) 3:(109ms) 4:(109ms) 5:(110ms) 6:(109ms) 7:(109ms) 8:(94ms) 9:(93ms) ] Avg. Exec. Time = 106
+Recursive Mergesort [repeat=10] [arraysize=1000000] [random] => [ 0:(172ms) 1:(187ms) 2:(187ms) 3:(172ms) 4:(172ms) 5:(188ms) 6:(172ms) 7:(172ms) 8:(187ms) 9:(219ms) ] Avg. Exec. Time = 182
+Random Recursive Mergesort [repeat=10] [arraysize=1000000] [random] => [ 0:(234ms) 1:(203ms) 2:(188ms) 3:(187ms) 4:(172ms) 5:(171ms) 6:(188ms) 7:(172ms) 8:(187ms) 9:(172ms) ] Avg. Exec. Time = 187
+Recursive Selectionsort [repeat=10] [arraysize=1000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=1000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=2000000] [crescent] => [ 0:(47ms) 1:(47ms) 2:(46ms) 3:(47ms) 4:(62ms) 5:(47ms) 6:(63ms) 7:(47ms) 8:(46ms) 9:(47ms) ] Avg. Exec. Time = 49
+Random Recursive Quicksort [repeat=10] [arraysize=2000000] [crescent] => [ 0:(94ms) 1:(93ms) 2:(94ms) 3:(93ms) 4:(94ms) 5:(94ms) 6:(94ms) 7:(94ms) 8:(94ms) 9:(109ms) ] Avg. Exec. Time = 95
+Recursive Mergesort [repeat=10] [arraysize=2000000] [crescent] => [ 0:(156ms) 1:(141ms) 2:(156ms) 3:(156ms) 4:(156ms) 5:(141ms) 6:(141ms) 7:(141ms) 8:(156ms) 9:(156ms) ] Avg. Exec. Time = 150
+Random Recursive Mergesort [repeat=10] [arraysize=2000000] [crescent] => [ 0:(156ms) 1:(156ms) 2:(156ms) 3:(140ms) 4:(141ms) 5:(157ms) 6:(156ms) 7:(172ms) 8:(156ms) 9:(156ms) ] Avg. Exec. Time = 154
+Recursive Selectionsort [repeat=10] [arraysize=2000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=2000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=2000000] [decrescent] => [ 0:(63ms) 1:(63ms) 2:(62ms) 3:(63ms) 4:(62ms) 5:(78ms) 6:(63ms) 7:(78ms) 8:(62ms) 9:(63ms) ] Avg. Exec. Time = 65
+Random Recursive Quicksort [repeat=10] [arraysize=2000000] [decrescent] => [ 0:(125ms) 1:(125ms) 2:(109ms) 3:(109ms) 4:(125ms) 5:(109ms) 6:(125ms) 7:(110ms) 8:(110ms) 9:(109ms) ] Avg. Exec. Time = 115
+Recursive Mergesort [repeat=10] [arraysize=2000000] [decrescent] => [ 0:(140ms) 1:(156ms) 2:(157ms) 3:(156ms) 4:(156ms) 5:(141ms) 6:(141ms) 7:(156ms) 8:(141ms) 9:(141ms) ] Avg. Exec. Time = 148
+Random Recursive Mergesort [repeat=10] [arraysize=2000000] [decrescent] => [ 0:(157ms) 1:(156ms) 2:(156ms) 3:(156ms) 4:(156ms) 5:(157ms) 6:(156ms) 7:(172ms) 8:(140ms) 9:(157ms) ] Avg. Exec. Time = 156
+Recursive Selectionsort [repeat=10] [arraysize=2000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=2000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=2000000] [random] => [ 0:(218ms) 1:(219ms) 2:(218ms) 3:(203ms) 4:(218ms) 5:(219ms) 6:(234ms) 7:(219ms) 8:(219ms) 9:(218ms) ] Avg. Exec. Time = 218
+Random Recursive Quicksort [repeat=10] [arraysize=2000000] [random] => [ 0:(203ms) 1:(218ms) 2:(219ms) 3:(219ms) 4:(218ms) 5:(219ms) 6:(219ms) 7:(219ms) 8:(203ms) 9:(203ms) ] Avg. Exec. Time = 214
+Recursive Mergesort [repeat=10] [arraysize=2000000] [random] => [ 0:(359ms) 1:(359ms) 2:(359ms) 3:(360ms) 4:(359ms) 5:(359ms) 6:(360ms) 7:(359ms) 8:(343ms) 9:(344ms) ] Avg. Exec. Time = 356
+Random Recursive Mergesort [repeat=10] [arraysize=2000000] [random] => [ 0:(359ms) 1:(360ms) 2:(359ms) 3:(359ms) 4:(360ms) 5:(359ms) 6:(343ms) 7:(359ms) 8:(359ms) 9:(344ms) ] Avg. Exec. Time = 356
+Recursive Selectionsort [repeat=10] [arraysize=2000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=2000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=5000000] [crescent] => [ 0:(125ms) 1:(125ms) 2:(125ms) 3:(140ms) 4:(141ms) 5:(140ms) 6:(125ms) 7:(125ms) 8:(141ms) 9:(125ms) ] Avg. Exec. Time = 131
+Random Recursive Quicksort [repeat=10] [arraysize=5000000] [crescent] => [ 0:(265ms) 1:(266ms) 2:(281ms) 3:(250ms) 4:(266ms) 5:(281ms) 6:(234ms) 7:(250ms) 8:(265ms) 9:(265ms) ] Avg. Exec. Time = 262
+Recursive Mergesort [repeat=10] [arraysize=5000000] [crescent] => [ 0:(391ms) 1:(390ms) 2:(391ms) 3:(390ms) 4:(391ms) 5:(391ms) 6:(390ms) 7:(407ms) 8:(375ms) 9:(390ms) ] Avg. Exec. Time = 390
+Random Recursive Mergesort [repeat=10] [arraysize=5000000] [crescent] => [ 0:(391ms) 1:(407ms) 2:(421ms) 3:(375ms) 4:(406ms) 5:(406ms) 6:(391ms) 7:(391ms) 8:(406ms) 9:(390ms) ] Avg. Exec. Time = 398
+Recursive Selectionsort [repeat=10] [arraysize=5000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=5000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=5000000] [decrescent] => [ 0:(172ms) 1:(172ms) 2:(172ms) 3:(172ms) 4:(172ms) 5:(172ms) 6:(171ms) 7:(188ms) 8:(172ms) 9:(172ms) ] Avg. Exec. Time = 173
+Random Recursive Quicksort [repeat=10] [arraysize=5000000] [decrescent] => [ 0:(296ms) 1:(297ms) 2:(312ms) 3:(297ms) 4:(312ms) 5:(297ms) 6:(297ms) 7:(312ms) 8:(313ms) 9:(312ms) ] Avg. Exec. Time = 304
+Recursive Mergesort [repeat=10] [arraysize=5000000] [decrescent] => [ 0:(406ms) 1:(375ms) 2:(390ms) 3:(391ms) 4:(375ms) 5:(375ms) 6:(390ms) 7:(391ms) 8:(374ms) 9:(391ms) ] Avg. Exec. Time = 385
+Random Recursive Mergesort [repeat=10] [arraysize=5000000] [decrescent] => [ 0:(390ms) 1:(375ms) 2:(421ms) 3:(391ms) 4:(375ms) 5:(390ms) 6:(375ms) 7:(390ms) 8:(375ms) 9:(391ms) ] Avg. Exec. Time = 387
+Recursive Selectionsort [repeat=10] [arraysize=5000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=5000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=5000000] [random] => [ 0:(578ms) 1:(593ms) 2:(594ms) 3:(578ms) 4:(594ms) 5:(578ms) 6:(578ms) 7:(578ms) 8:(578ms) 9:(578ms) ] Avg. Exec. Time = 582
+Random Recursive Quicksort [repeat=10] [arraysize=5000000] [random] => [ 0:(562ms) 1:(562ms) 2:(578ms) 3:(578ms) 4:(578ms) 5:(578ms) 6:(562ms) 7:(562ms) 8:(578ms) 9:(578ms) ] Avg. Exec. Time = 571
+Recursive Mergesort [repeat=10] [arraysize=5000000] [random] => [ 0:(937ms) 1:(922ms) 2:(921ms) 3:(922ms) 4:(937ms) 5:(921ms) 6:(922ms) 7:(922ms) 8:(922ms) 9:(921ms) ] Avg. Exec. Time = 924
+Random Recursive Mergesort [repeat=10] [arraysize=5000000] [random] => [ 0:(937ms) 1:(922ms) 2:(907ms) 3:(906ms) 4:(922ms) 5:(922ms) 6:(922ms) 7:(938ms) 8:(922ms) 9:(922ms) ] Avg. Exec. Time = 922
+Recursive Selectionsort [repeat=10] [arraysize=5000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=5000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=10000000] [crescent] => [ 0:(265ms) 1:(265ms) 2:(282ms) 3:(265ms) 4:(266ms) 5:(265ms) 6:(266ms) 7:(250ms) 8:(266ms) 9:(266ms) ] Avg. Exec. Time = 265
+Random Recursive Quicksort [repeat=10] [arraysize=10000000] [crescent] => [ 0:(531ms) 1:(500ms) 2:(531ms) 3:(531ms) 4:(531ms) 5:(531ms) 6:(516ms) 7:(531ms) 8:(516ms) 9:(516ms) ] Avg. Exec. Time = 523
+Recursive Mergesort [repeat=10] [arraysize=10000000] [crescent] => [ 0:(812ms) 1:(782ms) 2:(797ms) 3:(782ms) 4:(781ms) 5:(797ms) 6:(766ms) 7:(814ms) 8:(781ms) 9:(781ms) ] Avg. Exec. Time = 789
+Random Recursive Mergesort [repeat=10] [arraysize=10000000] [crescent] => [ 0:(781ms) 1:(781ms) 2:(781ms) 3:(813ms) 4:(781ms) 5:(781ms) 6:(797ms) 7:(797ms) 8:(781ms) 9:(797ms) ] Avg. Exec. Time = 789
+Recursive Selectionsort [repeat=10] [arraysize=10000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=10000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=10000000] [decrescent] => [ 0:(359ms) 1:(359ms) 2:(359ms) 3:(360ms) 4:(328ms) 5:(344ms) 6:(359ms) 7:(328ms) 8:(344ms) 9:(359ms) ] Avg. Exec. Time = 349
+Random Recursive Quicksort [repeat=10] [arraysize=10000000] [decrescent] => [ 0:(625ms) 1:(609ms) 2:(609ms) 3:(610ms) 4:(609ms) 5:(625ms) 6:(609ms) 7:(609ms) 8:(593ms) 9:(625ms) ] Avg. Exec. Time = 612
+Recursive Mergesort [repeat=10] [arraysize=10000000] [decrescent] => [ 0:(781ms) 1:(766ms) 2:(750ms) 3:(766ms) 4:(765ms) 5:(765ms) 6:(765ms) 7:(766ms) 8:(766ms) 9:(750ms) ] Avg. Exec. Time = 764
+Random Recursive Mergesort [repeat=10] [arraysize=10000000] [decrescent] => [ 0:(766ms) 1:(750ms) 2:(765ms) 3:(765ms) 4:(813ms) 5:(750ms) 6:(766ms) 7:(797ms) 8:(749ms) 9:(734ms) ] Avg. Exec. Time = 765
+Recursive Selectionsort [repeat=10] [arraysize=10000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=10000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=10000000] [random] => [ 0:(1219ms) 1:(1218ms) 2:(1203ms) 3:(1187ms) 4:(1203ms) 5:(1187ms) 6:(1203ms) 7:(1218ms) 8:(1203ms) 9:(1219ms) ] Avg. Exec. Time = 1206
+Random Recursive Quicksort [repeat=10] [arraysize=10000000] [random] => [ 0:(1187ms) 1:(1172ms) 2:(1187ms) 3:(1187ms) 4:(1187ms) 5:(1187ms) 6:(1187ms) 7:(1203ms) 8:(1203ms) 9:(1172ms) ] Avg. Exec. Time = 1187
+Recursive Mergesort [repeat=10] [arraysize=10000000] [random] => [ 0:(1921ms) 1:(2030ms) 2:(1906ms) 3:(1906ms) 4:(1906ms) 5:(1905ms) 6:(1922ms) 7:(1921ms) 8:(1906ms) 9:(1891ms) ] Avg. Exec. Time = 1921
+Random Recursive Mergesort [repeat=10] [arraysize=10000000] [random] => [ 0:(1922ms) 1:(1937ms) 2:(1952ms) 3:(1953ms) 4:(1906ms) 5:(1891ms) 6:(1890ms) 7:(1921ms) 8:(1906ms) 9:(1890ms) ] Avg. Exec. Time = 1916
+Recursive Selectionsort [repeat=10] [arraysize=10000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=10000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=20000000] [crescent] => [ 0:(562ms) 1:(547ms) 2:(546ms) 3:(547ms) 4:(531ms) 5:(547ms) 6:(531ms) 7:(547ms) 8:(531ms) 9:(547ms) ] Avg. Exec. Time = 543
+Random Recursive Quicksort [repeat=10] [arraysize=20000000] [crescent] => [ 0:(1077ms) 1:(1078ms) 2:(1078ms) 3:(1047ms) 4:(1015ms) 5:(984ms) 6:(1016ms) 7:(1015ms) 8:(1016ms) 9:(1000ms) ] Avg. Exec. Time = 1032
+Recursive Mergesort [repeat=10] [arraysize=20000000] [crescent] => [ 0:(1624ms) 1:(1609ms) 2:(1593ms) 3:(1593ms) 4:(1593ms) 5:(1593ms) 6:(1609ms) 7:(1624ms) 8:(1593ms) 9:(1590ms) ] Avg. Exec. Time = 1602
+Random Recursive Mergesort [repeat=10] [arraysize=20000000] [crescent] => [ 0:(1578ms) 1:(1640ms) 2:(1593ms) 3:(1625ms) 4:(1625ms) 5:(1624ms) 6:(1594ms) 7:(1563ms) 8:(1640ms) 9:(1609ms) ] Avg. Exec. Time = 1609
+Recursive Selectionsort [repeat=10] [arraysize=20000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=20000000] [decrescent] => [ 0:(734ms) 1:(719ms) 2:(718ms) 3:(703ms) 4:(718ms) 5:(719ms) 6:(719ms) 7:(718ms) 8:(719ms) 9:(718ms) ] Avg. Exec. Time = 718
+Random Recursive Quicksort [repeat=10] [arraysize=20000000] [decrescent] => [ 0:(1234ms) 1:(1156ms) 2:(1203ms) 3:(1172ms) 4:(1203ms) 5:(1187ms) 6:(1172ms) 7:(1187ms) 8:(1172ms) 9:(1187ms) ] Avg. Exec. Time = 1187
+Recursive Mergesort [repeat=10] [arraysize=20000000] [decrescent] => [ 0:(1516ms) 1:(1547ms) 2:(1516ms) 3:(1531ms) 4:(1531ms) 5:(1531ms) 6:(1531ms) 7:(1531ms) 8:(1531ms) 9:(1531ms) ] Avg. Exec. Time = 1529
+Random Recursive Mergesort [repeat=10] [arraysize=20000000] [decrescent] => [ 0:(1531ms) 1:(1531ms) 2:(1562ms) 3:(1563ms) 4:(1593ms) 5:(1546ms) 6:(1515ms) 7:(1562ms) 8:(1578ms) 9:(1562ms) ] Avg. Exec. Time = 1554
+Recursive Selectionsort [repeat=10] [arraysize=20000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=20000000] [random] => [ 0:(2546ms) 1:(2515ms) 2:(2515ms) 3:(2499ms) 4:(2515ms) 5:(2499ms) 6:(2515ms) 7:(2499ms) 8:(2500ms) 9:(2500ms) ] Avg. Exec. Time = 2510
+Random Recursive Quicksort [repeat=10] [arraysize=20000000] [random] => [ 0:(2375ms) 1:(2405ms) 2:(2406ms) 3:(2390ms) 4:(2390ms) 5:(2390ms) 6:(2374ms) 7:(2421ms) 8:(2421ms) 9:(2406ms) ] Avg. Exec. Time = 2397
+Recursive Mergesort [repeat=10] [arraysize=20000000] [random] => [ 0:(3999ms) 1:(3999ms) 2:(3999ms) 3:(4015ms) 4:(4015ms) 5:(3999ms) 6:(4034ms) 7:(4030ms) 8:(4015ms) 9:(4015ms) ] Avg. Exec. Time = 4012
+Random Recursive Mergesort [repeat=10] [arraysize=20000000] [random] => [ 0:(3968ms) 1:(4030ms) 2:(3921ms) 3:(3968ms) 4:(3936ms) 5:(3905ms) 6:(3999ms) 7:(4046ms) 8:(3968ms) 9:(4014ms) ] Avg. Exec. Time = 3975
+Recursive Selectionsort [repeat=10] [arraysize=20000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=20000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=30000000] [crescent] => [ 0:(859ms) 1:(828ms) 2:(828ms) 3:(829ms) 4:(827ms) 5:(828ms) 6:(828ms) 7:(828ms) 8:(828ms) 9:(828ms) ] Avg. Exec. Time = 831
+Random Recursive Quicksort [repeat=10] [arraysize=30000000] [crescent] => [ 0:(1500ms) 1:(1562ms) 2:(1562ms) 3:(1515ms) 4:(1546ms) 5:(1500ms) 6:(1531ms) 7:(1531ms) 8:(1515ms) 9:(1500ms) ] Avg. Exec. Time = 1526
+Recursive Mergesort [repeat=10] [arraysize=30000000] [crescent] => [ 0:(2515ms) 1:(2469ms) 2:(2468ms) 3:(2468ms) 4:(2468ms) 5:(2452ms) 6:(2746ms) 7:(2640ms) 8:(2484ms) 9:(2452ms) ] Avg. Exec. Time = 2516
+Random Recursive Mergesort [repeat=10] [arraysize=30000000] [crescent] => [ 0:(2515ms) 1:(2500ms) 2:(2515ms) 3:(2515ms) 4:(2516ms) 5:(2531ms) 6:(2515ms) 7:(2531ms) 8:(2499ms) 9:(2531ms) ] Avg. Exec. Time = 2516
+Recursive Selectionsort [repeat=10] [arraysize=30000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=30000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=30000000] [decrescent] => [ 0:(1125ms) 1:(1077ms) 2:(1063ms) 3:(1078ms) 4:(1062ms) 5:(1078ms) 6:(1062ms) 7:(1094ms) 8:(1062ms) 9:(1062ms) ] Avg. Exec. Time = 1076
+Random Recursive Quicksort [repeat=10] [arraysize=30000000] [decrescent] => [ 0:(1781ms) 1:(1859ms) 2:(1797ms) 3:(1765ms) 4:(1796ms) 5:(1766ms) 6:(1780ms) 7:(1797ms) 8:(1766ms) 9:(1828ms) ] Avg. Exec. Time = 1793
+Recursive Mergesort [repeat=10] [arraysize=30000000] [decrescent] => [ 0:(2406ms) 1:(2359ms) 2:(2389ms) 3:(2375ms) 4:(2375ms) 5:(2391ms) 6:(2375ms) 7:(2359ms) 8:(2374ms) 9:(2374ms) ] Avg. Exec. Time = 2377
+Random Recursive Mergesort [repeat=10] [arraysize=30000000] [decrescent] => [ 0:(2452ms) 1:(2468ms) 2:(2469ms) 3:(2406ms) 4:(2483ms) 5:(2437ms) 6:(2422ms) 7:(2437ms) 8:(2374ms) 9:(2437ms) ] Avg. Exec. Time = 2438
+Recursive Selectionsort [repeat=10] [arraysize=30000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=30000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=30000000] [random] => [ 0:(3812ms) 1:(3764ms) 2:(3765ms) 3:(3765ms) 4:(3796ms) 5:(3765ms) 6:(3764ms) 7:(3781ms) 8:(3764ms) 9:(3765ms) ] Avg. Exec. Time = 3774
+Random Recursive Quicksort [repeat=10] [arraysize=30000000] [random] => [ 0:(3702ms) 1:(3718ms) 2:(3702ms) 3:(3671ms) 4:(3703ms) 5:(3671ms) 6:(3671ms) 7:(3656ms) 8:(3703ms) 9:(3671ms) ] Avg. Exec. Time = 3686
+Recursive Mergesort [repeat=10] [arraysize=30000000] [random] => [ 0:(6076ms) 1:(6077ms) 2:(6077ms) 3:(6077ms) 4:(6076ms) 5:(6077ms) 6:(6061ms) 7:(6076ms) 8:(6077ms) 9:(6077ms) ] Avg. Exec. Time = 6075
+Random Recursive Mergesort [repeat=10] [arraysize=30000000] [random] => [ 0:(6148ms) 1:(6078ms) 2:(6092ms) 3:(6124ms) 4:(6108ms) 5:(6092ms) 6:(6123ms) 7:(6139ms) 8:(6092ms) 9:(6108ms) ] Avg. Exec. Time = 6110
+Recursive Selectionsort [repeat=10] [arraysize=30000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=30000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=40000000] [crescent] => [ 0:(1172ms) 1:(1125ms) 2:(1124ms) 3:(1125ms) 4:(1125ms) 5:(1124ms) 6:(1125ms) 7:(1125ms) 8:(1125ms) 9:(1124ms) ] Avg. Exec. Time = 1129
+Random Recursive Quicksort [repeat=10] [arraysize=40000000] [crescent] => [ 0:(2062ms) 1:(2109ms) 2:(2125ms) 3:(2093ms) 4:(2046ms) 5:(2047ms) 6:(2109ms) 7:(2109ms) 8:(2046ms) 9:(2062ms) ] Avg. Exec. Time = 2080
+Recursive Mergesort [repeat=10] [arraysize=40000000] [crescent] => [ 0:(3509ms) 1:(3452ms) 2:(3421ms) 3:(3437ms) 4:(3462ms) 5:(3399ms) 6:(3432ms) 7:(3417ms) 8:(3432ms) 9:(3433ms) ] Avg. Exec. Time = 3439
+Random Recursive Mergesort [repeat=10] [arraysize=40000000] [crescent] => [ 0:(3296ms) 1:(3370ms) 2:(3323ms) 3:(3370ms) 4:(3510ms) 5:(3417ms) 6:(3510ms) 7:(3511ms) 8:(3464ms) 9:(3369ms) ] Avg. Exec. Time = 3414
+Recursive Selectionsort [repeat=10] [arraysize=40000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=40000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=40000000] [decrescent] => [ 0:(1484ms) 1:(1448ms) 2:(1448ms) 3:(1448ms) 4:(1448ms) 5:(1449ms) 6:(1448ms) 7:(1448ms) 8:(1448ms) 9:(1448ms) ] Avg. Exec. Time = 1451
+Random Recursive Quicksort [repeat=10] [arraysize=40000000] [decrescent] => [ 0:(2451ms) 1:(2511ms) 2:(2432ms) 3:(2386ms) 4:(2448ms) 5:(2432ms) 6:(2370ms) 7:(2463ms) 8:(2417ms) 9:(2385ms) ] Avg. Exec. Time = 2429
+Recursive Mergesort [repeat=10] [arraysize=40000000] [decrescent] => [ 0:(3265ms) 1:(3277ms) 2:(3261ms) 3:(3261ms) 4:(3276ms) 5:(3292ms) 6:(3276ms) 7:(3260ms) 8:(3245ms) 9:(3268ms) ] Avg. Exec. Time = 3268
+Random Recursive Mergesort [repeat=10] [arraysize=40000000] [decrescent] => [ 0:(3375ms) 1:(3213ms) 2:(3401ms) 3:(3213ms) 4:(3260ms) 5:(3230ms) 6:(3323ms) 7:(3401ms) 8:(3198ms) 9:(3416ms) ] Avg. Exec. Time = 3303
+Recursive Selectionsort [repeat=10] [arraysize=40000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=40000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=40000000] [random] => [ 0:(5263ms) 1:(5208ms) 2:(5198ms) 3:(5198ms) 4:(5198ms) 5:(5204ms) 6:(5197ms) 7:(5198ms) 8:(5213ms) 9:(5217ms) ] Avg. Exec. Time = 5209
+Random Recursive Quicksort [repeat=10] [arraysize=40000000] [random] => [ 0:(4964ms) 1:(4979ms) 2:(4990ms) 3:(4967ms) 4:(4948ms) 5:(4963ms) 6:(4963ms) 7:(4963ms) 8:(4932ms) 9:(4963ms) ] Avg. Exec. Time = 4963
+Recursive Mergesort [repeat=10] [arraysize=40000000] [random] => [ 0:(8277ms) 1:(8290ms) 2:(8290ms) 3:(8290ms) 4:(8290ms) 5:(8306ms) 6:(8291ms) 7:(8291ms) 8:(8291ms) 9:(8275ms) ] Avg. Exec. Time = 8289
+Random Recursive Mergesort [repeat=10] [arraysize=40000000] [random] => [ 0:(8181ms) 1:(8400ms) 2:(8290ms) 3:(8181ms) 4:(8369ms) 5:(8159ms) 6:(8415ms) 7:(8208ms) 8:(8431ms) 9:(8306ms) ] Avg. Exec. Time = 8294
+Recursive Selectionsort [repeat=10] [arraysize=40000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=40000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000000] [crescent] => [ 0:(1479ms) 1:(1417ms) 2:(1402ms) 3:(1417ms) 4:(1417ms) 5:(1417ms) 6:(1417ms) 7:(1417ms) 8:(1417ms) 9:(1416ms) ] Avg. Exec. Time = 1421
+Random Recursive Quicksort [repeat=10] [arraysize=50000000] [crescent] => [ 0:(2562ms) 1:(2573ms) 2:(2635ms) 3:(2573ms) 4:(2573ms) 5:(2620ms) 6:(2558ms) 7:(2604ms) 8:(2605ms) 9:(2588ms) ] Avg. Exec. Time = 2589
+Recursive Mergesort [repeat=10] [arraysize=50000000] [crescent] => [ 0:(4343ms) 1:(4245ms) 2:(4244ms) 3:(4229ms) 4:(4229ms) 5:(4260ms) 6:(4229ms) 7:(4229ms) 8:(4245ms) 9:(4244ms) ] Avg. Exec. Time = 4249
+Random Recursive Mergesort [repeat=10] [arraysize=50000000] [crescent] => [ 0:(4311ms) 1:(4323ms) 2:(4276ms) 3:(4209ms) 4:(4322ms) 5:(4260ms) 6:(4322ms) 7:(4261ms) 8:(4307ms) 9:(4213ms) ] Avg. Exec. Time = 4280
+Recursive Selectionsort [repeat=10] [arraysize=50000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000000] [decrescent] => [ 0:(1890ms) 1:(1824ms) 2:(1808ms) 3:(1966ms) 4:(1843ms) 5:(1859ms) 6:(1843ms) 7:(1890ms) 8:(1859ms) 9:(1828ms) ] Avg. Exec. Time = 1861
+Random Recursive Quicksort [repeat=10] [arraysize=50000000] [decrescent] => [ 0:(3062ms) 1:(2984ms) 2:(3046ms) 3:(3062ms) 4:(2968ms) 5:(3117ms) 6:(3031ms) 7:(3061ms) 8:(3078ms) 9:(3093ms) ] Avg. Exec. Time = 3050
+Recursive Mergesort [repeat=10] [arraysize=50000000] [decrescent] => [ 0:(4124ms) 1:(4108ms) 2:(4108ms) 3:(4108ms) 4:(4108ms) 5:(4124ms) 6:(4093ms) 7:(4108ms) 8:(4108ms) 9:(4093ms) ] Avg. Exec. Time = 4108
+Random Recursive Mergesort [repeat=10] [arraysize=50000000] [decrescent] => [ 0:(4124ms) 1:(4233ms) 2:(4186ms) 3:(4233ms) 4:(4234ms) 5:(4203ms) 6:(4140ms) 7:(4234ms) 8:(4125ms) 9:(4249ms) ] Avg. Exec. Time = 4196
+Recursive Selectionsort [repeat=10] [arraysize=50000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=50000000] [random] => [ 0:(6577ms) 1:(6499ms) 2:(6483ms) 3:(6482ms) 4:(6483ms) 5:(6483ms) 6:(6498ms) 7:(6483ms) 8:(6499ms) 9:(6482ms) ] Avg. Exec. Time = 6496
+Random Recursive Quicksort [repeat=10] [arraysize=50000000] [random] => [ 0:(6280ms) 1:(6280ms) 2:(6305ms) 3:(6295ms) 4:(6280ms) 5:(6264ms) 6:(6311ms) 7:(6264ms) 8:(6295ms) 9:(6342ms) ] Avg. Exec. Time = 6291
+Recursive Mergesort [repeat=10] [arraysize=50000000] [random] => [ 0:(10520ms) 1:(10435ms) 2:(10451ms) 3:(10419ms) 4:(10420ms) 5:(10497ms) 6:(10404ms) 7:(10388ms) 8:(10419ms) 9:(10404ms) ] Avg. Exec. Time = 10435
+Random Recursive Mergesort [repeat=10] [arraysize=50000000] [random] => [ 0:(10467ms) 1:(10435ms) 2:(10435ms) 3:(10513ms) 4:(10529ms) 5:(10482ms) 6:(10560ms) 7:(10490ms) 8:(10544ms) 9:(10576ms) ] Avg. Exec. Time = 10503
+Recursive Selectionsort [repeat=10] [arraysize=50000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=50000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=60000000] [crescent] => [ 0:(1750ms) 1:(1671ms) 2:(1672ms) 3:(1656ms) 4:(1673ms) 5:(1656ms) 6:(1672ms) 7:(1671ms) 8:(1672ms) 9:(1671ms) ] Avg. Exec. Time = 1676
+Random Recursive Quicksort [repeat=10] [arraysize=60000000] [crescent] => [ 0:(3125ms) 1:(3202ms) 2:(3124ms) 3:(3186ms) 4:(3234ms) 5:(3109ms) 6:(3202ms) 7:(3281ms) 8:(3124ms) 9:(3109ms) ] Avg. Exec. Time = 3169
+Recursive Mergesort [repeat=10] [arraysize=60000000] [crescent] => [ 0:(5201ms) 1:(5093ms) 2:(5108ms) 3:(5108ms) 4:(5092ms) 5:(5108ms) 6:(5108ms) 7:(5162ms) 8:(5077ms) 9:(5092ms) ] Avg. Exec. Time = 5114
+Random Recursive Mergesort [repeat=10] [arraysize=60000000] [crescent] => [ 0:(5186ms) 1:(5202ms) 2:(5264ms) 3:(5217ms) 4:(5202ms) 5:(5233ms) 6:(5296ms) 7:(5186ms) 8:(5187ms) 9:(5233ms) ] Avg. Exec. Time = 5220
+Recursive Selectionsort [repeat=10] [arraysize=60000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=60000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=60000000] [decrescent] => [ 0:(2296ms) 1:(2218ms) 2:(2219ms) 3:(2202ms) 4:(2202ms) 5:(2203ms) 6:(2203ms) 7:(2203ms) 8:(2202ms) 9:(2218ms) ] Avg. Exec. Time = 2216
+Random Recursive Quicksort [repeat=10] [arraysize=60000000] [decrescent] => [ 0:(3656ms) 1:(3733ms) 2:(3656ms) 3:(3609ms) 4:(3655ms) 5:(3671ms) 6:(3765ms) 7:(3671ms) 8:(3655ms) 9:(3671ms) ] Avg. Exec. Time = 3674
+Recursive Mergesort [repeat=10] [arraysize=60000000] [decrescent] => [ 0:(4936ms) 1:(4890ms) 2:(4936ms) 3:(4889ms) 4:(4936ms) 5:(4920ms) 6:(4921ms) 7:(4921ms) 8:(4920ms) 9:(4936ms) ] Avg. Exec. Time = 4920
+Random Recursive Mergesort [repeat=10] [arraysize=60000000] [decrescent] => [ 0:(4968ms) 1:(5134ms) 2:(5108ms) 3:(5093ms) 4:(5046ms) 5:(4952ms) 6:(5108ms) 7:(5046ms) 8:(5139ms) 9:(5092ms) ] Avg. Exec. Time = 5068
+Recursive Selectionsort [repeat=10] [arraysize=60000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=60000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=60000000] [random] => [ 0:(8077ms) 1:(7998ms) 2:(7982ms) 3:(7998ms) 4:(7983ms) 5:(7967ms) 6:(7982ms) 7:(7983ms) 8:(7983ms) 9:(7967ms) ] Avg. Exec. Time = 7992
+Random Recursive Quicksort [repeat=10] [arraysize=60000000] [random] => [ 0:(7576ms) 1:(7655ms) 2:(7670ms) 3:(7639ms) 4:(7554ms) 5:(7612ms) 6:(7608ms) 7:(7608ms) 8:(7592ms) 9:(7647ms) ] Avg. Exec. Time = 7616
+Recursive Mergesort [repeat=10] [arraysize=60000000] [random] => [ 0:(12591ms) 1:(12575ms) 2:(12575ms) 3:(12591ms) 4:(12622ms) 5:(12576ms) 6:(12607ms) 7:(12576ms) 8:(12575ms) 9:(12591ms) ] Avg. Exec. Time = 12587
+Random Recursive Mergesort [repeat=10] [arraysize=60000000] [random] => [ 0:(12747ms) 1:(12747ms) 2:(12747ms) 3:(12802ms) 4:(12747ms) 5:(12684ms) 6:(12871ms) 7:(12654ms) 8:(12653ms) 9:(12731ms) ] Avg. Exec. Time = 12738
+Recursive Selectionsort [repeat=10] [arraysize=60000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=60000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=70000000] [crescent] => [ 0:(1952ms) 1:(1952ms) 2:(1953ms) 3:(1953ms) 4:(1952ms) 5:(1953ms) 6:(1953ms) 7:(1952ms) 8:(1953ms) 9:(1937ms) ] Avg. Exec. Time = 1951
+Random Recursive Quicksort [repeat=10] [arraysize=70000000] [crescent] => [ 0:(3733ms) 1:(3671ms) 2:(3656ms) 3:(3733ms) 4:(3593ms) 5:(3702ms) 6:(3593ms) 7:(3687ms) 8:(3655ms) 9:(3687ms) ] Avg. Exec. Time = 3671
+Recursive Mergesort [repeat=10] [arraysize=70000000] [crescent] => [ 0:(6327ms) 1:(6233ms) 2:(6248ms) 3:(6248ms) 4:(6264ms) 5:(6249ms) 6:(6233ms) 7:(6248ms) 8:(6280ms) 9:(6280ms) ] Avg. Exec. Time = 6261
+Random Recursive Mergesort [repeat=10] [arraysize=70000000] [crescent] => [ 0:(6389ms) 1:(6086ms) 2:(6358ms) 3:(6093ms) 4:(6030ms) 5:(6170ms) 6:(6295ms) 7:(6092ms) 8:(6373ms) 9:(6342ms) ] Avg. Exec. Time = 6222
+Recursive Selectionsort [repeat=10] [arraysize=70000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=70000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=70000000] [decrescent] => [ 0:(2703ms) 1:(2656ms) 2:(2593ms) 3:(2609ms) 4:(2625ms) 5:(2608ms) 6:(2609ms) 7:(2609ms) 8:(2624ms) 9:(2609ms) ] Avg. Exec. Time = 2624
+Random Recursive Quicksort [repeat=10] [arraysize=70000000] [decrescent] => [ 0:(4452ms) 1:(4421ms) 2:(4359ms) 3:(4312ms) 4:(4295ms) 5:(4312ms) 6:(4265ms) 7:(4186ms) 8:(4358ms) 9:(4249ms) ] Avg. Exec. Time = 4320
+Recursive Mergesort [repeat=10] [arraysize=70000000] [decrescent] => [ 0:(6077ms) 1:(6077ms) 2:(6076ms) 3:(6077ms) 4:(6061ms) 5:(6093ms) 6:(6054ms) 7:(6092ms) 8:(6108ms) 9:(6077ms) ] Avg. Exec. Time = 6079
+Random Recursive Mergesort [repeat=10] [arraysize=70000000] [decrescent] => [ 0:(5935ms) 1:(5916ms) 2:(5884ms) 3:(5914ms) 4:(6009ms) 5:(5905ms) 6:(6296ms) 7:(5921ms) 8:(5921ms) 9:(5961ms) ] Avg. Exec. Time = 5966
+Recursive Selectionsort [repeat=10] [arraysize=70000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=70000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=70000000] [random] => [ 0:(9435ms) 1:(9326ms) 2:(9326ms) 3:(9341ms) 4:(9342ms) 5:(9342ms) 6:(9326ms) 7:(9342ms) 8:(9341ms) 9:(9342ms) ] Avg. Exec. Time = 9346
+Random Recursive Quicksort [repeat=10] [arraysize=70000000] [random] => [ 0:(8920ms) 1:(9091ms) 2:(9014ms) 3:(9030ms) 4:(9013ms) 5:(8889ms) 6:(8873ms) 7:(8904ms) 8:(8888ms) 9:(9069ms) ] Avg. Exec. Time = 8969
+Recursive Mergesort [repeat=10] [arraysize=70000000] [random] => [ 0:(15137ms) 1:(15218ms) 2:(15090ms) 3:(15091ms) 4:(15106ms) 5:(15121ms) 6:(15090ms) 7:(15105ms) 8:(15153ms) 9:(15122ms) ] Avg. Exec. Time = 15123
+Random Recursive Mergesort [repeat=10] [arraysize=70000000] [random] => [ 0:(15216ms) 1:(14841ms) 2:(14825ms) 3:(14944ms) 4:(14871ms) 5:(14856ms) 6:(14965ms) 7:(14840ms) 8:(14840ms) 9:(14871ms) ] Avg. Exec. Time = 14906
+Recursive Selectionsort [repeat=10] [arraysize=70000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=70000000] [random] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=80000000] [crescent] => [ 0:(2280ms) 1:(2281ms) 2:(2280ms) 3:(2265ms) 4:(2281ms) 5:(2296ms) 6:(2265ms) 7:(2265ms) 8:(2281ms) 9:(2281ms) ] Avg. Exec. Time = 2277
+Random Recursive Quicksort [repeat=10] [arraysize=80000000] [crescent] => [ 0:(4264ms) 1:(4265ms) 2:(4218ms) 3:(4139ms) 4:(4218ms) 5:(4249ms) 6:(4187ms) 7:(4186ms) 8:(4530ms) 9:(4327ms) ] Avg. Exec. Time = 4258
+Recursive Mergesort [repeat=10] [arraysize=80000000] [crescent] => [ 0:(7195ms) 1:(7125ms) 2:(7040ms) 3:(7056ms) 4:(7072ms) 5:(7072ms) 6:(7088ms) 7:(7072ms) 8:(7087ms) 9:(7072ms) ] Avg. Exec. Time = 7087
+Random Recursive Mergesort [repeat=10] [arraysize=80000000] [crescent] => [ 0:(6935ms) 1:(7244ms) 2:(7229ms) 3:(7119ms) 4:(7006ms) 5:(6948ms) 6:(7150ms) 7:(7212ms) 8:(7135ms) 9:(7212ms) ] Avg. Exec. Time = 7119
+Recursive Selectionsort [repeat=10] [arraysize=80000000] [crescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=80000000] [crescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=80000000] [decrescent] => [ 0:(3074ms) 1:(2965ms) 2:(2979ms) 3:(2963ms) 4:(2980ms) 5:(2948ms) 6:(3058ms) 7:(2984ms) 8:(2968ms) 9:(2984ms) ] Avg. Exec. Time = 2990
+Random Recursive Quicksort [repeat=10] [arraysize=80000000] [decrescent] => [ 0:(4905ms) 1:(4936ms) 2:(4983ms) 3:(4962ms) 4:(4936ms) 5:(5015ms) 6:(4936ms) 7:(4920ms) 8:(5030ms) 9:(5045ms) ] Avg. Exec. Time = 4966
+Recursive Mergesort [repeat=10] [arraysize=80000000] [decrescent] => [ 0:(6905ms) 1:(6889ms) 2:(6889ms) 3:(6904ms) 4:(6858ms) 5:(6874ms) 6:(6889ms) 7:(6889ms) 8:(6889ms) 9:(6905ms) ] Avg. Exec. Time = 6889
+Random Recursive Mergesort [repeat=10] [arraysize=80000000] [decrescent] => [ 0:(6842ms) 1:(6827ms) 2:(7108ms) 3:(6936ms) 4:(6796ms) 5:(6780ms) 6:(6967ms) 7:(7186ms) 8:(6779ms) 9:(6733ms) ] Avg. Exec. Time = 6895
+Recursive Selectionsort [repeat=10] [arraysize=80000000] [decrescent] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=80000000] [decrescent] => [ ] Avg. Exec. Time = 0
+
+Recursive Quicksort [repeat=10] [arraysize=80000000] [random] => [ 0:(10974ms) 1:(10888ms) 2:(10888ms) 3:(10975ms) 4:(10873ms) 5:(10857ms) 6:(10857ms) 7:(10857ms) 8:(10872ms) 9:(10873ms) ] Avg. Exec. Time = 10891
+Random Recursive Quicksort [repeat=10] [arraysize=80000000] [random] => [ 0:(10404ms) 1:(10279ms) 2:(10310ms) 3:(10326ms) 4:(10216ms) 5:(10342ms) 6:(10278ms) 7:(10295ms) 8:(10341ms) 9:(10310ms) ] Avg. Exec. Time = 10310
+Recursive Mergesort [repeat=10] [arraysize=80000000] [random] => [ 0:(17318ms) 1:(17308ms) 2:(17308ms) 3:(17355ms) 4:(17293ms) 5:(17308ms) 6:(17293ms) 7:(17356ms) 8:(17324ms) 9:(17309ms) ] Avg. Exec. Time = 17317
+Random Recursive Mergesort [repeat=10] [arraysize=80000000] [random] => [ 0:(17101ms) 1:(17277ms) 2:(17364ms) 3:(17325ms) 4:(17074ms) 5:(17090ms) 6:(17324ms) 7:(16950ms) 8:(17121ms) 9:(17152ms) ] Avg. Exec. Time = 17177
+Recursive Selectionsort [repeat=10] [arraysize=80000000] [random] => [ ] Avg. Exec. Time = 0
+Random Recursive Selectionsort [repeat=10] [arraysize=80000000] [random] => [ ] Avg. Exec. Time = 0
+
+\\jtxt\\crescent.txt was written. 
+
+\\jtxt\\decrescent.txt was written. 
+
+\\jtxt\\random.txt was written. 
+
+
+Crescent times: 
+0ms 0ms 3ms 0ms 1ms 23ms 
+0ms 0ms 0ms 0ms 4ms 45ms 
+0ms 0ms 0ms 0ms 23ms 200ms 
+1ms 0ms 0ms 0ms 101ms 774ms 
+0ms 3ms 0ms 1ms 0ms 0ms 
+0ms 0ms 0ms 6ms 0ms 0ms 
+1ms 4ms 6ms 7ms 0ms 0ms 
+4ms 10ms 17ms 15ms 0ms 0ms 
+1ms 22ms 42ms 46ms 0ms 0ms 
+26ms 48ms 85ms 78ms 0ms 0ms 
+49ms 95ms 150ms 154ms 0ms 0ms 
+131ms 262ms 390ms 398ms 0ms 0ms 
+265ms 523ms 789ms 789ms 0ms 0ms 
+543ms 1032ms 1602ms 1609ms 0ms 0ms 
+831ms 1526ms 2516ms 2516ms 0ms 0ms 
+1129ms 2080ms 3439ms 3414ms 0ms 0ms 
+1421ms 2589ms 4249ms 4280ms 0ms 0ms 
+1676ms 3169ms 5114ms 5220ms 0ms 0ms 
+1951ms 3671ms 6261ms 6222ms 0ms 0ms 
+2277ms 4258ms 7087ms 7119ms 0ms 0ms 
+
+Decrescent times: 
+0ms 0ms 0ms 0ms 0ms 14ms 
+0ms 0ms 0ms 0ms 4ms 48ms 
+0ms 0ms 0ms 0ms 29ms 207ms 
+0ms 0ms 1ms 0ms 103ms 796ms 
+0ms 1ms 0ms 0ms 0ms 0ms 
+3ms 3ms 6ms 0ms 0ms 0ms 
+7ms 4ms 10ms 9ms 0ms 0ms 
+4ms 3ms 17ms 14ms 0ms 0ms 
+15ms 21ms 45ms 45ms 0ms 0ms 
+34ms 57ms 82ms 87ms 0ms 0ms 
+65ms 115ms 148ms 156ms 0ms 0ms 
+173ms 304ms 385ms 387ms 0ms 0ms 
+349ms 612ms 764ms 765ms 0ms 0ms 
+718ms 1187ms 1529ms 1554ms 0ms 0ms 
+1076ms 1793ms 2377ms 2438ms 0ms 0ms 
+1451ms 2429ms 3268ms 3303ms 0ms 0ms 
+1861ms 3050ms 4108ms 4196ms 0ms 0ms 
+2216ms 3674ms 4920ms 5068ms 0ms 0ms 
+2624ms 4320ms 6079ms 5966ms 0ms 0ms 
+2990ms 4966ms 6889ms 6895ms 0ms 0ms 
+
+Random times: 
+0ms 0ms 0ms 0ms 1ms 15ms 
+0ms 0ms 0ms 1ms 4ms 43ms 
+0ms 0ms 0ms 0ms 18ms 203ms 
+0ms 0ms 1ms 0ms 101ms 805ms 
+1ms 3ms 3ms 3ms 0ms 0ms 
+7ms 4ms 7ms 6ms 0ms 0ms 
+6ms 7ms 17ms 17ms 0ms 0ms 
+21ms 17ms 32ms 32ms 0ms 0ms 
+48ms 47ms 90ms 93ms 0ms 0ms 
+96ms 106ms 182ms 187ms 0ms 0ms 
+218ms 214ms 356ms 356ms 0ms 0ms 
+582ms 571ms 924ms 922ms 0ms 0ms 
+1206ms 1187ms 1921ms 1916ms 0ms 0ms 
+2510ms 2397ms 4012ms 3975ms 0ms 0ms 
+3774ms 3686ms 6075ms 6110ms 0ms 0ms 
+5209ms 4963ms 8289ms 8294ms 0ms 0ms 
+6496ms 6291ms 10435ms 10503ms 0ms 0ms 
+7992ms 7616ms 12587ms 12738ms 0ms 0ms 
+9346ms 8969ms 15123ms 14906ms 0ms 0ms 
+10891ms 10310ms 17317ms 17177ms 0ms 0ms 
+
+Main Execution Time: 4481896ms (4481s) (74m).
+
+
+Process finished with exit code 0

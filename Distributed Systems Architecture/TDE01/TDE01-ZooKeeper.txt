@@ -1,0 +1,37 @@
+
+## NOME: Gustavo Hammerschmidt.
+
+Funcionamento da eleição distribuída de líder no ZooKeeper: supondo que o processo candidato é o primeiro a iniciar a estrutura do servidor ZooKeeper, então ele deve executar os seguintes comandos: 1) criar um Znode chamado líder
+(comando ZK: create) e definir seu conteúdo como: sem líder (comando ZK: set data); 2) criar um Znode chamado candidatos (comando ZK: create); e 3) criar um Znode filho efêmero (comando ZK: create) de candidatos com o nome de seu identificador único (por exemplo, candidatoC ou apenas C).
+
+Caso o processo seja o segundo a entrar, ele precisará apenas executar o comando número 3; se a eleição tiver um fim com a execução de todos os processos, o último processo pode encerrar o servidor e apagar a estrutura (mas acho que isso não é a intenção do projeto ou algoritmo em si, acho que o servidor e a estrutura devem permanecer na memória para a entrada de outros processos - nesse caso, o processo removeria apenas seu znode folha igualmente nomeado (comando ZK: delete)).
+
+Temos a árvore consistindo de:
+
+/             [Diretório raiz] 
+|-Líder       [Diretório do processo líder]
+|-Candidatos  [Diretório de processos]
+| |-A         [Possível processo/candidato]
+| |-B	      [Possível processo/candidato]
+| |-C 	      [Possível processo/candidato]
+                      
+	
+Cada processo cria um Znode efêmero no diretório Candidatos (comando ZK: create), e pede ao servidor para ler os dados de líder (comando ZK: get data); caso a leitura aponte o nome único de um processo líder, o processo não-líder aguardará até que haja a leitura de "sem líder" no diretório Líder ou até que haja a saída do processo líder do diretório Candidatos (caso este tenha algum problema de conexão: por ser efêmero, seria removido da árvore; execução: 1) exceções, levando as condições de tratamento e/ou encerramento como líder, 2) encerramento do programa, removendo ele da árvore e terminando a sessão; ou apenas termine sua execução e fique suspenso, cedendo sua liderança aos outros processos); caso não haja um processo líder na leitura, o processo não-líder deverá escrever seu identificador único (comando ZK: set data) - este comando é atômico e notifica todos os processos de quem é o processo líder -, e, então, ele será o atual processo líder.
+
+Sobre a duração do status líder de um processo: um processo escreve seu nome nos dados do diretório líder, agora ele executa suas operações e, após termino, ele pede ao servidor para escrever "sem líder" no diretório líder. Caso um processo esteja como líder, os outros processos suspenderam a sua execução e não pediram para se tornarem líderes enquanto o processo líder em execução for líder; mas caso esse processo tenha problemas de execução ou conexão, os processos esperando para se tornarem líderes, checaram os filhos candidatos efêmeros (comando ZK: get children) e - caso o processo líder não seja uma folha do diretório mais - os processos em espera pediram ao servidor para serem líderes e a atomicidade da função (set data) definirá um deles como sendo o líder enquanto bloqueará os outros processos até o termino do processo líder subsequente.
+
+Então, dessa forma, cada processo saberá quem é o líder e quando estarão aptos a se tornarem líderes sobre as condições elencadas no parágrafo acima.
+
+
+Obs.: tive problemas com o jre e não consegui levantar um servidor ZK no meu pc, preferi apenas descrever o meu modo de eleger um líder entre processos usando a plataforma ZooKeeper ou como eu faria o código.
+
+
+
+
+
+
+
+
+
+
+

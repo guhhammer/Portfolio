@@ -1,0 +1,56 @@
+
+
+Installation:
+
+- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/#std-label-install-mdb-community-debian
+
+
+2️⃣ Start and Enable MongoDB Service
+
+sudo systemctl start mongod
+sudo systemctl enable mongod
+
+Check status:
+sudo systemctl status mongod
+
+3️⃣ MongoDB CLI Basics
+
+Step 1: Start the MongoDB shell
+mongosh
+
+Step 2: Basic commands in MongoDB shell
+
+Show databases:
+show dbs
+
+Create/use a database:
+use myDatabase
+
+Show collections (tables):
+show collections
+
+Insert a document (record):
+db.users.insertOne({ name: "Jake", age: 25 })
+
+Find documents:
+db.users.find()
+
+Update a document:
+db.users.updateOne({ name: "Jake" }, { $set: { age: 26 } })
+
+Delete a document:
+db.users.deleteOne({ name: "Jake" })
+
+Exit the shell:
+exit
+
+4️⃣ Optional: Manage MongoDB via systemctl
+
+Stop MongoDB:
+sudo systemctl stop mongod
+
+Restart MongoDB:
+sudo systemctl restart mongod
+
+Check logs:
+sudo journalctl -u mongod -f

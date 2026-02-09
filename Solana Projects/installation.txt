@@ -1,0 +1,129 @@
+
+
+Link > https://www.anchor-lang.com/docs/installation#install-dependencieshttps://www.anchor-lang.com/docs/installation#install-dependencies
+
+
+first I install the complete version of rust:
+
+sudo apt update
+sudo apt install rustup -y
+
+rustc --version
+
+
+then I force install anchor:
+
+cargo install --git https://github.com/coral-xyz/anchor --tag v0.31.0 anchor-cli --force
+
+anchor --version
+
+=====================================================================
+
+to see current config: 
+
+solana config get
+
+you can update the solana cli cluster using:
+
+solana config set --url mainnet-beta
+solana config set --url devnet
+solana config set --url localhost
+solana config set --url testnet
+
+solana config set -um    # For mainnet-beta
+solana config set -ud    # For devnet
+solana config set -ul    # For localhost
+solana config set -ut    # For testnet
+
+
+
+
+
+ERASE-THIS-LATER ==========================================================
+
+┌──(gustavo㉿kali)-[~/Desktop/solanaproto]
+└─$ solana-keygen new             
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none): 
+
+Wrote new keypair to /home/gustavo/.config/solana/id.json
+================================================================================
+pubkey: HAGbv8hcDSiM1fSZr3JrQFYLaKZMYVfUqhdRXMEH63xu
+================================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+major increase valve interest soul melt unfold later orchard lawsuit tent deputy
+================================================================================
+
+================================================================ERASE-THIS-LATER
+
+to get pubkey:
+solana address
+
+
+set to devnet and ask airdrop:
+solana airdrop 2
+
+
+to check balance:
+solana balance
+
+
+The Solana CLI comes with the test validator built-in. Running a local validator will allow you to deploy and test your programs locally.
+In a separate terminal, run the following command to start a local validator:
+
+solana-test-validator
+
+Make sure to update the Solana CLI config to localhost before commands.
+
+solana config set -ul
+ls
+
+
+==============================================================================
+
+Project:
+
+to init:
+
+anchor init <project-name>
+
+cd <project-name>
+
+to build:
+
+anchor build
+
+to deploy:
+
+anchor deploy
+
+to test program:
+
+anchor test
+
+
+Dont need to run solana-test-validator, anchor
+does it automatically. 
+run anchor clean before ancor test if bugs.
+
+
+==================================
+
+Many bugs in development.
+
+anchor build
+
+solana-test-validator --reset && anchor deploy
+
+kill solana-test-validator
+
+anchor test
+
+
+copy latest project and run  to minimaze anchor init problems.

@@ -1,0 +1,8 @@
+tempo: O(..)
+Estabilidade
+Espaço (In-place; não)
+
+critérios de avaliação aula hoje
+
+
+shellsort instável in-place melhor:n*(log n)^2 pior: n^(1.5)

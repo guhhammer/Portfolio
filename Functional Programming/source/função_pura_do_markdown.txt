@@ -1,0 +1,7 @@
+O que são Funções Puras?
+
+Funções Puras são funções que sempre retornam o mesmo output para um dado parâmetro input, ou seja, são funções que não sofrem efeitos colaterais ou que não mudam seu estado de programa. São como máquinas de café: os grãos entram, pó de café sai, fim da história.
+
+Os efeitos colaterais surgem em funções que, quando executadas, sofrem as mudanças de estado de aplicação do programa ou são causa de dependências externas (variáveis globais) presentes programa, logo, chamadas de funções impuras.
+
+Uma função impura modifica seus parâmetros; uma pura trata os seus parâmetros, em outras palavras, um número dado como parâmetro sempre será ele mesmo, o que uma função pura faz é tratas o valor para obter um output.

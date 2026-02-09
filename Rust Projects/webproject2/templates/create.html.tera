@@ -1,0 +1,12 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+MAKE THIS SUBMIT CREATE USER PAGE
+
+
+{% include "components/footer" %}
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+MAKE THIS USER DASHBOARD PAGE
+
+{{ ctx_user }}
+
+{% include "components/footer" %}
+  
+{% endblock %}

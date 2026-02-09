@@ -1,0 +1,3 @@
+Visão lógica.
+
+Arquitetura X componentes X tecnologia = dizer as tecnologias por comp.

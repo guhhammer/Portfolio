@@ -1,0 +1,32 @@
+IT -> Item; 
+P -> Parte
+
+exemplo IT01_P1 = item 01, parte 1
+
+A ordem dos arquivos segue a cardinalidade dos números
+1º -> IT01_P1, 2º -> IT01_P2 
+
+
+DICA:
+
+Para abrir o arquivo .py clique em HASHPROJEKT e depois em VENV, então clique em IT01_P1.  Mais instruções dentro do arquivo (se necessárias forem).
+
+A FOTO (Ordem dos Arquivos) serve de orientação na hora de abrir os arquivos e colocá-los em ordem/sequência.
+
+Sobre os arquivos enviados:
+	-Deve ser entregue 04 arquivos:
+	(i) Código fonte do item 01 no formato zip; => Está na pasta HASHPROJEKT, corresponde aos items: IT01_P1; IT01_P2; E Funções_IT01.
+
+	-(ii) Código fonte do item 02; => Está na pasta HASHPROJEKT, corresponde aos items: IT02_P1 e Funções_IT02.
+
+        -(iii) Código fonte do item 03; => Está na pasta HASHPROJEKT, corresponde aos items: IT03_P1; IT03_P2;
+Funções_IT03_P1; e Funções_IT03_P2.
+
+	-(iv) Relatório descrevendo todos os procedimentos realizados, o tempo necessário para realizar a quebra dos hashs e a solução adotada no item 03. => Está contido na pasta HASH , o arquivo Relatório(HASH).docx e complementares: planilha(Hash tempo 4 usuários) e pasta(tempo 4 usuários, ela contém todos os resultados obtidos e usados para projetar a planilha).  Recomendo ler primeiramente o relatório para entender como funciona a sequência dos arquivos.
+
+********** é possível que os interpretadores: pip e setuptools não sejam baixados com o projeto caso isso aconteça por favor os baixe. ***********
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+Funções puras:
+	- sempre retornam o memso output para um dado parâmetro input.
+	- não sofrem efeitos colaterais ou que não mudam seu estado de programa.
+	
+
+efietos colaterais: funções sofrem as mudanças de estado de aplicação do programa ou são causa de dependências externas(variáveis globais) presentes no programa, logo, são funções impuras.
+
+função impura: modifica seus parâmetros; uma pura trata os seus parâmetros.
+	- Um número dado como parâmetro sempre será ele mesmo, o que uma função pura faz é tratar o valor para obter um output.
+
+

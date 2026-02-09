@@ -1,0 +1,8 @@
+
+
+
+Execute a classe Main e as outras classes entraram em cena.
+
+
+No gráfico da planilha, os valores de cada execução se sobrepõem devido à quantidade de valores e seus tamanhos. Para melhor visualização do gráfico, expanda-o em suas margens laterais.
+

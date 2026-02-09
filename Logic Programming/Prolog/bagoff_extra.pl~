@@ -1,0 +1,26 @@
+% Nome: Gustavo Hammerschmidt.
+
+
+cidade(curitiba, parana, brasil).
+cidade(blumenau, santa_catarina, brasil).
+cidade(joenville, santa_catarina, brasil).
+cidade(foz_do_iguaçu, parana, brasil).
+cidade(londrina, parana, brasil).
+cidade(maringa, parana, brasil).
+cidade(ushuaia, terra_do_fogo, argentina).
+cidade(santa_rosa, la_pampa, argentina).
+cidade(cordoba, cordoba, argentina).
+
+
+
+ex1(Cidades) :- bagof(C,Y^cidade(C,Y,argentina),Cidades).
+
+
+ex2(Cidades,Estado) :- bagof(C,Cidades^cidade(C,Estado,brasil),Cidades).
+
+
+ex3(Cidades, Estado) :- bagof(C,Cidades^cidade(C,Estado,_),Cidades).
+
+
+
+ex4(Estado,Pais) :- setof(Estado,X^cidade(X,Estado,Pais),Estado).

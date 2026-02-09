@@ -1,0 +1,30 @@
+#  States = { INICIATOR, IDLE, ID_COLLECTING, OK }
+#    Sstart = { INICIATOR, IDLE }
+#    Sfinish = { OK }
+
+# Restrictions: { CN, TR, BL, UI }
+
+INICIATOR
+  Expontaneous
+
+     state = ID_COLLECTING
+     
+     send <R> to N(x)
+     
+IDLE
+  Receiving <R>
+     
+     state = ID_COLLECTING
+
+     send <R> to N(x) - entry_point
+ 
+ID_COLLECTING
+  Receiving <R>
+	
+     state = ID_COLLECTING
+    
+  Receiving <I>
+
+     state = ID_COLLECTING  # Changes to OK when receives all Is and Rs.
+     
+     send <I:ids_it_found> to entry_point

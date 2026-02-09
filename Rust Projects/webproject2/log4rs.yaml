@@ -1,0 +1,15 @@
+appenders:
+  stdout:
+    kind: console
+
+  file:
+    kind: file
+    path: "logs/app.log"
+    encoder:
+      pattern: "{d} - {l} - {m}{n}"
+
+root:
+  level: trace
+  appenders:
+    - stdout
+    - file

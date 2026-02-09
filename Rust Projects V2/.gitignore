@@ -1,0 +1,12 @@
+
+# Rust
+**/target
+Cargo.lock
+
+*.txt
+*.swp
+
+**/.env
+**/price_records.json
+**/*.log
+**/local_persistent_storage/

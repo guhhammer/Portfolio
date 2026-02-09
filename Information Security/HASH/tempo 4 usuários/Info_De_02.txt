@@ -1,0 +1,8 @@
+Nome: 
+02
+
+Senha(sem Hash): 
+6324
+
+Senha(com Hash): 
+5e15fb59326e7a9c3d6558ca74621683

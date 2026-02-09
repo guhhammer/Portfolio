@@ -1,0 +1,8 @@
+Nome: 
+h1
+
+Senha(sem Hash): 
+7456
+
+Senha(com Hash): 
+7dd11ae2d5ed34925bdbdc9b01866349

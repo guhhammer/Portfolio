@@ -1,0 +1,8 @@
+Nome: 
+o3
+
+Senha(sem Hash): 
+3242
+
+Senha(com Hash): 
+032dd17b77fab7d51a476c5ff2b5659c

@@ -1,0 +1,8 @@
+Nome: 
+l1
+
+Senha(sem Hash): 
+1111
+
+Senha(com Hash): 
+b59c67bf196a4758191e42f76670ceba

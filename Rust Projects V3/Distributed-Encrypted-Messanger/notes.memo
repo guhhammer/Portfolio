@@ -1,0 +1,10 @@
+
+
+use npm run format to fmt tsx.
+
+use include_str! jsons to make each shipping of file specific to company; that way is another layer of security:
+    1- doesnt affect other companies.
+    2- doesnt let user manually change.
+    3- requires limited number of copies for a company.
+
+    

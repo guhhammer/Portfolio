@@ -1,0 +1,21 @@
+src/
+├── components/       # Reusable UI pieces (e.g., Button, Navbar)
+├── pages/            # Full pages (e.g., Home.jsx, Dashboard.jsx)
+├── layouts/          # Layout wrappers (e.g., AdminLayout.jsx)
+├── App.jsx           # Main app logic
+├── main.jsx          # Entry point
+└── index.css         # Global styles (if needed)
+
+
+Private Keys
+==================
+(0) 0xd9e2df180a211838d083f5a2acd89473241b91f2ea3af65be564486445bbfea1
+(1) 0x403e817d9c502bf82155c482f81ce138795d591f44bf1ba1bb49b419e097d423
+(2) 0xe6a3f54909d18683b2ec6ced64b21604191ce149bf6d09bc949a55fa9104a410
+(3) 0xbc1f656227168f0e8846176d5b1d0e8df6304a3585fc7fcc18ab3fb76d9d551d
+(4) 0xe6595a19a72c70ba48fb43b8fb1e5376c5cc31b90ddf1933db37f04e21759071
+(5) 0x7b98d3364a6d1a56e1a5e0b7ec80f066dfb734a9cfe67f7a14e8841511ef728d
+(6) 0x0ea6d574593d0628cb83af180ca11615df08a1051fc93d5fa6b717f838648ba1
+(7) 0xc2a25b745ee86c7dfa1f1443959774050d924e89a3a16ef6e1b6edcac11b5c66
+(8) 0xdcaf9f0abc620f07c3cefdf8ee70c45a48357fd9b9b3ca01c69efb0542fb7971
+(9) 0x4d9e4f0019745ec4a9dc65afbf84d82f6ca0e2431c5835bffd07dfa4f2955f52

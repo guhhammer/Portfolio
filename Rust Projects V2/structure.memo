@@ -1,0 +1,148 @@
+src/
+├── main.rs          # Starts the app (entrypoint, setup routes)
+├── api/             # Controllers / route handlers
+│   ├── mod.rs
+│   ├── users.rs
+│   └── payments.rs
+├── domain/          # Enterprise logic (your Models)
+│   ├── mod.rs
+│   ├── user.rs
+│   └── order.rs
+├── services/        # Application services (business workflows, use cases)
+│   ├── mod.rs
+│   ├── auth.rs
+│   └── billing.rs
+├── infra/           # Database, external APIs, persistence details
+│   ├── mod.rs
+│   ├── db.rs
+│   └── redis.rs
+└── views/           # JSON serializers, templates, DTOs
+    ├── mod.rs
+    ├── user_view.rs
+    └── order_view.rs
+
+2:
+
+Hexagonal / Clean Architecture – similar separation but instead of calling it MVC, you organize around domain vs adapters. This is very popular in Rust because it makes dependencies one-directional (infra depends on domain, not the other way).
+
+Feature-based modularization – Instead of layers (model/view/controller), split by features:
+
+src/features/
+├── users/
+│   ├── api.rs
+│   ├── model.rs
+│   └── service.rs
+├── payments/
+│   ├── api.rs
+│   ├── model.rs
+│   └── service.rs
+
+
+This can be easier if you expect consumers with drastically different views per feature.
+
+
+There will probably have a need to view state of gasstation ongoing
+details; should make a website for managers/owners to see or other auth 
+users, not to make a request direct to the program to change its state,
+but a rather analize tool; could use 
+
+    ELIXIR for website, or PYTHON for data analysis.
+
+Also, could use the site as a messenger for the company somehow.
+
+    Or use GO for web apps for performance. Still a question mark.
+
+
+
+
+Can use docker to ship the app. And choose a DB that is more compatible.
+
+
+
+# Git Workflow Commands and Notes
+
+## 1. Protect `main` branch (on GitHub/GitLab)
+
+* Set branch protection rules:
+
+  * Require PR/MR to merge
+  * Require code review
+  * Optional: status checks
+
+## 2. Versioning & labeling
+
+* Tag releases:
+
+```
+git tag -a v1.0.0 -m "First release"
+git push origin v1.0.0
+```
+
+* Use Semantic Versioning: `v<major>.<minor>.<patch>`
+
+## 3. Tracking work per coder
+
+* Use branches per feature:
+
+```
+feature/login
+feature/payment
+fix/navbar
+```
+
+* Optional: use GitHub Projects or issues with labels for tracking
+
+## 4. Controlling file access (limitations)
+
+* Git alone cannot restrict file-level access
+* Options:
+
+  1. Separate repositories (frontend, backend)
+  2. Sparse checkout (limited protection):
+
+```
+git sparse-checkout init --cone
+git sparse-checkout set frontend/
+```
+
+3. Pre-commit hooks & CI checks to enforce rules
+
+## 5. Recommended workflow
+
+1. Protect `main` branch
+2. Developers create feature branches:
+
+```
+feature/login, feature/dashboard
+```
+
+3. Push to feature branches, open PR/MR
+4. Use tags to mark versions:
+
+```
+git tag v1.1.0
+```
+
+5. File restrictions: separate repos or submodules
+
+## 6. Optional tools
+
+* GitHub Projects / Issues / Labels for task tracking
+* GitLab Permissions for finer-grained access
+* Monorepo + submodules for folder-level access
+
+
+https://surrealdb.com/install
+
+SurrealDB is a DB that is written on rust or something.
+Check compatibility. 
+
+
+
+$ objdump -d ./debug/gas_station > file.txt
+
+How to see the debug file in assembly.
+
+// check how to connect to a db for mocking.
+
+// check how to make a tauri for this for mocking.

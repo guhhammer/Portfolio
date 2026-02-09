@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crud Smart Contract</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 300px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crud DApp</h1>
+
+    <h2>Create User</h2>
+    <form action="/create" method="POST">
+        <input type="text" name="name" placeholder="Enter name" required>
+        <button type="submit">Create</button>
+    </form>
+
+    <h2>Read User</h2>
+    <form action="/read" method="POST">
+        <input type="number" name="id" placeholder="Enter ID" required>
+        <button type="submit">Read</button>
+    </form>
+
+    <% if (users.length > 0) { %>
+        <h3>Result:</h3>
+        <ul>
+            <% users.forEach(user => { %>
+                <li>ID: <%= user.id %> - Name: <%= user.name %></li>
+            <% }) %>
+        </ul>
+
+        <h2>Update User</h2>
+        <form action="/update" method="POST">
+            <input type="hidden" name="id" value="<%= users[0].id %>">
+            <input type="text" name="name" placeholder="New name" required>
+            <button type="submit">Update</button>
+        </form>
+
+        <h2>Delete User</h2>
+        <form action="/destroy" method="POST">
+            <input type="hidden" name="id" value="<%= users[0].id %>">
+            <button type="submit">Delete</button>
+        </form>
+    <% } %>
+
+</body>
+</html>

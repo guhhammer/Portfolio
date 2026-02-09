@@ -1,0 +1,7 @@
+{user} {password} {/127.0.0.1} {5000} {[[morango,]]}
+{banana} {banana} {/127.0.0.1} {5000} {[[abacaxi,olá__sou_abacaxi],[morango,bom_dia__banana],[gustavo,bom_dia],[abacaxi,banana_oi],[morango,banana__testando]]}
+{morango} {morango} {/127.0.0.1} {5000} {[[banana,oi_sou_banana],[melancia,ola__sou_a_melancia],[gustavo,morango__sou_eu_o_gustavo],[banana,morango__testando]]}
+{abacaxi} {abacaxi} {/127.0.0.1} {5000} {[[banana,oi_sou_banana],[melancia,ola__sou_a_melancia],[morango,oi_oi]]}
+{melancia} {melancia} {/127.0.0.1} {5000} {[[abacaxi,olá__sou_abacaxi],[morango,bom_dia__melancia]]}
+{gustavo} {1234} {/127.0.0.1} {5000} {[[novo,olá__gustavo]]}
+{novo} {novo} {/127.0.0.1} {2000} {[[banana,olá__novo_Tudo_bem^~],[gustavo,olá__novo]]}

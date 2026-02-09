@@ -1,0 +1,20 @@
+
+Caso queira executar o código, siga as seguintes instruções:
+	
+	- Se o arquivo .xlsx ou o arquivo .py estiverem abertos,	
+	  feche-os.
+
+	- Execute a classe Iniciador.java .
+	
+	- Ao final da execução do código, o arquivo .xlsx será 
+	automaticamente aberto.
+
+	- Caso queira ver o código .py, espere a execução do arquivo 
+	.java terminar e depois abra o arquivo .py em algum editor.
+
+	- Caso queira ver os dados obtidos da execução, abra o 
+	arquivo .xlsx e movimente-se pelas guias P_A1, P_A2, ...
+
+	- P_A1 = Planilha item A(número de tarefa por processador: 1)
+
+	- Veja o arquivo .docx !!

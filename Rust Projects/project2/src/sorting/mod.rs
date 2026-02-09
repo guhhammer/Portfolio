@@ -1,0 +1,13 @@
+pub mod bubblesort;
+pub mod bucketsort;
+pub mod countingsort;
+pub mod heapsort;
+pub mod insertionsort;
+pub mod kronometrmain;
+pub mod mergesort;
+pub mod quicksort;
+pub mod radixsort;
+pub mod randomized_quicksort;
+pub mod selectionsort;
+pub mod shellsort;
+pub mod sortingmain;

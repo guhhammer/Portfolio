@@ -1,0 +1,16 @@
+
+O que é Lazy e Eager?
+
+A Avaliação Eager (do inglês: avaliação ansiosa) é uma estratégia de avaliação utilizada por muitas linguagens de programação tradicionais. É também conhecida como Avaliação Strict (do inglês: avaliação rigorosa). Na avaliação Eager, uma função é avaliada assim que é ligada aos seus parâmetros. Em linguagens imperativas - onde a ordem de execução é, implicitamente, definida pela estrutura do código fonte -, quase sempre a avaliação Eager é utilizada.
+
+Uma vantagem dessa avaliação é que não há necessidade de manter a referência de avaliações de expressões, ela também possibilita que o programador dite a ordem de execução do programa facilmente.
+
+
+Uma disvantagem dessa avaliação é que ela força a avaliação de expressões que talvez não sejam necessárias em tempo de execução ou talvez atrase a avaliação de outras expressões que tenham uma necessidade mais imediata. E também força o desenvolvedor a organizar o código fonte de forma a otimizar a ordem de execução.
+
+
+A Avaliação Lazy (do inglês: avaliação preguiçosa) ou chamada por necessidade é uma estratégia de avaliação em que uma expressão não é avaliada até o seu primeiro uso, ou seja, adiar a avaliação até sua demanda - é mais sobre a expressividade pois ela atrasa o cálculo de um valor. A avaliação Lazy é constituída de lambdas - funções anônimas.
+
+Algumas vantagens são: a avaliação Lazy torna possível adicionar novas construções a uma linguagem sem o uso de macros; também pode otimizar a performace do programa, pois reduz o tempo de programas evitando avaliações desnecessárias de expressões presentes no escopo; pode nos ajudar a resolver dependências circulares; e dá acesso a estruturas de dados infinitas.
+
+Algumas desvantagens são: encontrar bugs pode ser complicado, pois o programador não tem controle sobre a execução do programa; pode aumentar a complexidade do espaço: todas as operações precisam ser armazenadas; e é mais difícil de codificar em contraste com a abordagem convencional.

@@ -1,0 +1,5 @@
+1º questão:
+dado uma relação familiar com fatos sobre quem é casado com quem e também com o fato de quem é mãe de quem. Construa uma relação chamada concunhado 
+
+2º questão:
+em um dado restaurante, é possível identificar uma lista de clientes, uma lista de pratos de entrada, de pratos principais e de sobremesas. Há também uma lista de tipos de vinho a serem servidos durante as refeições.Cada cliente possuí suas preferências de refeições e de vinhos. Construa um sistema em que dada uma informação sobre o tipo de vinho ou tipo de sobremesa ou o tipo de prato principal ou o tipo do prato de entrada, o sistema forneça as outras informações.

@@ -1,0 +1,7 @@
+<!-- Profile Image -->
+<img id="i-profile" alt="" src="/static/images/test_profile.jpg" class="p-8 rounded-full" data-profile-name="{{ ctx_user.profile_image }}" />
+<!-- Name -->
+<h1 id="h-name" class="text-2xl font-bold text-center" data-profile-name="{{ ctx_user.profile_name }}"> John Doe </h1>
+<!-- Short Description -->
+<p id="p-description" class="p-8 text-x1 font-sans" data-profile-name="{{ ctx_user.profile_short_description }}"> i'm am here to gather money and donate for charity. </p>
+<script src="/static/js/profile.js"></script>

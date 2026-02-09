@@ -1,0 +1,8 @@
+Nome: 
+f2
+
+Senha(sem Hash): 
+8342
+
+Senha(com Hash): 
+363ce3cd61389226b4a55b2aee2dacd7

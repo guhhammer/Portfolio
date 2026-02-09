@@ -1,0 +1,5 @@
+// P1. 2 contadores com tempos e contagens diferentes.
+// P2. Se pai termina antes, filho continua?
+
+// Resposta P1: sim, os processos executam paralelamente e o pai só encerra quando os processos terminarem.
+// Resposta P2: sim, os filhos ainda continuam se o pai terminar antes.

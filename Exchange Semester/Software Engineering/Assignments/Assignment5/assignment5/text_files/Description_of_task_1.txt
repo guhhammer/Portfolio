@@ -1,0 +1,6 @@
+
+Name: Gustavo Hammerschmidt.
+
+Description of Task 1:
+
+	- I've made two local repositories, named: scenarioA and scenarioB.  I'm both of them, I've changed the order of the imports in a way both would have the same imports, but in a different calling order. I've made changes to the way the title: "Welcome to Lunar Lander" was displayed in both files. To solve the merging conflict, I've executed the command diff to check where the conflicts happened, and them picked one of both files and manually changed the file to avoid conflicting with the other scenario file. Then, I've fetched the scenario with the origin and both scenarios had the changes I chose up to date. I sent three screenshots of number 3. screenshot3_merge_conflict_message shows the first time that a merge conflict message was reported; screenshot3_merge_diff_view shows the diff view of the changes on both files and screenshot3_merge_conflict_fixed shows the message that the conflict was resolved. I've sent a file with all the commands executed on the prompt throught the whole assignment, named: prompt_command_execution.txt.

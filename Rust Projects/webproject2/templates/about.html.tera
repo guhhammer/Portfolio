@@ -1,0 +1,43 @@
+{% extends "base" %}
+
+{% block body %}
+
+{% include "components/header" %}
+
+<div class=" flex-1 overflow-y-auto semi-transparent-black flex justify-center">
+  <div class="container mx-auto px-4 py-8 text-center max-w-3xl">
+    <h1 class="text-3xl font-bold text-purple-600 mb-4">About Donation.com</h1>
+    <p class="text-gray-700 mb-6">
+      Welcome to Donation.com, a platform dedicated to making charitable giving seamless, transparent, and impactful.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-purple-500 mb-3">Our Mission</h2>
+    <p class="text-gray-700 mb-6">
+      We believe that every act of kindness matters. Our mission is to connect donors with meaningful causes, ensuring
+      every contribution reaches those in need efficiently and securely.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-purple-500 mb-3">How It Works</h2>
+    <p class="text-gray-700 mb-6">
+      - Browse and discover causes that resonate with you.
+      - Donate securely through various payment methods, including cryptocurrency.
+      - Track your contributions and see the real-world impact they create.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-purple-500 mb-3">Get Involved</h2>
+    <p class="text-gray-700 mb-6">
+      Whether you're an individual, a nonprofit, or a business, you can make a difference. Join our growing community of
+      givers and help us build a better world.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-purple-500 mb-3">Contact Us</h2>
+    <p class="text-gray-700">
+      Have questions or suggestions? Reach out to us at
+      <a href="mailto:support@donation.com" class="text-purple-600 underline">support@donation.com</a>.
+    </p>
+  </div>
+</div>
+
+{% include "components/footer" %}
+
+{% endblock %}

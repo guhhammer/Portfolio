@@ -1,0 +1,175 @@
+/*
+
+Grupo 12: Gustavo Hammerschmidt,
+          Guilherme Henrique Fenner Hey,
+          Bruno Henrique Barbosa Alves,
+          Pedro Henrique da Silva Churata.
+
+*/
+
+
+% Função auxiliar:  tamanho do vetor.
+tamanho_v([],0).
+tamanho_v([_|Y], X) :- tamanho_v(Y,W), X is W+1.
+
+% Função auxiliar:  se elemento pertence ao vetor.
+pertence([], _, false) :- !.
+pertence([X], X, true) :- !.
+pertence([X], N, false) :- X=\=N,!.
+pertence([X|Y], N, Z) :- X =\=N, pertence(Y,N,Z),!.
+pertence([X|_], N,Z) :- X =:= N, Z = true.
+membro(S,L,M) :- pertence(L,S,M).
+
+
+
+% Questão 1. Maiores([1,2,3,4,5,6,7],5,N) -> N = [6,7]
+maior([],[],_).
+maior([X|Y],[X|Z],N) :- X > N, maior(Y,Z,N),!.
+maior([_|Y],Z,N) :- maior(Y,Z,N).
+quest_1(Num,Lista,Z) :-
+    nl,write('Elementos maiores do que '),
+    write(Num),write(' na lista '),write(Lista),
+    write(' : '),maior(Lista, Z, Num),nl.
+
+% Questão 1: Fim.
+
+% Questão 2. Média lista.
+somar([],0).
+somar([X],X) :- !.
+somar([X|Y],S) :- somar(Y, K), S is X + K,!.
+
+soma(Lista,Soma) :-  somar(Lista, Soma).
+size(X,Y) :- tamanho_v(X,Y).
+
+media(Lista, Soma) :-
+    soma(Lista,SomaL),size(Lista,Tamanho),
+    Tamanho =\= 0,Soma is SomaL/Tamanho,!.
+media(_,0).
+quest_2(L,S) :-
+    nl,write('Média dos elementos na lista '),
+    write(L),write(' : '),
+    media(L,S),nl.
+
+% Questão 2: Fim.
+
+% Questão 3. Maior que média aritmética.
+maiores_media(Lista,Z) :- media(Lista,Media), maior(Lista,Z,Media).
+quest_3(L,Z) :-
+    nl,write('Elementos maiores do que a média da lista ('),
+    media(L,Aux),write(Aux),write(') na lista '),write(L),
+    write(' : '),maiores_media(L,Z),nl.
+
+% Questão 3: Fim.
+
+% Questão 4. Elementos anteriores à pos. n.
+ante([],[],_,_).
+ante([X|Y],[X|Z],N,Count) :- Count < N, ante(Y,Z,N,Count+1),!.
+ante([_|Y],Z,N,Count) :- ante(Y,Z,N,Count+1).
+anterior(Num, Lista, Z) :- ante(Lista,Z, Num,0).
+quest_4(N,L,X) :-
+    nl,write('Elementos anteriores à posição '),write(N),
+    write(' na lista '),write(L),
+    write(' : '),anterior(N,L,X),nl.
+
+% Questão 4: Fim.
+
+% Questão 5. Elementos posteriores à pos. n. incluindo n
+post([],[],_,_).
+post([X|Y],[X|Z],N,Count) :- Count >= N, post(Y,Z,N,Count+1),!.
+post([_|Y],Z,N,Count) :- post(Y,Z,N,Count+1).
+posterior(Num, Lista, Z) :-  post(Lista,Z,Num,0).
+quest_5(N,L,X) :-
+    nl,write('Elementos posteriores à posição '),write(N),
+    write(' na lista '),write(L),
+    write(' : '),posterior(N,L,X),nl.
+
+% Questão 5: Fim.
+
+% Questão 6. Lista 1 a n.
+
+ls_1_n(0, []) :- !.
+ls_1_n(X,[X|L]) :- X1 is X-1, ls_1_n(X1, L),!.
+list1_n(N,[]) :- 1 > N,!.        % reverte <- func. 12.
+list1_n(N,Z) :- ls_1_n(N, Aux ), reverte(Aux,Z).
+quest_6(N,L) :-
+    nl,write('Lista de 1 a '),
+    write(N),write(': '),list1_n(N,L),nl.
+
+% Questão 6: Fim.
+
+% Questão 7. Esquerda e Direita de X.
+esqdir([],[],_,_).
+esqdir([X|Y],[X|Z],N,Count) :- Count =:= N-1,esqdir(Y,Z,N,Count+1),!.
+esqdir([X|Y],[X|Z],N,Count) :- Count =:= N+1,esqdir(Y,Z,N,Count+1),!.
+esqdir([_|Y],Z,N,Count) :- esqdir(Y,Z,N,Count+1).
+esq_dir(X,Lista,Z) :- esqdir(Lista,Z,X,0).
+quest_7(N,L,X) :-
+    nl,write('Elementos à esquerda e à direita da posição '),
+    write(N),write(' na lista '),
+    write(L),write(' : '),
+    esq_dir(N,L,X),nl.
+
+% Questão 7: Fim.
+
+% Questão 8. Duas listas.
+esq([],[],_,_).
+esq([X|Y],[X|Z],N,Count) :- Count < N, esq(Y,Z,N,Count+1),!.
+esq([_|Y],Z,N,Count) :- esq(Y,Z,N,Count+1).
+dir([],[],_,_).
+dir([X|Y],[X|Z],N,Count) :- Count >= N, dir(Y,Z,N,Count+1),!.
+dir([_|Y],Z,N,Count) :- dir(Y,Z,N,Count+1).
+divide(X,Lista,A,B) :- esq(Lista,A,X,0), dir(Lista,B,X,0).
+quest_8(X,L,A,B) :-
+    nl,write('Divide a lista '), write(L),write(' em duas na posição: '),
+    write(X),write('. '),divide(X,L,A,B),nl.
+
+% Questão 8: Fim.
+
+% Questão 9. Intervalo entre A e B.
+
+ls_x_y(X, N,[]) :- X-1 =:= N,!.
+ls_x_y(X, N, [N|L]) :- N1 is N - 1, ls_x_y(X,N1,L).
+intervalo(A,B,[]) :- A > B,!.           % reverte <- func. 12.
+intervalo(A,B,Lista):- ls_x_y(A,B,Aux), reverte(Aux,Lista).
+quest_9(A,B,L) :-
+    nl,write('Lista de '),write(A),write(' a '),
+    write(B),write(': '),intervalo(A,B,L),nl.
+
+% Questão 9: Fim.
+
+% Questão 10. Tamanho elementos.
+tam([],_).
+tam([Y],[A]) :- tamanho_v(Y,A),!.
+tam([X|Y], [A|B]) :- tamanho_v(X,A), tam(Y,B),!.
+tamanho(List,N) :- tam(List,N).
+quest_10(L,N) :-
+    nl,write('Tamanho dos elementos da lista '),
+    write(L),write(' : '),
+    tamanho(L,N),nl.
+
+% Questão 10: Fim.
+
+% Questão 11. Merge listas.
+min([],X,X).
+min([H|T],M,X) :- H =< M, min(T,H,X).
+min([H|T],M,X) :- M < H, min(T,M,X).
+minimo([H|T],X) :- min(T,H,X).
+
+cresc([], []).
+cresc([X], [X]) :- !.
+cresc([X|Y],[Aux|Z]) :-
+    minimo([X|Y], Aux),remover_x_lista_15(Aux,[X|Y],W),cresc(W,Z),!.
+ordenar_lista(L,S) :- cresc(L,S).
+
+merg([],X,X):-!.
+merg(X,[],X):-!.
+merg([X|Y],[W|Z],[X|L]):-  X=<W, merg(Y,[W|Z],L),!.
+merg([X|Y],[W|Z],[W|L]):-  W=<X, merg([X|Y],Z,L).
+
+merging(L,L2, M) :-  ordenar_lista(L,O),ordenar_lista(L2,O2),merg(O,O2,M).
+quest_11(L,L2,List) :-
+    nl,write('Merge das listas '),write(L),
+    write(' e '),write(L2),write(' : '),
+    merging(L,L2,List),nl.
+
+% Questão 11: Fim.

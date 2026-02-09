@@ -1,0 +1,8 @@
+Nome: 
+j2
+
+Senha(sem Hash): 
+3333
+
+Senha(com Hash): 
+2be9bd7a3434f7038ca27d1918de58bd

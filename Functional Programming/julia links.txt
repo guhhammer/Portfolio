@@ -1,0 +1,4 @@
+https://docs.julialang.org/en/v1/manual/arrays/
+https://learnxinyminutes.com/docs/julia/
+https://en.wikibooks.org/wiki/Introducing_Julia/Controlling_the_flow
+http://web.stanford.edu/class/ee103/julia_slides/julia_vectors_slides.pdf

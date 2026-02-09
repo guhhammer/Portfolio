@@ -1,0 +1,37 @@
+{
+  "load_grid_locally": false,
+  
+  "grid_filepath": "src/etc/grid.json",
+  
+  "my_grid_name": "SimulationGrid",
+
+  "make_supply_display": false,
+  "make_supply_run": true,
+
+  "price_maker_display": false,
+  "price_maker_run": true,
+  
+  "grid_schema_display": false,
+  "grid_schema_reverse": true,
+  "grid_schema_run": true,
+  
+  "gaspump_schema_display": false,
+  "gaspump_schema_run": true,
+  
+  "fuel_catalog_display": false,
+  "fuel_catalog_run": true,
+  
+  "display_display": false,
+  "display_run": true,
+  
+  "price_tracker_display": false,
+  "price_tracker_price_changes_time_secs": 15,
+  
+  "incoming_simulation_display": false,
+  "incoming_simulation_run": true,
+
+  "periodic_save_grid_period": 30,
+  "periodic_save_grid_display": false,
+  "periodic_save_grid_run": true
+
+}

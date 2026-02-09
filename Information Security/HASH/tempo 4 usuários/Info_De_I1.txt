@@ -1,0 +1,8 @@
+Nome: 
+i1
+
+Senha(sem Hash): 
+2341
+
+Senha(com Hash): 
+c8dfece5cc68249206e4690fc4737a8d

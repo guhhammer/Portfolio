@@ -1,0 +1,52 @@
+# === DOCKER DAEMON MANAGEMENT ===
+
+# Start Docker daemon
+sudo systemctl start docker
+
+# Stop Docker daemon
+sudo systemctl stop docker
+
+# Restart Docker daemon
+sudo systemctl restart docker
+
+# Check Docker daemon status
+sudo systemctl status docker
+
+
+# === CONTAINER MANAGEMENT ===
+
+# List running containers
+docker ps
+
+# List all containers (running + stopped)
+docker ps -a
+
+# Stop a running container
+docker stop <container_id_or_name>
+
+# Remove a container
+docker rm <container_id_or_name>
+
+# Show running processes inside a container
+docker top <container_id_or_name>
+
+
+# === IMAGE AND VOLUME MANAGEMENT ===
+
+# List Docker images
+docker images
+
+# Remove a Docker image
+docker rmi <image_id_or_name>
+
+# List Docker volumes
+docker volume ls
+
+
+# === SYSTEM CLEANUP ===
+
+# Remove stopped containers, unused networks, dangling images, and build cache
+docker system prune
+
+# Remove all unused images (not just dangling), containers, volumes, and networks
+docker system prune -a

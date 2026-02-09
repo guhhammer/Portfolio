@@ -1,0 +1,1028 @@
+
+Gustavo@Gustavo MINGW64 ~
+$ git config --global user.name "Gustavo"
+
+Gustavo@Gustavo MINGW64 ~
+$ mkdir C:/Users/Gustavo/Desktop/assignment5
+
+Gustavo@Gustavo MINGW64 ~
+$ cd C:/Users/Gustavo/Desktop/assignment5
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ mkdir myGitRemote.git
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd myGitRemote.git
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitRemote.git
+$ git init --bare
+Initialized empty Git repository in C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git/
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitRemote.git (BARE:master)
+$ ls
+config  description  HEAD  hooks/  info/  objects/  refs/
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitRemote.git (BARE:master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ mkdir myGitLocalA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd myGitLocalA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA
+$ git init
+Initialized empty Git repository in C:/Users/Gustavo/Desktop/assignment5/myGitLocalA/.git/
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git add *
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git commit -m "Initial Import"
+[master (root-commit) 3c3099e] Initial Import
+ 3 files changed, 169 insertions(+)
+ create mode 100644 GameController.java
+ create mode 100644 LunarLander.java
+ create mode 100644 SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ got remote add origin file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.gitbash: got: command not found
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ got remote add origin file:///.../assignment5/myGitRemote.git
+bash: got: command not found
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git remote add origin file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.72 KiB | 1.72 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+ * [new branch]      master -> master
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git myGitlocalB  Cloning into 'myGitlocalB'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git myGitLocalB
+fatal: destination path 'myGitLocalB' already exists and is not an empty directory.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git myGitLocalB
+Cloning into 'myGitLocalB'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd myGitLocalB
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (master)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (development)
+$ git status
+On branch development
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SpaceCraft.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (development)
+$ git add SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (development)
+$ git commit -m "Developing in progress."
+[development e7de3f6] Developing in progress.
+ 1 file changed, 5 insertions(+)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (development)
+$ git push origin development
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+ * [new branch]      development -> development
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (development)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalB (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd myGitLocalA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  Push  URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  HEAD branch: master
+  Remote branches:
+    development new (next fetch will store in remotes/origin)
+    master      tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 313 bytes | 3.00 KiB/s, done.
+From file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote
+ * [new branch]      development -> origin/development
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git checkout -b development origin/development
+Switched to a new branch 'development'
+Branch 'development' set up to track remote branch 'development' from 'origin'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (development)
+$ git checkout master
+Switched to branch 'master'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git merge development
+Updating 3c3099e..e7de3f6
+Fast-forward
+ SpaceCraft.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git scenarioA
+Cloning into 'scenarioA'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (2/2), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git scenarioB
+Cloning into 'scenarioB'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (2/2), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git scenarioB
+Cloning into 'scenarioB'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (2/2), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git clone file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git scenarioA
+Cloning into 'scenarioA'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (2/2), done.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git checkout -b scenarioA_branch
+Switched to a new branch 'scenarioA_branch'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ git status
+On branch scenarioA_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GameController.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ git add GameController.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ git commit -m "scenarioA_changes"
+[scenarioA_branch 7981a7c] scenarioA_changes
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ git push origin scenarioA_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+ * [new branch]      scenarioA_branch -> scenarioA_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioB
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git checkout -b "scenarioB_branch"
+Switched to a new branch 'scenarioB_branch'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git status
+On branch scenarioB_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GameController.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git add GameController.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git commit -m "scenarioB_changes"
+[scenarioB_branch 5bb1c24] scenarioB_changes
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git push origin development
+error: src refspec development does not match any
+error: failed to push some refs to 'file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git push origin scenarioB_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 418.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+ * [new branch]      scenarioB_branch -> scenarioB_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (scenarioB_branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git remote show
+origin
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  Push  URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  HEAD branch: master
+  Remote branches:
+    development      tracked
+    master           tracked
+    scenarioA_branch new (next fetch will store in remotes/origin)
+    scenarioB_branch tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local refs configured for 'git push':
+    master           pushes to master           (up to date)
+    scenarioB_branch pushes to scenarioB_branch (up to date)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 437 bytes | 1024 bytes/s, done.
+From file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote
+ * [new branch]      scenarioA_branch -> origin/scenarioA_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git checkout -b dev_b origin/scenarioB_branch
+Switched to a new branch 'dev_b'
+Branch 'dev_b' set up to track remote branch 'scenarioB_branch' from 'origin'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (dev_b)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (dev_b)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge scenarioA_branch
+merge: scenarioA_branch - not something we can merge
+
+Did you mean this?
+        origin/scenarioA_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge origin/scenarioA_branch
+Updating 3c3099e..7981a7c
+Fast-forward
+ GameController.java | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge origin/scenarioB_branch
+Auto-merging GameController.java
+CONFLICT (content): Merge conflict in GameController.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git config merge.conflictsytle diff3
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git merge origin/scenarioB_branch
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   GameController.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ diff common mine
+diff: common: No such file or directory
+diff: mine: No such file or directory
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ diff scenarioA_branch/GameController.java scenarioB_branch/GameController.java
+diff: scenarioA_branch/GameController.java: No such file or directory
+diff: scenarioB_branch/GameController.java: No such file or directory
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ diff scenarioA_changes/GameController.java scenarioB_changes/GameController.java
+diff: scenarioA_changes/GameController.java: No such file or directory
+diff: scenarioB_changes/GameController.java: No such file or directory
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git log --merge p GameController.java
+fatal: ambiguous argument 'p': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git log --merge -p GameController.java
+commit 5bb1c24cad91e6f678522469744beacbcc937254 (origin/scenarioB_branch, scenarioB_branch, dev_b)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:11:01 2020 -0300
+
+    scenarioB_changes
+
+commit 5bb1c24cad91e6f678522469744beacbcc937254 (origin/scenarioB_branch, scenarioB_br
+anch, dev_b)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:11:01 2020 -0300
+
+    scenarioB_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..bcb4a12 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,7 +1,9 @@
+-import java.io.BufferedReader;
+ import java.io.IOException;
++import java.io.BufferedReader;
+ import java.io.InputStreamReader;
+
++// I've imported IOException first.
++
+
+ public class GameController {
+
+@@ -20,8 +22,11 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++            System.out.println("This is Lunar Lander");
++           // I've changed the title displayed.
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:09:23 2020 -0300
+
+    scenarioA_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..039790d 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,6 +1,8 @@
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:09:23 2020 -0300
+
+    scenarioA_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..039790d 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,6 +1,8 @@
++import java.io.InputStreamReader;
+ import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
++
++// I've imported InputStreamReader first.
+
+
+ public class GameController {
+@@ -20,8 +22,14 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++           System.out.print("\n");
++           System.out.print("Welcome to my Lunar Lander app");
++           System.out.print("\n");
++
++            // I've changed the introduction message;
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:09:23 2020 -0300
+
+    scenarioA_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..039790d 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,6 +1,8 @@
++import java.io.InputStreamReader;
+ import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
++
++// I've imported InputStreamReader first.
+
+
+ public class GameController {
+@@ -20,8 +22,14 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++           System.out.print("\n");
++           System.out.print("Welcome to my Lunar Lander app");
++           System.out.print("\n");
++
++            // I've changed the introduction message;
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:09:23 2020 -0300
+
+    scenarioA_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..039790d 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,6 +1,8 @@
++import java.io.InputStreamReader;
+ import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
++
++// I've imported InputStreamReader first.
+
+
+ public class GameController {
+@@ -20,8 +22,14 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++           System.out.print("\n");
++           System.out.print("Welcome to my Lunar Lander app");
++           System.out.print("\n");
++
++            // I've changed the introduction message;
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+    scenarioB_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..bcb4a12 100644
+diff --git a/GameController.java b/GameController.java
+commit 5bb1c24cad91e6f678522469744beacbcc937254 (origin/scenarioB_branch, scenarioB_branch, dev_b)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:11:01 2020 -0300
+
+    scenarioB_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..bcb4a12 100644
+--- a/GameController.java
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..bcb4a12 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,7 +1,9 @@
+commit 5bb1c24cad91e6f678522469744beacbcc937254 (origin/scenarioB_branch, scenarioB_branch, dev_b)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:11:01 2020 -0300
+
+    scenarioB_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..bcb4a12 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,7 +1,9 @@
+-import java.io.BufferedReader;
+ import java.io.IOException;
++import java.io.BufferedReader;
+ import java.io.InputStreamReader;
+
++// I've imported IOException first.
++
+
+ public class GameController {
+
+@@ -20,8 +22,11 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++            System.out.println("This is Lunar Lander");
++           // I've changed the title displayed.
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+
+commit 7981a7ce427e0ceb29314543a78c4c5da5276bd3 (HEAD -> master, origin/scenarioA_branch)
+Author: Gustavo <gustavocrazy@yahoo.com>
+Date:   Thu May 7 00:09:23 2020 -0300
+
+    scenarioA_changes
+
+diff --git a/GameController.java b/GameController.java
+index 4f335f6..039790d 100644
+--- a/GameController.java
++++ b/GameController.java
+@@ -1,6 +1,8 @@
++import java.io.InputStreamReader;
+ import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
++
++// I've imported InputStreamReader first.
+
+
+ public class GameController {
+@@ -20,8 +22,14 @@ public class GameController {
+
+        public void run(){
+            //Send welcome message
+-           System.out.println("#Welcome to Lunar Lander");
++           //System.out.println("#Welcome to Lunar Lander");
+
++           System.out.print("\n");
++           System.out.print("Welcome to my Lunar Lander app");
++           System.out.print("\n");
++
++            // I've changed the introduction message;
++
+            try{
+              //Begin reading from System input
+              BufferedReader inputReader =
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git merge origin/scenarioB_branch
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   GameController.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git add GameController.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master|MERGING)
+$ git commit -m "fixed merged conflicts"
+[master 06bdb4a] fixed merged conflicts
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge scenarioB_branch
+Already up to date.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge scenarioA_branch
+merge: scenarioA_branch - not something we can merge
+
+Did you mean this?
+        origin/scenarioA_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git merge origin/scenarioA_branch
+Already up to date.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenarioA_branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git merge origin/scenarioB_branch
+merge: origin/scenarioB_branch - not something we can merge
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  Push  URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  HEAD branch: master
+  Remote branches:
+    development      tracked
+    master           tracked
+    scenarioA_branch tracked
+    scenarioB_branch new (next fetch will store in remotes/origin)
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local refs configured for 'git push':
+    master           pushes to master           (up to date)
+    scenarioA_branch pushes to scenarioA_branch (up to date)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 398 bytes | 30.00 KiB/s, done.
+From file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote
+ * [new branch]      scenarioB_branch -> origin/scenarioB_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git checkout -b developmentA origin/scenarioB_brange
+fatal: 'origin/scenarioB_brange' is not a commit and a branch 'developmentA' cannot be created from it
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (master)
+$ git checkout -b developmentA origin/scenarioB_branch
+Switched to a new branch 'developmentA'
+Branch 'developmentA' set up to track remote branch 'scenarioB_branch' from 'origin'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioB
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  Push  URL: file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote.git
+  HEAD branch: master
+  Remote branches:
+    development      tracked
+    master           tracked
+    scenarioA_branch tracked
+    scenarioB_branch tracked
+  Local branches configured for 'git pull':
+    dev_b  merges with remote scenarioB_branch
+    master merges with remote master
+  Local refs configured for 'git push':
+    master           pushes to master           (fast-forwardable)
+    scenarioB_branch pushes to scenarioB_branch (up to date)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ got fetch origin
+bash: got: command not found
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ git checkout -b developmentB origin/scenarioA_branch
+Switched to a new branch 'developmentB'
+Branch 'developmentB' set up to track remote branch 'scenarioA_branch' from 'origin'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ git status
+On branch developmentB
+Your branch is up to date with 'origin/scenarioA_branch'.
+
+nothing to commit, working tree clean
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ git status
+On branch developmentA
+Your branch is up to date with 'origin/scenarioB_branch'.
+
+nothing to commit, working tree clean
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ git myLocalA
+
+git: 'myLocalA' is not a git command. See 'git --help'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd myGitLocalA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ git fetch origin
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 765 bytes | 51.00 KiB/s, done.
+From file:///C:/Users/Gustavo/Desktop/assignment5/myGitRemote
+ * [new branch]      scenarioA_branch -> origin/scenarioA_branch
+ * [new branch]      scenarioB_branch -> origin/scenarioB_branch
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/myGitLocalA (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioB
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ git status
+On branch developmentB
+Your branch is up to date with 'origin/scenarioA_branch'.
+
+nothing to commit, working tree clean
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ git push scenarioB_branch
+fatal: 'scenarioB_branch' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ git push origin scenarioB_branch
+Everything up-to-date
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$ cd scenarioB
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (developmentB)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioB (master)
+$ cd ..
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5
+$  cd scenarioA
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ git fetch origin
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (developmentA)
+$ git checkout -b scenariob_development origin/scenarioA_branch
+Switched to a new branch 'scenariob_development'
+Branch 'scenariob_development' set up to track remote branch 'scenarioA_branch' from 'origin'.
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenariob_development)
+$ ls
+GameController.java  LunarLander.java  SpaceCraft.java
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenariob_development)
+$ ^C
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenariob_development)
+$ ^C
+
+Gustavo@Gustavo MINGW64 ~/Desktop/assignment5/scenarioA (scenariob_development)
+$

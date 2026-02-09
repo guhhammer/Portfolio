@@ -1,0 +1,8 @@
+Nome: 
+h2
+
+Senha(sem Hash): 
+0001
+
+Senha(com Hash): 
+25bbdcd06c32d477f7fa1c3e4a91b032

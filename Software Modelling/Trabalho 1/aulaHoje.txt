@@ -1,0 +1,3 @@
+<extend> é opciona; sua seta vai contra o sentido de leitura.
+
+<include> é obrigatória; sua seta vai ao encontro do sentido de leitura

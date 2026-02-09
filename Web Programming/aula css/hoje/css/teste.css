@@ -1,0 +1,48 @@
+
+
+html{
+	background-color: #585858;
+}
+
+#div1{
+	margin-left: 120px;
+	margin-top: 30px;
+}
+
+
+#div1 #tb input{
+	padding: 10px 20px 10px 20px;
+	border-radius: 2px;
+	margin-bottom: 3px;
+	border-color: #CCC;
+	border-width: 1px;
+	font-family: Arial;
+	vertical-align: center;
+}
+
+#tb tr td input::placeholder{
+	font-family: Arial;
+}
+
+#div1 #tb tr td input.REDD{
+	border-color: #FA5858;
+}
+
+#div1 #tb tr td input.REDD::placeholder{
+	color: #FA5858;
+}
+
+
+#div1 #tb tr td #bt{
+	margin-top: 17px;
+	background-color: #088A68;
+	color: white;
+	width: 100px;
+	height: 40px;
+}
+
+
+#div1 #tb tr td #bt:hover{
+	cursor: pointer;
+	background-color: #04B486;
+}

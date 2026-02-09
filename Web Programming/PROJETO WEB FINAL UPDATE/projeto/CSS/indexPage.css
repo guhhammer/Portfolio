@@ -1,0 +1,45 @@
+
+body{
+
+	background-image: url("../imagens/telaInicial/fundo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+
+#loadingGif{
+
+	position: absolute;
+	top: 200px;
+	left: 520px;
+
+	width:300px;
+	height: 150px;
+
+}
+
+
+#loadingGif #logo{
+
+
+}
+
+
+#loadingGif #load{
+
+	margin-left: 180px;
+
+}
+
+
+#loadingGif #line{
+
+	margin-left: 140px;
+	
+	color: lightblue;
+	font-size: 30px;
+
+	width: 300px;
+
+}

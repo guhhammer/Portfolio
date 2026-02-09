@@ -1,0 +1,14 @@
+https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
+
+https://docs.python.org/3/library/hashlib.html
+
+https://www.google.com.br/search?q=encode+python&oq=encode&aqs=chrome.2.69i57j0l5.6073j0j7&sourceid=chrome&ie=UTF-8
+
+https://pythonhelp.wordpress.com/2011/10/09/calculando-o-hash-de-strings-em-python/
+
+item03:
+https://security.stackexchange.com/questions/99541/md5-brute-force-on-a-faulty-hash
+
+https://blog.computes.com/cracking-md5-passwords-with-computes-io-9cd43be0dca
+
+https://crypto.stackexchange.com/questions/779/hashing-or-encrypting-twice-to-increase-security

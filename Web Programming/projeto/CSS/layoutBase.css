@@ -1,0 +1,478 @@
+
+
+
+
+#topoBarra{
+
+    background-color: blue;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    width:all;
+    height:60px;
+
+}
+
+
+#topoBarra button{
+    
+    margin-top: -5px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    opacity: 0.9;
+    border-color: white;
+
+}
+
+
+#topoBarra input{
+    
+    margin-top: -5px;
+    margin-left: 25px;
+    padding-left: 10px;
+    height: 30px;
+    width: 320px;
+    opacity: 0.94;
+    border-color: 1px solid blue;
+    font-size: 15px;
+
+}
+
+#topoBarra #btMenu{
+
+    margin-left: -8px;
+    margin-top: -3px;
+    width: 35px;
+    height: 35px;
+
+}
+
+#topoBarra #logo{
+
+    margin-left: 780px;
+    width: 230px;
+    height: 60px;
+
+}
+
+
+#caixaDeEntradaBarra{
+    
+    background-image: linear-gradient(to right, #F0F2F0, #414345);
+    margin-top: -2px;
+    margin-left: -12px;
+    margin-right: -8px;
+    width: all;
+    height: 45px;
+
+}
+
+#caixaDeEntradaBarra button{
+    
+    margin-top: -2px;
+    width: 320px;
+    height: 43px;
+    font-size: 18px;
+
+}
+
+#caixaDeEntradaBarra p{
+
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: Arial;
+
+}
+
+
+#guiaBarra{
+
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 0px;
+    height: 87%;
+    width: 20.9%;
+    background-color: gray;
+
+}
+
+
+#guiaBarra table{
+
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+
+#guiaBarra .btRecolherGuia{
+
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+
+}
+
+
+#guiaBarra .guiaBarraButtons{
+
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 220px;
+    height: 30px;
+    opacity: 0.8;
+
+}
+
+
+#guiaBarra .btMenuSideBar{
+
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
+    margin-left: -8px;
+
+}
+
+
+.withGuide{
+
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 320px;
+
+}
+
+.withoutGuide{
+
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 200px;
+
+}
+
+
+
+.noneStyle{
+
+    display: none;
+
+}
+
+.hide{
+
+    visibility: hidden;
+    display: none;
+
+}
+
+#mensagens .designRascunho{
+
+    width: 1180px;
+    height: 40px;
+    margin-bottom: 5px;
+    
+}
+
+.excluir{
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #F22000;
+    border-color: darkred;
+
+}
+
+.spam{
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #FF6F00;
+    border-color: #FF9933;
+
+}
+
+
+.transparentV{
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: transparent;
+    border-color: black;
+
+}
+
+.yellow{
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #EAF03D;
+    border-color: #F2FA08;
+
+}
+
+.green{
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #32F238;
+    border-color: #5CE661;
+
+}
+#mensagens .designRascunho #excluir:hover{
+
+    cursor: pointer;
+
+}
+
+
+#mensagens .designRascunho p{
+
+    margin-left: 15px;
+
+}
+
+.red{
+
+    background-color: red;
+
+}
+
+#topoBarra #btLogOut{
+
+    width: 38px;
+    height: 38px;
+
+    margin-top: -4px;
+    margin-left: -10px;
+    
+}
+
+
+#topoBarra #btPesquisar{
+
+    width: 36px;
+    height: 34px;
+
+    margin-top: -4px;
+    margin-left: 1px;
+
+}
+
+#topoBarra #btLookFor{
+
+    width: 36px;
+    height: 34px;
+
+    margin-left: -8px;
+    margin-top: -4px;
+
+}
+
+#emptyBox{
+
+
+    margin-left: 300px;
+    margin-top: 65px;
+
+
+}
+
+button:hover{
+
+    background-color: #C9C9C9;
+    cursor: pointer;
+
+}
+
+#btExcluir:hover{
+
+    background-color: #FF9999;
+    cursor: pointer;
+
+}
+
+
+#btSpam:hover{
+
+    background-color: #FF8900;
+    cursor: pointer;
+
+}
+
+
+#btFavoritar:hover{
+
+    background-color: #D8D83B;
+    cursor: pointer;
+
+}
+
+#btVisualizado:hover{
+
+    background-color: #0EFD3E;
+    cursor: pointer;
+
+}
+
+#msgBox:hover{
+
+    background-color: #C9C9C9;
+    cursor: pointer;
+
+}
+
+#btRetornar:hover{
+
+    background-color: #C9C9C9;
+    cursor: pointer;
+
+}
+
+#btRecolher:hover{
+
+    background-color: #C9C9C9;
+    cursor: pointer;
+
+}
+
+
+#btPesquisar:hover{
+
+    background-color: #C9C9C9;
+    cursor: pointer;
+
+}
+
+
+.yellowHIDE{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #EAF03D;
+    border-color: #F2FA08;
+
+    visibility: hidden;
+    display: none;
+
+}
+
+
+.yellowON{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #EAF03D;
+    border-color: #F2FA08;
+
+    visibility: all;
+    display: block;
+    
+}
+
+
+.redHIDE{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: red;
+    border-color: darkred;
+
+    visibility: hidden;
+    display: none;
+
+}
+
+.redON{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: red;
+    border-color: darkred;
+
+    visibility: all;
+    display: block;
+
+}   
+
+
+
+.orangeHIDE{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #FF6F00;
+    border-color: #FF9933;
+
+    visibility: hidden;
+    display: none;
+
+}
+
+.orangeON{
+
+    margin-top: 5px;
+    margin-left: 3px;
+
+    width: 22px;
+    height: 22px;   
+    border-radius: 50%;
+    
+    background-color: #FF6F00;
+    border-color: #FF9933;
+
+    visibility: all;
+    display: block;
+
+}   
+
+
+.highlight{
+
+    background-color: #1EF93C;
+
+}
+
+.unhighlight{
+
+    background-color: transparent;
+
+}
+

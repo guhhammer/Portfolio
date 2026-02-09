@@ -1,0 +1,90 @@
+
+Nomes:
+	Gustavo Foroutan Raposo
+	Gustavo Hammerschmidt
+	João Felipe Schwab Teixera de Andrade
+	Matheus Wilhelm Siqueira
+	Ricardo Naoki Tanji
+
+
+A Motorauto S/A fabrica 3 modelos de automóveis nas suas fábricas: Modelo de 1.100 cilindradas (c.c.), modelo de 1.400 c.c. e modelo de 1.800 c.c. Um conflito trabalhista faz prever uma greve prolongada na fábrica 1 num futuro muito próximo. Para fazer face a esta situação, a direção da empresa decidiu preparar um plano excepcional de produção e vendas para o próximo período, pressupondo que não haverá produção na fábrica 1 durante este período. Neste mesmo período, a capacidade de produção da fábrica 2 será de 4.000 unidades de 1.100 c.c., ou 3.000 unidades de 1.400 c.c. ou 2.000 unidades de 1.800 c.c. ou qualquer combinação apropriada destes 3 modelos. Uma combinação apropriada pode ser, por exemplo, 2.000 unidades de 1.100 c.c. (50% da capacidade), 900 unidades de 1.400 c.c. (30% da capacidade) e 400 modelos de 1.800 c.c. (20% da capacidade). Analogamente a fábrica 3 tem capacidade para 3.000 modelos de 1.100 c.c. ou 8.000 modelos de 1.400 c.c. ou qualquer combinação apropriada destes 2 modelos, não sendo o modelo de 1.800 c.c. produzido nesta fábrica.  Cada automóvel de 1.100 c.c. é vendido por $1.150, cada modelo de 1.400 c.c. é vendido por $1.450 e cada modelo de 1.800 c.c. é vendido por $1.800. O custo de produção na fábrica 2 é de $875, $1.200 e $1.450 para cada unidade produzida dos modelos de 1.100 c.c., 1.400 c.c. e 1.800 c.c. respectivamente. Por sua vez o custo de produção na fábrica 3 é de $900 para cada unidade produzida do modelo de 1.100 c.c. e de $1.100 para cada unidade do modelo de 1.400 c.c. A empresa assumiu compromissos que a obrigam a fornecer 1.000 unidades do modelo de 1.800 c.c. para exportação. Por outro lado, dada a queda na procura pelos modelos de 1.100 c.c. e 1.800 c.c., o departamento comercial estima em 1.000 e 2.500 unidades as vendas máximas destes 2 modelos, respectivamente. Como o modelo de 1.400 c.c. é atualmente um grande sucesso comercial, não existe limitação para suas vendas. No início do período, os estoques dos 3 modelos são de 200 unidades do modelo de 1.100 c.c., 600 unidades do modelo de 1.400 c.c. e 200 unidades do modelo de 1.800 c.c. É possível, dados os últimos acordos assinados, importar da Argentina até 500 unidades do modelo de 1.100 c.c.  Cada modelo importado custará $1.000. Considerando que o objetivo da Motorauto é maximizar seus lucros, formule um modelo de Programação Linear para o problema.
+
+
+
+{Alias:
+	
+	F2 -> Fábrica 2 
+	F3 -> Fábrica 3
+	FI -> Fábrica -- Importação 
+
+	Modelo A -- 1,100 c.c.
+	Modelo B -- 1,400 c.c.
+	Modelo C -- 1,800 c.c.
+
+	F2.M.A. -> Fábrica 2, Modelo A
+
+}
+
+{Lucro:
+
+	Diferença entre Preço e Custo:
+
+		F2.M.A. -> 275
+		F2.M.B. -> 250
+		F2.M.C. -> 350
+		F3.M.A. -> 250
+		F3.M.B. -> 350
+
+		FI.M.A. -> 150 (Importação)
+
+	{Fórmula de lucro:
+
+		- Multiplicação do lucro por unidade:
+
+			Y = Soma([ 
+						F2.M.A. * 275,
+						F2.M.B. * 250,
+						F2.M.C. * 350,
+						F3.M.A. * 250,
+						F3.M.B. * 350,		
+						FI.M.A. * 150 	])
+
+		Obs.:
+			Filtrar para obter o lucro máximo.
+
+	}
+
+}
+
+{Limitadores:
+
+	-- Há limitadores de capacidade de produção,
+		mínimos e máximos de produção,
+		quantidade em estoque,
+		e de importação.
+		
+	{Capacidade de produção:
+
+		F2.M.A./4000 + F2.M.B./3000 + F2.M.C./2000 <= 1
+		
+		F3.M.A./3000 + F3.M.B./8000 <=1
+
+		1 -> 100% da capacidade.
+
+	}
+
+	{Capacidade de importação:
+
+		FI.M.A. <= 500
+
+	}
+
+	{Capacidade de armazenamento:
+
+		F2.M.A. + F3.M.A. + FI.M.A. <= 800
+
+		800 <= F3.M.C. <= 2300
+
+	}
+
+}

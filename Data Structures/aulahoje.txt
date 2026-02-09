@@ -1,0 +1,11 @@
+1) Por que o Mergesort não é in-place?
+  - Não é um algoritmo in-place porque requer um espaço adicional de O(n) para efetuar o merge. 
+
+2) Qual estrutura de dados interna é utilizada pelo Heapsort? Quais as similaridades e diferenças entre essa estrutura e uma árvore binária de busca?
+	- O Heapsort utiliza um heap, uma estrutura binária de árvore(binary heap). O heap segue uma ordenação parcial vertical diferente da ABB, que é uma ordenação parcial horizontal. O Heapsort é melhor em encontrar o mínimo e o máximo O(1), enquanto a árvore binária de busca é melhor em encontrar todos O(log N). Tempo de inserção é melhor no Heapsort do que na ABB. 
+
+3) Quais são as etapas de execução do Heapsort?
+	- Inserção dos dados em um heap(construção) e deconstrução do heap. Reorganização do array de tal forma que esse array represente o heap implicitamente.
+
+
+Heapsort é estático e é in-place

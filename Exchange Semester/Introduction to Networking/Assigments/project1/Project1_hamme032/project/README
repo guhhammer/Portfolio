@@ -1,0 +1,14 @@
+
+Name: Gustavo Hammerschmidt.
+
+To execute the program, run the server classes: Qualcommserver, Viasatserver and Localserver firstly.
+Then run the client classes: Client and Admin.
+
+Classes in the structure module were made to ease the communication betwenn the above mentioned classes.
+
+The abstract classes are used to the define the common structure to similar classes.
+
+For each function, there is a short description of it above its method signature.
+
+
+

@@ -1,0 +1,8 @@
+Nome: 
+g1
+
+Senha(sem Hash): 
+1234
+
+Senha(com Hash): 
+81dc9bdb52d04dc20036dbd8313ed055

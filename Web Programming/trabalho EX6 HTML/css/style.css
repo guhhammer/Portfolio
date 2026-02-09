@@ -1,0 +1,157 @@
+
+
+/* NOME: GUSTAVO HAMMERSCHMIDT */      
+
+
+html{ 
+
+	background-color: #13547a;
+}
+
+#headLugarfy{
+	position: absolute;
+	width: 99%;
+	height: 80px;
+	background-color: green;
+	color: black;
+	text-align: center;
+	font-family: Arial;
+	border-radius: 40px;
+
+
+}
+
+
+#lugarfy{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 100px;
+
+}
+
+
+.blured{
+
+	filter: blur(1px);
+
+}
+
+.highlight{
+
+	background-color: #8cff32;
+	border: 1px solid #AAA;
+	opacity: 0.5;
+
+}
+
+
+
+#listaM{
+
+	border-spacing: 40px;
+
+}
+
+
+#lugarfy{
+
+	font-family: Arial;
+}
+
+#lugarfy #addFont1{
+
+	margin-right: 10px;
+	font-size: 20px;
+
+}
+
+#divAdicionar input{
+
+	width: 250px;
+	height: 30px;
+	border: 3px solid blur(1px);
+	background-color: rgba(256,256,256,0.85);
+
+}
+
+#divAdicionar button{
+
+	background-color: green;
+	border: 1px solid black;
+	border-radius: 6px;
+	color: white;
+	font-size: 20px;
+	width: 180px;
+	height: 40px;
+
+}
+
+
+
+
+#lugarfy #remFont1{
+
+	margin-right: 10px;
+	font-size: 20px;
+
+}
+
+#lugarfy #remFont2{
+
+	margin-right: 10px;
+	font-size: 20px;
+
+}
+
+#divRemover input{
+
+	height: 30px;
+	border: 3px solid blur(1px);
+	background-color: rgba(256,256,256,0.85);
+
+}
+
+
+#divRemover button{
+
+	background-color: green;
+	border: 1px solid black;
+	border-radius: 6px;
+	color: white;
+	font-size: 15px;
+	width: 100px;
+	height: 40px;
+
+}
+
+
+#listaM td{
+
+	font-size: 25px;
+	font-family: Arial;
+
+}
+
+
+#info{
+
+	position: absolute;
+	margin-left: 900px;
+	margin-top: 160px;
+
+}
+
+
+#lugarfy input:hover{
+
+	cursor: pointer;
+	border: 1px solid rgb(0,255,0);
+
+}
+
+#lugarfy button:hover{
+
+	cursor: pointer;
+	background-color: rgb(25,255,43);
+	border: 1px solid #CCC;
+}

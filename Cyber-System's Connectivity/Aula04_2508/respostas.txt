@@ -1,0 +1,20 @@
+Exercícios:
+
+
+A.1) 
+No primeiro programa, o tempo medido foi o do lançamento das threads e, no segundo, o da sua conclusão.
+
+A.2)
+As threads são executadas de maneira serializada, pois uma thread só começa quando a anterior termina.
+
+B.1)
+O processo cria sua própria variável, que não é compartilhada com outros processos ou com o programa principal. Como a variável não foi inicializada, houve erro no +=1.
+
+B.2)
+O interpretador do Python acusa que a variável global não foi encontrada, uma vez que ela só existe no processo main.
+
+C.1)
+Todas as threads fazem a leitura antes do sleep, e, portanto, guardam o valor 0 no número de threads. Assim, o valor final é apenas 0 + 1.
+
+C.2)
+Cada vez que uma thread tenta acessar numthreads, ela é colocada para dormir até que o recurso seja liberado por lock.release(). Isso faz com que a execução das threads fique serializada.

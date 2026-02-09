@@ -1,0 +1,117 @@
+
+
+.withGuide_createMessage{
+
+	position: relative;
+	margin-left: 350px;
+	margin-top: 30px;
+	width: 500px;
+
+}
+
+.withoutGuide_createMessage{
+
+	position: relative;
+	margin-left: 200px;
+	margin-top: 30px;
+	width: 500px;
+
+}
+
+
+
+#criarMensagens p{
+
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: -10px;
+
+}
+
+
+#criarMensagens input{
+
+	width: 1060px;
+	margin-top: -13px;
+	margin-left: 20px;
+	height: 30px;
+	padding-left: 20px;
+}
+
+
+#criarMensagens #emailMensagem{
+
+	margin-left: 20px;
+	width: 1060px;
+	height: 420px;
+
+}
+
+#criarMensagens #btAbortar{
+
+	margin-left: 640px;
+	margin-top: 10px;
+	width: 120px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+
+}
+
+#criarMensagens #btRascunhar{
+
+	margin-left: 770px;
+	margin-top: -45px;
+	width: 180px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+
+}
+
+#criarMensagens #btEnviar{
+
+	margin-left: 960px;
+	margin-top: -48px;
+	width: 120px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+
+}
+
+.redBorder{
+
+	border-color: #F03D3D;
+	background-color: #F65A5A;
+}
+
+
+#btAbortar:hover{
+
+	background-color: #03CBF3; 
+	cursor: pointer;
+
+}
+
+#btRascunhar:hover{
+
+	background-color: #03CBF3; 
+	cursor: pointer;
+
+}
+
+#btEnviar:hover{
+
+	background-color: red; 
+	cursor: pointer;
+
+}
+
+
+#topoBarra #logo{
+
+	margin-left: 770px;
+
+}

@@ -1,0 +1,143 @@
+Senha(Quebra do Hash):   1234
+Tempo de execução:  10.795031682772843
+Senha(Quebra do Hash):   3265
+Tempo de execução:  19.54759044568854
+Senha(Quebra do Hash):   5983
+Tempo de execução:  29.63986756399954
+Senha(Quebra do Hash):   6754
+Tempo de execução:  34.257651912448885
+Tempo para executar a quebra de todas as senhas em segundos(s):  94.24035799801311
+###############################2  g
+
+
+
+Senha(Quebra do Hash):   2897
+Tempo de execução:  15.276249745011091
+Senha(Quebra do Hash):   8342
+Tempo de execução:  43.8151468329843
+Senha(Quebra do Hash):   9991
+Tempo de execução:  49.65591914253592
+Senha(Quebra do Hash):   0923
+Tempo de execução:  5.547498072348006
+Tempo para executar a quebra de todas as senhas em segundos(s):  114.29503403487179
+##########################################1   f
+
+
+
+
+Senha(Quebra do Hash):   7456
+Tempo de execução:  51.53935125689753
+Senha(Quebra do Hash):   0001
+Tempo de execução:  5.241360419819728
+Senha(Quebra do Hash):   8231
+Tempo de execução:  55.90737391573584
+Senha(Quebra do Hash):   3425
+Tempo de execução:  39.07481556336833
+Tempo para executar a quebra de todas as senhas em segundos(s):  151.76322104127846
+###############################################3
+
+
+Senha(Quebra do Hash):   2341
+Tempo de execução:  19.069785920506757
+Senha(Quebra do Hash):   4321
+Tempo de execução:  112.40337470604108
+Senha(Quebra do Hash):   1111
+Tempo de execução:  24.931584711698946
+Senha(Quebra do Hash):   1000
+Tempo de execução:  28.444173359100944
+Tempo para executar a quebra de todas as senhas em segundos(s):  184.8493758598525
+############################################4
+
+
+
+Senha(Quebra do Hash):   2222
+Tempo de execução:  37.47499654669109
+Senha(Quebra do Hash):   3333
+Tempo de execução:  31.974077303656394
+Senha(Quebra do Hash):   4444
+Tempo de execução:  41.72193315163726
+Senha(Quebra do Hash):   5555
+Tempo de execução:  31.646006542256316
+Tempo para executar a quebra de todas as senhas em segundos(s):  142.81724020104886
+#########################################5
+
+Senha(Quebra do Hash):   6666
+Tempo de execução:  42.884729617672726
+Senha(Quebra do Hash):   6665
+Tempo de execução:  36.858165012143246
+Senha(Quebra do Hash):   6664
+Tempo de execução:  39.977953135069924
+Senha(Quebra do Hash):   6663
+Tempo de execução:  48.319994081263744
+Tempo para executar a quebra de todas as senhas em segundos(s):  168.0410753454271
+############################################6
+
+
+
+Senha(Quebra do Hash):   1111
+Tempo de execução:  10.647370759646705
+Senha(Quebra do Hash):   1190
+Tempo de execução:  10.891370662141513
+Senha(Quebra do Hash):   1400
+Tempo de execução:  11.487227033571298
+Senha(Quebra do Hash):   1800
+Tempo de execução:  11.163397748057704
+Tempo para executar a quebra de todas as senhas em segundos(s):  44.189640329858356
+##########################################7
+
+
+
+
+
+Senha(Quebra do Hash):   5000
+Tempo de execução:  36.29546040626308
+Senha(Quebra do Hash):   5000
+Tempo de execução:  33.37619855478487
+Senha(Quebra do Hash):   5000
+Tempo de execução:  47.02326354156821
+Senha(Quebra do Hash):   5000
+Tempo de execução:  36.4084235933486
+Tempo para executar a quebra de todas as senhas em segundos(s):  153.10361722882544
+#############################################8
+
+
+
+Senha(Quebra do Hash):   7213
+Tempo de execução:  43.09690947027738
+Senha(Quebra do Hash):   9000
+Tempo de execução:  54.99616864463933
+Senha(Quebra do Hash):   9900
+Tempo de execução:  50.180017679231
+Senha(Quebra do Hash):   9999
+Tempo de execução:  52.33364908479828
+Tempo para executar a quebra de todas as senhas em segundos(s):  200.60698735896494
+#############################################9
+
+
+
+
+
+Senha(Quebra do Hash):   9672
+Tempo de execução:  53.62491933369741
+Senha(Quebra do Hash):   6324
+Tempo de execução:  35.160624837224056
+Senha(Quebra do Hash):   3242
+Tempo de execução:  20.019161481001234
+Senha(Quebra do Hash):   1223
+Tempo de execução:  10.051679035143351
+Tempo para executar a quebra de todas as senhas em segundos(s):  118.8566083502934
+############################################10
+
+
+
+
+
+
+
+
+
+
+
+
+
+

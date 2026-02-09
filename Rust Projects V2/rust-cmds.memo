@@ -1,0 +1,69 @@
+# 🦀 Rust project management commands
+
+# 1. Create a new project
+cargo new my_project
+
+# 2. Create a new library project
+cargo new my_lib --lib
+
+# 3. Build the project (debug mode)
+cargo build
+
+# 4. Build optimized (release mode)
+cargo build --release
+
+# 5. Run the project (auto-builds if needed)
+cargo run
+
+# 6. Run with arguments
+cargo run -- arg1 arg2
+
+# 7. Run tests
+cargo test
+
+# 8. Check code quickly (faster than build)
+cargo check
+
+# 9. Format code
+cargo fmt
+
+# 10. Lint with Clippy
+cargo clippy
+
+# 11. Clean target directory
+cargo clean
+
+# 12. Show project info (dependencies, targets)
+cargo metadata --format-version=1
+
+# 13. Update dependencies
+cargo update
+
+# 14. Add a dependency
+cargo add <crate-name>
+
+# 15. Remove a dependency
+cargo remove <crate-name>
+
+# 16. List installed Rust versions (toolchains)
+rustup show
+
+# 17. Install a Rust version
+rustup install 1.70.0
+
+# 18. Switch to specific Rust version
+rustup default 1.70.0
+
+# 19. Check Rust version
+rustc --version
+
+# 20. Check Cargo version
+cargo --version
+
+
+Most Used daily:
+
+    cargo check     # quick compile check
+    cargo run       # run in debug
+    cargo build --release   # final optimized build
+    cargo test      # test all

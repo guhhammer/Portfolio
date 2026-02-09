@@ -1,0 +1,10 @@
+Streaming transaction logs mentioning 5ySaYqh4WwZMoNiVmW6B8Hb4Kb1AwXABNaXpR4pHpQR2. Confirmed commitment
+Transaction executed in slot 28:
+  Signature: 3UT7MEcJJRV9Q54WfyC6VEHNepJiQgzu935NHHRrMcsKqKGUdu8mAd9gYAFgsURKMDqJFe25423K24wAKmZ8FUjV
+  Status: Ok
+  Log Messages:
+    Program 5ySaYqh4WwZMoNiVmW6B8Hb4Kb1AwXABNaXpR4pHpQR2 invoke [1]
+    Program log: Instruction: Initialize
+    Program log: Greetings from: 5ySaYqh4WwZMoNiVmW6B8Hb4Kb1AwXABNaXpR4pHpQR2
+    Program 5ySaYqh4WwZMoNiVmW6B8Hb4Kb1AwXABNaXpR4pHpQR2 consumed 11690 of 200000 compute units
+    Program 5ySaYqh4WwZMoNiVmW6B8Hb4Kb1AwXABNaXpR4pHpQR2 success

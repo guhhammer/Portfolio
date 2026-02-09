@@ -1,0 +1,15 @@
+inicio
+	inteiro: a;
+	imprima (" digite um valor para a :");
+        leia ( a );
+        se a = 5 E andre=gay
+        entao
+		imprima (" igual a 5");
+	senao
+		imprima (" diferente de 5");
+	fim-se
+	
+	enquanto x = 0 faz
+		y <- y + 1
+	fim_enquanto
+fim

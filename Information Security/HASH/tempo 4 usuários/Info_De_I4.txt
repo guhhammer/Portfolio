@@ -1,0 +1,8 @@
+Nome: 
+i4
+
+Senha(sem Hash): 
+1000
+
+Senha(com Hash): 
+a9b7ba70783b617e9998dc4dd82eb3c5

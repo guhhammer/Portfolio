@@ -1,0 +1,27 @@
+
+html, body{
+	overflow-x: hidden;
+}
+
+#header{
+	margin-bottom: 1%;
+}
+
+#header #p_name{
+	position: absolute;
+	color: #04DC77;
+	margin-left: 5%;
+	font-size: 240%;
+	width: 100%;
+}
+
+#header #p_rank{
+	position: absolute;
+	color: #04DC77;
+	color: #04DC77;
+	right: 10%;
+	display: inline-block;
+	text-align: right;
+	font-size: 220%;
+	width: 110%;
+}

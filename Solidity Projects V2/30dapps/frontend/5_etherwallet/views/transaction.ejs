@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+</head>
+<body>
+    <h1>Transaction History</h1>
+    <% if (transactions.length > 0) { %>
+        <ul>
+        <% transactions.forEach(function(tx) { %>
+            <li>
+                <strong>Owner:</strong> <%= tx.owner %> |
+                <strong>Direction:</strong> <%= tx.direction %> |
+                <strong>Amount:</strong> <%= tx.amount %> ETH |
+                <strong>Timestamp:</strong> <%= tx.timestamp %>
+            </li>
+        <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No transactions found.</p>
+    <% } %>
+    <a href="/">Go back</a>
+</body>
+</html>

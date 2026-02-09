@@ -1,0 +1,107 @@
+
+/*
+   vertical(segmento(ponto(X,Y1),ponto(X,Y2) ) ).
+  horizontal(segmento(ponto(X1,Y),ponto(X2,Y) ) ).
+*/
+
+
+/*
+comandos:
+    pwd.
+    ls.
+
+
+*/
+/*
+gosta(julio,peixe).
+gosta(julio,maria).
+gosta(maria,livro).
+gosta(joao,livro).
+*/
+/*
+sum(X,Y,Z) :- Z is X + Y.
+
+maior(X,Y,Z) :-  X > Y, Z is X.
+maior(X,Y,Z) :-  Y > X, Z is Y.
+maior(X,Y,'iguais')  :-  X == Y.
+
+menor(X,Y,Z) :-  X < Y, Z is X.
+menor(X,Y,Z) :-  Y < X, Z is Y.
+menor(X,Y,'iguais')  :-  X == Y.
+
+
+par(X) :- Z is X mod 2, Z = 0.
+impar(X) :-    \+ par(X).
+*/
+
+/*
+casado(john, jenny).
+casado(john_junior, mary).
+casado(steve, stacey).
+casado(ben, anne).
+pai(john, anne).
+pai(john, john_junior).
+pai(john_junior, drake).
+pai(ben, joe).
+
+mae(X,Y) :- casado(Z,X), pai(Z,Y).
+irmao(X,Y) :- pai(Z,X),pai(Z,Y).
+irmao(X,Y) :- mae(Z,X),mae(Z,Y).
+tio(X,Y) :- irmao(X,Z), pai(Z,Y).
+tio(X,Y) :- irmao(X,Z), mae(Z,Y).
+avo(X,Y) :- pai(X,Z), pai(Z,Y).
+primo(X,Y) :- pai(Z,X),irmao(Z,W),pai(W,Y), X \= Y.
+primo(X,Y) :- mae(Z,X),irmao(Z,W),pai(W,Y), X \= Y.
+cunhado(X,Y) :- casado(X,Z), irmao(Z,Y).
+*/
+/*
+mulher(jane).
+mae(jane, john).
+
+mae(X,_) :- mulher(X).
+*/
+/*
+facil(1).
+facil(2).
+facil(3).
+gizmo(a,1).
+gizmo(b,3).
+gizmo(a,2).
+gizmo(d,5).
+gizmo(c,3).
+gizmo(a,3).
+gizmo(c,4).
+
+
+
+maisdificil(a, 1).
+maisdificil(c, X).
+maisdificil(b, 4).
+maisdificil(d, 2).
+*/
+
+
+a(a1,1).
+a(A,2).
+a(a3,N).
+b(1,b1).
+b(2,B).
+b(N,b3).
+
+c(X,Y) :-a(X,N),b(N,Y).
+d(X,Y) :-a(X,N),b(Y,N).
+
+d(X,Y) :- a(N,X), b(N,Y).
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+#install tauri dependencies for debian.
+sudo apt update
+sudo apt install libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev
+
+
+#install rust if don't have.
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
+#scaffold the app.
+npm create tauri-app@latest
+# follow the prompts:
+# - Frontend: TypeScript/JavaScript
+# - Package manager: your choice (npm/pnpm/yarn)
+# - UI template: Vanilla
+# - UI flavor: TypeScript (recommended)
+
+#run dev.
+cd <your-app>
+npm install        # or pnpm install / yarn
+npm run tauri dev  # or: pnpm tauri dev / yarn tauri dev
+
+#make a change in index.html.
+<h1 id="message">Hello, Tauri!</h1>
+
+#make a build distribution.
+npm run tauri build

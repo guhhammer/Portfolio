@@ -1,0 +1,62 @@
+
+Nome: Gustavo Hammerschmidt.
+
+
+Exercício 1:
+
+I. V (O tamanho usual do cluster é 4K)
+II. V (O espaço perdido é chamado slack space)
+III. F (Cluster pequeno irá aumentar a complexidade das operações de leitura do arquivo, pois haverão muitos pedaços que precisarão ser localizados.)
+IV. V
+V. F (A fragmentação acontece porque o sistema não tem como saber qual será o tamanho do arquivo.)
+VI. V
+
+
+Exercício 2:
+
+I. V
+Obs.: ext usa um modelo para mapear arquivos em clusters chamado i-nodes.
+II. V
+III. V
+Obs.: NTFS e ext4 são robustos contra esse problema.
+IV. F
+Obs.: NTFS e ext4 têm meios de restaurar os sistemas de arquivo, usando journaling por exemplo; ext2, ext3 e FAT são sujeitos a esses problemas.
+V. F
+Obs.: é preciso escrever os dados no disco e atualizar a tabela que associa o cluster ao arquivo.
+
+
+Exercício 3: 
+
+(e)
+(f)
+(i)
+(f)
+(i)
+
+
+Exercício 4:
+
+r: não cria o arquivo.
+w+: sempre cria um arquivo novo.
+a+: só cria o arquivo se ele não existir.
+
+(r)
+(r ou r+)
+(w, w+, a, a+)
+(w+, a+) 
+(w+)
+(a+, r+)
+(a) Obs.: abre um arquivo em modo atualização.
+
+
+Exercício 5:
+
+I. F
+II. V
+III. V
+Obs.: BASE64 é um algoritmo que codifica qualquer arquivo binário em texto.
+IV. F
+V. V
+VI. V
+
+

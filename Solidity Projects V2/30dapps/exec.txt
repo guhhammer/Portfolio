@@ -1,0 +1,6 @@
+
+npx ganache - background terminal 
+
+nvm install 18
+nvm use 18
+truffle compile && truffle migrate --reset && truffle test

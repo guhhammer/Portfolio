@@ -1,0 +1,26 @@
+Avaliação Eager:
+
+	- Função é avaliada assim que é ligada aos seus parâmetros.
+
+Vantagens: 
+	- Programador dita a ordem de execução facilmente.
+	- Não há necessidade de manter a referência de avaliações de expressões.
+
+Disvantagens:
+	- Força a avaliação de uma expressão que talvez não seja necessária em tempo de execução.
+	- Talvez atrase a avaliação de outras expressões que tenham necessidade imediata.
+	- Força o programador a otimizar o código para otimizar a ordem de execução.
+
+Avaliação Lazy:
+	- Chamada por necessidade.
+	- Adia a avaliação até sua demanda.
+
+Vantagens:
+	- Torna possível adicionar construções sem o uso de macros.
+	- Pode otimizar performance do programa.
+	- Pode ajudar a resolver dependências circulares e dá acesso a estruturas de dados infinitas.
+
+Disvantagens:
+	- Difícil de encontrar bugs.
+	- Pode aumentar a complexidade doespaço.
+	- É mais difícil codificar em contraste com a abordagem convencional.

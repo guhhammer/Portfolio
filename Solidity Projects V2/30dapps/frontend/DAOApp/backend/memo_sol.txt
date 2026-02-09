@@ -1,0 +1,37 @@
+
+RUN GANACHE ON A SEPARATE TERMINAL: npx ganache.
+
+COMPILE CONTRACTS: truffle compile.
+
+DEPLOY MIGRATIONS: truffle migrate --reset.
+
+TEST CONTRACTS: truffle test.
+
+npx ganache:
+- sudo lsof -i :8545
+- kill -9 <process-id>
+- npx ganache
+
+MAKE IT ALL IN ONE:
+- truffle compile && truffle migrate --reset && truffle test
+
+TO MAKE A CUSTOM NETWORK:
+- truffle migrate --reset --network ganache.
+
+
+MIGRATE TO DEVELOPMENT BEFORE RUNNING FRONTEND.
+truffle migrate --network development
+
+TO MAKE NEW FRONTENDS:
+npm init -y
+npm install express ejs web3
+touch app.js
+mkdir views
+touch views/index.ejs
+
+run node app.js on frontend/project_name folder.
+
+Sometimes there is a need to force build clean:
+rm -rf build/
+
+

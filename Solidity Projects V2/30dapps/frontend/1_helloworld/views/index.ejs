@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+</head>
+<body>
+  <h1>HelloWorld Contract</h1>
+
+  <form action="/sayhello" method="POST">
+    <button type="submit">Say Hello (Call Contract)</button>
+  </form>
+
+  <h2>Last Hello Message:</h2>
+  <% if (message) { %>
+    <p><strong><%= message %></strong></p>
+  <% } else { %>
+    <p>No message yet.</p>
+  <% } %>
+
+</body>
+</html>

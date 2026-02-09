@@ -1,0 +1,12 @@
+
+Name: Gustavo Hammerschmidt.
+
+Question1:
+
+	No, the changes I've made didn't show up because the development branch was not merged to the master branch.
+
+
+Question 2:
+
+	Yes, because I've fetched the latest data from the rpository.
+

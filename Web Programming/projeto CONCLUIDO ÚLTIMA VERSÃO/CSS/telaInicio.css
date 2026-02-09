@@ -1,0 +1,125 @@
+
+body{
+
+	background-image: url("../imagens/telaInicial/fundo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+
+#login{
+	
+	position: absolute;
+	top: 150px;
+	left: 520px;
+
+	width: 500px;
+	height: 310px;
+
+}
+
+#login #logo{
+
+	width: 500px;
+	height: 180px;
+
+}
+
+
+#login #usuario{
+
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 430px;
+	height: 30px;
+	opacity: 0.95;
+	text-align: center;
+	font-family: Arial;
+	border: 1px solid rgb(15,256,256);
+	font-size: 20px;
+
+}
+
+
+#login #senha{
+
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 430px;
+	height: 30px;
+	opacity: 0.95;
+	text-align: center;
+	font-family: Arial;
+	border: 1px solid rgb(15,256,256);
+	font-size: 20px;
+
+}
+
+
+#login #btLogin{
+
+	margin-top: 18px;
+	margin-left: 130px;
+	width: 230px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;
+
+}
+
+#login #btLogin:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+
+}
+
+#login #btForget{
+
+	margin-top: 20px;
+	margin-left: -30px;
+	font-size: 20px;
+	color: #FF9A00;
+	background-color: transparent;
+	border-color: transparent;
+
+}
+
+#login #btForget:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	color: #BC7D1F;
+
+}
+
+#login #btCreate{
+
+	margin-top: 20px;
+	margin-left: -10px;
+	font-size: 20px;
+	color: #FF9A00;
+	background-color: transparent;
+	border-color: transparent;
+
+}
+
+#login #btCreate:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	color: #BC7D1F;
+
+}
+
+
+.redBorder{
+
+	border-color: red;
+
+}

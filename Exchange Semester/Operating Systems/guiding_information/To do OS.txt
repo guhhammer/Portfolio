@@ -1,0 +1,7 @@
+
+POSIX Threads:
+https://computing.llnl.gov/tutorials/pthreads/
+
+
+Linux Commands:
+https://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9780134774626/firstchapter

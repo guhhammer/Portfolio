@@ -1,0 +1,1 @@
+I couldn't upload my saved model due to internet complications. I can send it for you if you find it necessary, I would if I had one more hour to upload and download it from my virtual linux machine and if it was explicitly requested. :)

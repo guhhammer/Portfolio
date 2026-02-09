@@ -1,0 +1,76 @@
+{
+  "contractName": "None",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/30_none.sol\":\"None\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/30_none.sol\":{\"keccak256\":\"0xf597b4870f9ec608721701bf4c98335235ba05429f8bbc4d61e5f83db815512c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cfe8ad1a09dd3d102208614e51f296be3f733f93eca341f26280e66a997b7d6d\",\"dweb:/ipfs/QmdhR6Z9vxD1h475stNUZt6whWa7UKaqpK7VmnYSJYoKs5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea2646970667358221220eb786b2d914e3bcccf88bae57e8a9d404c60d3c6ed9662b27237d5342ceeaf2064736f6c63430008150033",
+  "deployedBytecode": "0x60806040525f80fdfea2646970667358221220eb786b2d914e3bcccf88bae57e8a9d404c60d3c6ed9662b27237d5342ceeaf2064736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "65:16:22:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "65:16:22:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.21;\n\ncontract None {}\n\n\n// do dex implements.",
+  "sourcePath": "/home/gustavo/Desktop/eat-the-blocks/30dapps/contracts/30_none.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/30_none.sol",
+    "exportedSymbols": {
+      "None": [
+        8160
+      ]
+    },
+    "id": 8161,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8159,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:24:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "None",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8160,
+        "linearizedBaseContracts": [
+          8160
+        ],
+        "name": "None",
+        "nameLocation": "74:4:22",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 8161,
+        "src": "65:16:22",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "39:66:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-05-12T18:41:35.497Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

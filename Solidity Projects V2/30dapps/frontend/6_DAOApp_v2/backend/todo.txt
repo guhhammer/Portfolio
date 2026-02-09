@@ -1,0 +1,6 @@
+
+
+Maybe make frontend for 15_dao.sol.
+
+check fomo3d on github - try to run.
+

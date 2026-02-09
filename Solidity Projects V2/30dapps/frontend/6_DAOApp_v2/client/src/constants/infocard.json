@@ -1,0 +1,6 @@
+{
+    "admin": "0x0000..0000 (inject)",
+    "contributionLimit": "30 days (inject)",
+    "quorum": "50%",
+    "votingPeriod": "30 days"
+}

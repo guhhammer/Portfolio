@@ -1,0 +1,260 @@
+
+
+					Primeira Aula de Compiladores
+
+
+
+
+Uma linguagem artificial é planejada e projetada de modo consciente: ou seja,
+a gramática normalmente é simplificada para facilitar o aprendizado.
+
+
+Uma linguagem natural é aquela que evolui naturalmente; suas gramáticas são
+modelos imperfeitos de fenômenos linguísticos, que são mais complexos, não 
+determinísticos e ambíguos.  Exemplo: Linguagens faladas.
+
+
+Interpretador -> ferramenta que faz análises e processamentos de uma linguagem
+articial. O código é executado à medida que é analisado.
+
+
+""""""""""""""""""""""""""""""""""""""
+Interpretador vs Compilador:
+
+- Interpretador:
+	
+	- Executa um programa-fonte de imediato.
+	
+	Processo: 
+		
+		1) Tradução (compilação). ->
+		2) Código intermediário (por exemplo, Bytecode). ->
+		3) Máquina Virtual (Módulos/Bibliotecas). -> 
+		4) Código Executando.
+	
+- Compilador:
+	
+	- Gera um código-objeto (máquina/binário); o qual é executado após o 
+	término da tradução.
+	
+Prof. Gregory disse:  Cá, entre nós. Definimos compiladores somente aqueles que
+transformam o código em código binário.
+""""""""""""""""""""""""""""""""""""""
+
+Interpretadores:
+
+Principais Funcionalidades:
+
+	- Fornercer um meio de abstração para a programação.
+	- Verificar certos tipos de erros no código.
+	- Permitir a execução do código.
+	
+	
+Principais fases ou etapas de interpretação do código:
+
+	- Análise Léxica.
+	- Análise Sintática.
+	- Análise Semântica;  esta é opcional.
+	
+	Etapas adicionais que caracterizam o processo de compilação:
+	- Geração de código.
+	- Otimização de código.
+	
+	
+Processo de Interpretação:
+
+Código-fonte (Linguagem A) ->
+
+	1) De Análise Léxica para Análise Sintática ->  Tokens.
+
+	2) De Análise Sintática para Análise Semântica -> Árvore Sintática.
+
+	3) De Análise Semântica para Otimização de Código -> Árvore anotada.
+
+	4) De Otimização de Código para Geração de Código -> Código intermediário.
+	
+	-> Código-alvo (Linguagem B).
+	
+	Obs.: 
+	
+		- 1) e 2) são parte da Interpretação.
+		- 4) é parte da Compilação.
+		
+--------------------------------------------------------------------------	
+		
+Um alfabeto (Σ) é um conjunto finito de símbolos indivisíveis. 
+
+	-	Σ = {a,b,c}
+	-   Σ = {0,1}
+	
+Tamanho de uma palavra w: |w| 
+	
+	- W = abab;  |W| = 4
+	
+	
+	
+Palavra vazia: ε, sendo |ε| = 0 
+	
+	
+Concatenação de palavras:
+
+	W = açú   | U = car
+
+		WU (ou W.U) = açúcar
+		
+		UW (ou U.W) = caraçú
+	
+	
+Concatenação sucessiva:
+	
+	- concatenação de uma palavra com ela mesma:
+	
+		W ^ (n):  W elevado a n
+
+		oi² = oioi
+
+
+
+
+Subpalavra -> qualquer sequência de símbolos contíguos da palavra.
+
+Prefixo -> qualquer sequência inicial de símbolos da palavra.
+
+Sufixo -> qualquer sequência final de símbolos de uma palavra.
+
+*** Qualquer prefixo ou sufixo de uma palavra é uma subpalavra.
+
+*** ε também é uma subpalavra.
+
+
+Reverso -> o reverso de uma palavra W é a palavra W ^ r formada pelos
+símbolos de W na ordem inversa.
+
+Conjunto de todas as palavras:
+
+	- Seja Σ um alfabeto, então Σ* denota o conjunto de todas as
+	palavras sobre o alfabeto. 
+	- * representa o fecho de Kleene ("0 ou mais repetições") 
+	- Ex.: se Σ = {a, b}, então:
+         - Σ* = {a, b}* = {ε, a, b, aa, ab, ba, bb, aaa, …} 
+		 
+	Além disso, Σ+ denota Σ* - {ε} 
+	
+	
+Uma Linguagem Formal ou Linguagem L sobre um alfabeto Σ é um
+subconjunto de Σ*.  L (está contido) Σ*.
+
+
+
+---------------------------------------------------------------
+
+
+Análise Léxica:
+
+
+	- Tokens: classes de símbolos, como palavras reservadas, 
+	delimitadores, identificadores, etc. 
+
+	*** Importante armazenar com o token os valores reconhecidos
+	no código-fonte.
+
+
+	Padrão e Lexema:
+		
+		- Padrão:
+			
+			- Regra descrevendo um conjunto de cadeias de entrada que
+			podem ser reconhecidas como um dado token. 
+		
+		- Lexema ou valor:
+		
+			- Conjunto de caracteres reconhecidos no código-fonte pelo
+			padrão de um token. 
+			
+			- Atributo do token.
+			
+			
+			
+Linguagens Regulares:		
+
+	- Uma linguagem regular é a linguagem formal que pode ser expressa através 
+	de uma expressão regular.
+	
+	- Se adaptam as necessidades mínimas da análise léxica de
+	compiladores.
+		
+		- Especificação (descrição) e reconhecimento de tokens. 
+
+	- Possuem limitações de expressividade:
+		
+		- Uma linguagem com duplo balanceamento não é regular.
+			- Ex.: Linguagens que utilizam parênteses balanceados (abertura
+			e fechamento), como C, C++, Pascal, LISP, Java, etc. 
+
+
+Expressão Regular:
+
+	- Toda linguagem regular pode ser descrita (especificada) por
+	uma expressão regular. 
+	
+	- Formalismo gerador, pois pode inferir-se como gerar as
+	palavras de uma linguagem. 
+	
+	- Representa um padrão de cadeias de caracteres. 
+	
+	- Útil para descrever formalmente os tokens de uma linguagem. 
+
+	- Definição:
+	
+		- As expressões regulares (ER) são definidas a partir de:
+			
+			- Conjuntos básicos
+			
+			- (letra phi) é uma ER e representa a linguagem vazia.
+			
+			- ε é uma ER e representa a linguagem contendo exclusivamente 
+			a palavra vazia, i.e., { ε }
+			
+			- Para qualquer símbolo x de Σ, x é uma ER e representa a
+			linguagem { x }
+			
+			- Operações de concatenação (.) e união (+), Fecho de Kleene (*) 
+
+
+	- Precedência dos Operadores:
+
+	Maior  - - - - > Menor: 
+	
+		*  - >  .  - > +
+		F. Kleene -> concatenação -> união.
+		
+	O operador de união, + , pode ser denotado, também, como | .
+
+
+	- Representação simplificada:
+	
+		[0-9] (números naturais)
+        [a-z] (alfabeto em minúsculo)
+		[A-Z] (alfabeto em maiúsculo)
+		[a-zA-Z] (alfabeto em minúsculo e maiúsculo)
+		+ (uma ou mais ocorrências do elemento precedente)
+		* (zero ou mais ocorrências do elemento precedente)	
+		? (zero ou uma ocorrência do elemento precedente) 
+
+
+
+
+
+Hierarquia de Chomsky:
+
+	- Linguagens Regulares(Tipo 3).
+	- Linguagens Livres do Contexto(Tipo 2).
+	- Linguagens Sensíveis ao Contexto(Tipo 1).
+	- Linguagens Recursivamente Enumeráveis(Tipo 0).
+	
+	- -> Complexidade aumenta -> + : 
+		Tipo 3 -> Tipo 2 -> Tipo 1 -> Tipo0.
+			
+
+	  
+	 

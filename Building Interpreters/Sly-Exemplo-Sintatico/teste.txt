@@ -1,0 +1,42 @@
+inicio 
+
+	inteiro: a;
+	
+	a <- 6;
+
+	se a > 0 entao imprima(a); senao imprima("nao"); fim_se
+	
+	inteiro: i;
+	i <- (a+a);
+	
+	repete imprima(i); ate i < 10
+
+	enquanto i < 5 faz imprima(i); fim_enquanto
+	
+	inteiro: x;
+
+	para x de 0 ate 10 passo 2 imprima(x); fim_para
+
+	imprima(x);
+
+	
+	se a > 5 E a < 10 entao imprima("sim"); fim_se	
+	
+	se not a > 5 OU a < 10
+	   entao 
+		inteiro: a <- 2+1;
+	   senao 
+		imprima("nao");
+	fim_se
+	
+	enquanto a > 5 E a < 10 faz imprima("sim"); fim_enquanto
+	
+	repete imprima(i); ate a > 5 E a < 10	
+	
+	inteiro: s <- 6;
+	inteiro: y <- 3;
+
+	se  (s > 5) = (true <> false)  entao s <- s + 1; fim_se
+	
+	leia(b);	
+fim

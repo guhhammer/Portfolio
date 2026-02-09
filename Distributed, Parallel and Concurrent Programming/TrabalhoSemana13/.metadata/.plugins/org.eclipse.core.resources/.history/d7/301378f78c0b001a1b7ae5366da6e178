@@ -1,0 +1,150 @@
+package Projeto;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class ClosenessCentrality {
+
+	private static Grafo g; // Grafo de uso.
+	
+	private static ArrayList<Integer> possibilidades = new ArrayList<>(); // fins de caminho possíveis.
+	
+	private static Queue<Integer> p = new LinkedList<Integer>(); // contrói possibilidades.
+	
+	// Uso: faz busca em largura de possíveis caminhos. Somente utilizado para grafos direcionados.
+	private static void busca() {
+		
+		if(p.peek() == null) {  return; }
+		
+		if(!possibilidades.contains(p.peek())) {
+			
+			possibilidades.add(p.peek());
+			
+			MEsparsa.Knot aux = g.matriz.lista[p.peek()].primeiro;
+			while(aux != null) {  p.offer(aux.adjacente);  aux = aux.proximo;  }
+			
+		}
+		
+		p.poll();
+		
+		if(p.peek() != null) { busca();}
+		
+	}
+	
+	// Uso: encontra alcançabilidade de um vértice.
+	private static boolean findReachability(int inicio, int fim) {
+		
+		possibilidades.clear();  p.clear();
+		
+		p.offer(inicio);
+		
+		busca();
+		
+		for(Integer i : possibilidades) { if(i == fim) { return true; } }
+		
+		return false;
+		
+	}
+	
+	// Uso: seta o grafo de uso.
+	private static void setGrafo(Grafo gr) { g = gr; } 
+	
+	// Uso: C.P. para grafo não-direcionado.
+	private static float closenessDe_(int vertice) {
+		
+		int[] actual = null; // componenente do vértice.
+		boolean flag = false;
+		for(Object x_ : g.getComponentes()) { 
+		   actual = (int[]) x_;
+		   for(int i = 0; i < actual.length; i++) { if(actual[i] == vertice) { flag = true; }  if(flag) { break; } }
+		   if(flag) { break; }
+		}
+	
+		float soma = 0.0f; // soma das distâncias entre os elementos do componente e o vértice. 
+		for(int i = 0; i < actual.length; i++) { 
+			if(actual[i] != vertice) { soma += Dijkstra.distancia(g, vertice, actual[i])*1.0f; }
+		}
+		
+		return (soma == 0.0f) ? 0.0f : (float) Math.pow(soma, -1);
+
+	}
+	
+	// Uso: C.P. para grafo direcionado.
+	private static float closenessDe_Directed(int vertice) {
+		
+		int[] actual = null; // componenente do vértice.
+		boolean flag = false;
+		for(Object x_ : g.getComponentes()) { 
+		   actual = (int[]) x_;
+		   for(int i = 0; i < actual.length; i++) { if(actual[i] == vertice) { flag = true; }  if(flag) { break; } }
+		   if(flag) { break; }
+		}
+		
+		float soma = 0.0f; // soma das distâncias entre os elementos do componente e o vértice. 
+		for(int i = 0; i < actual.length; i++) { 
+			if(actual[i] != vertice && findReachability(vertice, actual[i])) {
+				soma += Dijkstra.distancia(g, vertice, actual[i])*1.0f;
+			}  // a soma só ocorre se o vértice actual[i] for alcançável.
+		}
+		
+		return (soma == 0.0f) ? 0.0f : (float) Math.pow(soma, -1);
+
+	}
+	
+	// Uso: retorna os C.P.s de todos os vértices do grafo.
+	private static void closenessAll(boolean direcionado) {
+		
+		System.out.println("\n\nCentralidade de Proximidade:\n");
+		for(int i = 0; i < g.tamanho; i++) {
+			System.out.print(String.format("C.P. do vértice %d:   %f\n", i,
+							(direcionado) ? closenessDe_Directed(i) : closenessDe_(i)));
+		}
+		System.out.println("\n\n");
+	}
+	
+	// Uso: define a ordem de execução dos métodos da classe.
+	private static void steps(Grafo g) {
+		
+		setGrafo(g);
+		
+		closenessAll(g.direcionado);
+		
+	}
+	
+	// Uso: função de acesso público à classe.
+	public static void centralidadeDeProximidade(Grafo g) { steps(g); }
+	
+	
+	public static void main(String[] args) {
+		
+		
+		Grafo g = new Grafo(8, false);
+		
+		g.criaAdjacencia(0, 1, 3);
+		g.criaAdjacencia(0, 4, 1);
+		
+		g.criaAdjacencia(1, 4, 2);
+		g.criaAdjacencia(1, 6, 5);
+		g.criaAdjacencia(1, 7, 4);
+		g.criaAdjacencia(1, 3, 2);
+		g.criaAdjacencia(1, 2, 3);
+		
+		
+		g.criaAdjacencia(4, 6, 3);
+		g.criaAdjacencia(4, 5, 2);
+		g.criaAdjacencia(5, 6, 2);
+		g.criaAdjacencia(6, 7, 1);
+		
+		g.criaAdjacencia(3, 7, 2);
+		g.criaAdjacencia(3, 2, 2);
+		
+		setGrafo(g);
+		
+		System.out.println(closenessDe_(0));
+		
+		
+		
+	}
+	
+}

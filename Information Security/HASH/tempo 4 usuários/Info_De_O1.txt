@@ -1,0 +1,8 @@
+Nome: 
+o1
+
+Senha(sem Hash): 
+9672
+
+Senha(com Hash): 
+66705064b387572428517e38ae23e019

@@ -1,0 +1,2714 @@
+\documentclass[11pt]{article}
+
+    \usepackage[breakable]{tcolorbox}
+    \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)
+    
+    \usepackage{iftex}
+    \ifPDFTeX
+    	\usepackage[T1]{fontenc}
+    	\usepackage{mathpazo}
+    \else
+    	\usepackage{fontspec}
+    \fi
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % Maintain compatibility with old templates. Remove in nbconvert 6.0
+    \let\Oldincludegraphics\includegraphics
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionFormat{nocaption}{}
+    \captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
+
+    \usepackage[Export]{adjustbox} % Used to constrain images to a maximum size
+    \adjustboxset{max size={0.9\linewidth}{0.9\paperheight}}
+    \usepackage{float}
+    \floatplacement{figure}{H} % forces figures to be placed at the correct location
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range
+    \makeatletter % fix for grffile with XeLaTeX
+    \def\Gread@@xetex#1{%
+      \IfFileExists{"\Gin@base".bb}%
+      {\Gread@eps{\Gin@base.bb}}%
+      {\Gread@@xetex@aux#1}%
+    }
+    \makeatother
+
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    % The default LaTeX title has an obnoxious amount of whitespace. By default,
+    % titling removes some of it. It also provides customization options.
+    \usepackage{titling}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
+    
+
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{Atividade1}
+    
+    
+    
+    
+    
+% Pygments definitions
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % For linebreaks inside Verbatim environment from package fancyvrb. 
+    \makeatletter
+        \newbox\Wrappedcontinuationbox 
+        \newbox\Wrappedvisiblespacebox 
+        \newcommand*\Wrappedvisiblespace {\textcolor{red}{\textvisiblespace}} 
+        \newcommand*\Wrappedcontinuationsymbol {\textcolor{red}{\llap{\tiny$\m@th\hookrightarrow$}}} 
+        \newcommand*\Wrappedcontinuationindent {3ex } 
+        \newcommand*\Wrappedafterbreak {\kern\Wrappedcontinuationindent\copy\Wrappedcontinuationbox} 
+        % Take advantage of the already applied Pygments mark-up to insert 
+        % potential linebreaks for TeX processing. 
+        %        {, <, #, %, $, ' and ": go to next line. 
+        %        _, }, ^, &, >, - and ~: stay at end of broken line. 
+        % Use of \textquotesingle for straight quote. 
+        \newcommand*\Wrappedbreaksatspecials {% 
+            \def\PYGZus{\discretionary{\char`\_}{\Wrappedafterbreak}{\char`\_}}% 
+            \def\PYGZob{\discretionary{}{\Wrappedafterbreak\char`\{}{\char`\{}}% 
+            \def\PYGZcb{\discretionary{\char`\}}{\Wrappedafterbreak}{\char`\}}}% 
+            \def\PYGZca{\discretionary{\char`\^}{\Wrappedafterbreak}{\char`\^}}% 
+            \def\PYGZam{\discretionary{\char`\&}{\Wrappedafterbreak}{\char`\&}}% 
+            \def\PYGZlt{\discretionary{}{\Wrappedafterbreak\char`\<}{\char`\<}}% 
+            \def\PYGZgt{\discretionary{\char`\>}{\Wrappedafterbreak}{\char`\>}}% 
+            \def\PYGZsh{\discretionary{}{\Wrappedafterbreak\char`\#}{\char`\#}}% 
+            \def\PYGZpc{\discretionary{}{\Wrappedafterbreak\char`\%}{\char`\%}}% 
+            \def\PYGZdl{\discretionary{}{\Wrappedafterbreak\char`\$}{\char`\$}}% 
+            \def\PYGZhy{\discretionary{\char`\-}{\Wrappedafterbreak}{\char`\-}}% 
+            \def\PYGZsq{\discretionary{}{\Wrappedafterbreak\textquotesingle}{\textquotesingle}}% 
+            \def\PYGZdq{\discretionary{}{\Wrappedafterbreak\char`\"}{\char`\"}}% 
+            \def\PYGZti{\discretionary{\char`\~}{\Wrappedafterbreak}{\char`\~}}% 
+        } 
+        % Some characters . , ; ? ! / are not pygmentized. 
+        % This macro makes them "active" and they will insert potential linebreaks 
+        \newcommand*\Wrappedbreaksatpunct {% 
+            \lccode`\~`\.\lowercase{\def~}{\discretionary{\hbox{\char`\.}}{\Wrappedafterbreak}{\hbox{\char`\.}}}% 
+            \lccode`\~`\,\lowercase{\def~}{\discretionary{\hbox{\char`\,}}{\Wrappedafterbreak}{\hbox{\char`\,}}}% 
+            \lccode`\~`\;\lowercase{\def~}{\discretionary{\hbox{\char`\;}}{\Wrappedafterbreak}{\hbox{\char`\;}}}% 
+            \lccode`\~`\:\lowercase{\def~}{\discretionary{\hbox{\char`\:}}{\Wrappedafterbreak}{\hbox{\char`\:}}}% 
+            \lccode`\~`\?\lowercase{\def~}{\discretionary{\hbox{\char`\?}}{\Wrappedafterbreak}{\hbox{\char`\?}}}% 
+            \lccode`\~`\!\lowercase{\def~}{\discretionary{\hbox{\char`\!}}{\Wrappedafterbreak}{\hbox{\char`\!}}}% 
+            \lccode`\~`\/\lowercase{\def~}{\discretionary{\hbox{\char`\/}}{\Wrappedafterbreak}{\hbox{\char`\/}}}% 
+            \catcode`\.\active
+            \catcode`\,\active 
+            \catcode`\;\active
+            \catcode`\:\active
+            \catcode`\?\active
+            \catcode`\!\active
+            \catcode`\/\active 
+            \lccode`\~`\~ 	
+        }
+    \makeatother
+
+    \let\OriginalVerbatim=\Verbatim
+    \makeatletter
+    \renewcommand{\Verbatim}[1][1]{%
+        %\parskip\z@skip
+        \sbox\Wrappedcontinuationbox {\Wrappedcontinuationsymbol}%
+        \sbox\Wrappedvisiblespacebox {\FV@SetupFont\Wrappedvisiblespace}%
+        \def\FancyVerbFormatLine ##1{\hsize\linewidth
+            \vtop{\raggedright\hyphenpenalty\z@\exhyphenpenalty\z@
+                \doublehyphendemerits\z@\finalhyphendemerits\z@
+                \strut ##1\strut}%
+        }%
+        % If the linebreak is at a space, the latter will be displayed as visible
+        % space at end of first line, and a continuation symbol starts next line.
+        % Stretch/shrink are however usually zero for typewriter font.
+        \def\FV@Space {%
+            \nobreak\hskip\z@ plus\fontdimen3\font minus\fontdimen4\font
+            \discretionary{\copy\Wrappedvisiblespacebox}{\Wrappedafterbreak}
+            {\kern\fontdimen2\font}%
+        }%
+        
+        % Allow breaks at special characters using \PYG... macros.
+        \Wrappedbreaksatspecials
+        % Breaks at punctuation characters . , ; ? ! and / need catcode=\active 	
+        \OriginalVerbatim[#1,codes*=\Wrappedbreaksatpunct]%
+    }
+    \makeatother
+
+    % Exact colors from NB
+    \definecolor{incolor}{HTML}{303F9F}
+    \definecolor{outcolor}{HTML}{D84315}
+    \definecolor{cellborder}{HTML}{CFCFCF}
+    \definecolor{cellbackground}{HTML}{F7F7F7}
+    
+    % prompt
+    \makeatletter
+    \newcommand{\boxspacing}{\kern\kvtcb@left@rule\kern\kvtcb@boxsep}
+    \makeatother
+    \newcommand{\prompt}[4]{
+        \ttfamily\llap{{\color{#2}[#3]:\hspace{3pt}#4}}\vspace{-\baselineskip}
+    }
+    
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+\begin{document}
+    
+    \maketitle
+    
+    
+
+    
+    \hypertarget{atividade-spark}{%
+\section{Atividade Spark}\label{atividade-spark}}
+
+Considerando o dataset detalhado a seguir, extraia o conjunto de
+informações solicitadas.
+
+\hypertarget{dataset-dados-de-covid-no-brasil}{%
+\subsubsection{Dataset dados de COVID no
+Brasil}\label{dataset-dados-de-covid-no-brasil}}
+
+\begin{itemize}
+\tightlist
+\item
+  Arquivo disponível em /home/dados/covid/covid.csv
+\item
+  Dados relativos a pacientes que realizaram exames de Covid19 no Brasil
+\item
+  \textasciitilde1.6GB
+\item
+  4.4M de instâncias
+\end{itemize}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\# & Nome do campo & Descrição\tabularnewline
+\midrule
+\endhead
+0 & id & identificador\tabularnewline
+1 & dataNotificacao & Data da notificação\tabularnewline
+2 & dataInicioSintomas & Data do inicio dos sintomas\tabularnewline
+3 & dataNascimento & Data de nascimento\tabularnewline
+4 & sintomas & Sintomas do paciente\tabularnewline
+5 & profissionalSaude & Relacionado a profissional de
+saúde\tabularnewline
+6 & cbo & Ocupação\tabularnewline
+7 & condicoes & Condições do paciente\tabularnewline
+8 & estadoTeste & Estado do teste\tabularnewline
+9 & dataTeste & Data do teste\tabularnewline
+10 & tipoTeste & Tipo de teste realizado\tabularnewline
+11 & resultadoTeste & Resultado do Teste\tabularnewline
+12 & paisOrigem & Pais de Origem do paciente\tabularnewline
+13 & sexo & Sexo do paciente\tabularnewline
+14 & bairro & Bairro do paciente\tabularnewline
+15 & estado & Estado do paciente\tabularnewline
+16 & estadoIBGE & Estado do paciente IBGE\tabularnewline
+17 & municipio & Municipio do paciente\tabularnewline
+18 & municipioIBGE & Municipio do paciente\tabularnewline
+19 & cep & CEP\tabularnewline
+20 & origem & Origem do paciente\tabularnewline
+21 & cnes & Código da unidade de saúde\tabularnewline
+22 & estadoNotificacao & Estado da notificação\tabularnewline
+23 & estadoNotificacaoIBGE & Estado da notificação IBGE\tabularnewline
+24 & municipioNotificacao & Município da notificação\tabularnewline
+25 & municipioNotificacaoIBGE & Município da notificação
+IBGE\tabularnewline
+26 & numeroNotificacao & Número da notificação\tabularnewline
+27 & excluido & ID de exclusão\tabularnewline
+28 & validado & Local validação\tabularnewline
+29 & idade & Idade do paciente\tabularnewline
+30 & dataEncerramento & Data do encerramento da avaliação do
+paciente\tabularnewline
+31 & evolucaoCaso & Evolução do caso do paciente\tabularnewline
+32 & classificacaoFinal & Avaliação final do caso\tabularnewline
+\bottomrule
+\end{longtable}
+
+Informações a serem extraídas:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Quantidade de pacientes positivos para corona virus (resultadoTeste)
+\item
+  Quantidade de pacientes do sexo feminino positivos para corona virus
+  (resultadoTeste)
+\item
+  Quantidade de pacientes de acordo com o sexo e o resultado do teste
+  (resultadoTeste)
+\item
+  Sintomas mais comuns para casos positivos para corona virus
+\item
+  Sintomas mais comuns para casos não positivos para corona virus
+\item
+  Quantidade de casos positivos no Paraná
+\item
+  Municipio do Paraná com a maior quantidade de óbitos (evolucaoCaso)
+\item
+  Quantidade de municipios no Paraná com casos positivos
+\item
+  Quantidade de municipios no Paraná sem casos positivos
+\item
+  Estado com a maior taxa de falecimento de mulheres
+\item
+  Menor idade de mulher positiva para covid
+\item
+  Maior idade de mulher positiva para covid
+\item
+  Quantidade de casos positivos, em granularidade diária, ao longo do
+  tempo
+\item
+  Quantidade de casos positivos, em granularidade semanal, ao longo do
+  tempo
+\item
+  Quantidade de pacientes que faleceram (evolucaoCaso) separados pela
+  idade
+\item
+  Taxa de óbito (evolucaoCaso) por idade
+\item
+  Idade média das mulheres positivas para covid
+\item
+  Município do Paraná com a maior quantidade de mulheres positivos para
+  covid
+\item
+  Dia da semana com a maior quantidade de testes realizados
+\item
+  Dia da semana com maior quantidade de pacientes positivos para corona
+  virus
+\item
+  Municipio, com mais de 500 testes, com a maior taxa de exames que não
+  foram positivos para COVID (casos que foram testados porém não tiveram
+  o resultadoTeste como Positivo)
+\end{enumerate}
+
+\textbf{Dicas:} - \emph{Crie uma célula (Insert -\textgreater{} Insert
+Cell Below) para cada informação solicitada} - \emph{A análise deve ser
+feita sobre os dados do HDFS} - \emph{Inicialize o seu cluster
+executando o script em: Desktop/ambientes/spark/inicializar.sh} -
+\emph{Acesse o seu cluster executando o script em:
+Desktop/ambientes/spark/abrir\_navegador.sh}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{1}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} abre sessão no spark}
+\PY{k+kn}{import} \PY{n+nn}{os}
+\PY{n}{os}\PY{o}{.}\PY{n}{environ}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PYSPARK\PYZus{}PYTHON}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{/usr/bin/python3}\PY{l+s+s1}{\PYZsq{}}
+
+\PY{k+kn}{import} \PY{n+nn}{pyspark}
+\PY{n}{conf} \PY{o}{=} \PY{n}{pyspark}\PY{o}{.}\PY{n}{SparkConf}\PY{p}{(}\PY{p}{)}
+
+\PY{n}{conf}\PY{o}{.}\PY{n}{setMaster}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{spark://spark\PYZhy{}master:7077}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+
+\PY{n}{sc} \PY{o}{=} \PY{n}{pyspark}\PY{o}{.}\PY{n}{SparkContext}\PY{o}{.}\PY{n}{getOrCreate}\PY{p}{(}\PY{p}{)}
+\PY{n}{sc}\PY{o}{.}\PY{n}{stop}\PY{p}{(}\PY{p}{)}
+\PY{n}{sc} \PY{o}{=} \PY{n}{pyspark}\PY{o}{.}\PY{n}{SparkContext}\PY{p}{(}\PY{n}{conf} \PY{o}{=} \PY{n}{conf}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{2}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}carrega arquivo do HDFS em um RDD}
+\PY{n}{arquivoRDD} \PY{o}{=} \PY{n}{sc}\PY{o}{.}\PY{n}{textFile}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hdfs://namenode:9000/covid.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 1 }
+\PY{c+c1}{\PYZsh{} Quantidade de pacientes positivos para corona virus (resultadoTeste)}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('null', 646421),
+ ('Negativo', 2547942),
+ ('Positivo', 1230210),
+ ('""', 31),
+ ('resultadoTeste', 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 2}
+\PY{c+c1}{\PYZsh{} Quantidade de pacientes do sexo feminino positivos para corona virus (resultadoTeste)}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('Positivo', 632899)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 3 }
+\PY{c+c1}{\PYZsh{} Quantidade de pacientes de acordo com o sexo e o resultado do teste (resultadoTeste)}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ \PYZhy{}\PYZhy{} }\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('"" -- Masculino', 4),
+ ('resultadoTeste -- sexo', 1),
+ ('Negativo -- Masculino', 1141559),
+ ('Positivo -- Masculino', 578177),
+ ('Negativo -- Indefinido', 88174),
+ ('null -- Masculino', 274303),
+ ('Positivo -- null', 17),
+ ('Negativo -- Feminino', 1318173),
+ ('Positivo -- Feminino', 632899),
+ ('"" -- Feminino', 27),
+ ('Negativo -- null', 36),
+ ('null -- Indefinido', 4),
+ ('Positivo -- Indefinido', 19117),
+ ('null -- Feminino', 371661),
+ ('null -- null', 453)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{6}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 4}
+\PY{c+c1}{\PYZsh{} Sintomas mais comuns para casos positivos para corona virus}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{6}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('Outros', 385582),
+ ('Tosse, Outros', 73863),
+ ('Tosse', 62818),
+ ('Febre, Tosse, Outros', 61908),
+ ('Febre, Outros', 54497),
+ ('Febre, Tosse', 43796),
+ ('Febre', 28205),
+ ('Febre, Tosse, Dor de Garganta', 26261),
+ ('Outros: Paciente assintomático', 24481),
+ ('Tosse, Dor de Garganta', 18628),
+ ('Dor de Garganta', 16393),
+ ('Dor de Garganta, Outros', 16323),
+ ('""', 14236),
+ ('Febre, Tosse, Dispneia', 14222),
+ ('Febre, Tosse, Outros, Dor de Garganta', 13506),
+ ('Tosse, Febre, Outros', 12817),
+ ('Tosse, Febre', 12333),
+ ('Tosse, Outros, Dor de Garganta', 12221),
+ ('Tosse, Dor de Garganta, Outros', 11433),
+ ('Febre, Tosse, Dor de Garganta, Outros', 11394),
+ ('Outros, Tosse', 10977),
+ ('Febre, Tosse, Dor de Garganta, Dispneia', 10863),
+ ('Outros, Dor de Garganta', 10781),
+ ('Tosse, Dispneia', 10639),
+ ('null', 10439),
+ ('Dispneia', 9281),
+ ('Dor de Garganta, Tosse, Outros', 9145),
+ ('Febre, Dor de Garganta', 8414),
+ ('Outros, Febre', 8146),
+ ('Febre, Tosse, Outros, Dispneia', 8016),
+ ('Dispneia, Outros', 7814),
+ ('Dor de Garganta, Tosse', 7700),
+ ('Febre, Dor de Garganta, Outros', 6898),
+ ('Tosse, Dispneia, Outros', 6893),
+ ('Tosse, Outros, Dispneia', 6422),
+ ('Febre, Outros, Dor de Garganta', 6408),
+ ('Febre, Tosse, Outros, Dor de Garganta, Dispneia', 6235),
+ ('Febre, Tosse, Dispneia, Outros', 5877),
+ ('Outros, Dispneia', 5813),
+ ('Dor de Garganta, Febre, Tosse, Outros', 5190),
+ ('Dor de Garganta, Febre, Tosse', 5118),
+ ('Febre, Dispneia', 4558),
+ ('Dor de Garganta, Febre, Outros', 4359),
+ ('Tosse, Dor de Garganta, Dispneia', 3683),
+ ('Febre, Dispneia, Outros', 3611),
+ ('Febre, Outros, Dispneia', 3584),
+ ('Febre, Tosse, Dor de Garganta, Dispneia, Outros', 3564),
+ ('Dispneia, Tosse', 3556),
+ ('Dor de Garganta, Febre', 3544),
+ ('Dor de Garganta, Tosse, Febre', 3312),
+ ('Dispneia, Febre, Tosse', 3142),
+ ('Dispneia, Tosse, Outros', 3124),
+ ('Outros, Febre, Tosse', 3093),
+ ('Febre,Tosse', 3084),
+ ('Tosse, Febre, Dor de Garganta', 2995),
+ ('Febre, Outros, Tosse', 2968),
+ ('Dispneia, Febre, Tosse, Outros', 2691),
+ ('Tosse, Outros, Febre', 2664),
+ ('Dor de Garganta, Tosse, Febre, Outros', 2598),
+ ('Dor de Garganta, Dispneia, Febre, Tosse', 2577),
+ ('Tosse, Outros, Dor de Garganta, Dispneia', 2567),
+ ('Outros, Tosse, Febre', 2530),
+ ('Tosse, Febre, Dispneia', 2311),
+ ('Dor de Garganta, Dispneia, Febre, Tosse, Outros', 2171),
+ ('Dispneia, Febre, Outros', 2072),
+ ('Febre, Dor de Garganta, Tosse', 1920),
+ ('Dispneia, Febre', 1846),
+ ('Outros, Tosse, Dor de Garganta', 1796),
+ ('Dor de Garganta, Dispneia', 1758),
+ ('Tosse, Dor de Garganta, Dispneia, Outros', 1674),
+ ('Febre,Tosse,Dor de Garganta', 1650),
+ ('Tosse,Dor de Garganta', 1580),
+ ('Tosse, Dispneia, Febre', 1548),
+ ('Febre, Dor de Garganta, Dispneia', 1528),
+ ('Tosse, Febre, Dor de Garganta, Outros', 1514),
+ ('Dor de Garganta, Dispneia, Outros', 1439),
+ ('Tosse, Dor de Garganta, Febre', 1320),
+ ('Febre, Dor de Garganta, Tosse, Outros', 1307),
+ ('Tosse, Febre, Dispneia, Outros', 1239),
+ ('Febre, Dispneia, Tosse', 1171),
+ ('Dor de Garganta, Dispneia, Tosse, Outros', 1096),
+ ('Tosse, Dispneia, Febre, Outros', 1091),
+ ('Outros, Dor de Garganta, Tosse', 1083),
+ ('Dor de Garganta, Dispneia, Tosse', 1073),
+ ('Outros, Dor de Garganta, Dispneia', 1009),
+ ('Dor de Garganta, Tosse, Dispneia', 949),
+ ('Dispneia, Tosse, Febre', 917),
+ ('Outros, Tosse, Dispneia', 906),
+ ('Outros, Febre, Dor de Garganta', 857),
+ ('Febre, Outros, Dor de Garganta, Dispneia', 837),
+ ('Dor de Garganta, Outros, Tosse', 823),
+ ('Dor de Garganta, Tosse, Dispneia, Outros', 807),
+ ('Febre,Dor de Garganta', 805),
+ ('Dor de Garganta, Dispneia, Febre', 791),
+ ('Febre, Tosse, Dispneia, Dor de Garganta', 784),
+ ('Tosse, Dor de Garganta, Febre, Outros', 691),
+ ('Febre, Dispneia, Tosse, Outros', 666),
+ ('Outros, Febre, Tosse, Dor de Garganta', 665),
+ ('Febre,Tosse,Dispneia', 650),
+ ('Outros, Dor de Garganta, Febre', 638),
+ ('Febre,Tosse,Dor de Garganta,Dispneia', 629),
+ ('Dor de Garganta, Tosse, Dispneia, Febre', 626),
+ ('Febre, Dor de Garganta, Dispneia, Outros', 626),
+ ('Febre, Tosse, Dor de Garganta, Outros, Dispneia', 609),
+ ('Tosse, Febre, Dor de Garganta, Dispneia', 603),
+ ('Dor de Garganta, Outros, Febre', 602),
+ ('Febre, Tosse, Dispneia, Dor de Garganta, Outros', 575),
+ ('Outros, Dispneia, Tosse', 530),
+ ('Dor de Garganta, Dispneia, Febre, Outros', 526),
+ ('Dispneia, Tosse, Febre, Outros', 519),
+ ('Tosse,Dispneia', 502),
+ ('Tosse, Dispneia, Dor de Garganta', 493),
+ ('Outros, Febre, Dispneia', 480),
+ ('Tosse, Febre, Outros, Dispneia', 450),
+ ('Febre, Outros, Tosse, Dor de Garganta', 449),
+ ('Dor de Garganta, Tosse, Dispneia, Febre, Outros', 431),
+ ('Dispneia, Dor de Garganta', 421),
+ ('Dispneia, Outros, Tosse', 415),
+ ('Tosse, Febre, Outros, Dor de Garganta', 404),
+ ('Dor de Garganta, Tosse, Febre, Dispneia', 399),
+ ('Tosse, Dor de Garganta, Outros, Dispneia', 395),
+ ('Tosse, Dispneia, Dor de Garganta, Outros', 369),
+ ('Tosse,Febre', 359),
+ ('Outros, Tosse, Febre, Dor de Garganta', 356),
+ ('Dispneia, Dor de Garganta, Outros', 348),
+ ('Outros, Febre, Tosse, Dispneia', 339),
+ ('Febre, Outros, Tosse, Dispneia', 336),
+ ('Dor de Garganta, Outros, Dispneia', 329),
+ ('Febre,Dispneia', 327),
+ ('Outros, Dispneia, Febre', 326),
+ ('Dor de Garganta, Tosse, Outros, Febre', 321),
+ ('Tosse,Dor de Garganta,Dispneia', 314),
+ ('Tosse, Dor de Garganta, Outros, Febre', 284),
+ ('Dor de Garganta, Dispneia, Tosse, Febre', 282),
+ ('Outros, Dor de Garganta, Tosse, Febre', 276),
+ ('Dispneia, Outros, Febre', 273),
+ ('Dispneia,Febre,Tosse', 272),
+ ('Dispneia, Dor de Garganta, Tosse', 270),
+ ('Tosse, Febre, Dor de Garganta, Dispneia, Outros', 267),
+ ('Febre, Outros, Dor de Garganta, Tosse', 260),
+ ('Febre, Dor de Garganta, Outros, Tosse', 258),
+ ('Dor de Garganta, Febre, Tosse, Dispneia', 254),
+ ('Dor De Garganta,Febre,Tosse', 253),
+ ('Outros, Tosse, Febre, Dispneia', 251),
+ ('Febre, Tosse, Outros, Dispneia, Dor de Garganta', 239),
+ ('Febre, Dispneia, Dor de Garganta', 235),
+ ('Tosse, Dispneia, Outros, Febre', 235),
+ ('Tosse, Febre, Dispneia, Dor de Garganta', 233),
+ ('Dispneia, Dor de Garganta, Tosse, Febre', 228),
+ ('Dor de Garganta, Tosse, Febre, Dispneia, Outros', 226),
+ ('Dispneia, Tosse, Dor de Garganta', 223),
+ ('Tosse, Outros, Dor de Garganta, Febre', 221),
+ ('Outros, Tosse, Dor de Garganta, Dispneia', 215),
+ ('Febre, Dor de Garganta, Dispneia, Tosse', 206),
+ ('Dor de Garganta, Dispneia, Tosse, Febre, Outros', 206),
+ ('Dor de Garganta, Febre, Dispneia', 204),
+ ('Dor de Garganta, Outros, Tosse, Febre', 204),
+ ('Outros, Dor de Garganta, Febre, Tosse', 201),
+ ('Dor de Garganta,Febre,Tosse', 199),
+ ('Dor de Garganta,Dispneia,Febre,Tosse', 189),
+ ('Tosse, Outros, Febre, Dispneia', 185),
+ ('Febre, Dor de Garganta, Outros, Dispneia', 180),
+ ('Tosse, Dor de Garganta, Dispneia, Febre', 175),
+ ('Dor de Garganta, Febre, Tosse, Dispneia, Outros', 174),
+ ('Tosse, Outros, Dispneia, Febre', 173),
+ ('Febre, Dispneia, Dor de Garganta, Outros', 172),
+ ('Dispneia, Dor de Garganta, Tosse, Outros', 166),
+ ('Febre, Dor de Garganta, Tosse, Dispneia', 164),
+ ('Dor de Garganta, Febre, Outros, Tosse', 164),
+ ('Outros, Febre, Tosse, Dor de Garganta, Dispneia', 158),
+ ('Febre, Dispneia, Dor de Garganta, Tosse', 147),
+ ('Febre, Tosse, Dispneia, Outros, Dor de Garganta', 147),
+ ('Outros, Febre, Dor de Garganta, Tosse', 146),
+ ('Dor de Garganta, Febre, Dispneia, Tosse', 146),
+ ('Outros, Tosse, Dor de Garganta, Febre', 145),
+ ('Tosse, Outros, Febre, Dor de Garganta', 143),
+ ('Outros, Dispneia, Dor de Garganta', 141),
+ ('Febre,', 141),
+ ('Febre, Outros, Tosse, Dor de Garganta, Dispneia', 140),
+ ('Dispneia, Outros, Tosse, Febre', 137),
+ ('Tosse, Febre, Dispneia, Dor de Garganta, Outros', 137),
+ ('Febre, Dispneia, Outros, Tosse', 136),
+ ('Dispnéia,Febre,Tosse', 136),
+ ('Dor de Garganta, Tosse, Outros, Dispneia', 131),
+ ('Dispneia, Dor de Garganta, Febre, Tosse', 129),
+ ('Febre, Dor de Garganta, Tosse, Dispneia, Outros', 129),
+ ('Dispneia,Tosse', 128),
+ ('Outros, Dispneia, Febre, Tosse', 127),
+ ('Dispneia, Febre, Tosse, Dor de Garganta', 125),
+ ('Dispneia, Tosse, Dor de Garganta, Outros', 125),
+ ('Febre, Outros, Dispneia, Tosse', 124),
+ ('Dor de Garganta,Dispneia', 124),
+ ('Dor de Garganta, Febre, Dispneia, Outros', 122),
+ ('Febre, Dor de Garganta, Dispneia, Tosse, Outros', 120),
+ ('Tosse, Febre, Outros, Dor de Garganta, Dispneia', 119),
+ ('Dispneia, Dor de Garganta, Febre', 116),
+ ('Febre, Dispneia, Tosse, Dor de Garganta', 114),
+ ('Tosse, Outros, Dispneia, Dor de Garganta', 113),
+ ('Dor de Garganta,Tosse', 111),
+ ('Tosse, Dor de Garganta, Febre, Dispneia', 110),
+ ('Dor de Garganta, Outros, Febre, Tosse', 108),
+ ('Tosse, Dispneia, Outros, Dor de Garganta', 106),
+ ('Dispneia, Outros, Dor de Garganta', 105),
+ ('Dor de Garganta, Febre, Tosse, Outros, Dispneia', 105),
+ ('Febre,Dor de Garganta,Dispneia', 103),
+ ('Febre, Dispneia, Dor de Garganta, Tosse, Outros', 102),
+ ('Tosse,Febre,Dispneia', 100),
+ ('Dor De Garganta,Dispnéia,Febre,Tosse', 96),
+ ('Outros, Dor de Garganta, Tosse, Dispneia', 95),
+ ('Dor De Garganta,Tosse', 93),
+ ('Outros, Tosse, Dispneia, Febre', 93),
+ ('Outros, Dispneia, Tosse, Febre', 91),
+ ('Tosse, Dor de Garganta, Dispneia, Febre, Outros', 88),
+ ('Outros, Dor de Garganta, Dispneia, Tosse', 85),
+ ('Dispneia, Dor de Garganta, Tosse, Febre, Outros', 85),
+ ('Febre, Dispneia, Tosse, Dor de Garganta, Outros', 84),
+ ('Dor de Garganta, Febre, Dispneia, Tosse, Outros', 82),
+ ('Dispneia, Tosse, Outros, Febre', 81),
+ ('Outros, Tosse, Dispneia, Dor de Garganta', 72),
+ ('Outros, Febre, Dispneia, Tosse', 72),
+ ('Outros, Dispneia, Dor de Garganta, Tosse', 70),
+ ('Outros, Tosse, Febre, Dor de Garganta, Dispneia', 69),
+ ('Dor de Garganta,Febre', 68),
+ ('Dispneia,Febre', 67),
+ ('Dispneia, Dor de Garganta, Febre, Tosse, Outros', 65),
+ ('Dispneia, Outros, Febre, Tosse', 64),
+ ('Tosse, Dispneia, Dor de Garganta, Febre', 64),
+ ('Dispneia, Febre, Dor de Garganta', 62),
+ ('Dispneia, Febre, Outros, Tosse', 60),
+ ('Febre, Dispneia, Outros, Dor de Garganta', 59),
+ ('Tosse, Dor de Garganta, Febre, Dispneia, Outros', 58),
+ ('Dor de Garganta, Dispneia, Outros, Tosse', 58),
+ ('Dispneia, Febre, Tosse, Dor de Garganta, Outros', 56),
+ ('Dispneia, Dor de Garganta, Outros, Tosse, Febre', 56),
+ ('Febre,Tosse,Dor De Garganta,', 55),
+ ('Dispneia, Tosse, Febre, Dor de Garganta', 55),
+ ('Tosse,Febre,Dor de Garganta', 55),
+ ('Dor De Garganta,Febre,', 54),
+ ('Dispneia, Dor de Garganta, Febre, Outros', 51),
+ ('Outros, Dispneia, Tosse, Dor de Garganta', 50),
+ ('Dor de Garganta, Outros, Tosse, Dispneia', 50),
+ ('Outros, Febre, Dor de Garganta, Dispneia', 49),
+ ('Dor de Garganta, Febre, Outros, Dispneia', 48),
+ ('Dor de Garganta, Tosse, Febre, Outros, Dispneia', 45),
+ ('Febre, Outros, Dispneia, Dor de Garganta', 45),
+ ('Dor De Garganta, Febre, Tosse', 44),
+ ('Febre,Dispneia,Tosse', 42),
+ ('Outros, Febre, Tosse, Dispneia, Dor de Garganta', 41),
+ ('Dor de Garganta, Tosse, Dispneia, Outros, Febre', 40),
+ ('Febre,Tosse, Outros', 40),
+ ('Dispneia, Dor de Garganta, Outros, Tosse', 39),
+ ('Febre, Tosse, Dor De Garganta, Outros', 38),
+ ('Dor de Garganta, Dispneia, Febre, Outros, Tosse', 37),
+ ('Tosse, Febre, Dor de Garganta, Outros, Dispneia', 37),
+ ('Dispneia, Febre, Dor de Garganta, Outros', 36),
+ ('Dispneia, Febre, Tosse, Outros, Dor de Garganta', 36),
+ ('Dispnéia,Tosse', 35),
+ ('Dor de Garganta,Dispneia,Tosse', 35),
+ ('Dor De Garganta, Febre, Tosse, Outros', 34),
+ ('Tosse, Outros, Dor de Garganta, Dispneia, Febre', 33),
+ ('Febre,Tosse,Dor De Garganta, Outros', 33),
+ ('Dor De Garganta,', 33),
+ ('Outros, Dor de Garganta, Dispneia, Febre', 33),
+ ('Dispneia, Febre, Dor de Garganta, Tosse', 33),
+ ('Outros, Febre, Dispneia, Dor de Garganta', 32),
+ ('Tosse, Dor de Garganta, Dispneia, Outros, Febre', 32),
+ ('Dor de Garganta, Outros, Febre, Dispneia', 32),
+ ('Febre, Outros, Dor de Garganta, Dispneia, Tosse', 32),
+ ('Febre, Dor de Garganta, Tosse, Outros, Dispneia', 31),
+ ('Tosse, Dispneia, Febre, Dor de Garganta', 31),
+ ('Tosse, Dispneia, Febre, Dor de Garganta, Outros', 31),
+ ('Dor de Garganta, Dispneia, Outros, Febre', 31),
+ ('Dor de Garganta,Tosse,Febre', 30),
+ ('Dispneia, Tosse, Outros, Dor de Garganta', 30),
+ ('Tosse, Outros, Febre, Dor de Garganta, Dispneia', 30),
+ ('Dor De Garganta', 30),
+ ('Dispneia, Tosse, Febre, Dor de Garganta, Outros', 28),
+ ('Dispneia,Tosse,Febre', 28),
+ ('Outros, Dor de Garganta, Febre, Dispneia', 28),
+ ('Dor De Garganta, Dispneia, Febre, Tosse', 26),
+ ('Febre, Dor de Garganta, Outros, Tosse, Dispneia', 26),
+ ('Tosse, Dor de Garganta, Febre, Outros, Dispneia', 26),
+ ('Dor De Garganta,Dispneia,Febre,Tosse', 26),
+ ('Outros, Dor de Garganta, Tosse, Febre, Dispneia', 26),
+ ('Dispneia, Tosse, Dor de Garganta, Febre', 26),
+ ('Febre, Outros, Tosse, Dispneia, Dor de Garganta', 26),
+ ('Tosse, Febre, Outros, Dispneia, Dor de Garganta', 26),
+ ('Febre, Dor de Garganta, Dispneia, Outros, Tosse', 26),
+ ('Febre, Outros, Dor de Garganta, Tosse, Dispneia', 25),
+ ('Febre,Tosse,Dor De Garganta', 25),
+ ('Dispneia, Febre, Dor de Garganta, Tosse, Outros', 25),
+ ('Tosse, Dor de Garganta, Outros, Febre, Dispneia', 25),
+ ('Tosse, Febre, Dispneia, Outros, Dor de Garganta', 25),
+ ('Febre,Dor de Garganta,Tosse', 24),
+ ('Febre, Dispneia, Tosse, Outros, Dor de Garganta', 24),
+ ('Tosse,Dispneia,Febre', 24),
+ ('Dor de Garganta, Dispneia, Outros, Tosse, Febre', 24),
+ ('Febre,Tossedificuldade De Respirar', 24),
+ ('Tosse, Dispneia, Dor de Garganta, Febre, Outros', 23),
+ ('Dor de Garganta, Outros, Tosse, Febre, Dispneia', 22),
+ ('Dor De Garganta, Tosse, Outros', 22),
+ ('undefined', 22),
+ ('Febre, Tosse, Dor De Garganta,', 22),
+ ('Dor de Garganta, Outros, Dispneia, Tosse', 22),
+ ('Outros, Dispneia, Dor de Garganta, Tosse, Febre', 22),
+ ('Outros, Dor de Garganta, Febre, Tosse, Dispneia', 22),
+ ('Tosse,Dor de Garganta,Febre', 21),
+ ('Tosse, Outros, Dor de Garganta, Febre, Dispneia', 21),
+ ('Outros, Tosse, Febre, Dispneia, Dor de Garganta', 20),
+ ('Dor De Garganta, Outros', 20),
+ ('Paciente assintomático', 20),
+ ('Febre, Tosse, Dor De Garganta', 20),
+ ('Dor de Garganta, Dispneia, Tosse, Outros, Febre', 20),
+ ('Dispnéia,Febre,', 19),
+ ('Outros, Febre, Dor de Garganta, Tosse, Dispneia', 19),
+ ('Outros, Dor de Garganta, Dispneia, Febre, Tosse', 19),
+ ('Dor De Garganta,Dispnéia,Tosse', 19),
+ ('Dor de Garganta, Outros, Dispneia, Febre', 19),
+ ('Outros, Dor de Garganta, Dispneia, Tosse, Febre', 19),
+ ('Dor De Garganta, Tosse', 19),
+ ('Dor de Garganta, Outros, Febre, Tosse, Dispneia', 19),
+ ('Dor de Garganta, Tosse, Outros, Dispneia, Febre', 19),
+ ('Dispneia, Dor de Garganta, Outros, Febre', 19),
+ ('Tosse,', 19),
+ ('Febre, Tosse, Dor De Garganta, Dispneia,', 19),
+ ('Febre, Tosse,', 18),
+ ('Tosse, Dor De Garganta, Outros', 18),
+ ('Outros, Dispneia, Dor de Garganta, Febre', 18),
+ ('Febre,Tosse,Dor De Garganta,Dispineia, Outros', 17),
+ ('Febre,Tosse,Dor De Garganta,Dificuldade De Respirar', 17),
+ ('Febre,Tosse,', 17),
+ ('Dispneia, Outros, Tosse, Dor de Garganta', 17),
+ ('Outros, Dispneia, Febre, Tosse, Dor de Garganta', 17),
+ ('Dor de Garganta, Febre, Outros, Tosse, Dispneia', 16),
+ ('Tosse,Dor De Garganta', 16),
+ ('Tosse, Dispneia, Febre, Outros, Dor de Garganta', 16),
+ ('Dor De Garganta, Febre', 16),
+ ('Febre, Outros, Dispneia, Dor de Garganta, Tosse', 16),
+ ('Dispneia, Outros, Dor de Garganta, Tosse', 16),
+ ('Dor de Garganta, Dispneia, Outros, Febre, Tosse', 15),
+ ('Febre,Tosse,Dispneia,Dor de Garganta', 15),
+ ('Dor De Garganta, Dispneia, Febre, Tosse, Outros', 15),
+ ('Febre, Dispneia, Dor de Garganta, Outros, Tosse', 15),
+ ('Tosse,Dor De Garganta,', 14),
+ ('Outros, Dispneia, Dor de Garganta, Febre, Tosse', 14),
+ ('Tosse, Dor de Garganta, Outros, Dispneia, Febre', 14),
+ ('Outros, Febre, Dispneia, Dor de Garganta, Tosse', 14),
+ ('Febredor De Garganta,', 13),
+ ('Tosse, Dor De Garganta', 13),
+ ('Dor de Garganta, Tosse, Outros, Febre, Dispneia', 13),
+ ('Dispnéia,', 13),
+ ('Dispneia, Tosse, Febre, Outros, Dor de Garganta', 13),
+ ('Dispneia, Febre, Outros, Dor de Garganta', 13),
+ ('Febre, Dor De Garganta, Outros', 12),
+ ('Tosse, Outros, Dispneia, Dor de Garganta, Febre', 12),
+ ('Febre, Tosse, Dor De Garganta, Dispneia, Outros', 12),
+ ('Tosse, Dispneia, Dor de Garganta, Outros, Febre', 11),
+ ('Tosse,Febre,Dor de Garganta,Dispneia', 11),
+ ('Outros, Febre, Dor de Garganta, Dispneia, Tosse', 10),
+ ('Outros, Tosse, Dor de Garganta, Febre, Dispneia', 10),
+ ('Dor de Garganta, Outros, Dispneia, Febre, Tosse', 10),
+ ('Dor de Garganta,Febre,Tosse,Dispneia', 10),
+ ('Outros, Tosse, Dor de Garganta, Dispneia, Febre', 10),
+ ('Febre,Dor De Garganta', 10),
+ ('Tosse, Outros, Dispneia, Febre, Dor de Garganta', 10),
+ ('Dor De Garganta,Febre', 10),
+ ('Dor De Garganta, Dispneia, Tosse', 9),
+ ('Dispneia, Outros, Dor de Garganta, Febre', 9),
+ ('Febre, Dispneia, Outros, Tosse, Dor de Garganta', 9),
+ ('Tosse,Febre,Dor De Garganta', 9),
+ ('Outros, Dispneia, Tosse, Febre, Dor de Garganta', 9),
+ ('Tosse,Febre,Dispneia,Dor de Garganta', 9),
+ ('Outros, Dor De Garganta', 9),
+ ('Dor De Garganta,Dispnéia,Febre,', 8),
+ (',Tossedificuldade De Respirar', 8),
+ ('Dor de Garganta,Tosse,Dispneia', 8),
+ ('Tosse,Dispneia,Dor de Garganta', 8),
+ ('Febre, Dor de Garganta, Outros, Dispneia, Tosse', 8),
+ ('Febre,Tosse,Dor De Garganta,Dispneia', 8),
+ ('Dispneia, Tosse, Dor de Garganta, Febre, Outros', 8),
+ ('Tosse, Outros, Febre, Dispneia, Dor de Garganta', 8),
+ ('Febre, Outros, Dispneia, Tosse, Dor de Garganta', 8),
+ ('Outros, Dispneia, Febre, Dor de Garganta', 7),
+ ('Dor De Garganta, Febre, Outros', 7),
+ ('Tosse, Dor De Garganta,', 7),
+ ('Dor De Garganta,Tosse,', 7),
+ ('Tosse, Febre, Dor De Garganta, Outros', 7),
+ ('Febre, Tosse, Dispneia,', 7),
+ ('Dor de Garganta,Dispneia,Febre', 7),
+ ('Dor de Garganta,Dispneia,Tosse,Febre', 7),
+ ('Dor De Garganta, Dispneia', 7),
+ ('Dispneia, Outros, Febre, Tosse, Dor de Garganta', 6),
+ ('Febre,Tosse,Dor De Garganta,Dispneia, Outros', 6),
+ ('Dispneia,Dor de Garganta,Tosse', 6),
+ ('Febre,Tosse,Dor De Garganta,Dispineia,Dispneia, Outros', 6),
+ ('Dispneia,Tosse,Dor de Garganta', 6),
+ ('Febre, Tosse, Outros, Dor De Garganta', 6),
+ ('Febre, Dor De Garganta, Tosse, Outros', 6),
+ ('Febre,Tosse,Outros', 6),
+ ('Dor de Garganta, Febre, Dispneia, Outros, Tosse', 6),
+ ('Dor De Garganta,Tosse,Febre', 6),
+ ('Febre,Dor De Garganta,Tosse', 6),
+ ('Dispneia, Dor de Garganta, Tosse, Outros, Febre', 6),
+ ('Dispneia, Outros, Tosse, Febre, Dor de Garganta', 6),
+ ('Dispneia,Dor de Garganta', 6),
+ ('Outros, Febre, Dispneia, Tosse, Dor de Garganta', 6),
+ ('Dor De Garganta,Dispneia,Tosse', 6),
+ ('Dispneia, Outros, Febre, Dor de Garganta', 6),
+ ('Dispneia,Febre,Tosse,', 6),
+ ('Tosse, Dispneia, Outros, Febre, Dor de Garganta', 6),
+ ('Outros, Dor de Garganta, Tosse, Dispneia, Febre', 6),
+ ('Dispneia, Dor de Garganta, Febre, Outros, Tosse', 6),
+ (',Tosse,Dor De Garganta,Dificuldade De Respirar', 6),
+ ('Tosse, Febre, Dor De Garganta', 6),
+ ('Dor De Garganta,Febre,Tosse,', 5),
+ ('Dor de Garganta, Outros, Tosse, Dispneia, Febre', 5),
+ ('Dispneia, Dor de Garganta, Outros, Febre, Tosse', 5),
+ ('Dor De Garganta, Tosse, Febre', 5),
+ ('Dispneia,Febre,Tosse,Dor de Garganta', 5),
+ ('Dor De Garganta, Dispneia, Febre', 5),
+ ('Dispneia, Outros, Dor de Garganta, Tosse, Febre', 5),
+ ('Febre,Tosse,Dispineia, Outros', 5),
+ ('Dor de Garganta,Febre,Dispneia,Tosse', 5),
+ ('Dor De Garganta,Dispnéia,', 5),
+ ('Febre, Dor De Garganta, Tosse', 5),
+ ('Febre,Outros', 5),
+ ('Dispneia, Febre, Dor de Garganta, Outros, Tosse', 4),
+ ('Dispneia, Dor De Garganta', 4),
+ ('Dor De Garganta, Dispneia, Tosse, Outros', 4),
+ ('Febre, Tosse, Dispneia, Dor De Garganta, Outros', 4),
+ ('Outros, Tosse, Dispneia, Dor de Garganta, Febre', 4),
+ ('Dispneia,Febre,Dor de Garganta', 4),
+ ('Dispneia,Febre,Tosse,Dor De Garganta', 4),
+ ('Dor De Garganta,Dispneia', 4),
+ ('Febre,Tosse,Dispneia,Dor De Garganta', 4),
+ ('Febre, Outros, Dor De Garganta', 4),
+ ('Febre,Dispneia,Dor de Garganta', 4),
+ ('Febre, Dor De Garganta,', 4),
+ ('Febre, Tosse, Dor De Garganta, Dispneia', 4),
+ ('Dispneia, Tosse, Outros, Dor de Garganta, Febre', 4),
+ ('Tosse,Dor De Garganta, Outros', 4),
+ ('Dispneia,Dor de Garganta,Febre', 4),
+ ('Dor de Garganta, Outros, Dispneia, Tosse, Febre', 4),
+ ('Febre, Tosse, Dor De Garganta, Outros, Dispneia', 4),
+ ('Febre, Dispneia, Outros, Dor de Garganta, Tosse', 4),
+ ('Febre,Dor de Garganta,Dispneia,Tosse', 4),
+ ('Dor De Garganta, Tosse, Febre, Outros', 4),
+ ('Tosse,Outros', 4),
+ ('Tosse, Dor De Garganta, Dispneia', 4),
+ ('Dispneia,Tosse,', 3),
+ ('Febre,Dificuldade De Respirar', 3),
+ ('Dispneia, Febre, Outros, Dor de Garganta, Tosse', 3),
+ (', Outros', 3),
+ ('Tosse,Dor De Garganta,Dispneia', 3),
+ ('Dor De Garganta, Febre, Tosse, Dispneia', 3),
+ ('Dificuldade De Respirar', 3),
+ ('Outros, Dor de Garganta, Febre, Dispneia, Tosse', 3),
+ ('Tosse,Dor De Garganta,Febre', 3),
+ ('Dispneia,Dor De Garganta', 3),
+ ('Febre,Dispineia, Outros', 3),
+ ('Dor De Garganta, Febre, Dispneia, Outros', 3),
+ ('Dor de Garganta, Febre, Outros, Dispneia, Tosse', 3),
+ ('Febre, Dor De Garganta', 3),
+ ('Febre,Dor de Garganta,Tosse,Dispneia', 3),
+ ('Outros, Dispneia, Tosse, Dor de Garganta, Febre', 3),
+ ('Dispneia,Dor de Garganta,Febre,Tosse', 3),
+ ('Febre,Dispneia,Tosse,Dor de Garganta', 3),
+ ('Dispneia, Febre, Outros, Tosse, Dor de Garganta', 3),
+ ('Febre,Tosse,Dor De Garganta,Dispineia,,Dispneia, Outros', 3),
+ ('Dor de Garganta,Febre,Dispneia', 3),
+ ('Dispneia, Outros, Dor de Garganta, Febre, Tosse', 3),
+ ('Outros, Tosse, Dispneia, Febre, Dor de Garganta', 3),
+ ('Tosse, Dor De Garganta, Dispneia, Outros', 3),
+ ('Febre,Dor De Garganta, Outros', 3),
+ ('Febre, Dispneia,', 3),
+ ('Tosse, Outros, Dor De Garganta', 3),
+ ('Dor De Garganta,Febre,Dispneia,Tosse', 3),
+ ('Dor De Garganta, Dispneia, Febre, Outros', 3),
+ ('Febre,Dor De Garganta,Dispneia', 3),
+ ('Febre,Dispneia,Dor de Garganta,Tosse', 2),
+ ('Dispneia, Outros, Febre, Dor de Garganta, Tosse', 2),
+ ('Outros, Dispneia, Febre, Dor de Garganta, Tosse', 2),
+ ('Dor De Garganta, Tosse, Outros, Febre', 2),
+ ('Tosse, Dispneia,', 2),
+ ('Dispneia, Dor De Garganta, Febre, Tosse', 2),
+ ('Dor de Garganta,Tosse,Dispneia,Febre', 2),
+ ('Dor De Garganta,Dispneia,Tosse,', 2),
+ ('Tosse,Dor de Garganta,diarreia', 2),
+ ('Dispneia, Febre, Tosse, Dor De Garganta', 2),
+ ('Febre,Tosse,Dispneia, Outros', 2),
+ ('Tosse, Dor De Garganta, Dispneia,', 2),
+ ('Tosse,Dor de Garganta,Dispneia,Febre', 2),
+ ('Tosse,Dispneia,Febre,Dor de Garganta', 2),
+ ('Tosse, Febre, Dispneia, Dor De Garganta', 2),
+ ('Tosse,Dispneia,Dor De Garganta', 2),
+ ('Dor De Garganta, Tosse, Dispneia', 2),
+ ('Febre,Dispneia,Dor De Garganta', 2),
+ ('Febredor De Garganta,Dificuldade De Respirar', 2),
+ ('Dor de Garganta, Outros, Febre, Dispneia, Tosse', 2),
+ ('Febre,Tosse,Dispneia,', 2),
+ ('Dispneia, Tosse, Outros, Febre, Dor de Garganta', 2),
+ ('Tosse, Dor De Garganta, Febre, Outros', 2),
+ ('Febre,Tosse,Dispineia,Dispneia, Outros', 2),
+ ('Tosse, Febre, Dispneia, Dor De Garganta, Outros', 2),
+ ('Tosse,Dor De Garganta,Dispneia, Outros', 2),
+ ('Dispneia,Febre,Dor de Garganta,Tosse', 2),
+ ('Outros, Febre, Tosse, Dor De Garganta', 2),
+ ('Tosse, Dor De Garganta, Febre', 2),
+ ('Dispneia,Dor de Garganta,Tosse,Febre', 2),
+ ('Tosse,Dor de Garganta,Febre,Dispneia', 2),
+ ('Dor De Garganta,Febre,Tosse,Dispneia', 2),
+ ('Febre,Tosse,Dor De Garganta,Dispneia,', 2),
+ ('Tosse,Dispineia, Outros', 1),
+ ('Dor De Garganta, Febre, Outros, Tosse', 1),
+ ('Tosse,Dor De Garganta,Febre,Dispneia', 1),
+ ('Tosse,Dor De Garganta,Dispneia,Febre', 1),
+ ('Dor De Garganta,Dispneia,Febre', 1),
+ ('Dispneia,Tosse,Dor De Garganta', 1),
+ ('Febre, Dor De Garganta, Outros, Dispneia', 1),
+ ('diarreia', 1),
+ ('congestão nasal, calafrio, anosmia, disgeusia', 1),
+ ('perca de olfato e paladar', 1),
+ ('Tosse,Dispneia,Dor de Garganta,Febre', 1),
+ ('Dor De Garganta, Dispneia, Outros, Febre', 1),
+ ('Tosse, Febre, Dor De Garganta, Dispneia, Outros', 1),
+ ('Febre, Dispneia, Tosse, Dor De Garganta, Outros', 1),
+ ('Dor De Garganta,Febre,Tosse,Outros', 1),
+ ('Dor De Garganta,Dispneia,', 1),
+ ('Dor De Garganta,Tosse,Outros', 1),
+ ('Tosse,calafrio', 1),
+ ('Tosse,Febre,congestão nasal', 1),
+ ('Tosse, Febre, Dor De Garganta, Dispneia', 1),
+ ('Dor De Garganta, Febre, Outros, Dispneia', 1),
+ ('Dispineia, Outros', 1),
+ ('Febre,Dispneia,Tosse,', 1),
+ ('Tosse,Febre,perda do paladar, olfato', 1),
+ ('Tosse,perda de olfato e paladar', 1),
+ ('Dor De Garganta,Febre,Outros', 1),
+ ('Tosse,calafrios', 1),
+ ('Febre, Tosse, Dispneia, Dor De Garganta', 1),
+ ('Dor De Garganta,Tosse,Dispneia', 1),
+ ('Febre, Dor De Garganta, Dispneia,', 1),
+ ('diarreia,ausencia de olfato e paladar', 1),
+ ('Tosse,Outros,Febre', 1),
+ ('Febre,Tosse,Dispineia,,Dispneia, Outros', 1),
+ ('Dispneia,Tosse,Febre,Dor de Garganta', 1),
+ ('Tosse, Dor De Garganta, Outros, Dispneia', 1),
+ ('Tosse,Dispneia,Outros', 1),
+ ('Febre,Dor De Garganta,Dispneia,Tosse', 1),
+ ('Dispneia, Febre, Dor De Garganta', 1),
+ ('Dor De Garganta, Febre, Tosse, Outros, Dispneia', 1),
+ ('congestão nasal', 1),
+ ('Tosse,Febre,Dor de Garganta,perca de olfato e paladar', 1),
+ ('perca de olfato', 1),
+ ('Dor De Garganta, Dispneia, Outros', 1),
+ ('Outros, Tosse, Dor De Garganta, Dispneia', 1),
+ ('Tosse, Dispneia, Dor De Garganta', 1),
+ ('Dor De Garganta, Dispneia, Tosse, Febre, Outros', 1),
+ ('Dor De Garganta,Tosse,Febre,Dispneia', 1),
+ ('Febre,Dispneia,', 1),
+ ('Dor De Garganta,Dispneia,Tosse,Outros', 1),
+ ('Febre, Outros, Tosse, Dor De Garganta', 1),
+ ('Dispneia, Febre, Tosse, Outros, Dor De Garganta', 1),
+ ('Outros, Febre, Dor De Garganta', 1),
+ ('Febre,Dispneia,Tosse,Dor De Garganta', 1),
+ ('Dor De Garganta, Febre, Dispneia', 1),
+ ('Dispneia,Outros,Febre', 1),
+ ('Febre, Dor De Garganta, Dispneia, Outros', 1),
+ ('Tosse,Febre,Dor de Garganta,perda do paladar e olfato', 1),
+ ('Dor De Garganta,Dispneia,Tosse,Febre', 1),
+ ('Tosse,Dispneia,Dor De Garganta,Febre', 1),
+ ('Dor De Garganta,Dispneia,Febre,Tosse,', 1),
+ ('Dor De Garganta,Dispneia,Febre,Tosse,Outros', 1),
+ ('Tosse,diarreia', 1),
+ ('Tosse,congestão nasal,perda de paladar', 1),
+ ('Tosse, Outros, Febre, Dor De Garganta', 1),
+ ('Dor de Garganta,perda de olfato e paladar.', 1),
+ ('diarreia ,calafrio congestão , perda de apetite', 1),
+ ('Outros, Dor De Garganta, Dispneia', 1),
+ ('Tosse,Febre,Dor De Garganta,Dispneia', 1),
+ ('Febre,Tosse,Dispneia,Outros', 1),
+ ('Febre, Tosse, Outros, Dispneia, Dor De Garganta', 1),
+ ('Febre,Dor De Garganta,Tosse,Dispneia', 1),
+ ('Dispneia,Tosse,Dor De Garganta,Febre', 1),
+ ('Tosse, Dispneia, Outros, Dor de Garganta, Febre', 1),
+ ('Tosse,Febre,perda de olfato e paladar', 1),
+ ('Dispneia,Dor De Garganta,Tosse', 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 5}
+\PY{c+c1}{\PYZsh{} Sintomas mais comuns para casos não positivos para corona virus}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{4}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Negativo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('Outros', 1101930),
+ ('Outros: Paciente assintomático', 260856),
+ ('Tosse', 120996),
+ ('Tosse, Outros', 92789),
+ ('Dor de Garganta', 59950),
+ ('Febre, Outros', 51551),
+ ('Febre, Tosse, Outros', 45485),
+ ('""', 42022),
+ ('Febre, Tosse', 41949),
+ ('Dor de Garganta, Outros', 38446),
+ ('Tosse, Dor de Garganta', 37532),
+ ('Febre', 35993),
+ ('Febre, Tosse, Dor de Garganta', 30474),
+ ('Tosse, Dor de Garganta, Outros', 22867),
+ ('Outros, Dor de Garganta', 22645),
+ ('Tosse, Outros, Dor de Garganta', 20769),
+ ('Dor de Garganta, Tosse, Outros', 20353),
+ ('Dispneia', 20155),
+ ('Tosse, Dispneia', 20016),
+ ('Dor de Garganta, Tosse', 18242),
+ ('Febre, Dor de Garganta', 15216),
+ ('Dispneia, Outros', 14453),
+ ('Febre, Tosse, Outros, Dor de Garganta', 13273),
+ ('Febre, Tosse, Dor de Garganta, Outros', 13049),
+ ('Tosse, Febre', 12937),
+ ('Outros, Tosse', 12713),
+ ('Febre, Tosse, Dor de Garganta, Dispneia', 12526),
+ ('Febre, Tosse, Dispneia', 12360),
+ ('Tosse, Dispneia, Outros', 11965),
+ ('Febre, Dor de Garganta, Outros', 10988),
+ ('Tosse, Outros, Dispneia', 9839),
+ ('Tosse, Febre, Outros', 9675),
+ ('Outros, Dispneia', 9597),
+ ('Febre, Outros, Dor de Garganta', 9053),
+ ('Tosse,Dor de Garganta', 8352),
+ ('Tosse, Dor de Garganta, Dispneia', 8042),
+ ('null', 7634),
+ ('Dor de Garganta, Febre, Outros', 7573),
+ ('Outros, Febre', 7293),
+ ('Dor de Garganta, Febre, Tosse', 7207),
+ ('Dispneia, Tosse', 7106),
+ ('Dor de Garganta, Febre', 6804),
+ ('Febre, Tosse, Outros, Dor de Garganta, Dispneia', 6640),
+ ('Dor de Garganta, Febre, Tosse, Outros', 6545),
+ ('Febre, Tosse, Outros, Dispneia', 6303),
+ ('Dispneia, Tosse, Outros', 5759),
+ ('Febre,Tosse', 5382),
+ ('Febre, Tosse, Dispneia, Outros', 5313),
+ ('Febre, Dispneia', 5278),
+ ('Febre,Tosse,Dor de Garganta', 5231),
+ ('Tosse, Outros, Dor de Garganta, Dispneia', 5150),
+ ('Dor de Garganta, Tosse, Febre', 4842),
+ ('Dor de Garganta, Dispneia', 4696),
+ ('Febre, Tosse, Dor de Garganta, Dispneia, Outros', 4280),
+ ('Dor de Garganta, Dispneia, Outros', 3976),
+ ('Tosse, Dor de Garganta, Dispneia, Outros', 3936),
+ ('Febre, Dispneia, Outros', 3893),
+ ('Febre, Outros, Dispneia', 3608),
+ ('Tosse, Febre, Dor de Garganta', 3525),
+ ('Dor de Garganta, Tosse, Febre, Outros', 3380),
+ ('Dor de Garganta, Dispneia, Febre, Tosse, Outros', 3316),
+ ('Dor de Garganta, Dispneia, Tosse, Outros', 3026),
+ ('Dor de Garganta, Dispneia, Febre, Tosse', 3019),
+ ('Dispneia, Febre, Tosse', 2975),
+ ('Outros, Tosse, Dor de Garganta', 2807),
+ ('Febre, Dor de Garganta, Dispneia', 2784),
+ ('Febre, Dor de Garganta, Tosse', 2609),
+ ('Febre,Dor de Garganta', 2602),
+ ('Dor de Garganta, Dispneia, Tosse', 2550),
+ ('Dispneia, Febre, Tosse, Outros', 2549),
+ ('Dor de Garganta, Tosse, Dispneia', 2544),
+ ('Dispneia, Febre, Outros', 2431),
+ ('Dispneia, Febre', 2401),
+ ('Outros, Dor de Garganta, Dispneia', 2268),
+ ('Tosse, Febre, Dispneia', 2238),
+ ('Tosse, Outros, Febre', 2233),
+ ('Dor de Garganta, Tosse, Dispneia, Outros', 2191),
+ ('Outros, Febre, Tosse', 2049),
+ ('Outros, Dor de Garganta, Tosse', 1999),
+ ('Febre, Outros, Tosse', 1967),
+ ('Outros, Tosse, Febre', 1803),
+ ('Tosse, Dor de Garganta, Febre', 1801),
+ ('Tosse, Dispneia, Febre', 1773),
+ ('Dor de Garganta, Outros, Tosse', 1738),
+ ('Febre, Dor de Garganta, Tosse, Outros', 1715),
+ ('Tosse, Febre, Dor de Garganta, Outros', 1682),
+ ('Tosse,Dispneia', 1550),
+ ('Febre,Tosse,Dor de Garganta,Dispneia', 1527),
+ ('Tosse,Dor de Garganta,Dispneia', 1523),
+ ('Dor de Garganta, Dispneia, Febre', 1350),
+ ('Outros, Tosse, Dispneia', 1349),
+ ('Febre, Outros, Dor de Garganta, Dispneia', 1311),
+ ('Febre, Dispneia, Tosse', 1235),
+ ('Tosse, Dispneia, Febre, Outros', 1127),
+ ('Dispneia, Dor de Garganta', 1101),
+ ('Dor de Garganta, Dispneia, Febre, Outros', 1082),
+ ('Dor de Garganta, Outros, Febre', 1070),
+ ('Tosse, Dispneia, Dor de Garganta', 1063),
+ ('Outros, Febre, Dor de Garganta', 1057),
+ ('Tosse, Febre, Dispneia, Outros', 1031),
+ ('Febre, Dor de Garganta, Dispneia, Outros', 1013),
+ ('Dispneia, Tosse, Febre', 982),
+ ('Dor de Garganta, Tosse, Dispneia, Febre', 975),
+ ('Febre,Tosse,Dispneia', 932),
+ ('Febre, Tosse, Dispneia, Dor de Garganta', 897),
+ ('Dispneia, Dor de Garganta, Outros', 846),
+ ('Tosse, Dispneia, Dor de Garganta, Outros', 837),
+ ('Outros, Dispneia, Tosse', 820),
+ ('Outros, Dor de Garganta, Febre', 812),
+ ('Tosse, Febre, Dor de Garganta, Dispneia', 804),
+ ('Tosse, Dor de Garganta, Febre, Outros', 797),
+ ('Dispneia, Outros, Tosse', 730),
+ ('Outros, Febre, Tosse, Dor de Garganta', 718),
+ ('Tosse, Dor de Garganta, Outros, Dispneia', 718),
+ ('Dor de Garganta, Outros, Dispneia', 703),
+ ('Dor de Garganta, Tosse, Dispneia, Febre, Outros', 672),
+ ('Febre, Tosse, Dispneia, Dor de Garganta, Outros', 655),
+ ('Dispneia, Dor de Garganta, Tosse', 642),
+ ('Febre, Tosse, Dor de Garganta, Outros, Dispneia', 637),
+ ('Febre, Dispneia, Tosse, Outros', 626),
+ ('Dor de Garganta, Tosse, Febre, Dispneia', 586),
+ ('Febre,Tosse,Dor De Garganta,', 553),
+ ('Dor de Garganta,Dispneia', 535),
+ ('Febre,Dispneia', 510),
+ ('Tosse, Febre, Outros, Dor de Garganta', 507),
+ ('Dispneia, Tosse, Dor de Garganta', 502),
+ ('Dispneia, Tosse, Febre, Outros', 490),
+ ('Dor de Garganta,Febre,Tosse', 483),
+ ('Outros, Febre, Dispneia', 470),
+ ('Dor de Garganta,Tosse', 453),
+ ('Dor de Garganta, Tosse, Outros, Febre', 450),
+ ('Febre, Outros, Tosse, Dor de Garganta', 445),
+ ('Dor de Garganta, Dispneia, Tosse, Febre', 439),
+ ('Tosse, Febre, Outros, Dispneia', 426),
+ ('Dor de Garganta, Febre, Dispneia', 413),
+ ('Febre, Dispneia, Dor de Garganta', 411),
+ ('Dispneia, Outros, Febre', 396),
+ ('Dor de Garganta, Febre, Tosse, Dispneia', 391),
+ ('Outros, Tosse, Dor de Garganta, Dispneia', 372),
+ ('Outros, Dispneia, Febre', 370),
+ ('Outros, Tosse, Febre, Dor de Garganta', 369),
+ ('Dispneia, Dor de Garganta, Tosse, Outros', 354),
+ ('Tosse, Dor de Garganta, Outros, Febre', 350),
+ ('Tosse,Febre', 349),
+ ('Tosse, Febre, Dor de Garganta, Dispneia, Outros', 328),
+ ('Febre,Tossedificuldade De Respirar', 328),
+ ('Dor de Garganta,Dispneia,Febre,Tosse', 325),
+ ('Dor de Garganta, Tosse, Outros, Dispneia', 321),
+ ('Dor de Garganta, Outros, Tosse, Febre', 321),
+ ('Febre, Dispneia, Dor de Garganta, Outros', 305),
+ ('Outros, Dispneia, Dor de Garganta', 302),
+ ('Dispneia, Dor de Garganta, Tosse, Febre', 298),
+ ('Dispneia,Febre,Tosse', 288),
+ ('Febre, Dor de Garganta, Outros, Tosse', 288),
+ ('Dispneia, Tosse, Dor de Garganta, Outros', 287),
+ ('Tosse, Febre, Dispneia, Dor de Garganta', 283),
+ ('Dor de Garganta, Dispneia, Tosse, Febre, Outros', 281),
+ ('Febre,Tosse,Dor De Garganta,Dificuldade De Respirar', 280),
+ ('Dor de Garganta, Febre, Dispneia, Outros', 278),
+ ('Febre, Outros, Dor de Garganta, Tosse', 277),
+ ('Dor de Garganta, Tosse, Febre, Dispneia, Outros', 276),
+ ('Febre, Dor de Garganta, Dispneia, Tosse', 275),
+ ('Febre,Dor de Garganta,Dispneia', 273),
+ ('Febre, Dor de Garganta, Outros, Dispneia', 273),
+ ('Outros, Febre, Tosse, Dispneia', 268),
+ ('Febre, Outros, Tosse, Dispneia', 265),
+ ('Tosse, Dispneia, Outros, Dor de Garganta', 261),
+ ('Dispneia,Tosse', 255),
+ ('Outros, Dor de Garganta, Tosse, Febre', 255),
+ ('Tosse, Dispneia, Outros, Febre', 249),
+ ('Tosse,Dor De Garganta,', 245),
+ ('Tosse, Dor de Garganta, Dispneia, Febre', 240),
+ ('Dispneia, Outros, Dor de Garganta', 240),
+ ('Dor de Garganta, Febre, Tosse, Dispneia, Outros', 236),
+ ('Febre, Dor de Garganta, Tosse, Dispneia', 224),
+ ('Tosse, Outros, Dispneia, Dor de Garganta', 222),
+ ('Febre, Tosse, Outros, Dispneia, Dor de Garganta', 217),
+ ('Paciente assintomático', 210),
+ ('Dor de Garganta, Febre, Outros, Tosse', 197),
+ ('Febre, Dispneia, Dor de Garganta, Tosse', 196),
+ ('Outros, Febre, Tosse, Dor de Garganta, Dispneia', 195),
+ ('Outros, Tosse, Febre, Dispneia', 193),
+ ('Tosse,', 191),
+ ('Febre, Dor de Garganta, Tosse, Dispneia, Outros', 191),
+ ('Outros, Dor de Garganta, Febre, Tosse', 191),
+ ('Tosse, Outros, Dor de Garganta, Febre', 188),
+ ('Dispneia, Dor de Garganta, Febre, Tosse', 167),
+ ('Febre, Tosse, Dor De Garganta,', 163),
+ ('Outros, Dor de Garganta, Tosse, Dispneia', 162),
+ ('Febre, Dispneia, Tosse, Dor de Garganta', 160),
+ ('Tosse, Dor de Garganta, Dispneia, Febre, Outros', 158),
+ ('Dispneia, Dor de Garganta, Febre', 156),
+ ('Outros, Tosse, Dor de Garganta, Febre', 155),
+ ('Dor de Garganta, Febre, Tosse, Outros, Dispneia', 155),
+ ('Tosse, Dor de Garganta, Febre, Dispneia', 151),
+ ('Outros, Febre, Dor de Garganta, Tosse', 150),
+ ('Febre, Tosse, Dispneia, Outros, Dor de Garganta', 149),
+ ('Febre, Dor de Garganta, Dispneia, Tosse, Outros', 149),
+ ('Outros, Dor de Garganta, Dispneia, Tosse', 148),
+ ('Febre, Outros, Tosse, Dor de Garganta, Dispneia', 147),
+ ('Dor de Garganta,Dispneia,Tosse', 146),
+ ('Tosse, Febre, Dispneia, Dor de Garganta, Outros', 145),
+ ('Febre,', 144),
+ ('Dor de Garganta, Febre, Dispneia, Tosse', 138),
+ ('Tosse,Febre,Dispneia', 137),
+ ('Dor de Garganta, Outros, Febre, Tosse', 137),
+ ('Dor de Garganta,Febre', 137),
+ ('Dor de Garganta, Outros, Tosse, Dispneia', 136),
+ ('Outros, Tosse, Dispneia, Dor de Garganta', 135),
+ ('Dispneia, Febre, Tosse, Dor de Garganta', 134),
+ ('Tosse, Outros, Dispneia, Febre', 133),
+ ('Tosse,Febre,Dor de Garganta', 133),
+ ('Tosse, Outros, Febre, Dor de Garganta', 131),
+ ('Tosse, Outros, Febre, Dispneia', 131),
+ ('Dispneia, Outros, Tosse, Febre', 125),
+ ('Febre, Dispneia, Dor de Garganta, Tosse, Outros', 123),
+ ('Dispneia, Febre, Dor de Garganta', 123),
+ ('Febre, Tosse, Dor De Garganta, Dispneia,', 122),
+ ('Dispneia, Dor de Garganta, Outros, Tosse, Febre', 118),
+ ('Dor de Garganta, Febre, Dispneia, Tosse, Outros', 118),
+ ('Dor De Garganta,', 117),
+ ('Tosse, Febre, Outros, Dor de Garganta, Dispneia', 109),
+ (',Tossedificuldade De Respirar', 108),
+ ('Outros, Dispneia, Febre, Tosse', 106),
+ ('Dor de Garganta, Dispneia, Outros, Tosse', 103),
+ ('Febre, Dispneia, Outros, Tosse', 101),
+ ('Outros, Tosse, Dispneia, Febre', 95),
+ ('Febre, Outros, Dispneia, Tosse', 94),
+ ('Febre, Dispneia, Tosse, Dor de Garganta, Outros', 92),
+ ('Dor De Garganta,Tosse,', 92),
+ ('Dispneia, Dor de Garganta, Tosse, Febre, Outros', 92),
+ ('Dor de Garganta, Febre, Outros, Dispneia', 90),
+ ('Outros, Febre, Dor de Garganta, Dispneia', 88),
+ ('Dispneia, Tosse, Febre, Dor de Garganta', 88),
+ ('Dor de Garganta, Dispneia, Outros, Febre', 88),
+ ('Dor de Garganta, Tosse, Febre, Outros, Dispneia', 87),
+ ('Febre, Tosse,', 86),
+ ('Dispneia, Dor de Garganta, Outros, Tosse', 86),
+ ('Outros, Tosse, Febre, Dor de Garganta, Dispneia', 85),
+ ('Tosse, Dor de Garganta, Febre, Dispneia, Outros', 84),
+ ('Outros, Dispneia, Tosse, Febre', 84),
+ ('Dispneia, Tosse, Outros, Dor de Garganta', 83),
+ ('Dispneia, Dor de Garganta, Febre, Tosse, Outros', 83),
+ ('Outros, Dispneia, Dor de Garganta, Tosse', 82),
+ ('Febre, Outros, Dispneia, Dor de Garganta', 79),
+ ('Dispneia, Tosse, Outros, Febre', 78),
+ ('Dor de Garganta, Tosse, Dispneia, Outros, Febre', 77),
+ ('Febre,Tosse,', 77),
+ ('Dispneia, Dor de Garganta, Febre, Outros', 77),
+ ('Dor de Garganta,Tosse,Febre', 76),
+ (',Tosse,Dor De Garganta,Dificuldade De Respirar', 75),
+ ('Dor De Garganta,Febre,Tosse,', 75),
+ ('Febredor De Garganta,', 74),
+ ('Febre, Dispneia, Outros, Dor de Garganta', 68),
+ ('Tosse, Dispneia, Dor de Garganta, Febre', 66),
+ ('Dor de Garganta, Outros, Dispneia, Tosse', 66),
+ ('Dispneia, Outros, Tosse, Dor de Garganta', 65),
+ ('Dispneia, Outros, Febre, Tosse', 65),
+ ('Febre,Dispneia,Tosse', 64),
+ ('Febre, Tosse, Dispneia,', 64),
+ ('Dispneia, Febre, Outros, Tosse', 64),
+ ('Febre, Dor de Garganta, Tosse, Outros, Dispneia', 64),
+ ('Dispneia, Febre, Dor de Garganta, Outros', 63),
+ ('Outros, Dispneia, Tosse, Dor de Garganta', 63),
+ ('Dispneia, Febre, Tosse, Dor de Garganta, Outros', 62),
+ ('Tosse, Febre, Dor de Garganta, Outros, Dispneia', 60),
+ ('Dispneia, Febre, Dor de Garganta, Tosse', 59),
+ ('Dispneia,Febre', 59),
+ ('Dor de Garganta, Dispneia, Febre, Outros, Tosse', 58),
+ ('Febre,Tosse,Dispneia,Dor de Garganta', 57),
+ ('Febre,Dor de Garganta,Tosse', 51),
+ ('Febre, Outros, Dor de Garganta, Dispneia, Tosse', 48),
+ ('Tosse, Dispneia, Febre, Dor de Garganta, Outros', 47),
+ ('Tosse, Dor de Garganta, Dispneia, Outros, Febre', 47),
+ ('Febre, Dor De Garganta,', 47),
+ ('Dor de Garganta, Outros, Tosse, Febre, Dispneia', 46),
+ ('Tosse, Dor De Garganta,', 46),
+ ('Dor de Garganta,Tosse,Dispneia', 45),
+ ('Outros, Dor de Garganta, Dispneia, Febre', 43),
+ ('Tosse,Dispneia,Febre', 43),
+ ('Dor de Garganta,Febre,Tosse,Dispneia', 41),
+ ('Dor de Garganta, Outros, Febre, Dispneia', 41),
+ ('Tosse, Dispneia, Febre, Dor de Garganta', 40),
+ ('Outros, Dor de Garganta, Febre, Dispneia', 39),
+ ('Febre, Outros, Dor de Garganta, Tosse, Dispneia', 38),
+ ('Outros, Febre, Dispneia, Tosse', 38),
+ ('Dispneia, Outros, Dor de Garganta, Tosse', 38),
+ ('Tosse,Dispneia,Dor de Garganta', 37),
+ ('Outros, Febre, Tosse, Dispneia, Dor de Garganta', 37),
+ ('Outros, Febre, Dispneia, Dor de Garganta', 37),
+ ('Outros, Dor de Garganta, Dispneia, Febre, Tosse', 37),
+ ('Dor de Garganta, Outros, Dispneia, Febre', 37),
+ ('Dispneia, Tosse, Dor de Garganta, Febre', 37),
+ ('Febre, Dor de Garganta, Outros, Tosse, Dispneia', 36),
+ ('Tosse, Outros, Dor de Garganta, Dispneia, Febre', 35),
+ ('Febre, Dor de Garganta, Dispneia, Outros, Tosse', 34),
+ ('Dispneia, Febre, Outros, Dor de Garganta', 34),
+ ('Tosse,Febre,Dispneia,Dor de Garganta', 33),
+ ('Tosse, Dispneia, Dor de Garganta, Febre, Outros', 33),
+ ('Outros, Dispneia, Febre, Dor de Garganta', 33),
+ ('Febre,Tosse,Dor De Garganta, Outros', 32),
+ ('Dor de Garganta, Dispneia, Outros, Tosse, Febre', 31),
+ ('Dispneia, Febre, Tosse, Outros, Dor de Garganta', 31),
+ ('Dispneia,Tosse,', 30),
+ ('Tosse,Dor de Garganta,Febre', 30),
+ ('Dor De Garganta,Dispneia,Febre,Tosse,', 29),
+ ('Febre,Dificuldade De Respirar', 29),
+ ('Dor de Garganta,Dispneia,Febre', 29),
+ ('Outros, Dispneia, Dor de Garganta, Febre', 28),
+ ('Outros, Tosse, Febre, Dispneia, Dor de Garganta', 27),
+ ('Tosse, Dor de Garganta, Febre, Outros, Dispneia', 27),
+ ('Outros, Dor de Garganta, Tosse, Febre, Dispneia', 26),
+ ('Outros, Dor de Garganta, Febre, Tosse, Dispneia', 26),
+ ('Tosse, Dor De Garganta, Dispneia,', 26),
+ ('Dispneia,Febre,Tosse,', 26),
+ ('undefined', 26),
+ ('Dispneia,Tosse,Febre', 26),
+ ('Febre, Outros, Tosse, Dispneia, Dor de Garganta', 25),
+ ('Dispneia, Tosse, Febre, Dor de Garganta, Outros', 25),
+ ('Dispneia,Tosse,Dor de Garganta', 25),
+ ('Dispneia, Dor de Garganta, Outros, Febre', 24),
+ ('Tosse, Febre, Dispneia, Outros, Dor de Garganta', 24),
+ ('Outros, Dor de Garganta, Dispneia, Tosse, Febre', 24),
+ ('Dispneia,Dor de Garganta', 23),
+ ('Tosse,Febre,Dor de Garganta,Dispneia', 22),
+ ('Dor de Garganta, Tosse, Outros, Dispneia, Febre', 21),
+ ('Tosse, Febre, Outros, Dispneia, Dor de Garganta', 21),
+ ('Outros, Dor de Garganta, Tosse, Dispneia, Febre', 21),
+ ('Tosse, Dispneia, Febre, Outros, Dor de Garganta', 21),
+ ('Tosse, Outros, Febre, Dor de Garganta, Dispneia', 21),
+ ('Dor De Garganta,Dispneia,Tosse,', 20),
+ ('Outros, Tosse, Dor de Garganta, Dispneia, Febre', 20),
+ ('Febredor De Garganta,Dificuldade De Respirar', 20),
+ ('Dor de Garganta, Dispneia, Tosse, Outros, Febre', 19),
+ ('Outros, Dispneia, Febre, Tosse, Dor de Garganta', 19),
+ ('Dispneia, Febre, Dor de Garganta, Tosse, Outros', 19),
+ ('Dispneia, Outros, Febre, Dor de Garganta', 18),
+ ('Febre, Dispneia, Tosse, Outros, Dor de Garganta', 18),
+ ('Dificuldade De Respirar', 18),
+ ('Outros, Dispneia, Dor de Garganta, Tosse, Febre', 18),
+ ('Tosse, Dispneia,', 18),
+ ('Dispneia,Febre,Tosse,Dor de Garganta', 17),
+ ('Tosse, Outros, Dor de Garganta, Febre, Dispneia', 17),
+ ('Tosse, Dispneia, Dor de Garganta, Outros, Febre', 17),
+ ('Dor de Garganta,Dispneia,Tosse,Febre', 15),
+ ('Dor De Garganta,Febre,', 15),
+ ('Dor de Garganta, Outros, Dispneia, Tosse, Febre', 15),
+ ('Febre,Tosse, Outros', 15),
+ ('Tosse, Dor de Garganta, Outros, Febre, Dispneia', 14),
+ ('Febre, Outros, Dispneia, Dor de Garganta, Tosse', 14),
+ ('Dor de Garganta, Tosse, Outros, Febre, Dispneia', 14),
+ ('Febre,Dispneia,Dor de Garganta', 14),
+ ('Dor de Garganta, Dispneia, Outros, Febre, Tosse', 13),
+ ('Tosse, Dor de Garganta, Outros, Dispneia, Febre', 13),
+ ('Dispneia, Dor de Garganta, Outros, Febre, Tosse', 13),
+ ('Febre, Dispneia, Dor de Garganta, Outros, Tosse', 13),
+ ('Dispneia, Tosse, Febre, Outros, Dor de Garganta', 13),
+ ('Febre, Dispneia, Outros, Tosse, Dor de Garganta', 13),
+ ('Tosse,Dor de Garganta,Dispneia,Febre', 12),
+ ('Outros, Dispneia, Dor de Garganta, Febre, Tosse', 12),
+ ('Dor de Garganta, Outros, Febre, Tosse, Dispneia', 12),
+ ('Dispneia, Outros, Dor de Garganta, Febre', 12),
+ ('Febre, Dor de Garganta, Outros, Dispneia, Tosse', 11),
+ ('Dispneia,', 11),
+ ('Dor de Garganta, Febre, Outros, Tosse, Dispneia', 11),
+ ('Dispneia, Tosse, Dor de Garganta, Febre, Outros', 11),
+ ('Outros, Febre, Dor de Garganta, Tosse, Dispneia', 11),
+ ('Dor de Garganta, Outros, Dispneia, Febre, Tosse', 11),
+ ('Outros, Febre, Dispneia, Dor de Garganta, Tosse', 11),
+ ('Dor de Garganta, Febre, Dispneia, Outros, Tosse', 11),
+ ('Outros, Tosse, Dor de Garganta, Febre, Dispneia', 11),
+ ('Febre,Tosse,Outros', 10),
+ ('Febre, Dispneia,', 10),
+ ('Dor de Garganta,Febre,Dispneia,Tosse', 10),
+ ('Tosse, Outros, Dispneia, Dor de Garganta, Febre', 10),
+ ('Febre, Dor De Garganta, Dispneia,', 10),
+ ('Dispneia,Dor de Garganta,Febre,Tosse', 10),
+ ('Dispneia, Febre, Outros, Tosse, Dor de Garganta', 10),
+ ('Dor de Garganta,Febre,Dispneia', 10),
+ ('Dispneia, Outros, Febre, Tosse, Dor de Garganta', 9),
+ ('Dispneia,Dor de Garganta,Tosse', 9),
+ ('Dispneia, Dor de Garganta, Tosse, Outros, Febre', 9),
+ ('Outros, Dispneia, Tosse, Febre, Dor de Garganta', 8),
+ ('Dor de Garganta,Tosse,Febre,Dispneia', 8),
+ ('Dispneia, Outros, Tosse, Febre, Dor de Garganta', 8),
+ ('Outros, Febre, Dispneia, Tosse, Dor de Garganta', 8),
+ ('Tosse, Outros, Dispneia, Febre, Dor de Garganta', 7),
+ ('Dispneia, Tosse, Outros, Febre, Dor de Garganta', 7),
+ ('Febre,Outros', 7),
+ ('Outros, Febre, Dor de Garganta, Dispneia, Tosse', 7),
+ ('Dispneia,Febre,', 7),
+ ('Dispneia, Dor de Garganta, Febre, Outros, Tosse', 7),
+ ('Febre,Dor De Garganta, Outros', 6),
+ ('Febre,Dor de Garganta,Dispneia,Tosse', 6),
+ ('Febre, Dispneia, Outros, Dor de Garganta, Tosse', 6),
+ ('Dor De Garganta,Febre,Tosse,Outros', 6),
+ ('Dor De Garganta,Dispneia,', 6),
+ ('Dor De Garganta,Dispneia,Febre,', 6),
+ ('Outros, Tosse, Dispneia, Dor de Garganta, Febre', 6),
+ ('Outros, Dor de Garganta, Febre, Dispneia, Tosse', 6),
+ ('Dor De Garganta,Dificuldade De Respirar', 6),
+ ('Febre,Dor de Garganta,Tosse,Dispneia', 6),
+ ('Tosse, Dispneia, Outros, Febre, Dor de Garganta', 6),
+ ('Tosse, Dispneia, Outros, Dor de Garganta, Febre', 6),
+ ('Dispneia,Febre,Dor de Garganta', 5),
+ ('Febre,Dispneia,Dor de Garganta,Tosse', 5),
+ ('Dispneia,Tosse,Outros', 5),
+ ('Febre,Tosse,Dispineia, Outros', 5),
+ ('Tosse, Outros, Febre, Dispneia, Dor de Garganta', 5),
+ ('Tosse,Dor de Garganta,Febre,Dispneia', 5),
+ ('Dispneia,Febre,Tosse,Outros', 5),
+ ('Tosse,Outros', 5),
+ ('Dispneia, Outros, Febre, Dor de Garganta, Tosse', 4),
+ ('diarréia', 4),
+ ('Dor De Garganta,Dispneia,Febre,Tosse,Outros', 4),
+ ('Outros, Dispneia, Tosse, Dor de Garganta, Febre', 4),
+ ('Dor de Garganta,Tosse,Dispneia,Febre', 4),
+ ('Dispneia,Tosse,Dor de Garganta,Febre', 4),
+ ('Dispneia,Tosse,Febre,Dor de Garganta', 4),
+ ('Dispneia, Outros, Dor de Garganta, Tosse, Febre', 4),
+ ('Dispneia, Febre, Dor de Garganta, Outros, Tosse', 4),
+ ('Tosse,Dor De Garganta, Outros', 4),
+ ('Dispneia, Outros, Dor de Garganta, Febre, Tosse', 4),
+ ('Dispneia, Tosse, Outros, Dor de Garganta, Febre', 4),
+ ('Febre, Outros, Dispneia, Tosse, Dor de Garganta', 4),
+ ('Dor de Garganta, Outros, Tosse, Dispneia, Febre', 4),
+ ('Dor de Garganta, Outros, Febre, Dispneia, Tosse', 4),
+ ('Dor De Garganta,Tosse,Outros', 4),
+ ('Dor De Garganta, Outros', 3),
+ ('Tosse,Dispineia, Outros', 3),
+ ('Outros, Tosse, Dispneia, Febre, Dor de Garganta', 3),
+ ('Tosse,Dispneia,Febre,Dor de Garganta', 3),
+ ('Dispneia, Tosse, Dor de Garganta, Outros, Febre', 3),
+ ('Tosse,Dispneia,Dor de Garganta,Febre', 3),
+ ('Dor De Garganta,Outros', 3),
+ ('Dor de Garganta, Febre, Outros, Dispneia, Tosse', 3),
+ ('Outros, Dispneia, Febre, Dor de Garganta, Tosse', 3),
+ ('Febre,Tosse,Dor De Garganta,Dispneia', 2),
+ ('Dor De Garganta,Febre,Outros', 2),
+ ('Dispneia, Febre, Outros, Dor de Garganta, Tosse', 2),
+ ('Febre,Dor De Garganta,Dispineia, Outros', 2),
+ ('Tosse,perca de palada', 2),
+ ('Tosse,Febre,diarréia', 2),
+ ('Febre,Tosse,Dor De Garganta,, Outros', 2),
+ ('Tosse,congestão nasal', 2),
+ ('diarreia', 2),
+ ('Tosse,Dor De Garganta,Dispineia, Outros', 2),
+ ('Tosse,nauseas, dor na face', 2),
+ ('Tosse,dor de barriga', 1),
+ ('Febre,Dor De Garganta,', 1),
+ ('Tosse,anosmia, ageusia', 1),
+ ('coriza, calafrio e congestão nasal', 1),
+ ('Febre,cefaleia e dor toracica', 1),
+ ('pigarro', 1),
+ ('Dor De Garganta,Dispneia,Tosse,Outros', 1),
+ ('diarreia, cefaleia leve', 1),
+ ('dorsalgia', 1),
+ ('Febre,Dispneia,', 1),
+ ('Febre,Dor de Garganta,diarreia', 1),
+ ('Tosse,Febre,calafrio , perda paladar e olfato', 1),
+ ('Dor De Garganta,Dispneia,Outros', 1),
+ ('Febre,Dispneia,Tosse,Dor de Garganta', 1),
+ ('Dor de Garganta,Tosse,Outros', 1),
+ ('Febre,mal estar', 1),
+ ('Tosse,calafrio , congestão nasal e perda  de olfato', 1),
+ ('Tosse,Febre,anosmia+disgeusia+diarreia', 1),
+ ('Dor De Garganta,Tosse', 1),
+ ('Dispneia,Febre,Outros', 1),
+ ('Febre,cefaleia e mialgia', 1),
+ ('perda de olfato e paladar', 1),
+ ('Tosse,cansaço', 1),
+ ('anosmia', 1),
+ ('Tosse,diarreia, perda de paladar', 1),
+ ('Dispneia,Outros', 1),
+ ('Febre,Outros,Dispneia', 1),
+ ('Febre,Dispneia,Tosse,', 1),
+ ('Febre,Tosse,Dor De Garganta,Dispineia, Outros', 1),
+ ('perda de paladar e olfato', 1),
+ ('Tosse,Febre,perda do paladar, olfato', 1),
+ ('Tosse,Febre,congestão nasal, calafrio', 1),
+ ('Dor de Garganta,Febre,Tosse,Dispneia,Outros', 1),
+ ('Dispneia,Febre,Dor de Garganta,Tosse', 1),
+ ('Tosse,anosmia, disgeusia', 1),
+ ('nausea,irritabilidade', 1),
+ ('Tosse,Dor de Garganta,Outros', 1),
+ ('Dor De Garganta, Dispneia, Febre, Tosse', 1),
+ ('Tosse,Febre,diarreia, cefaleia, mialgia', 1),
+ ('Dor de Garganta,Febre,Tosse,Outros', 1),
+ ('perda de paladar e olfato, nariz entupido', 1),
+ ('Febre,Dispneia,Tosse,Dor De Garganta', 1),
+ ('Dor De Garganta, Tosse, Febre, Dispneia', 1),
+ ('cefaleia leve', 1),
+ ('Febre,Tosse,Dor De Garganta,Dispneia,', 1),
+ ('Febre,Tosse,Dispneia,Outros', 1),
+ ('Dor de Garganta,cefaleia', 1),
+ ('Dor De Garganta, Dispneia,', 1),
+ ('Febre,anosmia', 1),
+ ('Tosse,falda de paladar e olfato, alergia na  mao', 1),
+ ('Dispneia, Dor De Garganta, Febre', 1),
+ ('Febre,Dor de Garganta,Tosse,Outros', 1),
+ ('Febre , Tosse , Dor De Garganta ,', 1),
+ ('Tosse,Febre,Dor de Garganta,perca de olfato paladar', 1),
+ ('diarréia, dor no peito', 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 6}
+\PY{c+c1}{\PYZsh{} Quantidade de casos positivos no Paraná}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{PARANÁ}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+6183
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 7}
+\PY{c+c1}{\PYZsh{} Municipio do Paraná com a maior quantidade de óbitos (evolucaoCaso)}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{31}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{PARANÁ}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Óbito}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ \PYZhy{}\PYZhy{} }\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('PARANÁ -- Foz do Iguaçu', 25),
+ ('PARANÁ -- Curitiba', 14),
+ ('PARANÁ -- Pinhais', 5),
+ ('PARANÁ -- Toledo', 4),
+ ('PARANÁ -- Londrina', 4),
+ ('PARANÁ -- Mariluz', 4),
+ ('PARANÁ -- Mandirituba', 3),
+ ('PARANÁ -- Paranavaí', 3),
+ ('PARANÁ -- Irati', 3),
+ ('PARANÁ -- Cambé', 3),
+ ('PARANÁ -- Diamante do Sul', 2),
+ ('PARANÁ -- Umuarama', 2),
+ ('PARANÁ -- Guaíra', 2),
+ ('PARANÁ -- Corbélia', 2),
+ ('PARANÁ -- Jaguapitã', 2),
+ ('PARANÁ -- Santa Terezinha de Itaipu', 2),
+ ('PARANÁ -- Ivaiporã', 2),
+ ('PARANÁ -- Piraquara', 2),
+ ('PARANÁ -- Quitandinha', 2),
+ ('PARANÁ -- São João do Ivaí', 2),
+ ('PARANÁ -- Astorga', 1),
+ ('PARANÁ -- Campo Do Tenente', 1),
+ ('PARANÁ -- Pérola', 1),
+ ('PARANÁ -- Cafelândia', 1),
+ ('PARANÁ -- Santo Antônio da Platina', 1),
+ ('PARANÁ -- Matinhos', 1),
+ ('PARANÁ -- Rio Branco Do Sul', 1),
+ ('PARANÁ -- Adrianópolis', 1),
+ ('PARANÁ -- Campo Bonito', 1),
+ ('PARANÁ -- Japurá', 1),
+ ('PARANÁ -- Cascavel', 1),
+ ('PARANÁ -- Campo do Tenente', 1),
+ ('PARANÁ -- São Miguel do Iguaçu', 1),
+ ('PARANÁ -- null', 1),
+ ('PARANÁ -- Figueira', 1),
+ ('PARANÁ -- Cianorte', 1),
+ ('PARANÁ -- Teixeira Soares', 1),
+ ('PARANÁ -- Mangueirinha', 1),
+ ('PARANÁ -- Nova Londrina', 1),
+ ('PARANÁ -- Ribeirão Claro', 1),
+ ('PARANÁ -- Maringá', 1),
+ ('PARANÁ -- Arapongas', 1),
+ ('PARANÁ -- Agudos do Sul', 1),
+ ('PARANÁ -- Rio Branco do Sul', 1),
+ ('PARANÁ -- Formosa Do Oeste', 1),
+ ('PARANÁ -- Santana do Itararé', 1),
+ ('PARANÁ -- Santa Fé', 1),
+ ('PARANÁ -- Porecatu', 1),
+ ('PARANÁ -- Mandaguari', 1),
+ ('PARANÁ -- Boa Vista Da Aparecida', 1),
+ ('PARANÁ -- Paranaguá', 1),
+ ('PARANÁ -- Fazenda Rio Grande', 1),
+ ('PARANÁ -- Tupãssi', 1),
+ ('PARANÁ -- Colombo', 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 8}
+\PY{c+c1}{\PYZsh{} Quantidade de municipios no Paraná com casos positivos}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{PARANÁ}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+296
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 9}
+\PY{c+c1}{\PYZsh{} Quantidade de municipios no Paraná sem casos positivos}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Negativo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{PARANÁ}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+407
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 10}
+\PY{c+c1}{\PYZsh{} Estado com a maior taxa de falecimento de mulheres}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{31}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Óbito}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('BAHIA', 1588),
+ ('SÃO PAULO', 878),
+ ('RIO DE JANEIRO', 743),
+ ('MINAS GERAIS', 430),
+ ('SANTA CATARINA', 181),
+ ('RIO GRANDE DO SUL', 115),
+ ('PARANÁ', 59)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 11}
+\PY{c+c1}{\PYZsh{} Menor idade de mulher positiva para covid}
+
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{29}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,} \PY{k+kc}{True}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+['Positivo', 'Feminino', '0']
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{14}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 12}
+\PY{c+c1}{\PYZsh{} Maior idade de mulher positiva para covid}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{29}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{14}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+['Positivo', 'Feminino', '99']
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{15}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 13}
+\PY{c+c1}{\PYZsh{} Quantidade de casos positivos, em granularidade diária, ao longo do tempo }
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{9}\PY{p}{]}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{T}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{k+kc}{True}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{15}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[('2020-01-01', 13),
+ ('2020-01-02', 3),
+ ('2020-01-06', 3),
+ ('2020-01-07', 2),
+ ('2020-01-08', 1),
+ ('2020-01-09', 1),
+ ('2020-01-10', 1),
+ ('2020-01-13', 4),
+ ('2020-01-15', 5),
+ ('2020-01-16', 1),
+ ('2020-01-17', 5),
+ ('2020-01-18', 1),
+ ('2020-01-20', 8),
+ ('2020-01-21', 5),
+ ('2020-01-22', 4),
+ ('2020-01-23', 2),
+ ('2020-01-24', 2),
+ ('2020-01-25', 1),
+ ('2020-01-27', 4),
+ ('2020-01-28', 5),
+ ('2020-01-29', 4),
+ ('2020-01-30', 8),
+ ('2020-01-31', 8),
+ ('2020-02-01', 34),
+ ('2020-02-02', 24),
+ ('2020-02-03', 16),
+ ('2020-02-04', 13),
+ ('2020-02-05', 10),
+ ('2020-02-06', 22),
+ ('2020-02-07', 11),
+ ('2020-02-08', 4),
+ ('2020-02-09', 6),
+ ('2020-02-10', 11),
+ ('2020-02-11', 12),
+ ('2020-02-12', 9),
+ ('2020-02-13', 17),
+ ('2020-02-14', 19),
+ ('2020-02-15', 32),
+ ('2020-02-16', 25),
+ ('2020-02-17', 26),
+ ('2020-02-18', 39),
+ ('2020-02-19', 29),
+ ('2020-02-20', 30),
+ ('2020-02-21', 13),
+ ('2020-02-22', 23),
+ ('2020-02-23', 12),
+ ('2020-02-24', 32),
+ ('2020-02-25', 30),
+ ('2020-02-26', 29),
+ ('2020-02-27', 17),
+ ('2020-02-28', 20),
+ ('2020-02-29', 9),
+ ('2020-03-01', 8),
+ ('2020-03-02', 44),
+ ('2020-03-03', 19),
+ ('2020-03-04', 35),
+ ('2020-03-05', 13),
+ ('2020-03-06', 19),
+ ('2020-03-07', 16),
+ ('2020-03-08', 11),
+ ('2020-03-09', 38),
+ ('2020-03-10', 63),
+ ('2020-03-11', 64),
+ ('2020-03-12', 89),
+ ('2020-03-13', 135),
+ ('2020-03-14', 136),
+ ('2020-03-15', 143),
+ ('2020-03-16', 380),
+ ('2020-03-17', 298),
+ ('2020-03-18', 346),
+ ('2020-03-19', 358),
+ ('2020-03-20', 379),
+ ('2020-03-21', 230),
+ ('2020-03-22', 182),
+ ('2020-03-23', 636),
+ ('2020-03-24', 620),
+ ('2020-03-25', 752),
+ ('2020-03-26', 763),
+ ('2020-03-27', 948),
+ ('2020-03-28', 626),
+ ('2020-03-29', 570),
+ ('2020-03-30', 1474),
+ ('2020-03-31', 1190),
+ ('2020-04-01', 1168),
+ ('2020-04-02', 1225),
+ ('2020-04-03', 1407),
+ ('2020-04-04', 1064),
+ ('2020-04-05', 758),
+ ('2020-04-06', 1967),
+ ('2020-04-07', 1771),
+ ('2020-04-08', 1737),
+ ('2020-04-09', 1875),
+ ('2020-04-10', 1201),
+ ('2020-04-11', 1085),
+ ('2020-04-12', 887),
+ ('2020-04-13', 2646),
+ ('2020-04-14', 2617),
+ ('2020-04-15', 2631),
+ ('2020-04-16', 2665),
+ ('2020-04-17', 2826),
+ ('2020-04-18', 1579),
+ ('2020-04-19', 1041),
+ ('2020-04-20', 3253),
+ ('2020-04-21', 1672),
+ ('2020-04-22', 3899),
+ ('2020-04-23', 2820),
+ ('2020-04-24', 4074),
+ ('2020-04-25', 2074),
+ ('2020-04-26', 1513),
+ ('2020-04-27', 4881),
+ ('2020-04-28', 14110),
+ ('2020-04-29', 4506),
+ ('2020-04-30', 5138),
+ ('2020-05-01', 3082),
+ ('2020-05-02', 2650),
+ ('2020-05-03', 1791),
+ ('2020-05-04', 5864),
+ ('2020-05-05', 6457),
+ ('2020-05-06', 5789),
+ ('2020-05-07', 5451),
+ ('2020-05-08', 6067),
+ ('2020-05-09', 2895),
+ ('2020-05-10', 2482),
+ ('2020-05-11', 6687),
+ ('2020-05-12', 6519),
+ ('2020-05-13', 6827),
+ ('2020-05-14', 7320),
+ ('2020-05-15', 8051),
+ ('2020-05-16', 4316),
+ ('2020-05-17', 3701),
+ ('2020-05-18', 9433),
+ ('2020-05-19', 9206),
+ ('2020-05-20', 9694),
+ ('2020-05-21', 10184),
+ ('2020-05-22', 10700),
+ ('2020-05-23', 5456),
+ ('2020-05-24', 3344),
+ ('2020-05-25', 10506),
+ ('2020-05-26', 12292),
+ ('2020-05-27', 11102),
+ ('2020-05-28', 11116),
+ ('2020-05-29', 12355),
+ ('2020-05-30', 6093),
+ ('2020-05-31', 2954),
+ ('2020-06-01', 13209),
+ ('2020-06-02', 11975),
+ ('2020-06-03', 12058),
+ ('2020-06-04', 12307),
+ ('2020-06-05', 11692),
+ ('2020-06-06', 6539),
+ ('2020-06-07', 3757),
+ ('2020-06-08', 15733),
+ ('2020-06-09', 14310),
+ ('2020-06-10', 16341),
+ ('2020-06-11', 9055),
+ ('2020-06-12', 12204),
+ ('2020-06-13', 6369),
+ ('2020-06-14', 3805),
+ ('2020-06-15', 18295),
+ ('2020-06-16', 17044),
+ ('2020-06-17', 17360),
+ ('2020-06-18', 16614),
+ ('2020-06-19', 15966),
+ ('2020-06-20', 8479),
+ ('2020-06-21', 5530),
+ ('2020-06-22', 21313),
+ ('2020-06-23', 20120),
+ ('2020-06-24', 18354),
+ ('2020-06-25', 19452),
+ ('2020-06-26', 20360),
+ ('2020-06-27', 8153),
+ ('2020-06-28', 6346),
+ ('2020-06-29', 22686),
+ ('2020-06-30', 20578),
+ ('2020-07-01', 20149),
+ ('2020-07-02', 18778),
+ ('2020-07-03', 18676),
+ ('2020-07-04', 8283),
+ ('2020-07-05', 5561),
+ ('2020-07-06', 25095),
+ ('2020-07-07', 22478),
+ ('2020-07-08', 22211),
+ ('2020-07-09', 21937),
+ ('2020-07-10', 23268),
+ ('2020-07-11', 9725),
+ ('2020-07-12', 6284),
+ ('2020-07-13', 29226),
+ ('2020-07-14', 24363),
+ ('2020-07-15', 22653),
+ ('2020-07-16', 22454),
+ ('2020-07-17', 23025),
+ ('2020-07-18', 8281),
+ ('2020-07-19', 5209),
+ ('2020-07-20', 26387),
+ ('2020-07-21', 22227),
+ ('2020-07-22', 20453),
+ ('2020-07-23', 19099),
+ ('2020-07-24', 20002),
+ ('2020-07-25', 6692),
+ ('2020-07-26', 3870),
+ ('2020-07-27', 20739),
+ ('2020-07-28', 14770),
+ ('2020-07-29', 12352),
+ ('2020-07-30', 9432),
+ ('2020-07-31', 6353),
+ ('2020-08-01', 1770),
+ ('2020-08-02', 679),
+ ('2020-08-03', 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+
+\PY{l+s+sd}{CÓDIGO UTILIZADO NA INFORMAÇÃO 14.}
+
+\PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+\PY{n}{daysIn} \PY{o}{=} \PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+m+mi}{31} \PY{k}{if} \PY{n}{x} \PY{o}{\PYZpc{}} \PY{l+m+mi}{2} \PY{o}{!=} \PY{l+m+mi}{0} \PY{k}{else} \PY{p}{(}\PY{l+m+mi}{28} \PY{k}{if} \PY{n}{x}\PY{o}{==}\PY{l+m+mi}{2} \PY{k}{else} \PY{l+m+mi}{30}\PY{p}{)}
+
+\PY{n}{\PYZus{}a}\PY{p}{,}\PY{n}{\PYZus{}m}\PY{p}{,} \PY{n}{datesPossible}\PY{p}{,} \PY{n}{i}\PY{p}{,} \PY{n}{lim} \PY{o}{=} \PY{l+m+mi}{2020}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{p}{[}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{n}{daysIn}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}
+\PY{k}{while} \PY{k+kc}{True}\PY{p}{:}
+    \PY{n}{i} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+    \PY{k}{if} \PY{n}{\PYZus{}m} \PY{o}{==} \PY{l+m+mi}{9}\PY{p}{:}
+        \PY{k}{break}
+    
+    \PY{k}{if} \PY{n}{i} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{lim}\PY{p}{:}
+        \PY{n}{datesPossible}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n+nb}{str}\PY{p}{(}\PY{n}{\PYZus{}a}\PY{p}{)}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZhy{}0}\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{\PYZus{}m}\PY{p}{)}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZhy{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZdq{}} \PY{k}{if} \PY{n}{i} \PY{o}{\PYZgt{}} \PY{l+m+mi}{9} \PY{k}{else} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{0}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{)}
+    
+    \PY{k}{if} \PY{n}{i} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{daysIn}\PY{p}{(}\PY{n}{\PYZus{}m}\PY{p}{)}\PY{p}{:}
+        \PY{n}{\PYZus{}m} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+        \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}
+    
+\PY{c+c1}{\PYZsh{}print(datesPossible)}
+
+
+\PY{c+c1}{\PYZsh{} Defining week number:}
+\PY{c+c1}{\PYZsh{} Primeiro domingo do ano foi 5 de janeiro.}
+
+\PY{n}{weekAt} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{p}{)}
+
+\PY{n}{k}\PY{p}{,} \PY{n}{tr}\PY{p}{,} \PY{n}{wUpdate} \PY{o}{=} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{2}
+\PY{k}{while} \PY{n}{k} \PY{o}{\PYZlt{}} \PY{n+nb}{len}\PY{p}{(}\PY{n}{datesPossible}\PY{p}{)}\PY{p}{:}
+    \PY{k}{if} \PY{n}{k} \PY{o}{\PYZlt{}} \PY{l+m+mi}{4}\PY{p}{:}
+        \PY{n}{weekAt}\PY{p}{[}\PY{n}{datesPossible}\PY{p}{[}\PY{n}{k}\PY{p}{]}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{1}
+        \PY{n}{k} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+        \PY{k}{continue}
+    \PY{k}{if} \PY{n}{tr} \PY{o}{==} \PY{l+m+mi}{7}\PY{p}{:}
+        \PY{n}{wUpdate} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+        \PY{n}{tr} \PY{o}{=} \PY{l+m+mi}{0}
+    \PY{n}{weekAt}\PY{p}{[}\PY{n}{datesPossible}\PY{p}{[}\PY{n}{k}\PY{p}{]}\PY{p}{]} \PY{o}{=} \PY{n}{wUpdate}
+    \PY{n}{k} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+    \PY{n}{tr} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+    
+\PY{c+c1}{\PYZsh{}print(weekAt)}
+\PY{n+nb}{print}\PY{p}{(}\PY{n}{weekAt}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{2020\PYZhy{}01\PYZhy{}11}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+2
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{17}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 14}
+\PY{c+c1}{\PYZsh{} Quantidade de casos positivos, em granularidade semanal, ao longo do tempo }
+\PY{c+c1}{\PYZsh{} Primeiro domingo do ano foi dia 5 de janeiro =\PYZgt{} Week 2 \PYZhy{}\PYZgt{} de 5 a 11 de janeiro.}
+\PY{c+c1}{\PYZsh{} Use   print(weekAt[\PYZsq{}2020\PYZhy{}01\PYZhy{}11\PYZsq{}])  para checar a semana correspondente.}
+
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{p}{(}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{9}\PY{p}{]}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{T}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{!=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{data}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]} \PY{o+ow}{in} \PY{n}{weekAt}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{weekAt}\PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{k+kc}{True}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}               
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{17}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[(1, 16),
+ (2, 8),
+ (3, 16),
+ (4, 22),
+ (5, 63),
+ (6, 100),
+ (7, 106),
+ (8, 185),
+ (9, 148),
+ (10, 157),
+ (11, 668),
+ (12, 2173),
+ (13, 4915),
+ (14, 8286),
+ (15, 10523),
+ (16, 16005),
+ (17, 19305),
+ (18, 36158),
+ (19, 35005),
+ (20, 43421),
+ (21, 58017),
+ (22, 66418),
+ (23, 71537),
+ (24, 77817),
+ (25, 99288),
+ (26, 114098),
+ (27, 114711),
+ (28, 130998),
+ (29, 135211),
+ (30, 118730),
+ (31, 66095),
+ (32, 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{18}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 15}
+\PY{c+c1}{\PYZsh{} Quantidade de pacientes que faleceram (evolucaoCaso) separados pela idade}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{31}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{29}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Óbito}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{18}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[(0, 271),
+ (1, 9),
+ (2, 14),
+ (3, 7),
+ (4, 5),
+ (5, 3),
+ (6, 4),
+ (7, 6),
+ (8, 2),
+ (9, 7),
+ (10, 3),
+ (12, 4),
+ (13, 2),
+ (14, 2),
+ (15, 3),
+ (16, 12),
+ (17, 7),
+ (18, 10),
+ (19, 14),
+ (20, 14),
+ (21, 16),
+ (22, 21),
+ (23, 15),
+ (24, 15),
+ (25, 23),
+ (26, 33),
+ (27, 24),
+ (28, 28),
+ (29, 25),
+ (30, 27),
+ (31, 19),
+ (32, 39),
+ (33, 43),
+ (34, 51),
+ (35, 43),
+ (36, 55),
+ (37, 65),
+ (38, 56),
+ (39, 66),
+ (40, 54),
+ (41, 61),
+ (42, 74),
+ (43, 82),
+ (44, 75),
+ (45, 78),
+ (46, 91),
+ (47, 83),
+ (48, 85),
+ (49, 77),
+ (50, 83),
+ (51, 88),
+ (52, 107),
+ (53, 105),
+ (54, 126),
+ (55, 140),
+ (56, 158),
+ (57, 124),
+ (58, 134),
+ (59, 161),
+ (60, 153),
+ (61, 178),
+ (62, 169),
+ (63, 189),
+ (64, 173),
+ (65, 170),
+ (66, 193),
+ (67, 209),
+ (68, 205),
+ (69, 201),
+ (70, 210),
+ (71, 230),
+ (72, 195),
+ (73, 216),
+ (74, 195),
+ (75, 200),
+ (76, 212),
+ (77, 181),
+ (78, 174),
+ (79, 199),
+ (80, 212),
+ (81, 183),
+ (82, 185),
+ (83, 175),
+ (84, 169),
+ (85, 159),
+ (86, 139),
+ (87, 151),
+ (88, 133),
+ (89, 112),
+ (90, 111),
+ (91, 89),
+ (92, 94),
+ (93, 71),
+ (94, 60),
+ (95, 54),
+ (96, 38),
+ (97, 22),
+ (98, 17),
+ (99, 15),
+ (100, 10),
+ (101, 7),
+ (102, 10),
+ (103, 4),
+ (104, 4),
+ (105, 2),
+ (107, 1),
+ (108, 2),
+ (110, 2),
+ (188, 1)]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{19}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 16}
+\PY{c+c1}{\PYZsh{} Taxa de óbito (evolucaoCaso) por idade}
+
+\PY{k}{def} \PY{n+nf}{order16}\PY{p}{(}\PY{n}{data}\PY{p}{)}\PY{p}{:}
+    \PY{n}{up} \PY{o}{=} \PY{l+m+mi}{1} \PY{k}{if} \PY{n}{data}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Óbito}\PY{l+s+s2}{\PYZdq{}} \PY{k}{else} \PY{l+m+mi}{0}
+    \PY{k}{return} \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{up}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]} \PY{c+c1}{\PYZsh{} [total, is\PYZus{}dead, age]}
+
+\PY{k}{def} \PY{n+nf}{reduce16}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{+}\PY{n}{y}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{n}{y}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}
+
+\PY{k}{def} \PY{n+nf}{taxa16}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZob{}:.2f\PYZcb{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{100.0}\PY{o}{/}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{1.0}\PY{p}{)}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{\PYZdq{}}
+
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{31}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{29}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n+nb}{len}\PY{p}{(}\PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{4} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{!=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{idade}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{and} \PY{n+nb}{int}\PY{p}{(}\PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{l+m+mi}{111}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{n}{order16}\PY{p}{(}\PY{n}{c}\PY{p}{)}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{reduce16}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{taxa16}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{k+kc}{True}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+    
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{19}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[[0, '9.88\%'],
+ [1, '0.53\%'],
+ [2, '0.95\%'],
+ [3, '0.59\%'],
+ [4, '0.42\%'],
+ [5, '0.27\%'],
+ [6, '0.33\%'],
+ [7, '0.50\%'],
+ [8, '0.17\%'],
+ [9, '0.57\%'],
+ [10, '0.25\%'],
+ [11, '0.00\%'],
+ [12, '0.31\%'],
+ [13, '0.14\%'],
+ [14, '0.13\%'],
+ [15, '0.16\%'],
+ [16, '0.58\%'],
+ [17, '0.29\%'],
+ [18, '0.29\%'],
+ [19, '0.28\%'],
+ [20, '0.22\%'],
+ [21, '0.23\%'],
+ [22, '0.27\%'],
+ [23, '0.19\%'],
+ [24, '0.18\%'],
+ [25, '0.24\%'],
+ [26, '0.34\%'],
+ [27, '0.24\%'],
+ [28, '0.28\%'],
+ [29, '0.23\%'],
+ [30, '0.25\%'],
+ [31, '0.16\%'],
+ [32, '0.32\%'],
+ [33, '0.34\%'],
+ [34, '0.40\%'],
+ [35, '0.33\%'],
+ [36, '0.42\%'],
+ [37, '0.47\%'],
+ [38, '0.39\%'],
+ [39, '0.48\%'],
+ [40, '0.41\%'],
+ [41, '0.49\%'],
+ [42, '0.61\%'],
+ [43, '0.73\%'],
+ [44, '0.71\%'],
+ [45, '0.76\%'],
+ [46, '0.92\%'],
+ [47, '0.89\%'],
+ [48, '0.94\%'],
+ [49, '0.87\%'],
+ [50, '1.01\%'],
+ [51, '1.10\%'],
+ [52, '1.41\%'],
+ [53, '1.38\%'],
+ [54, '1.78\%'],
+ [55, '2.00\%'],
+ [56, '2.32\%'],
+ [57, '2.04\%'],
+ [58, '2.33\%'],
+ [59, '2.99\%'],
+ [60, '3.09\%'],
+ [61, '3.83\%'],
+ [62, '3.89\%'],
+ [63, '4.61\%'],
+ [64, '4.74\%'],
+ [65, '4.83\%'],
+ [66, '5.50\%'],
+ [67, '6.82\%'],
+ [68, '6.65\%'],
+ [69, '7.61\%'],
+ [70, '8.20\%'],
+ [71, '9.52\%'],
+ [72, '8.50\%'],
+ [73, '10.13\%'],
+ [74, '10.33\%'],
+ [75, '11.64\%'],
+ [76, '12.00\%'],
+ [77, '10.65\%'],
+ [78, '11.67\%'],
+ [79, '14.60\%'],
+ [80, '14.71\%'],
+ [81, '13.47\%'],
+ [82, '15.00\%'],
+ [83, '15.50\%'],
+ [84, '15.75\%'],
+ [85, '16.49\%'],
+ [86, '16.39\%'],
+ [87, '18.37\%'],
+ [88, '18.02\%'],
+ [89, '17.13\%'],
+ [90, '18.72\%'],
+ [91, '17.94\%'],
+ [92, '23.04\%'],
+ [93, '19.51\%'],
+ [94, '21.90\%'],
+ [95, '24.66\%'],
+ [96, '21.47\%'],
+ [97, '16.54\%'],
+ [98, '14.29\%'],
+ [99, '25.00\%'],
+ [100, '20.00\%'],
+ [101, '22.58\%'],
+ [102, '28.57\%'],
+ [103, '26.67\%'],
+ [104, '36.36\%'],
+ [105, '15.38\%'],
+ [106, '0.00\%'],
+ [107, '14.29\%'],
+ [108, '25.00\%'],
+ [109, '0.00\%'],
+ [110, '33.33\%']]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 17}
+\PY{c+c1}{\PYZsh{} Idade média das mulheres positivas para covid}
+\PY{n}{checkpoint17} \PY{o}{=} \PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{29}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+                    \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{n}{qntd} \PY{o}{=} \PY{n}{checkpoint17}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}
+\PY{n}{soma} \PY{o}{=} \PY{n}{checkpoint17}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{soma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{f}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Idade média:  }\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{soma}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{o}{*}\PY{l+m+mf}{1.0}\PY{o}{/}\PY{n}{qntd}\PY{o}{*}\PY{l+m+mf}{1.0}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Idade média:  40.96124658120806
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 18}
+\PY{c+c1}{\PYZsh{} Município do Paraná com a maior quantidade de mulheres positivos para covid}
+\PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{13}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{PARANÁ}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Feminino}\PY{l+s+s2}{\PYZdq{}} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+('Curitiba', 903)
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{22}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+
+\PY{l+s+sd}{CÓDIGO UTILIZADO DA INFORMAÇÃO 19.}
+
+\PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+
+\PY{c+c1}{\PYZsh{} Dia da Semana =\PYZgt{} Dom = 0, Seg = 1, ... Sáb = 6.}
+
+\PY{c+c1}{\PYZsh{} Primeiro dia do ano foi em uma quarta\PYZhy{}feira.}
+\PY{c+c1}{\PYZsh{} Usando o dicionário da questão 14 como auxiliar.}
+\PY{n}{dia} \PY{o}{=} \PY{l+m+mi}{3}
+
+\PY{n}{dayOfTheWeekAt} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{p}{)}
+
+\PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{weekAt}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{k}{if} \PY{n}{dia} \PY{o}{==} \PY{l+m+mi}{7}\PY{p}{:}
+        \PY{n}{dia} \PY{o}{=} \PY{l+m+mi}{0}
+    \PY{n}{dayOfTheWeekAt}\PY{p}{[}\PY{n}{x}\PY{p}{]} \PY{o}{=} \PY{n}{dia}
+    \PY{n}{dia} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+
+\PY{n}{ans} \PY{o}{=} \PY{p}{[}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Domingo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Segunda}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Terça}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Quarta}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} 
+       \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Quinta}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Sexta}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{6}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Sábado}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{]}
+
+\PY{n}{decodeDay} \PY{o}{=} \PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{ans}\PY{p}{[}\PY{n}{x}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{23}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 19}
+\PY{c+c1}{\PYZsh{}Dia da semana com a maior quantidade de testes realizados}
+
+\PY{c+c1}{\PYZsh{} Dia da Semana =\PYZgt{} Dom = 0, Seg = 1, ... Sáb = 6.}
+
+\PY{n}{dday} \PY{o}{=} \PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{n+nb}{str}\PY{p}{(}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{9}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{T}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f} \PY{o+ow}{in} \PY{n}{weekAt}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{dayOfTheWeekAt}\PY{p}{[}\PY{n}{c}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Dia da semana com mais testes realizados: }\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n}{decodeDay}\PY{p}{(}\PY{n}{dday}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Dia da semana com mais testes realizados: Domingo
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{24}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 20}
+\PY{c+c1}{\PYZsh{} Dia da semana com maior quantidade de pacientes positivos para corona virus}
+\PY{n}{dsem} \PY{o}{=} \PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n+nb}{str}\PY{p}{(}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{9}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{T}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o+ow}{in} \PY{n}{weekAt}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)} \PY{o+ow}{and} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{==}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{dayOfTheWeekAt}\PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+        \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Dia da semana com mais pacientes positivos para corona: }\PY{l+s+s2}{\PYZdq{}}\PY{o}{+}\PY{n}{decodeDay}\PY{p}{(}\PY{n}{dsem}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Dia da semana com mais pacientes positivos para corona: Domingo
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{34}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{}informacao 21}
+\PY{c+c1}{\PYZsh{} Municipio, com mais de 500 testes, com a maior taxa de exames que não}
+\PY{c+c1}{\PYZsh{} foram positivos para COVID (casos que foram testados porém não tiveram}
+\PY{c+c1}{\PYZsh{} o resultadoTeste como Positivo)}
+
+
+\PY{c+c1}{\PYZsh{} returns  [city, pos, total]}
+\PY{k}{def} \PY{n+nf}{order21}\PY{p}{(}\PY{n}{data}\PY{p}{)}\PY{p}{:}
+    \PY{n}{up} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{1} \PY{k}{if} \PY{n}{data}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positivo}\PY{l+s+s2}{\PYZdq{}} \PY{k}{else} \PY{l+m+mi}{0}\PY{p}{)}
+    \PY{k}{return} \PY{p}{[}\PY{n}{data}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{up}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}
+
+\PY{k}{def} \PY{n+nf}{reduce21}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{+}\PY{n}{y}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{n}{y}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}
+
+\PY{c+c1}{\PYZsh{} (total \PYZhy{} positivies) / total}
+\PY{k}{def} \PY{n+nf}{taxa21}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZob{}:.2f\PYZcb{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(} \PY{p}{(}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{o}{*}\PY{l+m+mf}{100.0}\PY{o}{/}\PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{1.0}\PY{p}{)} \PY{p}{)}\PY{o}{+}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{\PYZdq{}}
+
+\PY{n}{base} \PY{o}{=} \PY{n}{arquivoRDD}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{l}\PY{p}{:} \PY{p}{[}\PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{17}\PY{p}{]}\PY{p}{,} \PY{n}{l}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{11}\PY{p}{]}\PY{p}{]}\PY{p}{)}
+
+\PY{n}{municipios500} \PY{o}{=} \PY{n}{base}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{x}\PY{o}{+}\PY{n}{y}\PY{p}{)}\PYZbs{}
+                \PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZgt{}}\PY{l+m+mi}{500}\PY{p}{)}\PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{collect}\PY{p}{(}\PY{p}{)}
+
+
+\PY{n}{winner} \PY{o}{=} \PY{n}{base}\PY{o}{.}\PY{n}{filter}\PY{p}{(}\PY{k}{lambda} \PY{n}{f}\PY{p}{:} \PY{n}{f}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o+ow}{in} \PY{n}{municipios500}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{n}{order21}\PY{p}{(}\PY{n}{c}\PY{p}{)}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{reduceByKey}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{:} \PY{n}{reduce21}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{c}\PY{p}{:} \PY{p}{[}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{taxa21}\PY{p}{(}\PY{n}{c}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{sortBy}\PY{p}{(}\PY{k}{lambda} \PY{n}{s}\PY{p}{:} \PY{n}{s}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{k+kc}{False}\PY{p}{)}\PYZbs{}
+            \PY{o}{.}\PY{n}{first}\PY{p}{(}\PY{p}{)}
+
+\PY{n}{winner}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{34}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+['Santo Antônio do Grama', '97.34\%']
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\end{Verbatim}
+\end{tcolorbox}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+\end{document}

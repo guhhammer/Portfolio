@@ -1,0 +1,64 @@
+
+
+
+{1, 2, 3, 4, 5
+
+	a:
+		Pode-se fazer o uso da técnica assert
+		para todos os valores da soma, e assumir
+		os valores próximos por indução.
+
+}
+
+{1
+
+	b: 	
+
+		P1 é polinomial.
+
+}
+
+{2
+	
+	b:
+
+		P2 é polinomial.
+
+}
+
+{3
+	
+	b:
+
+		P3 é NP-completo.
+
+}
+
+{4
+	
+	b:
+
+		P4 é polinomial.
+
+}
+
+{5
+	
+	b:
+
+		P5 é não-deterministico polinomial.
+
+
+	Obs.:
+
+		Deve-se levar em conta a impossibilidade técnica
+		de contar até o infinito em tempo hábil.
+		Porém, é possível aproximar o valor com cálculo e outras 
+		fórmulas.
+
+}
+
+
+
+
+

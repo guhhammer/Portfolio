@@ -1,0 +1,5 @@
+
+
+composição -> quando um objeto é destruído, suas instâncias também são.
+
+associação -> quando um objeto é destruído e outro não é

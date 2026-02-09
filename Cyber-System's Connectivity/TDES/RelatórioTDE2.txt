@@ -1,0 +1,63 @@
+
+Nome: Gustavo Hammerschmidt.
+
+Obs.: Meu usuário se chama gustavo e não conectividade.
+
+Pergunta 1:
+
+Indique a quais grupos o usuário conectividade pertence:
+grupos=1000(gustavo), 4(adm), 24(cdrom), 27(sudo), 30(dip), 46(plugdev), 116(lpadmin), 122(sambashare)
+
+Ele é administrador do sistema:
+Sim, está no grupo adm, sudo e lpadmin.
+
+
+Pergunta 2:
+
+Indique quais permissões o comando chmod modificou comparando o resultado do comando ls -l nos passos 2 e 4:
+
+O comando concedeu permissão de execução do arquivo ao criador dele.
+Passo 2:  -rw-rw-r--
+Passo 4:  -rwxrw-r--
+
+X adicionado no quarto espaço indica permissão de execução do arquivo a seu criador.
+
+
+Pergunta 3:
+
+Ler o arquivo: permitido.
+Executar o arquivo: não permitido.
+Apagar o arquivo: não permitido.
+Renomear o arquivo: não permitido.
+
+O usuário convidado pertence a outros nas permissões do arquivo, logo, só tem permissões r--, e não faz parte de nenhum grupo que tem acesso rw- do arquivo.
+
+
+
+Pergunta 4:
+
+Explique os resultados do passo 3 analisando as informações do usuário convidado(id convidado) e as permissões das pastas obtidas com ls -l:
+
+Convidado pôde executar o arquivo na pasta pública e copiá-lo para ela; mas não pôde copiá-lo para a pasta privada.
+
+O comando <id convidado> identificou que:
+uid=1001(convidado)
+gif=1001(convidado)
+grupos=1001(convidado), 1000(gustavo)
+
+E ls -l publico que:
+
+-rwxrw-r-- 1 convidado convidado 30 out 19 14:51 teste2.sh
+-rwxrwxr-- 1 gustavo   gustavo   30 out 19 14:48 teste.sh
+
+Confirmando o comando <id convidado>, pois o convidado pertence ao grupo.
+
+
+
+
+
+
+
+
+
+

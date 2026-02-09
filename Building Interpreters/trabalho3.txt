@@ -1,0 +1,85 @@
+
+
+
+1) Qual linguagem é gerada pela gramática abaixo?
+	E -> (E) | a
+
+	L(G) = {a, (a), ((a)), (((a))), ...}
+
+
+2) Construa uma gramática que gera:
+	L(G) = {a, a+a, a+a+a, a+a+a+a, …}
+	
+	EXP -> a OP EXP | a
+	OP  -> +
+
+
+3) Construa uma gramática que gera:
+    L(G) = {a^n | n ≥ 1} 
+	
+	EXP -> a OP EXP | a
+	OP -> .               (Obs.: o ponto é a multiplicação.)
+	
+
+
+4) Construa uma gramática que gera:
+    L(G) = {a^n | n ≥ 1}
+
+	EXP -> a OP EXP	| a
+	OP -> .               (Obs.: o ponto é a multiplicação.)
+	
+	
+
+5) Construa uma gramática que gera:
+    L(G) = {a^n | n ≥ 0} 
+	
+	EXP -> a OP EXP | a | (épsilon)
+	OP  -> .              (Obs.: o ponto é a multiplicação.)
+
+	
+
+6) Qual a gramática da linguagem L(G)?
+    L(G) = {(a^n)(b^m)(c^m)(d^n) | n ≥ 1, m ≥ 1}	
+	
+	M -> a  M  d | b  N  c	
+	N -> b  N  c | bc
+	
+
+7) Defina uma gramática para a estrutura while. 
+
+
+	<comando-while>    ->  WHILE ( <expr-bool> ) { <comando> }
+	<comando>          ->  <comando-while>
+	<comando>          ->  <atribuicao> ;
+	<comando>          ->  <comando>  <atribuicao> ;
+	<atribuicao>       ->  <var> := <expr>
+	<expr>             ->  <expr-bool> | <expr-inteira>
+	<expr-bool>        ->  <expr>  =  <expr>
+	<expr-bool>        ->  <expr>  <  <expr>
+	<expr-bool>        ->  not <expr-bool>
+	<expr-bool>        ->  <expr-bool> AND <expr-bool>
+	<expr-bool>        ->  TRUE
+	<expr-bool>        ->  FALSE
+	<expr-inteira>     ->  <var> | <inteiro>
+	<var>              ->  A | B | C | D | E |...
+	<inteiro>          ->  1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0
+
+
+8) Escreva uma gramática livre para a seguinte
+linguagem L:
+	L={(a^i)(b^j)(a^k) | j=i+k, i ≥ 0 e k ≥ 0}
+
+	Exemplos de palavras da linguagem L
+		aabbba aaabbb bbbaaa
+
+	Exemplos de palavras não-pertencentes a L
+		abbba bab bbbbb 
+
+	
+    I -> a I bb I a | b I a | a I b | (épsilon)
+	 
+
+	
+	
+	
+	

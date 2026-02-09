@@ -1,0 +1,19 @@
+Streaming transaction logs mentioning H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem. Confirmed commitment
+Transaction executed in slot 9:
+  Signature: 4NXcovWZ5RcQx5omTZMoXMkhmmdQU8iGoNRubdUG5efqin5u5M2Y4imwGh2P8PLuDbEpo1mGnQ7FpyBXjUcaa2qr
+  Status: Ok
+  Log Messages:
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem invoke [1]
+    Program log: Instruction: IsArmstrongNumber
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem consumed 9124 of 200000 compute units
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem success
+Transaction executed in slot 10:
+  Signature: 4sVfBiFw8oULDN7KXDZBgTEfkiqondrKbG5wQZn11xH1hnGpAybfSB2riVHqtXAfwWkNqZ6DW7u6w81oFxcoVi2p
+  Status: Ok
+  Log Messages:
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem invoke [1]
+    Program log: Instruction: IsArmstrongNumber
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem consumed 5973 of 200000 compute units
+    Program H5c2LFtjH5Sw5Yp2j7Z2RTRhJQT2dxXu4UpyBAiRBvem success

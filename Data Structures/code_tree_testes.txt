@@ -1,0 +1,67 @@
+/* 
+    
+    fator_balanceamento(n) = altura(esq(n)) - altura(dir(n))
+    -1 = vazia // pende pra direita
+     0 = raiz 
+     1 = sub_arvore esquerda é um nível maior do que a da direita.
+    
+    -2 = fazer balanc
+     2 = fazer balanc.
+    
+        fazer rotação na inserção.
+    inserir
+    
+    fazer balanceamento no nó mais próximo da folha.
+    
+    tem rotação simples e composta; ver composta.
+    
+    pai da raiz da arvore nao entra no fb 
+    
+    */
+
+
+
+
+/* 
+
+// Uso: insere um elemento na árvore.
+    void inserir(node tree, int x){
+        node n = new node(x);
+        
+        if(tree == null){ this.raiz = n;} // árvore vazia.
+        else{
+            if(n.info < tree.info){ // chama árvore esquerda.
+                if(tree.esquerda != null){ this.inserir(tree.esquerda, x); }
+                else{tree.esquerda = n;} // dir. -> vazio : coloca à esquerda.
+                
+            }
+            else if(n.info >= tree.info){ // chama árvore direita.
+                if(tree.direita != null){ this.inserir(tree.direita, x); }
+                else{ tree.direita = n;} // esq. -> vazio : coloca à direita.
+                
+            }
+            this.rotacione(tree, n);
+        }
+    }   // gemacht.
+
+*/
+
+ /*
+        System.out.println("Inset first 10 Elements");
+        int N = 12;
+        tree.inserir(2);
+        for (int i = 1; i <= N; i++)
+        {
+            tree.inserir(i);
+ 
+            System.out.println("\nPre-order  :");
+            tree.pré_ordem(tree.raiz);
+            System.out.println("\nIn-order   :");
+            tree.in_ordem(tree.raiz);
+            System.out.println("\nPost-order :");
+            tree.pós_ordem(tree.raiz);
+ 
+            System.out.println();
+        }
+    tree.existe(50);
+   */

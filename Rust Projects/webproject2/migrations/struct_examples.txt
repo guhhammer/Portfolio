@@ -1,0 +1,379 @@
+User struct:
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct User {
+   
+    pub profile_image: String, // The profile image will be a base64 string
+   
+    pub profile_name: String,
+   
+    pub profile_short_description: String,
+   
+    pub donate_address: String,
+   
+    pub social_media: SocialMedia,
+   
+    pub long_description: String,
+
+    pub categories: Vec<Category>,
+
+    pub tier: Tier,
+
+}
+
+Tier struct:
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Tier {
+    // A
+    Affiliate,
+    
+    // C
+    Coach,
+    Consultant,
+    Creator,
+
+    // D
+    Donor,
+
+    // E
+    Entrepreneur,
+
+    // I
+    Influencer,
+    Investor,
+    
+    // M
+    Mentor,
+
+    // N
+    NonGovernmentalOrganization,
+    
+    // O
+    Organization,
+    
+    // P
+    Professional,
+    
+    // R
+    Researcher,
+    
+    // S
+    Student,
+    Supporter,
+    Sponsor,
+    
+    // T
+    TeamMember,
+    
+    // U
+    User,
+
+    // V
+    VerifiedUser,
+
+}
+
+Socialmedia struct:
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct SocialMedia {
+    
+    // Major social platforms
+    pub facebook: Link,
+    pub twitter: Link,
+    pub instagram: Link,
+    pub linkedin: Link,
+    pub youtube: Link,
+    pub tiktok: Link,
+    pub snapchat: Link,
+    pub pinterest: Link,
+    pub reddit: Link,
+    pub twitch: Link,
+    pub discord: Link,
+
+    // Communication platforms
+    pub whatsapp: Link,
+    pub telegram: Link,
+    pub signal: Link,
+    pub skype: Link,
+    pub slack: Link,
+    
+    // Blogging & writing platforms // new
+    pub medium: Link,
+    pub tumblr: Link,
+
+    // Video & image-sharing platforms // new
+    pub vimeo: Link,
+    pub flickr: Link,
+    pub imgur: Link,
+    pub artstation: Link,
+    pub deviantart: Link,
+    pub dribbble: Link,
+    pub behance: Link,
+
+    // Music & audio platforms // new
+    pub soundcloud: Link,
+    pub spotify: Link,
+    pub pandora: Link,
+    pub lastfm: Link,
+    pub bandcamp: Link,
+    pub mixcloud: Link,
+
+    // Personal website and others // new
+    pub website: Link,
+    pub wordpress: Link,
+    pub others: Link,
+    
+}
+
+Link struct:
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Link {
+
+    pub url: Option<String>,
+
+}
+
+Category struct:
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Category {
+    // A
+    AffordableHousing,
+    AddictionRecovery,
+    AnimalRescue,
+    AnimalRights,
+    AntiCorruption,
+    AntiHumanTrafficking,
+    // A (continued)
+    ArtsEducation,
+
+    // B
+    BiodiversityProtection,
+
+    // C
+    CancerResearch,
+    CancerSupport,
+    ChildWelfare,
+    CleanAir,
+    CleanEnergy,
+    CleanWater,
+    ClimateChange,
+    CyberSecurityAwareness,
+
+    // D
+    DisasterPreparedness,
+    DisasterRelief,
+    DisabilitySupport,
+
+    // E
+    EconomicEmpowerment,
+    Education,
+    ElderlyCare,
+    EnvironmentalConservation,
+
+    // F
+    FairTrade,
+    FoodSecurity,
+
+    // H
+    HealthCare,
+    Homelessness,
+    // H (continued)
+    HumanRights,
+    Hunger,
+
+    // I
+    InternationalAid,
+    IndigenousRights,
+
+    // J
+    JobCreation,
+
+    // K
+
+    // L
+    LiteracyPrograms,
+
+    // M
+    MentalHealth,
+
+    // N
+
+    // O
+    OceanConservation,
+
+    // P
+    Poverty,
+    PublicHealth,
+
+    // Q
+
+    // R
+    RacialEquality,
+    RenewableEnergy,
+    RefugeeAid,
+
+    // S
+    SocialJustice,
+
+    // T
+
+    // U
+
+    // V
+    VeteransSupport,
+
+    // W
+    WaterSanitation,
+    WildlifeProtection,
+    // W (continued)
+    WomensHealth,
+    WomensRights,
+
+    // X
+
+    // Y
+    YouthPrograms,
+
+    // Z 
+
+}
+
+
+// Example how the user data is stored. the profile image was not inserted for easier understanding
+
+
+// User 1:
+// ETH Account 5
+
+{
+   
+    "profile_image": "add profile image", // The profile image will be a base64 string
+   
+    "profile_name": "Flow Games",
+   
+    "profile_short_description": "Viva o hype com a gente! Notícias, eventos, reviews, dicas, esports e muito mais!",
+   
+    "donate_address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc", 
+   
+    "social_media": {
+
+        "facebook": None,
+        "twitter": None,
+        "instagram": None,
+        "linkedin": None,
+        "youtube": None,
+        "tiktok": None,
+        "snapchat": None,
+        "pinterest": None,
+        "reddit": None,
+        "twitch": None,
+        "discord": "https://discord.com/invite/SfxPYf7BkQ?utm_campaign=button_list_FaapartedoDiscorddoFlowGames&utm_medium=referral&utm_source=later-linkinbio",
+
+        "whatsapp": "https://whatsapp.com/channel/0029VacH04P8aKvBME6vZH1W?utm_campaign=button_list_RecebatodasasnotciasnoWhatsApp&utm_medium=referral&utm_source=later-linkinbio",
+        "telegram": "https://t.me/FlowGamesNEWS?utm_campaign=button_list_RecebatodasasnotciasnoTelegram&utm_medium=referral&utm_source=later-linkinbio",
+        "signal": None,
+        "skype": None,
+        "slack": None,
+
+        "medium": None,
+        "tumblr": None,
+
+        "vimeo": None,
+        "flickr": None,
+        "imgur": None,
+        "artstation": None,
+        "deviantart": None,
+        "dribbble": None,
+        "behance": None,
+
+        "soundcloud": None,
+        "spotify": None,
+        "pandora": None,
+        "lastfm": None,
+        "bandcamp": None,
+        "mixcloud": None,
+
+        "website": "https://flowgames.gg/?utm_campaign=button_list_PortalFlowGames&utm_medium=referral&utm_source=later-linkinbio",
+        "wordpress": None,
+        "others": "https://www.flowgames.store/?utm_campaign=button_list_FlowGamesStore&utm_medium=referral&utm_source=later-linkinbio",
+        
+    },
+   
+    "long_description": "
+
+        Viva o hype com a gente! Notícias, eventos, reviews, dicas, esports e muito mais! 
+
+        PROGRAMAÇÃO SEMANAL 
+
+        FLOW GAMES: todas as segundas e quintas-feiras; 
+        MD3: as terças e quartas-feiras; 
+        FLOW GAMES NEWS: toda sexta-feira; 
+        VÍDEOS: todas as semanas. 
+
+        ~~~~~~ 
+
+        Acompanhe o Flow Games em todas as mídias: https://linkin.bio/flowgamestv/ 
+
+        Acesse o nosso portal de notícias: https://flowgames.gg/ 
+
+        ~~~~~~ 
+
+        📬 CAIXA POSTAL 80154 | CEP: 03350-970 | São Paulo–SP 
+        (Especificar que é para o Flow Games)  
+
+        📩  comercial@goldenpill.com.br 
+
+        ~~~~~~ 
+
+        ANFITRIÕES
+
+        Davy Jones
+        Instagram: @odavyjones
+        Twitter: @DavyJonesRJ
+
+        Phoenix
+        Instagram: @PhoenixBRnnf
+        Twitter: @PhoenixBR
+
+        Thais Matsufugi 
+        Instagram: @ThaMatsu
+        Twitter: @thamatsu
+
+        Cross 
+        Instagram: @crosstossaur
+        Twitter: @Cross_GP
+
+        Bruno Micali 
+        Instagram: @micalibruno
+        Twitter: @MicaliBruno
+
+        Schaeppi 
+        Instagram: @tschaeppi 
+        Twitter: @Schaeppi
+
+        Prieto 
+        Instagram: @prieto.7k 
+        Twitter: @fprieto
+
+        Djoko 
+        Instagram: @djokolol
+        Twitter: @Djokolol
+
+        ",
+
+    "categories": [
+
+        "CyberSecurityAwareness",
+        "EnvironmentalConservation",
+        "JobCreation",
+        "MentalHealth",
+    
+    ],
+
+    "tier": "Creator",
+
+}

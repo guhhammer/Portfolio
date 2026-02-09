@@ -1,0 +1,5 @@
+rm -rf build node_modules
+npm install
+npm run build
+npm run deploy
+npm run deploy -- -f

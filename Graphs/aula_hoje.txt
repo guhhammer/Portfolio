@@ -1,0 +1,2 @@
+Todo os vértices podem ter 0 ou duas arestas(relações). Caso não, 
+não são eulerianos.

@@ -1,0 +1,8 @@
+Nome: 
+g2
+
+Senha(sem Hash): 
+3265
+
+Senha(com Hash): 
+f4334c131c781e2a6f0a5e34814c8147

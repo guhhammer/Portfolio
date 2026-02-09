@@ -1,0 +1,84 @@
+
+
+
+html{
+	
+	background-color: gray;
+
+}
+
+
+#xx{
+
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 180px;
+
+}
+
+
+#xx #email{
+
+	width: 900px;
+
+}
+
+
+#xx #email p{
+
+	margin-left: 10px;
+
+}
+
+
+
+
+#xx #email .green{
+
+	background-color: #00FF00;
+	border-color: #00FF00;
+	border-radius: 50%;
+
+	width: 15px;	
+	height: 15px;
+
+}
+
+
+#xx #email .transparent{
+
+	background-color: inherit;
+	border-color: black;
+	border-width: 1.5px;
+	border-radius: 50%;
+
+	width: 15px;	
+	height: 15px;
+
+}
+
+
+
+#xx #email .red{
+
+	background-color: red;
+	border-color: black;
+	border-radius: 50%;
+	border-width: 1.5px;
+
+	width: 15px;
+	height: 15px;
+
+}
+
+#xx #email .yellow{
+
+	background-color: yellow;
+	border-color: black;
+	border-radius: 50%;
+	border-width: 1.5px;
+
+	width: 15px;
+	height: 15px;
+
+}

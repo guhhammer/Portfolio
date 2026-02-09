@@ -1,0 +1,22 @@
+
+
+
+Que conclusão a equipe obteve dos algoritmos randomizados ou aleatórios. Eles representam uma opção viável?
+
+
+No geral, fazendo a comparação entre os três tipos de arrays ordenados: crescente, decrescente e aleatório, a performance dos algoritmos aleatórios e recursivos em relação à dos somente recursivos é inferior. 
+
+A performance dos algoritmos quicksort foi apenas melhor no array aleatório por uma pequena diferença, lembrando que a partição do algoritmo apenas recursivo ocorre na metade do array e do algoritmo recursivo e aleatório ocorre de forma aleatória. No caso do quicksort, a aleatoridade faz sentido para arrays com muitos elementos devido a alta probabilidade de ser um vetor não ordenado, seja de forma crescente, seja de forma decrescente: os dois piores cenários para o algoritmo em comparação aos três avaliados.
+
+Entre os algoritmos Selectionsort (Select sort), Mergesort e quicksort, apenas para o algoritmo quicksort e em um cenário, a aleatoridade fez uma diferença positiva. Isso se deve ao fato de o quicksort ser um algoritmo com o método dividir e conquistar, onde -- no caso do quicksort -- toda a parte de ordenação ocorre na divisão durante as chamadas recursivas e partições. No caso do mergesort, sabe-se que o algoritmo dividirá os arrays em conjuntos de dois elementos e fará o merge das menores partes até o todo com a fase do merge. Por isso, a aleatoridade não implica uma diferença positiva, pois ela apenas modifica o ponto de divisão dos conjuntos de forma aleatória. Seria mais bem aplicada ao algoritmo se nele fossem incluídas as modificações de paralelismo e inclusão do algoritmo insertionsort para os conjuntos até 1000 elementos -- isso para um conjunto de elementos grande. Para o selectionsort, a aleatoridade não serve, pois o algoritmo depende de uma ordem de ordenação; quando se usa o RRS, a chance de encontrar os menores valores já no começo da execução e ordená-los de forma crescente é muito baixa, ou seja, a aleatoridade atrapalha a forma como algoritmo opera, fazendo com que os seus tempos tenham sido muito ruins comparados ao RS, mesmo para conjuntos pequenos. 
+
+
+Não faz nenhum sentido pensar nesta abordagem?
+
+Só faz sentido pensar nessa abordagem quando os fatores seguintes estiverem presentes: (1) o conjunto de elementos é muito grande; (2) o algoritmo utiliza a aleatoridade antes de ordenar os elementos: na fase de divisão ou organização de ponteiros ou na construção de um heap; (3) se o algoritmo pode ser paralelizado; e (4) se há a possibilidade de inserir outros algoritmos em certos estados da ordenação do array.
+
+
+Há alguma relação no tocante ao custo médio dos algoritmos randomizados experimentados? Etc.
+
+Sim, o tempo médio dos algoritmos aleatórios foi, proporcionalmente entre os três algoritmos, o de melhor performance comparado aos cenários crescente e decrescente.
+

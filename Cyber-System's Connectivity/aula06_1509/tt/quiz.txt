@@ -1,0 +1,6 @@
+Quiz 3:
+
+	1 -> B
+	2 -> B
+	3 -> something
+	4 -> B

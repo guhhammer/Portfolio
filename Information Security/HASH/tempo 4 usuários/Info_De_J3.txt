@@ -1,0 +1,8 @@
+Nome: 
+j3
+
+Senha(sem Hash): 
+4444
+
+Senha(com Hash): 
+dbc4d84bfcfe2284ba11beffb853a8c4

@@ -1,0 +1,13 @@
+Nome: Gustavo Hammerschmidt.
+
+Qual é objetivo da pesquisa?
+
+Verificar como ocorre a ambidestreza no desenvolvimento de software maturo com métodos ágeis.
+
+Como a pesquisa foi conduzida?
+
+A pesquisa foi conduzida por intermédio de entrevistas com abordagens qualitativas compostas de três membros da equipe de desenvolvimento(um líder, um analista e um desenvolvedor); sendo elas, posteriormente, analisadas com redes temáticas. Também fora coletado dados quantitativos por meio de um questionário para obter estatísticas descritivas da percepção de maturação e ambidestreza.
+
+Quais são as unidades de análises pesquisadas?
+
+A pesquisa foi conduzida com base no estudo de caso único para, efetivamente, identificar dinâmicas contidas no ambiente de uma empresa de desenvolvimento de software com metodologias ágeis brasileira; que conta com 45 empregados e um gerente com 10 anos de trabalho na área.

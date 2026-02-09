@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block body %}
+  
+{% include "components/header" %}
+
+<div class="flex-1 flex flex-col items-center semi-transparent-black p-4">
+  
+  {% include "components/searchbar" %}
+
+  {% include "components/trending" %}
+
+  {{ ctx_trending }}
+  
+</div>
+
+{% include "components/footer" %}
+
+{% endblock %}

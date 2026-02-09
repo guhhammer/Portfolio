@@ -1,0 +1,4 @@
+a(maria,9,4,5).
+a(pedro,5,7,2).
+a(jonas,9,7,8). 
+a(lilia,8,6,6).

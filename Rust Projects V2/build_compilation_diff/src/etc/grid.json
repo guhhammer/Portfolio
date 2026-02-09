@@ -1,0 +1,195 @@
+{
+  "isles": [
+    [
+      {
+        "number": 1,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6646,
+            "fuel_type": "Gasoline85",
+            "pump_status": "Active"
+          },
+          {
+            "number": 2,
+            "liters_thousandth": 0,
+            "price_thousandth": 6673,
+            "fuel_type": "Gasoline95",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6646,
+            "fuel_type": "Gasoline85",
+            "pump_status": "Active"
+          },
+          {
+            "number": 2,
+            "liters_thousandth": 0,
+            "price_thousandth": 6673,
+            "fuel_type": "Gasoline95",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 3,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 4788,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 4788,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 5,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 4788,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 4788,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6620,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 7,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 4978,
+            "fuel_type": "Diesel50",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 4978,
+            "fuel_type": "Diesel50",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 5547,
+            "fuel_type": "Diesel500",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 5547,
+            "fuel_type": "Diesel500",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ]
+  ],
+  "price_controller": {
+    "Ethanol70": 4788,
+    "Gasoline85": 6646,
+    "Diesel500": 5547,
+    "Gasoline95": 6673,
+    "Gasoline70": 6620,
+    "Diesel50": 4978
+  },
+  "supplier": {
+    "Gasoline95": 44082207,
+    "Gasoline85": 92200028,
+    "Ethanol70": 242264928,
+    "Diesel50": 292199366,
+    "Diesel500": 492039016,
+    "Gasoline70": 192246334
+  },
+  "name": "Gassy"
+}

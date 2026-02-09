@@ -1,0 +1,14 @@
+
+
+RM & RRM & RQ & RRQ
+
+	T(0) = 1
+
+	T(n) = 2T(n/2) + n
+
+
+RS & RSS
+	
+	T(0) = 1
+
+	T(n) = T(n-1) + n

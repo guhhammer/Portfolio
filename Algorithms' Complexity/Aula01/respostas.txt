@@ -1,0 +1,72 @@
+
+
+{
+	
+1)	 Você	teria	alguma	razão	para	estudar	algoritmos? Discuta com	os	seus	
+colegas	do	grupo	e	depois	escreva	uma	reflexão	sobre	a	situação.
+
+Resposta/reflexão:
+	
+	Existiria apenas um motivo: se houvesse uma competição entre empresas ou grupos para entregar um resultaoo antes. No geral, não haveria um objetivo contanto que o algoritmo estivesse certo logicamente.
+
+}
+
+
+{
+	
+2) Dado	o	caso	concreto	descrito	acima,	discuta-o com	os	seus	colegas	do	
+grupo	e	depois	escrevam uma reflexão	sobre	a	situação.
+
+Resposta/reflexão:
+
+	Mesmo que haja recursos a mais, um computador pode performar melhor que outro com base na eficiência do algoritmo; então, o melhor cenário possível depende da capacidade de armazenamento e processamento do computador, e da eficiência lógica do algoritmo.
+
+}
+
+
+{
+	
+3) Vamos	 explorar	 um	 ponto	 mais	 essa	 situação	 concreta:	 como	
+desenrolaria	essa	situação da	ordenação	por	intercalação	quando	você	
+ordenasse um	arranjo	de	dez	milhões	de	números:
+a)	calcule	o	tempo	de	ordenação por	inserção.
+b)	calcule	o	tempo	de	ordenação	por	intercalação.
+c)	compare	o	resultado	e	comente	o	resultado	da	comparação.
+
+Para	 responder	 os	 itens	 (a)	 e	 (b),	 escreva	 a	 fórmula	 do cálculo	 e	 sua	aplicação	com	os	seus	valores. Discuta	os	resultados	com	os	seus	colegas do	grupo	e	depois	escrevam	uma	reflexão	sobre	a situação.
+
+	Resposta	item	3a):
+
+		(2 * 10000000 ^ 2) / 1000000000 = 200000 segundos
+
+	Resposta	item	3b):
+
+		(50 * 10000000 * log2 10000000) / 10000000 = 1162.67 segundos
+
+	Resposta	item	3c):
+
+		O computador mais lento obteve o melhor resultado quando o número n atingiu um valor considerável, sendo aproximadamente 171 vezes mais rápida. Quanto maior o tamanho da entrada, mais notável é que a complexidade do algoritmo importa mais do que a velocidade da máquina utilizada.
+
+}
+
+
+{
+	
+4) Os	algoritmos	são	verdadeiramente	tão	importantes	nos	computadores
+contemporâneos	 em	 comparação	 com	 outras	 tecnologias	 avançadas,	
+como:
+• Hardware	 com	 altas	 taxas	 de	 clock,	 pipelines	 e	 arquiteturas	
+superescalares.
+• Interfaces	gráficas	do	usuário	(GUIs)	intuitivas	e	fáceis	de	usar.
+• Redes	locais	e	remotas.
+• Sistemas	orientados	a	objetos.
+• Computação	em	nuvem.
+
+Discuta	 as	 tecnologias	 acima com	 os	 seus	 colegas	 do	 grupo	 e	 depois	
+escrevam	 uma	 reflexão	 sobre	 a	 situação,	 em	 particular,	 a	 última	
+tecnologia	da	lista	acima.
+Resposta/reflexão:
+
+	Sim, se os recursos disponíveis tendessem à melhor qualidade possível: máximo de processamento, memória livre, etc., então um algoritmo aleatório conseguiria prever em um tempo reduzido e, até próximo, o mesmo resultado de um algoritmo eficiente. Mas, como não é o caso e os recursos são finitos, um algoritmo eficiente pode compensar os custos de hardware mais avançados, utilizando-se de técnicas e lógica algorítmica eficiente, menor complexidade.
+	
+}

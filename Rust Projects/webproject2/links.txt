@@ -1,0 +1,58 @@
+TODO:
+--------------------------------------------------------
+- Project README.MD.
+
+- Reupload .git projec with all rustprojects I made.
+
+- check ether-rs lib to work with smartc contracts.
+
+--------------------------------------------------------
+
+- fill guards/ ... /u, /admin only auth users. #maybe make no guards folder.
+
+- .env vars - set sensitive
+
+- make link logo on social media; onclick -> open screen-centered box with links.
+
+- search:
+--  empty -> svg on else svg off and result.
+--  refresh on scroll end.
+--  add categoy checkbox on input tag
+
+- admin:
+--  route is used for user verification requests. 
+--  to see users in db, donations and others.
+--  to see the meetings scheduled for verification.
+--  make a meeting collection in mongo later and a snapshot of course.
+--  button in /u triggers post request to make a meeting with form data sent.
+
+- style:
+--  organize elements in pages.
+--  make adjustments.
+--  change design.
+--  make images not-clickable not-dragable.
+--  check other necessities.
+--  make .js files to pages.
+
+- donation contract:
+--  make donation contract.
+--  check if folder location can be side to side to this folder.
+--  check if I can have the folder within this one.
+--  check if I can make the deploy of it by this main.rs.
+
+- payment cards:
+--  check apis to make payments with cards and convert it to crypto.
+
+- changes:
+--  make sender send to contract address.
+--  the owner of contract will make transactions within x days.
+--  define user rank for X days variance.
+--  keep value locked in contract for some time.
+--  say that is for privacy reasons.
+--  use the locked value as stake.
+--  current the user sends through contract to the receiver.
+--  theoretically it could just send directly if it knew the address.
+
+- ideas:
+--  maybe embed idea of a patreon-like app alltogether with this project (but clear distinction).
+--  maybe ember idea of a livepix-like app to this.
