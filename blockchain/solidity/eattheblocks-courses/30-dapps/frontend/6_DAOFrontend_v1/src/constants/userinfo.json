@@ -1,0 +1,10 @@
+{
+
+    "0x0000..0000": {
+        "themePreference": "light",
+        "isInvestor": true,
+        "numberShares": "10000000000000",
+        "votes": ["0", "1", "8", "9","10", "11"]
+    }
+
+}

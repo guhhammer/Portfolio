@@ -1,0 +1,29 @@
+
+
+.tbl{
+	cursor: pointer;
+	width: 40%;
+	height: 70%;
+}
+
+.tbl tr td{
+	padding: 10px;
+	text-align: center;
+}
+
+.tbl tr:nth-child(2n){
+	background-color: lightgreen;
+}
+
+.tbl tr:nth-child(2n+1){
+	background-color: whitesmoke;
+}
+
+.tbl tr:hover{
+	background-color: yellow;
+}
+
+.tbl tr:first-child{
+	background-color: black;
+	color: white;
+}

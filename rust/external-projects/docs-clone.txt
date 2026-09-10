@@ -1,0 +1,15 @@
+DocsClone - documentation platform (Rust backend)
+
+What it is:
+  A modern documentation platform inspired by GitBook and Notion.
+
+Highlights:
+  - Markdown rendering
+  - Full-text search
+  - Authentication
+  - Responsive UI
+  - Fast Rust backend
+
+Links:
+  Live demo:  https://guhhammer.dev/docsclone
+  Repository: https://github.com/guhhammer/docs-clone

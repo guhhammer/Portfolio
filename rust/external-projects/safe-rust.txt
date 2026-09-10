@@ -1,0 +1,8 @@
+safe-rust - safety-oriented evaluation crate
+
+What it is:
+  A Rust crate that ensures expressions are evaluated safely, wrapping
+  evaluation so that failures are contained instead of crashing the caller.
+
+Links:
+  Repository: https://github.com/guhhammer/safe-rust

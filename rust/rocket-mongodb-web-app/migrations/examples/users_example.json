@@ -1,0 +1,130 @@
+[
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Pixel Forge Studio",
+    "profile_short_description": "Indie game studio sharing devlogs, tutorials and behind-the-scenes builds.",
+    "donate_address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "social_media": [
+      "https://youtube.com/@pixelforge-example",
+      "https://discord.gg/example-pixelforge"
+    ],
+    "long_description": "Pixel Forge is a two-person indie studio. We publish weekly devlogs about our puzzle platformer, plus tutorials on shaders, tooling and game feel. Donations keep the servers and the coffee running.",
+    "categories": [
+      "ArtsEducation",
+      "YouthPrograms"
+    ],
+    "tier": "Creator"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Open Ocean Lab",
+    "profile_short_description": "Marine biologists documenting coral reef restoration projects.",
+    "donate_address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "social_media": [
+      "https://openoceanlab.example.org",
+      "https://instagram.com/openoceanlab-example"
+    ],
+    "long_description": "We are a small research team restoring reefs and publishing open data on reef health. Every donation funds dive time, sensors and open-access publications.",
+    "categories": [
+      "OceanConservation",
+      "BiodiversityProtection",
+      "ClimateChange"
+    ],
+    "tier": "Researcher"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Code Bridge Collective",
+    "profile_short_description": "Free coding bootcamps for people restarting their careers.",
+    "donate_address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+    "social_media": [
+      "https://codebridge.example.org",
+      "https://linkedin.com/company/codebridge-example"
+    ],
+    "long_description": "Code Bridge runs evening and weekend programming courses for career changers, with mentoring and job-search support. Funds go to laptops, venue costs and instructor stipends.",
+    "categories": [
+      "Education",
+      "JobCreation",
+      "EconomicEmpowerment"
+    ],
+    "tier": "NonGovernmentalOrganization"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Sofia Alvarez",
+    "profile_short_description": "Independent journalist covering local politics and public spending.",
+    "donate_address": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+    "social_media": [
+      "https://sofiaalvarez.example.com",
+      "https://twitter.com/sofia-example"
+    ],
+    "long_description": "I write in-depth investigations about how public money is spent in mid-sized cities. Reader donations keep the reporting independent and paywall-free.",
+    "categories": [
+      "AntiCorruption",
+      "HumanRights"
+    ],
+    "tier": "Professional"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Green Roof Curitiba",
+    "profile_short_description": "Turning flat roofs into community vegetable gardens.",
+    "donate_address": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+    "social_media": [
+      "https://greenroof.example.org"
+    ],
+    "long_description": "A volunteer collective installing low-cost vegetable gardens on apartment rooftops, teaching residents to grow food and cutting urban heat.",
+    "categories": [
+      "FoodSecurity",
+      "EnvironmentalConservation",
+      "CleanAir"
+    ],
+    "tier": "Organization"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Ana & Tom Podcast",
+    "profile_short_description": "A weekly conversation about mental health at work.",
+    "donate_address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+    "social_media": [
+      "https://podcasts.example.com/ana-and-tom",
+      "https://instagram.com/anaandtom-example"
+    ],
+    "long_description": "Two former nurses talking honestly about burnout, therapy and workplace culture. Listener support pays for editing and transcripts.",
+    "categories": [
+      "MentalHealth",
+      "PublicHealth"
+    ],
+    "tier": "Influencer"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Rescue Paws Shelter",
+    "profile_short_description": "No-kill animal shelter and adoption network.",
+    "donate_address": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+    "social_media": [
+      "https://rescuepaws.example.org"
+    ],
+    "long_description": "We shelter, treat and rehome abandoned dogs and cats. Donations cover veterinary bills, food and transport to adopting families.",
+    "categories": [
+      "AnimalRescue",
+      "AnimalRights"
+    ],
+    "tier": "NonGovernmentalOrganization"
+  },
+  {
+    "profile_image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "profile_name": "Marcus Lee",
+    "profile_short_description": "Mathematics tutor publishing free exam-prep videos.",
+    "donate_address": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955",
+    "social_media": [
+      "https://youtube.com/@marcuslee-example"
+    ],
+    "long_description": "Short, clear videos on high-school and first-year university mathematics. Donations fund captions and translations.",
+    "categories": [
+      "Education",
+      "LiteracyPrograms"
+    ],
+    "tier": "Mentor"
+  }
+]

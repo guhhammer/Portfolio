@@ -1,0 +1,24 @@
+
+Space-based Architecture
+Part 1 of 3: Becoming a spaceman
+http://www.julianbrowne.com/article/space-based-architecture-example
+
+Chapter 5. Space-Based Architecture
+https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch05.html
+
+
+
+@@@@@
+
+https://docs.tibco.com/pub/activespaces/2.3.0/doc/html/GUID-36AA8103-57AB-48DE-826E-CDA497BCAA95.html
+
+Space-Based Architecture
+When designing a new system from scratch, a space-based approach provides several advantages.
+
+Space-based architectures use a grid approach for both data storage and processing.
+Data storage and access is virtualized.
+The space takes care of both data communication and process coordination
+Processing units are loosely coupled, and run in parallel.
+Processes are coordinated through data and events.
+
+@@@@@

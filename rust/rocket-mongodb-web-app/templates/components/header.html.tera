@@ -1,0 +1,25 @@
+<header class="w-full p-4 z-50 backdrop-blur-md bg-white/30 border-b border-gray-200/50 semi-transparent-black">
+    <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div onclick="logoRedirect()" class="cursor-pointer">
+            <img src="/static/images/donation.png" alt="Your Logo" class="h-16"> <!-- Adjust height as needed -->
+        </div>
+
+        <!-- Buttons -->
+        <nav class="flex items-center space-x-4">
+            <a href="/"
+                class="flex items-center justify-center p-2 rounded-lg hover:bg-purple-500/10 transition duration-200">
+                <img src="/static/images/social_media_svgs/user.svg" alt="User" class="h-6 w-6">
+                <!-- Adjust size as needed -->
+            </a>
+            <a href="/"
+                class="flex items-center justify-center p-2 rounded-lg hover:bg-purple-500/10 transition duration-200">
+                <img src="/static/images/social_media_svgs/home.svg" alt="Home" class="h-6 w-6">
+                <!-- Adjust size as needed -->
+            </a>
+            <button onclick="connectWallet()" class="b-font px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition duration-200">
+                Connect Wallet
+            </button>
+        </nav>
+    </div>
+</header>

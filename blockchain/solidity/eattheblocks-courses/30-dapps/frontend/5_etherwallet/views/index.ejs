@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtherWallet</title>
+</head>
+<body>
+    <h1>Welcome to EtherWallet</h1>
+    <p>Account: <%= account %></p>
+    <p>Balance: <%= balance %> ETH</p>
+
+    <form action="/deposit" method="POST">
+        <h3>Deposit</h3>
+        <input type="number" name="amount" placeholder="Amount in ETH" required />
+        <button type="submit">Deposit</button>
+    </form>
+
+    <form action="/withdraw" method="POST">
+        <h3>Withdraw</h3>
+        <input type="number" name="amount" placeholder="Amount in ETH" required />
+        <button type="submit">Withdraw</button>
+    </form>
+
+    <br>
+    <a href="/transactions">View Transactions</a>
+</body>
+</html>

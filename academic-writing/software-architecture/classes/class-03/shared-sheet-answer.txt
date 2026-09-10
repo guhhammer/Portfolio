@@ -1,0 +1,5 @@
+Qual é o público alvo do app?
+
+Definir o público alvo com base no 'profilamento' dos usuários e direcionar os requisitos de negócio e outros a posteriori. A avaliação do público pode ser feita por meio de algoritmos de Data Science com base em informações como Idade, Sexo, Localização; ou, até mesmo, com o autenticação de seus perfis em redes socias. 
+
+

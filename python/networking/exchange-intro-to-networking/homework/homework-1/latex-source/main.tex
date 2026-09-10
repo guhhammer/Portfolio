@@ -1,0 +1,143 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{times}
+\usepackage{epsf}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage{subcaption}
+\usepackage[]{graphics}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+\title{Architectures of Network Applications}
+\author{ Gustavo Hammerschmidt\thanks{hamme032@cougars.csusm.edu} \\ California State University San Marcos\\ }
+
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+ This article discourse differences in architectures of diverse networks, the protocols used on the relations between computers and examples of applications that use these architectures.
+ 
+\end{abstract}
+
+\section{Introduction\label{intro}}
+
+We are surrounded by information. Users connect each day to the internet for performing various activities, most of them have never written a line of code or know any programming languages. The internet is such a success that new and old technologies exist and coexist without having to change as the internet enhances itself\cite{computerNetwork}, as the computer hardware gets better. Between users and servers, a lot of protocols are followed in order for a message to be delivered. The most known architectures who support this environment are Client-server and the peer-to-peer architectures, there is also a hybrid architecture composed of both.
+
+
+\section{The Client-Server Architecture \label{Client-server Architecture}}
+
+\subsection{Description}
+
+This architecture was first conceived by the company Xerox PARC during the 70s. Examples of this model are Email and the World Wide Web. Two protocols that use this concept are HTTP(HyperText Transfer Protocol) and FTP(File Transfer Protocol).
+
+The client-Server \cite{clientserver}\cite{csmodel} Architecture presumes that a client will ask a server for some resource, information or service, therefore, the server is awaiting a client initial message. The servers execute applications and share information with clients, who communicate to gain access to server's resources. The communication between them is held via computer networks; sometimes both client and sever are in the same computer.
+
+\subsection{The HyperText Transfer Protocol}
+
+HTTP\cite{http} is used on the World Wide Web to transfer data across the network. It is used to send pages or files written in HTML. In order for it to be able to transfer data, the protocols TCP and IP(as known as TCP/IP) need to be already established -- this protocol is responsible for the internet communication between servers e users. HTTP is based on the request-response paradigm, which is the client-server architecture.
+
+\subsection{The File Transfer Protocol}
+
+FTP\cite{ftp}\cite{ftp2} is used on communications between computers and servers to transfer files, it is also based on client-server architecture and is used to transfer different types of files, including videos, documents and music.
+
+
+
+\section{The Peer-to-Peer Architecture \label{Peer-to-Peer Architecture}}
+
+\subsection{Description}
+
+The Peer-to-Peer Architecture \cite{definitionp2p}\cite{definitionp2p2} is a network where computers play both client and server roles, which allows them to communicate in a decentralized connection. These devices form a virtual network through their routing mechanism.
+
+The topology(overlay network) of this network influences some of its attributes -- such as its performance --; in this topology graph, nodes represent the computers and the edges represent the communication channels. Algorithms are then implemented to find nodes and connections, this ensures that every node will be able to send or receive data to other nodes in the network. There are two types of overlay networks: unstructured and structured.
+
+\subsection{The Peer-to-Peer unstructured Architecture}
+
+The unstructured topology of a peer-to-peer network is made of algorithms that build a list of close-related devices randomly. When a node needs to find another node, a breadth-first search is made through the entire network, though some networks have mechanisms to limit the depth of a search: if the searched node is too far, it may not be found. Gossip protocol is an example of data spreading in an unstructured peer-to-peer architecture.
+
+\subsubsection{The Gossip Protocol}
+
+The gossip protocol \cite{gossip} is a way of spreading data to all members in a group. The data is passed from one node to its close-related nodes. This way of sharing is also known as epidemic protocol.
+
+\subsection{The Peer-to-Peer structured Architecture}
+
+The structured topology is build from a deterministic procedure: generally hash tables. In this architecture, each node has a random key that is used to find the request in a hash table and then return the correspondent node, so a connection can be made. A example of this architecture is the BitTorrent's application.
+
+\subsubsection{The BitTorrent's application}
+
+BitTorrent is an application for file sharing. The user, who wished to use it, needs to use a BitTorrent client(most famous of them is uTorrent) to access the trackers. The trackers provide lists of files and the client can select one peer user to transfer a file.
+
+
+\section{Visual Representation of the Architectures}
+
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{assigment/images/p2p.png}
+    \caption{Client-Server Network}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{assigment/images/cs.jpg}
+    \caption{Peer-to-Peer Network}
+  \end{subfigure}
+  \caption{Architecture of the Networks}
+  \label{fig:coffee}
+\end{figure}
+
+In figure one, we see the representation of both architectures. The figure a demonstrates how devices are connected to other devices(hosts) in a client-server network. The figure b demonstrates how devices connect to each other on a Peer-to-Peer Network. 
+
+\section{Client-Server Architecture vs Peer-to-Peer Architecture}
+
+On table 1, some comparisons are made. First topic, a p2p(Peer-to-Peer) network is easily set up when compared to a client-server one, because devices set their selves up when joining the network: all they need is a list of close-related devices; but to a client-server one, there must be a server side of a application set on a host computer running and the clients need to have their part of the application ready to use. This difficulty on the setting-up stage implies in higher costs too: basically in a p2p network there is no cost involved for the application developers in a long-term, once servers are not needed. When it comes to security, it is safer to use a client-server network: the server side of the application is controlled by the company, the access is a lot more restricted, reverse engineering is not as effective in this situation, not only that, a bad-intent user can spread viruses in a peer-to-peer via gossip protocols in an easier way, every node in the network is exposed to these threats. 
+
+\begin{center}
+    \begin{table}[]
+        \centering
+        \begin{tabular}{c|c}
+        Peer-to-Peer Networks     & Client-Server Networks    \\
+        \hline
+        Easy to set up            & More difficult to set up  \\
+        Less expensive to install & more expensive to install \\
+        Low levels of security    & High levels of security   
+        \end{tabular}
+        \caption{Client-Server vs Peer-to-Peer Architecture}
+        \label{tab:my_label}
+    \end{table}
+\end{center}
+
+
+\section{The Hybrid Architecture}
+
+\subsection{Description}
+
+The hybrid architecture \cite{hhbrid} is a mix of client-server and peer-to-peer architectures. This architecture is found on applications where the user connect to a server to find another user, such as Skype or face-time calls applications; the user first communicate with a server via a client-server network and then, when it receives an address to another user, it uses peer-to-peer to communicate with him. Spotify \cite{spotify} used this architecture at the very beginning as a way to spread music across users, currently this architecture has been replaced by a client-server one, because the company has enough servers around the world now.
+
+
+\section{Conclusion}
+
+Now that both architectures have been explained, which one to adopt in a next project? Truth must be told that there is not a right and wrong approach in this story. There are cases that would perform better in one architecture instead of another. Positive and Negative aspects of both should be considerate before selecting one of them. In my opinion, security in network environments is critical for having a good application: as in the Spotify initial-stage\cite{spotify}, where the company did not have enough servers around the world, using a hybrid architecture is justifiable for means of company increases in reach-ability and market competitiveness; when applications reach a big dimension and important data from users are capable of being exposed, developers should consider a safer way to transmit messages through networks. Peer-to-Peer networks are also good approaches to small problems that can be resolved without a dedicated server, IOT devices are a good example of this: having a decentralized network of devices that can communicate with each other is the core matter of a Internet of Things -- in a peer-to-peer IOT, the cost of such network would be low compared to a client-server one.  
+
+
+
+
+
+
+
+
+
+\section{Table of contents}
+
+
+\tableofcontents
+
+
+\printbibliography
+
+\end{document}

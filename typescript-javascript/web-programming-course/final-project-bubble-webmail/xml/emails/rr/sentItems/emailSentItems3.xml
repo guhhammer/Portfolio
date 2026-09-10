@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<email><code>3</code><recipient>dd</recipient><emailCc>rr</emailCc><subject>Schedule change</subject><message>The schedule moved one hour later. Sorry for the short notice.</message><greenCode>1</greenCode><yellowCode>0</yellowCode></email>

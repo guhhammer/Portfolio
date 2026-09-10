@@ -1,0 +1,2 @@
+<div id="d-container-socialmedia" class="flex justify-center space-x-4 p-4" data-profile-name="{{ ctx_user.social_media }}"></div>
+<script src="/static/js/social_media.js"></script>

@@ -1,0 +1,41 @@
+Requisitos Não funcionais:
+
+Accessibilidade ao status de fácil uso.
+Elasticidade do software em completar suas tasks de agendamento.
+Extensibilidade do software a novos parceiros.
+Integrabilidade dos componentes.
+Performance dos pedidos e respostas de status.
+Portabilidade do Software.
+Notificação de circunstâncias atípicas.
+Usabilidade do software.
+Estabilidade do software a um ambiente com muitos usuários.
+
+Escolher um caso de uso crítico:
+Atualizar o catálogo.
+
+Definir os padrões arquiteturais:
+Padrão Model-View-Controller.
+Padrão Dutos e Filtros.
+Padrão Client-Server.
+Padrão Monolítico.
+Padrão Microserviços.
+
+Arquitetura Componentes:
+MVC para o cliente em um CSD, onde o server tem interfaces de microserviços, onde cada serviço pode usar um adapter. Foi o que eu fiz.
+Broker.
+Arquitetura em camadas.
+
+App Cliente iOS.
+App Cliente Android.
+Site para o Cliente.
+Site para os provedores.
+Backend.
+
+Escolher as tecnologias:
+Client -> iOS, Android, Web -> Swift, Java, HTMl+CSS+JS
+Server -> Java+Python(Aside scripts)
+Microserviços -> Interface em PHP ou WebAPI.
+Database -> MySQL
+
+
+

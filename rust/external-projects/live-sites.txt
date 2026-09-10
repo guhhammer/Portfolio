@@ -1,0 +1,10 @@
+Live sites built with Rust (all served from guhhammer.dev)
+
+  Portfolio  https://guhhammer.dev          personal website, projects and blog
+  Links      https://guhhammer.dev/links    lightweight self-hosted link hub
+  WebFry     https://guhhammer.dev/webfry   web utilities and developer tools
+  Blog       https://blog.guhhammer.dev     articles on Rust, Linux, backend engineering,
+                                            distributed systems and software architecture
+
+Deployment stack behind them: Rust (Rocket, Actix Web, Axum, Tokio), PostgreSQL,
+MongoDB, SQLx/Diesel, Docker, Nginx, Cloudflare, Linux, GitHub Actions.

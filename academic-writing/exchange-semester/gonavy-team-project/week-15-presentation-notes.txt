@@ -1,0 +1,11 @@
+
+
+Week 15th apresentation:
+
+Make 1 or 2 slides about the project requirements. Then 1 or 
+2 slides for the project architecture. Then the implementation
+of it(show it on the zoom). And the slides about the chalenges
+the team had and how it solved(tools used: web whatsapp).
+
+
+

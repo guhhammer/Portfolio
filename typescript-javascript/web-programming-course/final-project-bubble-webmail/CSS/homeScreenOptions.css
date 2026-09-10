@@ -1,0 +1,203 @@
+
+body{
+
+	background-image: url("../images/initialScreen/fundo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+#update{
+
+	position: absolute;
+	top: 100px;
+	left: 520px;
+
+	width: 500px;
+	height: 310px;
+
+}
+
+#update #logo{
+
+	width: 500px;
+	height: 180px;
+
+}
+
+#update button{
+
+	margin-top: 10px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;
+
+}
+
+#update button:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+
+#update #btCreate{
+
+	margin-left: 30px;
+
+}
+
+#update #btUpdate{
+
+}
+
+#choseCreate{
+
+	position: absolute;
+	top: 410px;
+	left: 555px;
+
+	width: 500px;
+	height: 310px;
+
+}
+
+
+#choseCreate input{
+
+	width: 430px;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Arial;
+
+}
+
+#choseCreate input:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+
+}
+
+#choseCreate #btCreateLogin{
+
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;	
+
+}
+
+#choseCreate #btCreateLogin:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+#choseCreate #createP{
+
+	color: white;
+	font-size: 35px;
+
+}
+
+#Clogin{
+
+}
+
+
+#choseUpdate{
+
+	position: absolute;
+	top: 410px;
+	left: 555px;
+
+	width: 500px;
+	height: 310px;
+
+}
+
+
+#choseUpdate input{
+
+	width: 430px;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Arial;
+
+}
+
+#choseUpdate input:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+
+}
+
+#choseUpdate #btUpdatePassword{
+
+	margin-top: 15px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right,#0052D4,#0575E6,#9CECFB);
+	border-color: #0575E6;
+	font-size: 20px;
+	color: #FFFFFF;	
+
+}
+
+#choseUpdate #btUpdatePassword:hover{
+
+	cursor: pointer;
+	opacity: 0.83;
+	border-color: lightblue;
+
+}
+
+#choseUpdate #updateP{
+
+	color: white;
+	font-size: 35px;
+
+}
+
+#Alogin{
+
+}
+
+.redBorder{
+
+	border-color: red;
+
+}
+
+.backgroundGreenColor{
+
+	background: lightgreen;
+
+}
+
+
+.backgroundRedColor{
+
+	background: #FF7666;
+	color: white;
+
+}
+
+
+

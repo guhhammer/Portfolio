@@ -1,0 +1,9 @@
+Glossa - a small Rust DSL for function pipelines
+
+What it is:
+  A lightweight domain-specific language for composing functions into
+  pipelines, using macros for composition and an expressive functional
+  syntax.
+
+Links:
+  Repository: https://github.com/guhhammer/glossa

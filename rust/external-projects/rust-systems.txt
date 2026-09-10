@@ -1,0 +1,8 @@
+RustSystems - earlier collection of Rust applications
+
+What it is:
+  A repository of Rust applications I built before this portfolio was
+  reorganized, with links to the ones that run online.
+
+Links:
+  Repository: https://github.com/guhhammer/RustSystems

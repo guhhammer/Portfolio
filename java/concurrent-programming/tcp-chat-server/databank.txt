@@ -1,0 +1,3 @@
+{alice} {alice123} {/127.0.0.1} {2000} {[[bob,hi_alice],[carol,see_you_at_noon]]}
+{bob} {bob123} {/127.0.0.1} {2000} {[[alice,hello_bob]]}
+{carol} {carol123} {/127.0.0.1} {2000} {[]}

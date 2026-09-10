@@ -1,0 +1,9 @@
+Messaging grid:  administra o fluxo de transações e comunicações entre os serviços.
+
+Data grid: administra a distribuição de dados em nas unidades de processamento de forma distribuída.
+
+Processing grid: coordena os processos entre as unidades de processamento, baseado no padrão mestre e escravo(também conhecimento como padrão blackboard), que habilita o uso de processamento paralelo de eventos entre diferentes serviços.
+
+Deployment Manager: administra o início e desligamento das unidades de processamento dinamicamente, e as monitora para fazer load-balancing.
+
+Messaging grid, Data grid e Processing grid são os componentes mais comuns às implementações da arquitetura space-based.

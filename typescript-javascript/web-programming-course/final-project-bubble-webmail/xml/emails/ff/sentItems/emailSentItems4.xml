@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<email><code>4</code><recipient>dd</recipient><emailCc>ff</emailCc><subject>Project update</subject><message>Here is the latest status of the project. Everything is on track.</message><greenCode>1</greenCode><yellowCode>0</yellowCode></email>

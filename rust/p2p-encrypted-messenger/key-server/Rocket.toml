@@ -1,0 +1,14 @@
+[default]
+address = "0.0.0.0"   # bind to all interfaces (LAN + localhost)
+port = 8000           # server port
+log = "normal"        # optional, log level
+
+[development]
+address = "127.0.0.1" # local-only during dev
+port = 8000
+log = "debug"
+
+[production]
+address = "0.0.0.0"
+port = 8000
+log = "critical"

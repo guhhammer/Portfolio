@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdvancedStorage</title>
+</head>
+<body>
+    <h1>AdvancedStorage DApp</h1>
+
+    <form action="/set" method="POST">
+        <label>Account:</label>
+        <select name="account" required>
+            <% accounts.forEach(account => { %>
+                <option value="<%= account %>"><%= account %></option>
+            <% }) %>
+        </select><br><br>
+
+        <label>New Data:</label>
+        <input type="text" name="newData" required><br><br>
+
+        <button type="submit">Set Data</button>
+    </form>
+
+    <hr>
+
+    <form action="/get" method="POST">
+        <label>Account:</label>
+        <select name="account" required>
+            <% accounts.forEach(account => { %>
+                <option value="<%= account %>" <%= selectedAccount === account ? "selected" : "" %>><%= account %></option>
+            <% }) %>
+        </select><br><br>
+
+        <button type="submit">Get Data</button>
+    </form>
+
+    <% if (storedData !== null) { %>
+        <h3>Stored Data for Selected Account:</h3>
+        <p><%= storedData %></p>
+    <% } %>
+</body>
+</html>

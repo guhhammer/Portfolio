@@ -1,0 +1,19 @@
+Amalthea - multi-tenant email routing platform (Rust)
+
+What it is:
+  A Rust-based, multi-tenant email routing platform. It parses addresses
+  like role@tenant.domain.tld to identify the target tenant and applies
+  configurable rules to route inbound mail to the right destination.
+
+Highlights:
+  - Tenant-aware routing via subdomain identification
+  - Multiple database backends: SQLite (default), PostgreSQL, MongoDB
+  - Optional Python rule evaluation for custom routing logic (PyO3)
+  - Admin dashboard (Actix-web) for managing tenants and rules
+  - DKIM signing for authenticated outbound mail
+  - Inbound SMTP listener (mailin-embedded) and outbound relay (lettre)
+  - Health checks and Prometheus metrics
+
+Links:
+  Crate:      https://crates.io/crates/amalthea
+  Repository: https://github.com/guhhammer/amalthea

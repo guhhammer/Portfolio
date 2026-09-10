@@ -1,0 +1,695 @@
+[
+  {
+    "Datetime": "2025/08/13--22:42:13",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:19:49",
+    "Prices": {
+      "Diesel50": 5.17,
+      "Diesel500": 5.47,
+      "Ethanol70": 4.37,
+      "Gasoline70": 6.33,
+      "Gasoline85": 7.05,
+      "Gasoline95": 8.08
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:20:24",
+    "Prices": {
+      "Diesel50": 5.08,
+      "Diesel500": 5.47,
+      "Ethanol70": 4.29,
+      "Gasoline70": 6.33,
+      "Gasoline85": 7.1,
+      "Gasoline95": 7.96
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:20:31",
+    "Prices": {
+      "Diesel50": 5.04,
+      "Diesel500": 5.33,
+      "Ethanol70": 4.45,
+      "Gasoline70": 6.26,
+      "Gasoline85": 7.06,
+      "Gasoline95": 8.1
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:20:42",
+    "Prices": {
+      "Diesel50": 5.16,
+      "Diesel500": 5.37,
+      "Ethanol70": 4.39,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.01,
+      "Gasoline95": 8.02
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:20:45",
+    "Prices": {
+      "Diesel50": 5.06,
+      "Diesel500": 5.46,
+      "Ethanol70": 4.28,
+      "Gasoline70": 6.31,
+      "Gasoline85": 7.08,
+      "Gasoline95": 7.97
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:21:25",
+    "Prices": {
+      "Diesel50": 5.14,
+      "Diesel500": 5.44,
+      "Ethanol70": 4.4,
+      "Gasoline70": 6.2,
+      "Gasoline85": 7.11,
+      "Gasoline95": 7.97
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:22:37",
+    "Prices": {
+      "Diesel50": 5.19,
+      "Diesel500": 5.46,
+      "Ethanol70": 4.39,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7,
+      "Gasoline95": 8
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:22:59",
+    "Prices": {
+      "Diesel50": 5.11,
+      "Diesel500": 5.33,
+      "Ethanol70": 4.4,
+      "Gasoline70": 6.28,
+      "Gasoline85": 7.08,
+      "Gasoline95": 7.97
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:23:42",
+    "Prices": {
+      "Diesel50": 5.09,
+      "Diesel500": 5.32,
+      "Ethanol70": 4.42,
+      "Gasoline70": 6.21,
+      "Gasoline85": 7.19,
+      "Gasoline95": 8.09
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:24:08",
+    "Prices": {
+      "Diesel50": 5.11,
+      "Diesel500": 5.4,
+      "Ethanol70": 4.25,
+      "Gasoline70": 6.26,
+      "Gasoline85": 7.14,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:24:45",
+    "Prices": {
+      "Diesel50": 5.13,
+      "Diesel500": 5.3,
+      "Ethanol70": 4.3,
+      "Gasoline70": 6.23,
+      "Gasoline85": 7.23,
+      "Gasoline95": 8.13
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:24:53",
+    "Prices": {
+      "Diesel50": 5.05,
+      "Diesel500": 5.42,
+      "Ethanol70": 4.39,
+      "Gasoline70": 6.27,
+      "Gasoline85": 7.07,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:25:06",
+    "Prices": {
+      "Diesel50": 5.09,
+      "Diesel500": 5.35,
+      "Ethanol70": 4.33,
+      "Gasoline70": 6.34,
+      "Gasoline85": 7,
+      "Gasoline95": 7.98
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:25:13",
+    "Prices": {
+      "Diesel50": 5.06,
+      "Diesel500": 5.43,
+      "Ethanol70": 4.29,
+      "Gasoline70": 6.34,
+      "Gasoline85": 7.01,
+      "Gasoline95": 8.1
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:26:01",
+    "Prices": {
+      "Diesel50": 5.02,
+      "Diesel500": 5.33,
+      "Ethanol70": 4.4,
+      "Gasoline70": 6.35,
+      "Gasoline85": 7.18,
+      "Gasoline95": 8.01
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:26:08",
+    "Prices": {
+      "Diesel50": 5.07,
+      "Diesel500": 5.35,
+      "Ethanol70": 4.3,
+      "Gasoline70": 6.38,
+      "Gasoline85": 7.14,
+      "Gasoline95": 7.97
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:28:18",
+    "Prices": {
+      "Diesel50": 5.17,
+      "Diesel500": 5.4,
+      "Ethanol70": 4.34,
+      "Gasoline70": 6.3,
+      "Gasoline85": 7.2,
+      "Gasoline95": 8
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:28:44",
+    "Prices": {
+      "Diesel50": 5.27,
+      "Diesel500": 5.42,
+      "Ethanol70": 4.28,
+      "Gasoline70": 6.31,
+      "Gasoline85": 7.22,
+      "Gasoline95": 7.94
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:29:23",
+    "Prices": {
+      "Diesel50": 5.36,
+      "Diesel500": 5.45,
+      "Ethanol70": 4.18,
+      "Gasoline70": 6.24,
+      "Gasoline85": 7.29,
+      "Gasoline95": 7.93
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:29:48",
+    "Prices": {
+      "Diesel50": 5.36,
+      "Diesel500": 5.42,
+      "Ethanol70": 4.09,
+      "Gasoline70": 6.14,
+      "Gasoline85": 7.24,
+      "Gasoline95": 8.03
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:30:17",
+    "Prices": {
+      "Diesel50": 5.43,
+      "Diesel500": 5.51,
+      "Ethanol70": 4.18,
+      "Gasoline70": 6.17,
+      "Gasoline85": 7.19,
+      "Gasoline95": 8
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:30:52",
+    "Prices": {
+      "Diesel50": 5.05,
+      "Diesel500": 5.3,
+      "Ethanol70": 4.34,
+      "Gasoline70": 6.2,
+      "Gasoline85": 7.12,
+      "Gasoline95": 8.07
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:31:18",
+    "Prices": {
+      "Diesel50": 5.13,
+      "Diesel500": 5.26,
+      "Ethanol70": 4.44,
+      "Gasoline70": 6.19,
+      "Gasoline85": 7.13,
+      "Gasoline95": 8.02
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:31:30",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.33,
+      "Ethanol70": 4.45,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.05,
+      "Gasoline95": 8.15
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:31:51",
+    "Prices": {
+      "Diesel50": 5.2,
+      "Diesel500": 5.28,
+      "Ethanol70": 4.51,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.08,
+      "Gasoline95": 8.22
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:32:23",
+    "Prices": {
+      "Diesel50": 5.18,
+      "Diesel500": 5.28,
+      "Ethanol70": 4.54,
+      "Gasoline70": 6.26,
+      "Gasoline85": 7.02,
+      "Gasoline95": 8.23
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:32:44",
+    "Prices": {
+      "Diesel50": 5.26,
+      "Diesel500": 5.27,
+      "Ethanol70": 4.57,
+      "Gasoline70": 6.16,
+      "Gasoline85": 6.92,
+      "Gasoline95": 8.33
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:33:08",
+    "Prices": {
+      "Diesel50": 5.3,
+      "Diesel500": 5.22,
+      "Ethanol70": 4.51,
+      "Gasoline70": 6.19,
+      "Gasoline85": 6.89,
+      "Gasoline95": 8.32
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:33:28",
+    "Prices": {
+      "Diesel50": 5,
+      "Diesel500": 5.39,
+      "Ethanol70": 4.27,
+      "Gasoline70": 6.22,
+      "Gasoline85": 7.02,
+      "Gasoline95": 8.12
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:35:13",
+    "Prices": {
+      "Diesel50": 5.05,
+      "Diesel500": 5.3,
+      "Ethanol70": 4.31,
+      "Gasoline70": 6.21,
+      "Gasoline85": 7.06,
+      "Gasoline95": 7.99
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:35:39",
+    "Prices": {
+      "Diesel50": 5.11,
+      "Diesel500": 5.23,
+      "Ethanol70": 4.33,
+      "Gasoline70": 6.3,
+      "Gasoline85": 7.06,
+      "Gasoline95": 8.02
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:36:05",
+    "Prices": {
+      "Diesel50": 5.18,
+      "Diesel500": 5.42,
+      "Ethanol70": 4.26,
+      "Gasoline70": 6.19,
+      "Gasoline85": 7.15,
+      "Gasoline95": 8.14
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:36:40",
+    "Prices": {
+      "Diesel50": 5.22,
+      "Diesel500": 5.51,
+      "Ethanol70": 4.3,
+      "Gasoline70": 6.26,
+      "Gasoline85": 7.19,
+      "Gasoline95": 8.16
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:37:18",
+    "Prices": {
+      "Diesel50": 5.18,
+      "Diesel500": 5.43,
+      "Ethanol70": 4.39,
+      "Gasoline70": 6.33,
+      "Gasoline85": 7.11,
+      "Gasoline95": 8.2
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:38:29",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:38:29",
+    "Prices": {
+      "Diesel50": 5.2,
+      "Diesel500": 5.44,
+      "Ethanol70": 4.33,
+      "Gasoline70": 6.35,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.1
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:40:31",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:40:31",
+    "Prices": {
+      "Diesel50": 5.01,
+      "Diesel500": 5.44,
+      "Ethanol70": 4.44,
+      "Gasoline70": 6.27,
+      "Gasoline85": 7.04,
+      "Gasoline95": 8.05
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:40:52",
+    "Prices": {
+      "Diesel50": 4.92,
+      "Diesel500": 5.4,
+      "Ethanol70": 4.34,
+      "Gasoline70": 6.21,
+      "Gasoline85": 7.06,
+      "Gasoline95": 8.14
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:40:58",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:40:58",
+    "Prices": {
+      "Diesel50": 5.07,
+      "Diesel500": 5.43,
+      "Ethanol70": 4.37,
+      "Gasoline70": 6.25,
+      "Gasoline85": 7.16,
+      "Gasoline95": 8
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:41:09",
+    "Prices": {
+      "Diesel50": 5.08,
+      "Diesel500": 5.29,
+      "Ethanol70": 4.25,
+      "Gasoline70": 6.3,
+      "Gasoline85": 7.15,
+      "Gasoline95": 8.13
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:41:42",
+    "Prices": {
+      "Diesel50": 5.18,
+      "Diesel500": 5.21,
+      "Ethanol70": 4.15,
+      "Gasoline70": 6.36,
+      "Gasoline85": 7.15,
+      "Gasoline95": 8.17
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:42:37",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:42:37",
+    "Prices": {
+      "Diesel50": 5.09,
+      "Diesel500": 5.41,
+      "Ethanol70": 4.25,
+      "Gasoline70": 6.36,
+      "Gasoline85": 7.18,
+      "Gasoline95": 8.03
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:47:52",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:47:52",
+    "Prices": {
+      "Diesel50": 5.11,
+      "Diesel500": 5.34,
+      "Ethanol70": 4.29,
+      "Gasoline70": 6.26,
+      "Gasoline85": 7.13,
+      "Gasoline95": 8.1
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:48:22",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:48:22",
+    "Prices": {
+      "Diesel50": 5.01,
+      "Diesel500": 5.35,
+      "Ethanol70": 4.26,
+      "Gasoline70": 6.35,
+      "Gasoline85": 7.19,
+      "Gasoline95": 7.96
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:49:00",
+    "Prices": {
+      "Diesel50": 5.01,
+      "Diesel500": 5.33,
+      "Ethanol70": 4.17,
+      "Gasoline70": 6.38,
+      "Gasoline85": 7.14,
+      "Gasoline95": 8.02
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:49:27",
+    "Prices": {
+      "Diesel50": 5.05,
+      "Diesel500": 5.32,
+      "Ethanol70": 4.23,
+      "Gasoline70": 6.28,
+      "Gasoline85": 7.09,
+      "Gasoline95": 8.05
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:49:57",
+    "Prices": {
+      "Diesel50": 4.98,
+      "Diesel500": 5.4,
+      "Ethanol70": 4.13,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.05,
+      "Gasoline95": 8.07
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:50:26",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:50:26",
+    "Prices": {
+      "Diesel50": 5.08,
+      "Diesel500": 5.47,
+      "Ethanol70": 4.25,
+      "Gasoline70": 6.2,
+      "Gasoline85": 7.08,
+      "Gasoline95": 8
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:50:54",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.48,
+      "Ethanol70": 4.26,
+      "Gasoline70": 6.16,
+      "Gasoline85": 7.13,
+      "Gasoline95": 8.05
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:51:23",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--02:51:23",
+    "Prices": {
+      "Diesel50": 5.02,
+      "Diesel500": 5.4,
+      "Ethanol70": 4.27,
+      "Gasoline70": 6.23,
+      "Gasoline85": 7.14,
+      "Gasoline95": 8.13
+    }
+  },
+  {
+    "Datetime": "2025/08/14--03:03:03",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--03:03:03",
+    "Prices": {
+      "Diesel50": 5.09,
+      "Diesel500": 5.39,
+      "Ethanol70": 4.31,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.17,
+      "Gasoline95": 8.05
+    }
+  },
+  {
+    "Datetime": "2025/08/14--03:03:16",
+    "Prices": {
+      "Diesel50": 5.1,
+      "Diesel500": 5.38,
+      "Ethanol70": 4.35,
+      "Gasoline70": 6.29,
+      "Gasoline85": 7.1,
+      "Gasoline95": 8.06
+    }
+  },
+  {
+    "Datetime": "2025/08/14--03:03:16",
+    "Prices": {
+      "Diesel50": 5.11,
+      "Diesel500": 5.39,
+      "Ethanol70": 4.31,
+      "Gasoline70": 6.35,
+      "Gasoline85": 7.14,
+      "Gasoline95": 8.12
+    }
+  },
+  {
+    "Datetime": "2025/08/14--03:03:42",
+    "Prices": {
+      "Diesel50": 5.05,
+      "Diesel500": 5.31,
+      "Ethanol70": 4.4,
+      "Gasoline70": 6.4,
+      "Gasoline85": 7.14,
+      "Gasoline95": 8.06
+    }
+  }
+]

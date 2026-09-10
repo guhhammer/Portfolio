@@ -1,0 +1,7 @@
+src/
+├── components/       # Reusable UI pieces (e.g., Button, Navbar)
+├── pages/            # Full pages (e.g., Home.jsx, Dashboard.jsx)
+├── layouts/          # Layout wrappers (e.g., AdminLayout.jsx)
+├── App.jsx           # Main app logic
+├── main.jsx          # Entry point
+└── index.css         # Global styles (if needed)

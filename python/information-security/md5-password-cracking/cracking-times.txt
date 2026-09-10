@@ -1,0 +1,143 @@
+Cracked password:   1234
+Execution time (s):  10.795031682772843
+Cracked password:   3265
+Execution time (s):  19.54759044568854
+Cracked password:   5983
+Execution time (s):  29.63986756399954
+Cracked password:   6754
+Execution time (s):  34.257651912448885
+Total time to crack all passwords (s):  94.24035799801311
+###############################2  g
+
+
+
+Cracked password:   2897
+Execution time (s):  15.276249745011091
+Cracked password:   8342
+Execution time (s):  43.8151468329843
+Cracked password:   9991
+Execution time (s):  49.65591914253592
+Cracked password:   0923
+Execution time (s):  5.547498072348006
+Total time to crack all passwords (s):  114.29503403487179
+##########################################1   f
+
+
+
+
+Cracked password:   7456
+Execution time (s):  51.53935125689753
+Cracked password:   0001
+Execution time (s):  5.241360419819728
+Cracked password:   8231
+Execution time (s):  55.90737391573584
+Cracked password:   3425
+Execution time (s):  39.07481556336833
+Total time to crack all passwords (s):  151.76322104127846
+###############################################3
+
+
+Cracked password:   2341
+Execution time (s):  19.069785920506757
+Cracked password:   4321
+Execution time (s):  112.40337470604108
+Cracked password:   1111
+Execution time (s):  24.931584711698946
+Cracked password:   1000
+Execution time (s):  28.444173359100944
+Total time to crack all passwords (s):  184.8493758598525
+############################################4
+
+
+
+Cracked password:   2222
+Execution time (s):  37.47499654669109
+Cracked password:   3333
+Execution time (s):  31.974077303656394
+Cracked password:   4444
+Execution time (s):  41.72193315163726
+Cracked password:   5555
+Execution time (s):  31.646006542256316
+Total time to crack all passwords (s):  142.81724020104886
+#########################################5
+
+Cracked password:   6666
+Execution time (s):  42.884729617672726
+Cracked password:   6665
+Execution time (s):  36.858165012143246
+Cracked password:   6664
+Execution time (s):  39.977953135069924
+Cracked password:   6663
+Execution time (s):  48.319994081263744
+Total time to crack all passwords (s):  168.0410753454271
+############################################6
+
+
+
+Cracked password:   1111
+Execution time (s):  10.647370759646705
+Cracked password:   1190
+Execution time (s):  10.891370662141513
+Cracked password:   1400
+Execution time (s):  11.487227033571298
+Cracked password:   1800
+Execution time (s):  11.163397748057704
+Total time to crack all passwords (s):  44.189640329858356
+##########################################7
+
+
+
+
+
+Cracked password:   5000
+Execution time (s):  36.29546040626308
+Cracked password:   5000
+Execution time (s):  33.37619855478487
+Cracked password:   5000
+Execution time (s):  47.02326354156821
+Cracked password:   5000
+Execution time (s):  36.4084235933486
+Total time to crack all passwords (s):  153.10361722882544
+#############################################8
+
+
+
+Cracked password:   7213
+Execution time (s):  43.09690947027738
+Cracked password:   9000
+Execution time (s):  54.99616864463933
+Cracked password:   9900
+Execution time (s):  50.180017679231
+Cracked password:   9999
+Execution time (s):  52.33364908479828
+Total time to crack all passwords (s):  200.60698735896494
+#############################################9
+
+
+
+
+
+Cracked password:   9672
+Execution time (s):  53.62491933369741
+Cracked password:   6324
+Execution time (s):  35.160624837224056
+Cracked password:   3242
+Execution time (s):  20.019161481001234
+Cracked password:   1223
+Execution time (s):  10.051679035143351
+Total time to crack all passwords (s):  118.8566083502934
+############################################10
+
+
+
+
+
+
+
+
+
+
+
+
+
+

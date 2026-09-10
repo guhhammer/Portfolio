@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<email><code>5</code><recipient>dd</recipient><emailCc>ff</emailCc><subject>Weekly report</subject><message>The weekly report is ready for review.</message><greenCode>1</greenCode><yellowCode>0</yellowCode></email>

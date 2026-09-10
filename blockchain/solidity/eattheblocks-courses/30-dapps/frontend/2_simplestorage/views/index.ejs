@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimpleStorage Frontend</title>
+</head>
+<body>
+  <h1>Stored Value: <%= storedValue %></h1>
+
+  <form action="/set" method="POST">
+    <input name="value" placeholder="Enter new value" />
+    <button type="submit">Set Value</button>
+  </form>
+</body>
+</html>

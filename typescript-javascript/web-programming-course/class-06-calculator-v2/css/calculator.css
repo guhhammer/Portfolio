@@ -1,0 +1,12 @@
+
+
+.tbl input{
+	
+	width: 40px;
+	height: 25px;
+	border-radius: 45%;
+	border-style: solid;
+	border-color: gray;
+	text-align: center;
+	
+}

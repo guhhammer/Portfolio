@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<email><recipient>dd</recipient><emailCc>ff</emailCc><subject>Invoice attached</subject><message>Please find the invoice for last month attached.</message><screen>../html/junkMail.html</screen><link>emailInbox14.xml</link></email>

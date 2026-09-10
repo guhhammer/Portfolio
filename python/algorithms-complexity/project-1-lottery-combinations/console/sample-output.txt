@@ -1,0 +1,10 @@
+
+Program 1:
+
+	Sequences:
+
+		a: 2118760 combinations.
+		b: 230300 combinations.
+		c: 19600 combinations.
+		d: 1225 combinations.
+

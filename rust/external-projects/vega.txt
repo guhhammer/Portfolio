@@ -1,0 +1,22 @@
+Vega - serverless encrypted messenger (Rust)
+
+What it is:
+  An encrypted messenger with no server. Peers find each other, carry each
+  other's ciphertext, and hold each other's mail. Nothing here is a service
+  you have to run or pay for, no node can read a message, and no node's
+  disappearance kills the network.
+
+Highlights:
+  - Serverless peer-to-peer message delivery
+  - End-to-end encryption; no node can read a message in transit
+  - Store-and-forward mail carried by peers
+  - No single point of failure; nodes can come and go
+  - Full design, including what it does not protect against, in
+    .documentation/design.md inside the repository
+
+Links:
+  Live:       https://guhhammer.dev/vega
+  Repository: https://github.com/guhhammer/vega
+
+Related work in this portfolio:
+  rust/p2p-encrypted-messenger/ is the earlier LAN-only prototype of the same idea.

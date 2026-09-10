@@ -1,0 +1,18 @@
+
+O que é Space-based?
+
+Foi inventada Microsoft em 1997-98, é uma arquitetura-paradigma de computação distribuída. Adota princípios das arquiteturas: REST(Representational State Transfer), Arquitetura Orientada a Serviços, Arquitetura Orientada a Eventos e elementos de Computação em Grid.
+
+
+Onde é utilizada?
+É utilizada em no Java Parallel Processing Framework(JPPF): uma API que facilita a distribuição de tarefas entre um cluster de computadores e as executa em paralelo.
+É parecido com a arquitetura Shared-Nothing utilizada pela Google e Amazon. 
+É utilizado em aplicações de segurança escaláveis de troca de informações por indústrias de segurança.
+
+https://www.infoq.com/news/Grid-Computing-JPPF/
+
+Como é estruturada?
+
+Ela é estruturada em unidades de processamento e virtual middleware.
+As unidades de processamento são escaláveis e sujeitas à falha, geralmente feitas de um container POJO(Plain Old Java Object). O Virtual Middleware é um modelo cluster que coordena o uso das unidades de processamento.
+

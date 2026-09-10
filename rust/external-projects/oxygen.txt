@@ -1,0 +1,16 @@
+Oxygen - private desktop chat app for local AI models (Rust + TypeScript, Tauri)
+
+What it is:
+  A private desktop chat application for language models that run locally
+  through Ollama. No account, no cloud, no telemetry: your conversations
+  never leave your machine.
+
+Highlights:
+  - Tauri desktop application (Rust backend, web front end)
+  - Talks to a local Ollama instance; works fully offline
+  - Nothing is sent to any server and nothing is tracked
+  - Installers available from the repository releases
+
+Links:
+  Live:                   https://guhhammer.dev/oxygen
+  Repository & downloads: https://github.com/guhhammer/oxygen

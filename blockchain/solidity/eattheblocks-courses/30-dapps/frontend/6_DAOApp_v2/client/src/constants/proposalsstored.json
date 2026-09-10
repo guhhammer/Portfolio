@@ -1,0 +1,119 @@
+{
+    "null": {
+        "id": 0,
+        "name": "null",
+        "deadline": "null",
+        "recipient": "null",
+        "amount": "null",
+        "votes": "null",
+        "executed": false
+    },
+    "0": {
+        "id": 0,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "1": {
+        "id": 1,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "2": {
+        "id": 2,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "3": {
+        "id": 3,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "4": {
+        "id": 4,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "5": {
+        "id": 5,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "6": {
+        "id": 6,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "7": {
+        "id": 7,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "8": {
+        "id": 8,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "9": {
+        "id": 9,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "10": {
+        "id": 10,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    },
+    "11": {
+        "id": 11,
+        "name": "proposal name",
+        "deadline": "1000000000",
+        "recipient": "0x0000..0000",
+        "amount": "1 ether",
+        "votes": "1.000",
+        "executed": false
+    }
+}

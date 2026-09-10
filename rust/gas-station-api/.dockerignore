@@ -1,0 +1,27 @@
+# Ignore git data
+.git
+.gitignore
+
+# Ignore build artifacts
+target
+debug
+
+# Ignore local configs
+Cargo.lock
+**/*.rs.bk
+
+# Ignore IDE/editor files
+*.swp
+*.swo
+*.iml
+*.idea
+*.vscode
+
+# Ignore OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Ignore container-related files
+docker-compose.yml
+Dockerfile
+.dockerignore

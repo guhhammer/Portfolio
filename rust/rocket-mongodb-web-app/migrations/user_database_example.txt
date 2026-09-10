@@ -1,0 +1,17 @@
+// Shape of one document in the "users" collection (see src/models/user.rs).
+// profile_image holds a base64-encoded PNG; social_media is a list of URLs;
+// categories must match the Category enum and tier the Tier enum.
+
+{
+    "profile_image": "<base64 png>",
+    "profile_name": "Pixel Forge Studio",
+    "profile_short_description": "Indie game studio sharing devlogs and tutorials.",
+    "donate_address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "social_media": [
+        "https://youtube.com/@pixelforge-example",
+        "https://discord.gg/example-pixelforge"
+    ],
+    "long_description": "Longer profile text shown on the creator page.",
+    "categories": ["ArtsEducation", "YouthPrograms"],
+    "tier": "Creator"
+}

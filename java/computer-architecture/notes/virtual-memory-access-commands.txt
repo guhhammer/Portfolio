@@ -1,0 +1,15 @@
+# Example READ/WRITE commands for the virtual-memory access simulator used in class.
+# Comment lines start with "#".
+# Line format:
+#    READ  <optional: bin/hex/oct> <virtual address, or "random">
+#    WRITE <optional: bin/hex/oct> <virtual address, or "random">
+# Example:
+READ hex 100    # page 0
+READ hex 4100
+READ hex 98100
+READ hex C100
+READ hex 10100
+READ hex 14100
+READ hex A1000
+READ hex 1C000
+READ hex A8100

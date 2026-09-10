@@ -1,0 +1,14 @@
+
+
+mkdir -p ~/go_projects/hello
+cd ~/go_projects/hello       // separating it into a folder.
+
+go mod init hello // needs to make a module for each project.
+
+nano main.go // to edit it.
+
+go run main.go // to run project.
+
+
+go build // to build project.
+./hello

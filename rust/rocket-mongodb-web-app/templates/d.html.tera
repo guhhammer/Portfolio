@@ -1,0 +1,35 @@
+{% extends "base" %}
+
+{% block body %}
+
+{% include "components/header" %}
+
+<div id="d-minus" class="flex-1 overflow-y-auto flex items-center justify-center glass-effect overflow-hidden">
+  <div id="d-container"
+    class="relative grid grid-rows-1 self-center content-center w-1/5 min-h-80 bg-gray-200 rounded-md shadow-lg semi-transparent-black transition-all duration-300 mx-auto">
+
+    <!-- + Button -->
+    <button id="b-more" onclick="resize_plus()" class="bg-purple-500 w-8 h-8 ml-2 mt-2 rounded-full"> + </button>
+
+    {% include "components/profile" %}
+
+    <!-- Donate Button -->
+    <button id="b-donate" onclick="donateTo()" data-profile-name="{{ ctx_user.donate_address }}"
+      class="b-font mx-auto p-4 w-3/5 bg-purple-500 text-white rounded-md shadow-lg hover:bg-purple-600 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+      Donate
+    </button>
+
+    <!-- Social Media -->
+    {% include "components/social_media" %}
+
+    {% include "components/long_description" %}
+
+  </div>
+  
+</div>
+
+{% include "components/footer" %}
+
+<script src="/static/js/d.js"></script>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+Order in which the diagrams are produced:
+
+1. Use-case diagram
+2. Structural / conceptual diagram
+3. Sequence diagram
+4. Class diagram

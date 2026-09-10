@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+**/venv/
+**/.venv/
+__pycache__/
+*.pyc
+
+# Build output
+target/
+build/
+dist/
+out/
+.next/
+frontend/dist/*
+!frontend/dist/.gitkeep
+**/.anchor/
+**/test-ledger/
+**/artifacts/
+**/cache/
+**/typechain-types/
+
+# Compiled artifacts
+*.class
+*.o
+*.exe
+*.dll
+*.jar
+*.pyd
+*.so
+
+# IDE and OS files
+.idea/
+.vscode/
+.metadata/
+.settings/
+*.iml
+.classpath
+.project
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Logs and local state
+*.log
+logs/
+**/local_persistent_storage/
+**/price_records.json
+
+# Secrets (keep only the .example files)
+.env
+.env.*
+!.env.example
+!.env-example
+!.env.template
+*.pem
+*.key
+**/id.json
+**/*keypair*.json
+
+# Go binaries built next to their main packages
+go/**/gasstation
+go/**/steganography
+go/**/parallelmergesort
+go/**/sortingbenchmarks
+go/**/terminaldashboard
+go/**/wailsdesktopapp
+go/learning/*/arrays
+go/learning/*/channels
+go/learning/*/generics
+go/learning/*/goroutines
+go/learning/*/hello
+go/learning/*/pointers
+go/learning/*/simple
+go/learning/*/strings
+go/learning/*/structs
+
+# lockfiles (regenerable)
+package-lock.json
+yarn.lock
+
+# Truffle / Hardhat build artifacts (regenerate with `truffle compile`)
+blockchain/**/build/contracts/
+blockchain/**/src/contracts/*.json
+blockchain/**/src/abis/*.json
+blockchain/**/bin/contracts/

@@ -1,0 +1,10 @@
+*.o
+.depend
+process-ready-queue/ready_queue
+unix-shell/osh
+cpu-scheduling-simulator/fcfs
+cpu-scheduling-simulator/sjf
+cpu-scheduling-simulator/priority
+cpu-scheduling-simulator/rr
+cpu-scheduling-simulator/priorityWithRR
+producer-consumer-pthreads/producer_consumer

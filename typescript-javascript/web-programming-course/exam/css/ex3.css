@@ -1,0 +1,32 @@
+
+
+
+#divEX3 #images{
+
+    font-size: 40px;
+    
+
+}
+
+#divEX3 #title{
+
+    text-align: left;
+
+}
+
+
+
+#divEX3 .fotos{
+
+    width: 350px;
+    height: 200px;
+
+}
+
+
+#divEX3 .fotos:hover{
+
+    cursor: pointer;
+    border: 3px solid #5500FF;
+
+}

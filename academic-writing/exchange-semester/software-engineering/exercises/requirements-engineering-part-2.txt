@@ -1,0 +1,4 @@
+RE is a coordinated set of activities for exploring, evaluating, 
+documenting, consolidating, revising, and adapting the objectives, capabilities, qualities,
+constraints, and assumptions that the system–to-be should meet based on problems raised by
+the system-as-is and opportunities provided by new technologies.

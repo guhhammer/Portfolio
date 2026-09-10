@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<email><code>10</code><recipient>dd</recipient><emailCc>dd</emailCc><subject>Invoice attached</subject><message>Please find the invoice for last month attached.</message><greenCode>1</greenCode><yellowCode>0</yellowCode></email>

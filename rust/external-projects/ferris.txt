@@ -1,0 +1,17 @@
+Ferris - Pac-Man-inspired maze game (Rust + Bevy, WebAssembly)
+
+What it is:
+  A maze game built with Rust and the Bevy game engine. You guide Ferris
+  the crab through neon mazes, eat pellets, avoid ghosts and collect bonus
+  lives. The same engine ships as a native desktop build and as a
+  WebAssembly build that runs in the browser at the live demo link.
+
+Highlights:
+  - Bevy engine, one code base for desktop and web
+  - Compiled to WebAssembly and served with compression (about 4 MB download)
+  - Keyboard controls (W, A, S, D), several levels of increasing difficulty
+  - MIT licensed
+
+Links:
+  Live demo:  https://guhhammer.dev/ferris
+  Repository: https://github.com/guhhammer/ferris

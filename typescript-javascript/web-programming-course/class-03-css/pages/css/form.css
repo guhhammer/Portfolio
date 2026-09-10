@@ -1,0 +1,55 @@
+
+html{
+	background-color: #696969;
+}
+
+.tbl{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.tbl input{ 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 1.5px;
+	margin-bottom: 1.5px;
+	border-radius: 2px;
+	border: solid 1px #CCC;
+	font-family: Arial;
+	cursor: text;
+	opacity: 0.7;
+}
+
+
+.bt {
+	width: 100px;
+	height: 40px;
+	background-color: #088A68;
+	color: white;
+	text-align: center;
+	border-style: black;
+	border-radius: 2px 2px 2px 2px;
+	border-width: 2px;
+	margin-top: 18.5;
+}
+
+.bt:hover{
+	cursor: pointer;
+	background-color: #04B486;
+}
+
+#RED{
+	border-color: red;
+}
+
+#RED::placeholder{
+	color: #FA5858;
+}
+
+.tabela{
+	position: relative;
+	margin-left: 200px;
+	margin-top: 100px;
+}

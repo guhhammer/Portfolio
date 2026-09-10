@@ -1,0 +1,3 @@
+Composition: when an object is destroyed, its parts are destroyed with it.
+
+Association: when an object is destroyed, the other one is not.

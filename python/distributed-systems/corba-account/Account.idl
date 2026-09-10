@@ -1,0 +1,13 @@
+exception InsufficientFunds {};
+
+interface Account {
+
+	readonly attribute float balance;
+	readonly attribute string id;
+
+	void deposit(in float value);
+	void withdraw(in float value) raises (InsufficientFunds);
+	void transfer(in float value, in Account destination) raises (InsufficientFunds);
+
+	oneway void shutdown(in string password);
+};

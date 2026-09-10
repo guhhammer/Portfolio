@@ -1,0 +1,9 @@
+<footer class="w-full p-4 z-50 backdrop-blur-md bg-white/30 border-t border-gray-200/50 semi-transparent-black">
+    <div class="text-center text-gray-600">
+        <p>&copy; 2025 Donation.com. All rights reserved.</p>
+        <div class="mt-2 space-x-4">
+            <a href="/about" class="b-font text-purple-500 hover:text-purple-600 transition duration-200">About</a>
+            <a href="/terms" class="b-font text-purple-500 hover:text-purple-600 transition duration-200">Terms of Service</a>
+        </div>
+    </div>
+</footer>

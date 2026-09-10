@@ -1,0 +1,93 @@
+
+
+
+
+
+#divEX2{
+
+
+    margin-top: 15%;
+    margin-left: 40%;
+
+}
+    
+
+
+#divEX2 input{
+
+    border-color: #0000DD;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+
+}
+
+#divEX2 #save{
+
+    background-color: #00AA00;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border: 1px solid #00AA00;
+
+}
+
+#divEX2 #clear{
+
+    background-color: #FFFF00;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border: 1px solid #FFFF00;
+}
+
+
+#divEX2 #name{
+    width: 150px;
+}
+
+#divEX2 #lastName{
+    width: 150px;
+}
+#divEX2 #email{
+    width: 300px;
+}
+
+#divEX2 #address{
+    width: 300px;
+}
+
+#divEX2 #age{
+    width: 100px;
+}
+
+#divEX2 #height{
+    width: 100px;
+}
+
+#divEX2 #weight{
+    width: 100px;
+}
+
+
+#divEX2 #cpf{
+    width: 150px;
+}
+
+#divEX2 #rg{
+    width: 150px;
+}
+
+
+#divEX2 #save{
+    width: 300px;
+}
+
+#divEX2 #clear{
+    width: 300px;
+}

@@ -1,0 +1,65 @@
+
+Execution time of Program1: 0.0 seconds.
+
+
+Execution time of Program2: 14.98 seconds.
+
+
+Execution time of Program3: 16.17 seconds.
+
+
+Execution time of Program4: 14.83 seconds.
+
+
+Execution time of Program5: 11.97 seconds.
+
+
+{
+	Program6:
+
+
+		Executing Program2 [0 to 9] => 0 1 2 3 4 5 6 7 8 9 => Average time: 14.52 seconds.
+		Executing Program3 [0 to 9] => 0 1 2 3 4 5 6 7 8 9 => Average time: 15.97 seconds.
+		Executing Program4 [0 to 9] => 0 1 2 3 4 5 6 7 8 9 => Average time: 14.87 seconds.
+		Executing Program5 [0 to 9] => 0 1 2 3 4 5 6 7 8 9 => Average time: 11.82 seconds.
+
+}
+
+
+Execution time of Program6: 572.3 seconds.
+
+
+{
+	Program7:
+
+
+		Executing SB15_14 now... 
+Execution time of getNCards: 163.59 seconds.
+
+		Executing SB15_13 now... 
+Execution time of getNCards: 474.41 seconds.
+
+		Executing SB15_12 now... 
+Execution time of getNCards: 717.06 seconds.
+
+		Executing SB15_11 now... 
+Execution time of getNCards: 851.62 seconds.
+
+
+
+
+SB15_14 => 1389095 cards * R$ 2,50 => R$ 3472737.5
+
+SB15_13 => 540239 cards * R$ 2,50 => R$ 1350597.5
+
+SB15_12 => 216452 cards * R$ 2,50 => R$ 541130.0
+
+SB15_11 => 82810 cards * R$ 2,50 => R$ 207025.0
+
+
+}
+
+
+Execution time of Program7: 2262.86 seconds.
+
+[Finished in 2894.7s]

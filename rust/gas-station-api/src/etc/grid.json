@@ -1,0 +1,195 @@
+{
+  "isles": [
+    [
+      {
+        "number": 1,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6186,
+            "fuel_type": "Gasoline85",
+            "pump_status": "Pumping"
+          },
+          {
+            "number": 2,
+            "liters_thousandth": 0,
+            "price_thousandth": 6215,
+            "fuel_type": "Gasoline95",
+            "pump_status": "Pumping"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Pumping"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6186,
+            "fuel_type": "Gasoline85",
+            "pump_status": "Active"
+          },
+          {
+            "number": 2,
+            "liters_thousandth": 0,
+            "price_thousandth": 6215,
+            "fuel_type": "Gasoline95",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 3,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 3883,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Pumping"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 3883,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 5,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 3883,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 3883,
+            "fuel_type": "Ethanol70",
+            "pump_status": "Active"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 6163,
+            "fuel_type": "Gasoline70",
+            "pump_status": "Active"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "number": 7,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 5450,
+            "fuel_type": "Diesel50",
+            "pump_status": "Pumping"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 5450,
+            "fuel_type": "Diesel50",
+            "pump_status": "Pumping"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "triggers": [
+          {
+            "number": 0,
+            "liters_thousandth": 0,
+            "price_thousandth": 5252,
+            "fuel_type": "Diesel500",
+            "pump_status": "Pumping"
+          },
+          {
+            "number": 1,
+            "liters_thousandth": 0,
+            "price_thousandth": 5252,
+            "fuel_type": "Diesel500",
+            "pump_status": "Pumping"
+          }
+        ]
+      }
+    ]
+  ],
+  "price_controller": {
+    "Gasoline70": 6163,
+    "Diesel500": 5252,
+    "Diesel50": 5450,
+    "Gasoline85": 6186,
+    "Ethanol70": 3883,
+    "Gasoline95": 6215
+  },
+  "supplier": {
+    "Diesel50": 294003353,
+    "Ethanol70": 244059995,
+    "Gasoline70": 194009725,
+    "Gasoline95": 44022631,
+    "Diesel500": 493978633,
+    "Gasoline85": 94074565
+  },
+  "name": "SimulationGrid"
+}

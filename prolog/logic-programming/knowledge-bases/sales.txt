@@ -1,0 +1,8 @@
+:- dynamic sale/5.
+
+sale('joao da silva', date(15,1,2015), 3, ball, 12.50).
+sale('claudia', date(18,1,2015), 1, sneakers, 89.45).
+sale('joao claudio', date(22,1,2015), 4, soap, 1.35).
+sale('joao da silva', date(15,2,2015), 5, bags, 202.50).
+sale('claudia', date(18,2,2015), 3, shoes, 200.45).
+sale('joao claudio', date(22,2,2015), 10, brushes, 20.5).
